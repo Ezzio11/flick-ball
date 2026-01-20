@@ -1,0 +1,41 @@
+name: Update Match Stats
+
+on:
+  schedule:
+    # Run daily at 04:00 AM UTC (after late matches)
+    - cron: '0 4 * * *'
+  workflow_dispatch: # Adds a "Run workflow" button in GitHub UI
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Run Ingestion Script
+        run: node scripts/ingest_data.js
+        
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name 'Stats Bot'
+          git config --global user.email 'stats-bot@noreply.github.com'
+          
+          # Check if files changed
+          if [[ -n $(git status -s src/lib/data_ingested.ts) ]]; then
+            git add src/lib/data_ingested.ts public/data/matches.json
+            # [skip netlify] tells Netlify NOT to trigger a build for this commit
+            git commit -m "chore(stats): update match data [skip netlify]"
+            git push
+            echo "::notice::Stats updated and pushed!"
+          else
+            echo "::notice::No changes in match statistics."
+          fi

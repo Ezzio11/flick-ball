@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ===== BRAND COLORS ===== */
+  --color-hero-bg: #db0030;
+  --color-text-primary: #ffffff;
+  --color-text-dark: #000000;
+
+  /* ===== BLAUGRANA PALETTE ===== */
+  --color-barca-garnet: #a50044;
+  --color-barca-blue: #004d98;
+  --color-barca-gold: #edbb00;
+  --color-barca-yellow: #ffed02;
+  --color-barca-red-bright: #db0030;
+
+  /* ===== FONTS ===== */
+  --font-header-main: var(--font-bangers);
+  --font-header-alt: var(--font-limelight);
+  --font-header-fancy: var(--font-lemonada);
+  --font-body: var(--font-comic);
+}
+
+/* ===== RESET & BASE ===== */
+:root {
+  --background: #db0030;
+  --foreground: #ffffff;
+
+  /* ===== BLAUGRANA PALETTE ===== */
+  --color-barca-garnet: #a50044;
+  --color-barca-blue: #004d98;
+  --color-barca-gold: #edbb00;
+  --color-barca-yellow: #ffed02;
+  --color-barca-red-bright: #db0030;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* ===== UTILITIES ===== */
+.font-header-main {
+  font-family: var(--font-header-main);
+}
+
+.font-header-alt {
+  font-family: var(--font-header-alt);
+}
+
+.font-header-fancy {
+  font-family: var(--font-header-fancy);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* ===== TEXT SHADOWS ===== */
+.text-shadow-sm {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-md {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-lg {
+  text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ===== COMIC BOOK UTILITIES ===== */
+
+/* Halftone Pattern (Dark Dots on Transparent) */
+/* Halftone Pattern (SVG Dots from Reference) */
+.comic-halftone {
+  background-color: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>');
+  background-size: 20px 20px;
+}
+
+/* Comic Panels */
+.comic-panel {
+  /* background removed - use Tailwind bg-* classes instead */
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 -1px #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.comic-panel-white {
+  background-color: #fff;
+}
+
+/* Skewed Divider Line */
+.comic-divider {
+  width: 6px;
+  background-color: #000;
+  transform: skewX(-10deg);
+  height: 100%;
+}
+
+/* Caption Top Box */
+.comic-caption-box {
+  background-color: #ffff00;
+  /* Classic comic caption yellow */
+  border: 4px solid #000;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-header-main);
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 4px 4px 0 #000;
+  display: inline-block;
+  transform: skewX(-5deg);
+}
+
+/* Skewed Header Box */
+.comic-header-box {
+  background-color: #fff;
+  border: 4px solid #000;
+  display: inline-block;
+  transform: skewX(-12deg) rotate(-2deg);
+  box-shadow: 8px 8px 0px -1px #000;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.comic-header-box:hover {
+  transform: skewX(-12deg) rotate(-3deg) scale(1.05);
+  box-shadow: 12px 12px 0px -1px #000;
+  background-color: #ffff00;
+  /* Yellow highlight on hover */
+}
+
+/* The "Spiderman" Tag */
+.comic-tag {
+  background-color: #f8012d;
+  /* Red base */
+  color: #fff;
+  padding: 0.5rem 2rem 1.5rem;
+  /* Extra bottom padding for overlap */
+  border-radius: 30px 30px 0 0;
+  /* Rounded top */
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0 #000;
+  font-family: var(--font-header-alt);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 20;
+}
+
+/* White bottom part of the tag (Pseudo-element substitute) */
+.comic-tag-bottom {
+  background-color: #fff;
+  color: #000;
+  font-family: var(--font-header-fancy);
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border: 3px solid #000;
+  border-top: none;
+  border-radius: 0 0 30px 30px;
+  /* Rounded bottom */
+  box-shadow: 5px 5px 0 #000;
+  margin-top: -5px;
+  /* Overlap */
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  transform: rotate(-1deg);
+}
+
+/* Comic Button */
+.comic-button {
+  font-family: var(--font-header-alt);
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #fff;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  transform: skewX(-10deg);
+  transition: all 0.2s;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  box-shadow: 8px 8px 0 #000;
+  transform: skewX(-10deg) translateY(-2px);
+}
+
+/* Text Stroke Utility */
+.text-stroke-black {
+  -webkit-text-stroke: 2px black;
+  paint-order: stroke fill;
+}
+
+/* ===== DIAGONAL PANEL CUTS ===== */
+
+/* Diagonal cut on top-left corner */
+.diagonal-cut-top-left {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+/* Diagonal cut on top-right corner */
+.diagonal-cut-top-right {
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+/* Diagonal cut on bottom-left corner */
+.diagonal-cut-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+}
+
+/* Diagonal cut on bottom-right corner */
+.diagonal-cut-bottom-right {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+}
+
+/* Large diagonal slice (for header) - right side */
+.diagonal-slice-right {
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+}
+
+/* Large diagonal slice (for footer) - top */
+.diagonal-slice-top {
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Full diagonal divider (for middle panels) */
+.diagonal-divider-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.diagonal-divider-top {
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ===== COMIC SFX UTILITIES ===== */
+.text-stroke-comic {
+  -webkit-text-stroke: 3px black;
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 0 #000;
+}
+
+.text-stroke-comic-sm {
+  -webkit-text-stroke: 2px black;
+  paint-order: stroke fill;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.comic-burst-bg {
+  background-color: #ffed02;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  /* Fallback/Simple shape, real burst handled via SVG or complex clip-path usually */
+}
+
+/* Jagged/Stamp Border Effect */
+.comic-stamp {
+  background-color: #fff;
+  position: relative;
+  border: 4px solid #000;
+  /* Instead of complex clip-path which cuts content, we use a pseudo-element border or simple dashed/solid combo */
+  /* For the generated image look (wavy/rough): */
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.comic-stamp::after {
+  /* Inner dashed line for "stamp" look */
+  content: '';
+  position: absolute;
+  top: 4px; left: 4px; right: 4px; bottom: 4px;
+  border: 2px dashed #ccc;
+  pointer-events: none;
+}
+
+/* Uniform Comic Button Style (Red/Blue from concept) */
+.btn-comic-red {
+    background-color: #db0030; /* Barca Red */
+    color: #fff;
+    border: 3px solid #004d98; /* Barca Blue border */
+    font-family: var(--font-bangers);
+    text-transform: uppercase;
+    transform: skewX(-10deg);
+    box-shadow: 4px 4px 0 #000;
+    transition: all 0.2s;
+}
+
+.btn-comic-red:hover {
+    transform: skewX(-10deg) translateY(-2px);
+    box-shadow: 6px 6px 0 #000;
+    background-color: #ff0033; /* Brighter red on hover */
+}
+
+/* ===== END COMIC UTILITIES ===== */
