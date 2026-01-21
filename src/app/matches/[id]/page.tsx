@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 }
 
 // Enable ISR with 60s revalidation
-export const revalidate = 60;
+export const revalidate = 86400;
 export const dynamicParams = true;
 
 export default async function MatchPage({ params }: { params: Promise<{ id: string }> }) {

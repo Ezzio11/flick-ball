@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 // Enable ISR with 60s revalidation
-export const revalidate = 60;
+export const revalidate = 86400;
 export const dynamicParams = true; // Allow new details to be generated on demand
 
 export default async function PlayerProfilePage({ params }: { params: Promise<{ slug: string }> }) {
