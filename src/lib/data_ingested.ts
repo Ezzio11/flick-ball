@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-20T08:29:55.064Z
+// Date: 2026-01-21T04:41:37.825Z
 
 import { MatchData } from './matchHelpers';
 
@@ -7947,8 +7947,8 @@ export const INGESTED_MATCHES: MatchData[] = [
             "xG": "3.68",
             "totalShots": 25,
             "shotsOnTarget": 9,
-            "bigChances": 7,
-            "bigChancesMissed": 6,
+            "bigChances": 8,
+            "bigChancesMissed": 7,
             "corners": 8,
             "fouls": 8,
             "accuratePasses": {

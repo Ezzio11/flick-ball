@@ -7942,8 +7942,8 @@
             "xG": "3.68",
             "totalShots": 25,
             "shotsOnTarget": 9,
-            "bigChances": 7,
-            "bigChancesMissed": 6,
+            "bigChances": 8,
+            "bigChancesMissed": 7,
             "corners": 8,
             "fouls": 8,
             "accuratePasses": {
