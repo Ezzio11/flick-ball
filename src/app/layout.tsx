@@ -25,13 +25,13 @@ const comicNeue = Comic_Neue({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://flick-ball.netlify.app'),
+  metadataBase: new URL('https://flickball.ezzio.me'),
   title: "FlickBall | The Hansi Flick Era: Stats, Tactics & Glory",
   description: "Dive into the stats behind Hansi Flick's Barcelona. Expected Goals (xG), tactical analysis, player rankings, and the visual story of a record-breaking season.",
   openGraph: {
     title: "FlickBall | The Hansi Flick Era: Stats, Tactics & Glory",
     description: "Dive into the stats behind Hansi Flick's Barcelona. Expected Goals (xG), tactical analysis, player rankings, and the visual story of a record-breaking season.",
-    url: "https://flick-ball.netlify.app",
+    url: "https://flickball.ezzio.me",
     type: "website",
     locale: "en_US",
     siteName: "FlickBall",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     images: ["/opengraph-image.jpg"]
   },
   other: {
-    "og:logo": "https://flick-ball.netlify.app/icon.png",
+    "og:logo": "https://flickball.ezzio.me/icon.png",
     "itemprop:name": "FlickBall | The Hansi Flick Era: Stats, Tactics & Glory",
     "itemprop:description": "Dive into the stats behind Hansi Flick's Barcelona. Expected Goals (xG), tactical analysis, player rankings, and the visual story of a record-breaking season.",
-    "itemprop:image": "https://flick-ball.netlify.app/opengraph-image.jpg"
+    "itemprop:image": "https://flickball.ezzio.me/opengraph-image.jpg"
   }
 };
 

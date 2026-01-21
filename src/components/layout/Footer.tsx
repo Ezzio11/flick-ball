@@ -20,7 +20,7 @@ export default function Footer() {
                 <div className="text-center md:text-right text-xs md:text-sm space-y-1" style={{ fontFamily: 'var(--font-comic)' }}>
                     <div className="flex items-center gap-2 justify-center md:justify-end">
                         <span className="opacity-80">Designed by</span>{' '}
-                        <a href="https://ezzio.netlify.app" target="_blank" rel="noopener noreferrer" className="font-bold text-[#ffed02] hover:text-white transition-colors underline">
+                        <a href="https://ezzio.me" target="_blank" rel="noopener noreferrer" className="font-bold text-[#ffed02] hover:text-white transition-colors underline">
                             Ezzio
                         </a>
                         <span className="text-white/30 mx-1">•</span>

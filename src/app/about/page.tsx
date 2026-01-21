@@ -377,7 +377,7 @@ const AboutPage = () => {
 
                     <div className="flex justify-center gap-6">
                         <a
-                            href="https://ezzio.netlify.app"
+                            href="https://ezzio.me"
                             target="_blank"
                             aria-label="Personal Website"
                             className="bg-[#a50044] text-white p-3 rounded-full hover:bg-[#800033] transition-all shadow-[4px_4px_0_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 active:scale-95"
