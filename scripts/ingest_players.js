@@ -166,14 +166,27 @@ async function run() {
     }
 
     // 4. Write Output
-    // Convert map to array
-    const titansData = Object.values(playersMap);
+    // Convert map to array and filter out players with zero minutes
+    const allPlayers = Object.values(playersMap);
+
+    // Filter: Only include players who have played (total minutes > 0)
+    const titansData = allPlayers.filter(player => {
+        const totalMinutes = player.matches.reduce((sum, match) => {
+            return sum + (match.minutes || match.minutes_played || 0);
+        }, 0);
+
+        if (totalMinutes === 0) {
+            console.log(`Excluding ${player.name} (0 minutes played)`);
+            return false;
+        }
+        return true;
+    });
 
     // Add header
     const fileContent = `export const TITANS_DATA = ${JSON.stringify(titansData, null, 4)};`;
 
     fs.writeFileSync(OUTPUT_FILE, fileContent);
-    console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE}`);
+    console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE} (excluded ${allPlayers.length - titansData.length} bench-only players)`);
 }
 
 run();
