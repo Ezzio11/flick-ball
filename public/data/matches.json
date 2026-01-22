@@ -2216,6 +2216,30 @@
         "formation": "4-2-3-1"
     },
     {
+        "id": "4579037",
+        "date": "2025-01-08T19:00:00Z",
+        "opponent": "Athletic Club",
+        "score": "2 - 0",
+        "isHome": false,
+        "competition": "Super Cup",
+        "season": "24/25",
+        "stats": {
+            "available": true
+        }
+    },
+    {
+        "id": "4582241",
+        "date": "2025-01-12T19:00:00Z",
+        "opponent": "Real Madrid",
+        "score": "5 - 2",
+        "isHome": false,
+        "competition": "Super Cup",
+        "season": "24/25",
+        "stats": {
+            "available": true
+        }
+    },
+    {
         "id": "4707274",
         "date": "2025-01-15T20:00:00Z",
         "opponent": "Real Betis",

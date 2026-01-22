@@ -424,10 +424,13 @@ export function aggregatePlayerStats(player: Player): AggregatedStats {
         if (match.yellowCard) totalYellowCards += 1;
         if (match.redCard) totalRedCards += 1;
 
-        // Physical - FIX: Use correct field names
-        if (match.physical_metrics_distance_covered) totalDistance += match.physical_metrics_distance_covered;
-        if (match.physical_metrics_topspeed) {
-            totalTopSpeed += match.physical_metrics_topspeed;
+        // Physical - distance is now stored as totalDistance in KM
+        if (match.totalDistance) {
+            totalDistance += match.totalDistance;
+            physicalCount++;
+        }
+        if (match.top_speed) {
+            totalTopSpeed += match.top_speed;
             speedCount++;
         }
         if (match.physical_metrics_number_of_sprints) totalSprints += match.physical_metrics_number_of_sprints;
@@ -435,7 +438,6 @@ export function aggregatePlayerStats(player: Player): AggregatedStats {
             totalWalking += match.physical_metrics_walking;
             totalRunning += match.physical_metrics_running || 0;
             totalSprinting += match.physical_metrics_sprinting || 0;
-            physicalCount++;
         }
 
         // GK

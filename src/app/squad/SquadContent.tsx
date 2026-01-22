@@ -114,9 +114,11 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
 
                                 {/* Comic Grid - SMALLER CARDS */}
                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                                    {players.map((player, index) => (
-                                        <PlayerCard key={player.id} player={player} index={index} category={position} />
-                                    ))}
+                                    {players
+                                        .sort((a, b) => b.appearances - a.appearances) // Sort by appearances descending
+                                        .map((player, index) => (
+                                            <PlayerCard key={player.id} player={player} index={index} category={position} />
+                                        ))}
                                 </div>
                             </div>
                         );
