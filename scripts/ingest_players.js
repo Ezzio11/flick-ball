@@ -111,12 +111,15 @@ async function run() {
                 // Count appearances
                 playersMap[playerId].appearances += 1;
 
-                // Extract Stats
+                // Extract Stats - with normalization for backward compatibility
                 const matchStats = {
                     matchId: match.id,
                     date: match.date,
-                    opponent: match.opponent, // This is usually correct in matches.json
+                    opponent: match.opponent,
                     competition: match.competition,
+                    result: match.score || match.result, // Add result field from matches.json
+                    score: match.score, // Explicit score field
+                    isHome: match.isHome, // Include isHome for proper score parsing
                     // Flatten stats
                 };
 
@@ -129,15 +132,28 @@ async function run() {
                             // key is usually like 'goals', 'notes', etc.
                             // We prefer the 'key' property if available
                             const key = statObj.key || statName;
-                            const value = statObj.stat ? statObj.stat.value : statObj.value;
+                            let value = statObj.stat ? statObj.stat.value : statObj.value;
 
-                            matchStats[key] = value;
+                            // Normalize specific fields for backward compatibility
+                            if (key === 'minutes_played') {
+                                matchStats.minutes_played = value;
+                                matchStats.minutes = value; // ALIAS for old code
+                            } else if (key === 'rating_title') {
+                                matchStats.rating_title = value;
+                                matchStats.rating = value; // ALIAS
+                            } else if (key === 'distance_covered' || key === 'physical_metrics_distance_covered') {
+                                // Convert meters to kilometers
+                                matchStats.totalDistance = value ? (value / 1000) : 0;
+                            } else {
+                                matchStats[key] = value;
+                            }
                         }
                     });
 
-                    // Add rating directly
-                    if (p.rating && p.rating.num) {
+                    // Add rating directly if not already set
+                    if (p.rating && p.rating.num && !matchStats.rating) {
                         matchStats.rating = p.rating.num;
+                        matchStats.rating_title = p.rating.num;
                     }
                 }
 
