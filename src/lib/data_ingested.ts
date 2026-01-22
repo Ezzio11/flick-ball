@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-21T04:41:37.825Z
+// Date: 2026-01-22T01:06:47.402Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8008,6 +8008,103 @@ export const INGESTED_MATCHES: MatchData[] = [
                 "team": "opponent",
                 "minute": 71,
                 "assist": "Carlos Soler"
+            }
+        ],
+        "formation": "4-2-3-1"
+    },
+    {
+        "id": 4947151,
+        "date": "2026-01-21T20:00:00.000Z",
+        "opponent": "Slavia Prague",
+        "score": "2 - 4",
+        "isHome": false,
+        "competition": "Champions League",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 59,
+            "xG": "1.42",
+            "totalShots": 20,
+            "shotsOnTarget": 12,
+            "bigChances": 2,
+            "bigChancesMissed": 1,
+            "corners": 4,
+            "fouls": 11,
+            "accuratePasses": {
+                "value": 432,
+                "percentage": 85
+            },
+            "oppositionHalfPasses": 235,
+            "ownHalfPasses": 197,
+            "touchesInOppBox": 32,
+            "accurateLongBalls": {
+                "value": 23,
+                "percentage": 49
+            },
+            "accurateCrosses": {
+                "value": 1,
+                "percentage": 10
+            },
+            "tackles": 22,
+            "interceptions": 8,
+            "blocks": 1,
+            "clearances": 20,
+            "keeperSaves": 1,
+            "shotsOffTarget": 5,
+            "blockedShots": 3,
+            "duelsWon": 57,
+            "groundDuelsWon": {
+                "value": 40,
+                "percentage": 51
+            },
+            "aerialDuelsWon": {
+                "value": 17,
+                "percentage": 71
+            },
+            "successfulDribbles": {
+                "value": 9,
+                "percentage": 43
+            },
+            "xGOpenPlay": "1.34",
+            "xGSetPlay": "0.09",
+            "xGOT": "3.78"
+        },
+        "scorers": [
+            {
+                "player": "Vasil Kusej",
+                "team": "opponent",
+                "minute": 10,
+                "assist": "Tomas Holes"
+            },
+            {
+                "player": "Fermin Lopez",
+                "team": "barca",
+                "minute": 34,
+                "assist": "Frenkie de Jong"
+            },
+            {
+                "player": "Fermin Lopez",
+                "team": "barca",
+                "minute": 42,
+                "assist": "Pedri"
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "opponent",
+                "minute": 44,
+                "assist": null
+            },
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 63,
+                "assist": null
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 71,
+                "assist": "Marcus Rashford"
             }
         ],
         "formation": "4-2-3-1"
