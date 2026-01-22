@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { AggregatedStats } from '@/lib/playerHelpers';
 import { cn } from '@/lib/utils';
-import PerformanceRadar from './PerformanceRadar';
+import PerformanceRadar, { MetricSet, METRIC_SETS, getDefaultSet, getAvailableSets } from './PerformanceRadar';
 
 interface HeroBannerProps {
     name: string;
@@ -15,6 +15,63 @@ interface HeroBannerProps {
 
 export default function HeroBanner({ name, position, profileImage, stats }: HeroBannerProps) {
     const [imageError, setImageError] = useState(false);
+
+    // Determine initial category based on position
+    const effectivePosition = (['GK', 'Goalkeeper'].includes(position)) ? 'Goalkeeper' :
+        (['CB', 'RB', 'LB', 'RWB', 'LWB', 'DEF', 'Defender'].includes(position)) ? 'Defender' :
+            (['CDM', 'CM', 'CAM', 'RM', 'LM', 'MID', 'Midfielder'].includes(position)) ? 'Midfielder' :
+                'Forward';
+
+    const defaultCategory = getDefaultSet(effectivePosition);
+    const [activeCategory, setActiveCategory] = useState<MetricSet>(defaultCategory);
+
+    const availableCategories = getAvailableSets(effectivePosition);
+    const filteredMetricSets = METRIC_SETS.filter(s => availableCategories.includes(s.id));
+
+    // Stats configuration mapping
+    const getStatsForCategory = (category: MetricSet) => {
+        switch (category) {
+            case 'attacking':
+                return [
+                    { label: 'Goals', value: stats.totalGoals, color: 'bg-red-100' },
+                    { label: 'xG', value: stats.totalxG?.toFixed(2) || '0.00', color: 'bg-red-50' },
+                    { label: 'Shots', value: stats.totalShots || 0, color: 'bg-orange-100' },
+                    { label: 'Big Chances', value: stats.totalBigChances || 0, color: 'bg-yellow-100' }
+                ];
+            case 'creative':
+                return [
+                    { label: 'Assists', value: stats.totalAssists, color: 'bg-yellow-100' },
+                    { label: 'xA', value: stats.totalxA?.toFixed(2) || '0.00', color: 'bg-yellow-50' },
+                    { label: 'Key Passes', value: stats.totalKeyPasses || 0, color: 'bg-orange-100' },
+                    { label: 'Chances', value: stats.totalChancesCreated || 0, color: 'bg-red-100' }
+                ];
+            case 'defensive':
+                return [
+                    { label: 'Tackles', value: stats.totalTackles || 0, color: 'bg-blue-100' },
+                    { label: 'Interceptions', value: stats.totalInterceptions || 0, color: 'bg-blue-50' },
+                    { label: 'Duels Won', value: stats.totalDuelsWon || 0, color: 'bg-indigo-100' },
+                    { label: 'Recoveries', value: stats.totalRecoveries || 0, color: 'bg-indigo-50' }
+                ];
+            case 'physical':
+                return [
+                    { label: 'Distance (km)', value: stats.totalDistance ? (stats.totalDistance).toFixed(1) : '0', color: 'bg-green-100' },
+                    { label: 'Top Speed', value: stats.avgTopSpeed ? stats.avgTopSpeed.toFixed(1) : '0', color: 'bg-green-50' },
+                    { label: 'Duels', value: stats.totalDuelsWon || 0, color: 'bg-emerald-100' },
+                    { label: 'Minutes', value: stats.totalMinutes, color: 'bg-emerald-50' }
+                ];
+            case 'goalkeeper':
+                return [
+                    { label: 'Clean Sheets', value: stats.totalCleanSheets || 0, color: 'bg-purple-100' },
+                    { label: 'Saves', value: stats.totalSaves || 0, color: 'bg-purple-50' },
+                    { label: 'Goals Agst', value: stats.totalGoalsConceded || 0, color: 'bg-pink-100' },
+                    { label: 'Prevented', value: stats.avgGoalsPrevented?.toFixed(2) || '0.00', color: 'bg-pink-50' }
+                ];
+            default:
+                return [];
+        }
+    };
+
+    const currentStats = getStatsForCategory(activeCategory);
 
     return (
         <div className="relative w-full overflow-hidden bg-white border-4 border-black shadow-[8px_8px_0_#000]">
@@ -80,57 +137,48 @@ export default function HeroBanner({ name, position, profileImage, stats }: Hero
 
                 {/* Right: Stats + Radar Panel */}
                 <div className="lg:col-span-7 bg-white flex flex-col">
-                    {/* Top: Key Stats */}
-                    <div className="p-6 border-b-4 border-black">
+                    {/* Top: Category Selector & Stats */}
+                    <div className="p-4 border-b-4 border-black">
+
+                        {/* Category Tabs */}
+                        <div className="flex flex-wrap gap-2 mb-4 justify-center lg:justify-start">
+                            {filteredMetricSets.map(set => (
+                                <button
+                                    key={set.id}
+                                    onClick={() => setActiveCategory(set.id)}
+                                    className={cn(
+                                        "px-3 py-1 border-2 border-black text-xs font-bold uppercase transition-all transform hover:-translate-y-1",
+                                        activeCategory === set.id ? "bg-black text-white shadow-[4px_4px_0_rgba(0,0,0,0.2)]" : "bg-white text-black shadow-[2px_2px_0_#000]"
+                                    )}
+                                    style={{ fontFamily: 'var(--font-comic)' }}
+                                >
+                                    {set.label}
+                                </button>
+                            ))}
+                        </div>
+
                         <div className="flex items-center gap-3 mb-4">
-                            <h2 className="text-3xl uppercase text-black leading-none" style={{ fontFamily: 'var(--font-bangers)' }}>Season Stats</h2>
+                            <h2 className="text-3xl uppercase text-black leading-none" style={{ fontFamily: 'var(--font-bangers)' }}>
+                                {METRIC_SETS.find(s => s.id === activeCategory)?.label} Stats
+                            </h2>
                             <span className="font-mono text-xs bg-black text-white px-2 py-1">FC BARCELONA</span>
                         </div>
 
                         {/* Stats Grid */}
                         <div className="grid grid-cols-4 gap-3">
-                            <StatBox label="Apps" value={stats.appearances} color="bg-blue-100" />
+                            <StatBox label="Apps" value={stats.appearances} color="bg-gray-100" />
 
-                            {/* Dynamic Stats based on Position */}
-                            {(position === 'GK' || position === 'Goalkeeper') && (
-                                <>
-                                    <StatBox label="Clean Sheets" value={stats.totalCleanSheets || 0} color="bg-yellow-100" />
-                                    <StatBox label="Saves" value={stats.totalSaves || 0} color="bg-red-100" />
-                                </>
-                            )}
-                            {(position === 'DEF' || position === 'Defender' || position === 'CB' || position === 'RB' || position === 'LB') && (
-                                <>
-                                    <StatBox label="Tackles" value={stats.totalTackles || 0} color="bg-yellow-100" />
-                                    <StatBox label="Duels Won" value={stats.totalDuelsWon || 0} color="bg-red-100" />
-                                </>
-                            )}
-                            {(position === 'MID' || position === 'Midfielder' || position === 'CM' || position === 'CDM' || position === 'CAM') && (
-                                <>
-                                    <StatBox label="Assists" value={stats.totalAssists} color="bg-yellow-100" />
-                                    <StatBox label="Chances" value={stats.totalChancesCreated || 0} color="bg-red-100" />
-                                </>
-                            )}
-                            {(position === 'FWD' || position === 'Forward' || position === 'ST' || position === 'LW' || position === 'RW') && (
-                                <>
-                                    <StatBox label="Goals" value={stats.totalGoals} color="bg-red-100" />
-                                    <StatBox label="Assists" value={stats.totalAssists} color="bg-yellow-100" />
-                                </>
-                            )}
-                            {/* Fallback for unknown positions or simple default */}
-                            {!['GK', 'Goalkeeper', 'DEF', 'Defender', 'CB', 'RB', 'LB', 'MID', 'Midfielder', 'CM', 'CDM', 'CAM', 'FWD', 'Forward', 'ST', 'LW', 'RW'].includes(position) && (
-                                <>
-                                    <StatBox label="Goals" value={stats.totalGoals} color="bg-red-100" />
-                                    <StatBox label="Assists" value={stats.totalAssists} color="bg-yellow-100" />
-                                </>
-                            )}
+                            {currentStats.map((stat, idx) => (
+                                <StatBox key={idx} label={stat.label} value={stat.value} color={stat.color} />
+                            ))}
 
                             <StatBox label="FBI Rating" value={stats.avgRating.toFixed(1)} color="bg-green-100" helpLink="/about-fbi" />
                         </div>
                     </div>
 
                     {/* Bottom: Radar Chart */}
-                    <div className="flex-grow p-4 bg-gray-50">
-                        <PerformanceRadar stats={stats} position={position} />
+                    <div className="flex-grow p-4 bg-gray-50 flex items-center justify-center">
+                        <PerformanceRadar stats={stats} position={position} activeSet={activeCategory} />
                     </div>
                 </div>
             </div>

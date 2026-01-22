@@ -9,10 +9,10 @@ interface PerformanceRadarProps {
     position: string;
 }
 
-type MetricSet = 'attacking' | 'creative' | 'defensive' | 'physical' | 'goalkeeper';
+export type MetricSet = 'attacking' | 'creative' | 'defensive' | 'physical' | 'goalkeeper';
 
 // Get metric sets available for a position
-const getAvailableSets = (position: string): MetricSet[] => {
+export const getAvailableSets = (position: string): MetricSet[] => {
     if (position === 'Goalkeeper') {
         return ['goalkeeper', 'physical'];
     }
@@ -23,11 +23,11 @@ const getAvailableSets = (position: string): MetricSet[] => {
         return ['creative', 'attacking', 'defensive', 'physical'];
     }
     // Forward
-    return ['attacking', 'creative', 'physical'];
+    return ['attacking', 'creative', 'physical', 'defensive']; // Added defensive for high pressers
 };
 
 // Get default metric set for a position
-const getDefaultSet = (position: string): MetricSet => {
+export const getDefaultSet = (position: string): MetricSet => {
     switch (position) {
         case 'Goalkeeper': return 'goalkeeper';
         case 'Defender': return 'defensive';
@@ -37,7 +37,7 @@ const getDefaultSet = (position: string): MetricSet => {
     }
 };
 
-const METRIC_SETS: { id: MetricSet; label: string; color: string }[] = [
+export const METRIC_SETS: { id: MetricSet; label: string; color: string }[] = [
     { id: 'attacking', label: 'Attacking', color: '#ef4444' },
     { id: 'creative', label: 'Playmaking', color: '#eab308' },
     { id: 'defensive', label: 'Defensive', color: '#3b82f6' },
@@ -52,14 +52,19 @@ const normalizePosition = (pos: string): string => {
     return 'Forward'; // Default for ST, RW, LW, FWD
 };
 
-export default function PerformanceRadar({ stats, position }: PerformanceRadarProps) {
+interface PerformanceRadarProps {
+    stats: AggregatedStats;
+    position: string;
+    activeSet?: MetricSet; // Now optional/controlled
+}
+
+export default function PerformanceRadar({ stats, position, activeSet }: PerformanceRadarProps) {
     // Normalize position from specific role (e.g. "GK") to category (e.g. "Goalkeeper")
     const effectivePosition = useMemo(() => normalizePosition(position), [position]);
 
-    // Auto-select based on position
+    // Internal state only used if prop is not provided (backwards compatibility/safety)
     const defaultSet = useMemo(() => getDefaultSet(effectivePosition), [effectivePosition]);
-    const availableSets = useMemo(() => getAvailableSets(effectivePosition), [effectivePosition]);
-    const [activeSet, setActiveSet] = useState<MetricSet>(defaultSet);
+    const [internalSet, setInternalSet] = useState<MetricSet>(defaultSet);
 
     const minutesPer90 = stats.totalMinutes / 90;
     const per90 = (val: number | undefined) => (minutesPer90 > 0 && val ? val / minutesPer90 : 0);
@@ -117,9 +122,10 @@ export default function PerformanceRadar({ stats, position }: PerformanceRadarPr
         }
     };
 
-    const currentSet = METRIC_SETS.find(s => s.id === activeSet)!;
-    const radarData = getRadarData(activeSet);
-    const filteredMetricSets = METRIC_SETS.filter(s => availableSets.includes(s.id));
+    const currentActiveSet = activeSet || internalSet;
+    const currentSet = METRIC_SETS.find(s => s.id === currentActiveSet)!;
+    const radarData = getRadarData(currentActiveSet);
+    const filteredMetricSets = METRIC_SETS.filter(s => getAvailableSets(effectivePosition).includes(s.id));
 
     // Custom tooltip for hover
     const CustomTooltip = ({ active, payload }: any) => {
@@ -137,20 +143,22 @@ export default function PerformanceRadar({ stats, position }: PerformanceRadarPr
 
     return (
         <div className="w-full">
-            {/* Dropdown Selector - Shows only relevant metrics for position */}
-            <div className="mb-4 flex justify-center">
-                <select
-                    value={activeSet}
-                    onChange={(e) => setActiveSet(e.target.value as MetricSet)}
-                    className="px-4 py-2 border-3 border-black bg-white text-black text-sm font-bold uppercase hover:bg-yellow-100 transition-colors focus:outline-none focus:ring-2 focus:ring-black shadow-[3px_3px_0_#000] cursor-pointer"
-                >
-                    {filteredMetricSets.map(set => (
-                        <option key={set.id} value={set.id} className="bg-white">
-                            {set.label}
-                        </option>
-                    ))}
-                </select>
-            </div>
+            {/* Dropdown Selector - Only show if NO external control is active to avoid double controls */}
+            {!activeSet && (
+                <div className="mb-4 flex justify-center">
+                    <select
+                        value={currentActiveSet}
+                        onChange={(e) => setInternalSet(e.target.value as MetricSet)}
+                        className="px-4 py-2 border-3 border-black bg-white text-black text-sm font-bold uppercase hover:bg-yellow-100 transition-colors focus:outline-none focus:ring-2 focus:ring-black shadow-[3px_3px_0_#000] cursor-pointer"
+                    >
+                        {filteredMetricSets.map(set => (
+                            <option key={set.id} value={set.id} className="bg-white">
+                                {set.label}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            )}
 
             {/* Radar Chart */}
             <ResponsiveContainer width="100%" height={280} className="hidden md:block">
@@ -207,7 +215,7 @@ export default function PerformanceRadar({ stats, position }: PerformanceRadarPr
             <div className="mt-2 flex justify-center">
                 <div
                     className="px-3 py-1 border-2 border-black text-xs font-bold uppercase"
-                    style={{ backgroundColor: currentSet.color, color: activeSet === 'creative' ? '#000' : '#fff' }}
+                    style={{ backgroundColor: currentSet.color, color: currentActiveSet === 'creative' ? '#000' : '#fff' }}
                 >
                     {currentSet.label} Metrics
                 </div>
