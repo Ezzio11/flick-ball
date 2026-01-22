@@ -39,3 +39,8 @@ jobs:
           else
             echo "::notice::No changes in match statistics."
           fi
+
+      - name: Trigger On-Demand Revalidation
+        run: |
+          curl "https://flickball.ezzio.me/api/revalidate?secret=${{ secrets.REVALIDATION_TOKEN }}"
+

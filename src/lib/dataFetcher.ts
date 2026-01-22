@@ -8,7 +8,7 @@ export async function fetchAllMatches(): Promise<Match[]> {
         try {
             console.log(`Fetching data from ${dataUrl}...`);
             const res = await fetch(dataUrl, {
-                next: { revalidate: 3600 } // Revalidate every hour
+                next: { revalidate: 3600, tags: ['matches'] } // Revalidate every hour, but allow on-demand purge
             });
 
             if (!res.ok) {
