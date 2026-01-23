@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-22T04:44:07.056Z
+// Date: 2026-01-23T04:39:09.673Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8023,23 +8023,23 @@ export const INGESTED_MATCHES: MatchData[] = [
         "stats": {
             "available": true,
             "possession": 59,
-            "xG": "1.42",
+            "xG": "1.47",
             "totalShots": 20,
             "shotsOnTarget": 12,
-            "bigChances": 2,
+            "bigChances": 3,
             "bigChancesMissed": 1,
             "corners": 4,
             "fouls": 11,
             "accuratePasses": {
-                "value": 432,
+                "value": 431,
                 "percentage": 85
             },
-            "oppositionHalfPasses": 235,
-            "ownHalfPasses": 197,
+            "oppositionHalfPasses": 237,
+            "ownHalfPasses": 194,
             "touchesInOppBox": 32,
             "accurateLongBalls": {
-                "value": 23,
-                "percentage": 49
+                "value": 22,
+                "percentage": 47
             },
             "accurateCrosses": {
                 "value": 1,
@@ -8059,15 +8059,15 @@ export const INGESTED_MATCHES: MatchData[] = [
             },
             "aerialDuelsWon": {
                 "value": 17,
-                "percentage": 71
+                "percentage": 68
             },
             "successfulDribbles": {
                 "value": 9,
                 "percentage": 43
             },
-            "xGOpenPlay": "1.34",
+            "xGOpenPlay": "1.39",
             "xGSetPlay": "0.09",
-            "xGOT": "3.78"
+            "xGOT": "3.73"
         },
         "scorers": [
             {
