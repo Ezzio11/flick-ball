@@ -8103,5 +8103,84 @@
             }
         ],
         "formation": "4-2-3-1"
+    },
+    {
+        "id": 4837312,
+        "date": "2026-01-25T15:15:00.000Z",
+        "opponent": "Real Oviedo",
+        "score": "3 - 0",
+        "isHome": true,
+        "competition": "LaLiga",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 73,
+            "xG": "2.09",
+            "totalShots": 15,
+            "shotsOnTarget": 7,
+            "bigChances": 5,
+            "bigChancesMissed": 4,
+            "corners": 10,
+            "fouls": 8,
+            "accuratePasses": {
+                "value": 607,
+                "percentage": 90
+            },
+            "oppositionHalfPasses": 259,
+            "ownHalfPasses": 348,
+            "touchesInOppBox": 46,
+            "accurateLongBalls": {
+                "value": 24,
+                "percentage": 59
+            },
+            "accurateCrosses": {
+                "value": 8,
+                "percentage": 40
+            },
+            "tackles": 14,
+            "interceptions": 10,
+            "blocks": 4,
+            "clearances": 14,
+            "keeperSaves": 3,
+            "shotsOffTarget": 4,
+            "blockedShots": 4,
+            "duelsWon": 43,
+            "groundDuelsWon": {
+                "value": 34,
+                "percentage": 49
+            },
+            "aerialDuelsWon": {
+                "value": 9,
+                "percentage": 64
+            },
+            "successfulDribbles": {
+                "value": 4,
+                "percentage": 27
+            },
+            "xGOpenPlay": "1.90",
+            "xGSetPlay": "0.19",
+            "xGOT": "2.77"
+        },
+        "scorers": [
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 52,
+                "assist": null
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 57,
+                "assist": null
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 73,
+                "assist": "Dani Olmo"
+            }
+        ],
+        "formation": "4-2-3-1"
     }
 ]
