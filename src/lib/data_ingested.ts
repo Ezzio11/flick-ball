@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-26T04:53:10.292Z
+// Date: 2026-01-27T04:43:25.528Z
 
 import { MatchData } from './matchHelpers';
 
