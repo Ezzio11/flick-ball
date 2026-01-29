@@ -32,8 +32,8 @@ jobs:
           # Check if files changed
           if [[ -n $(git status -s src/lib/data_ingested.ts) ]]; then
             git add src/lib/data_ingested.ts public/data/matches.json
-            # [skip netlify] tells Netlify NOT to trigger a build for this commit
-            git commit -m "chore(stats): update match data [skip netlify]"
+            # [skip ci] tells Vercel/GitHub to not trigger a build (we use on-demand revalidation instead)
+            git commit -m "chore(stats): update match data [skip ci]"
             git push
             echo "::notice::Stats updated and pushed!"
           else

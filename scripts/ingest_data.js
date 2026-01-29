@@ -358,6 +358,7 @@ export const INGESTED_MATCHES: MatchData[] = ${JSON.stringify(allMatches, null, 
 
     } catch (err) {
         console.error("\nFATAL ERROR:", err);
+        process.exit(1);
     }
 }
 
