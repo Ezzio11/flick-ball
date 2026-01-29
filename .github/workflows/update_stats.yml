@@ -21,19 +21,22 @@ jobs:
         with:
           node-version: '18'
           
-      - name: Run Ingestion Script
-        run: node scripts/ingest_data.js
+      - name: Run Ingestion Scripts
+        run: |
+          node scripts/ingest_data.js
+          node scripts/ingest_players.js
         
       - name: Commit & Push Changes
         run: |
           git config --global user.name 'Stats Bot'
           git config --global user.email 'stats-bot@noreply.github.com'
           
-          # Check if files changed
-          if [[ -n $(git status -s src/lib/data_ingested.ts) ]]; then
-            git add src/lib/data_ingested.ts public/data/matches.json
+          # Check if files changed (using || true to avoid exit 1 if no changes)
+          git add src/lib/data_ingested.ts public/data/matches.json src/lib/titans_data.ts
+          
+          if [[ -n $(git status -s) ]]; then
             # [skip ci] tells Vercel/GitHub to not trigger a build (we use on-demand revalidation instead)
-            git commit -m "chore(stats): update match data [skip ci]"
+            git commit -m "chore(stats): update match and player data [skip ci]"
             git push
             echo "::notice::Stats updated and pushed!"
           else

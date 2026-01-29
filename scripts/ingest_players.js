@@ -189,4 +189,7 @@ async function run() {
     console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE} (excluded ${allPlayers.length - titansData.length} bench-only players)`);
 }
 
-run();
+run().catch(err => {
+    console.error("FATAL ERROR in run():", err);
+    process.exit(1);
+});
