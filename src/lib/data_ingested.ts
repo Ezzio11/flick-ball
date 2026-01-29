@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-28T04:41:43.679Z
+// Date: 2026-01-29T02:12:39.345Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8184,6 +8184,97 @@ export const INGESTED_MATCHES: MatchData[] = [
                 "team": "barca",
                 "minute": 73,
                 "assist": "Dani Olmo"
+            }
+        ],
+        "formation": "4-2-3-1"
+    },
+    {
+        "id": 4947152,
+        "date": "2026-01-28T20:00:00.000Z",
+        "opponent": "FC København",
+        "score": "4 - 1",
+        "isHome": true,
+        "competition": "Champions League",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 76,
+            "xG": "3.05",
+            "totalShots": 28,
+            "shotsOnTarget": 13,
+            "bigChances": 5,
+            "bigChancesMissed": 3,
+            "corners": 10,
+            "fouls": 12,
+            "accuratePasses": {
+                "value": 680,
+                "percentage": 90
+            },
+            "oppositionHalfPasses": 337,
+            "ownHalfPasses": 343,
+            "touchesInOppBox": 39,
+            "accurateLongBalls": {
+                "value": 12,
+                "percentage": 44
+            },
+            "accurateCrosses": {
+                "value": 6,
+                "percentage": 38
+            },
+            "tackles": 12,
+            "interceptions": 7,
+            "blocks": 3,
+            "clearances": 14,
+            "keeperSaves": 0,
+            "shotsOffTarget": 4,
+            "blockedShots": 11,
+            "duelsWon": 42,
+            "groundDuelsWon": {
+                "value": 32,
+                "percentage": 43
+            },
+            "aerialDuelsWon": {
+                "value": 10,
+                "percentage": 59
+            },
+            "successfulDribbles": {
+                "value": 11,
+                "percentage": 46
+            },
+            "xGOpenPlay": "1.82",
+            "xGSetPlay": "0.44",
+            "xGOT": "3.96"
+        },
+        "scorers": [
+            {
+                "player": "Viktor Dadason",
+                "team": "opponent",
+                "minute": 4,
+                "assist": "Mohamed Elyounoussi"
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 48,
+                "assist": "Lamine Yamal"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 60,
+                "assist": "Fermin Lopez"
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 69,
+                "assist": null
+            },
+            {
+                "player": "Marcus Rashford",
+                "team": "barca",
+                "minute": 85,
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
