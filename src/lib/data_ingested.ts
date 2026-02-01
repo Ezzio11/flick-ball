@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-01-31T05:02:50.526Z
+// Date: 2026-02-01T05:21:30.512Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8278,5 +8278,90 @@ export const INGESTED_MATCHES: MatchData[] = [
             }
         ],
         "formation": "4-2-3-1"
+    },
+    {
+        "id": 4837326,
+        "date": "2026-01-31T20:00:00.000Z",
+        "opponent": "Elche",
+        "score": "1 - 3",
+        "isHome": false,
+        "competition": "LaLiga",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 61,
+            "xG": "6.44",
+            "totalShots": 30,
+            "shotsOnTarget": 8,
+            "bigChances": 13,
+            "bigChancesMissed": 10,
+            "corners": 8,
+            "fouls": 9,
+            "accuratePasses": {
+                "value": 473,
+                "percentage": 86
+            },
+            "oppositionHalfPasses": 187,
+            "ownHalfPasses": 286,
+            "touchesInOppBox": 65,
+            "accurateLongBalls": {
+                "value": 29,
+                "percentage": 59
+            },
+            "accurateCrosses": {
+                "value": 6,
+                "percentage": 50
+            },
+            "tackles": 14,
+            "interceptions": 7,
+            "blocks": 1,
+            "clearances": 15,
+            "keeperSaves": 2,
+            "shotsOffTarget": 15,
+            "blockedShots": 7,
+            "duelsWon": 54,
+            "groundDuelsWon": {
+                "value": 41,
+                "percentage": 58
+            },
+            "aerialDuelsWon": {
+                "value": 13,
+                "percentage": 68
+            },
+            "successfulDribbles": {
+                "value": 12,
+                "percentage": 71
+            },
+            "xGOpenPlay": "6.14",
+            "xGSetPlay": "0.30",
+            "xGOT": "3.06"
+        },
+        "scorers": [
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 6,
+                "assist": "Dani Olmo"
+            },
+            {
+                "player": "Álvaro Rodriguez",
+                "team": "opponent",
+                "minute": 29,
+                "assist": "Germán Valera"
+            },
+            {
+                "player": "Ferran Torres",
+                "team": "barca",
+                "minute": 40,
+                "assist": "Frenkie de Jong"
+            },
+            {
+                "player": "Marcus Rashford",
+                "team": "barca",
+                "minute": 72,
+                "assist": null
+            }
+        ],
+        "formation": "4-3-3"
     }
 ];
