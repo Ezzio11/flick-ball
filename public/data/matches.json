@@ -8358,5 +8358,84 @@
             }
         ],
         "formation": "4-3-3"
+    },
+    {
+        "id": 5144838,
+        "date": "2026-02-03T20:00:00.000Z",
+        "opponent": "Albacete",
+        "score": "1 - 2",
+        "isHome": false,
+        "competition": "Copa del Rey",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 73,
+            "xG": "2.27",
+            "totalShots": 17,
+            "shotsOnTarget": 7,
+            "bigChances": 8,
+            "bigChancesMissed": 6,
+            "corners": 6,
+            "fouls": 15,
+            "accuratePasses": {
+                "value": 603,
+                "percentage": 92
+            },
+            "oppositionHalfPasses": 378,
+            "ownHalfPasses": 225,
+            "touchesInOppBox": 42,
+            "accurateLongBalls": {
+                "value": 36,
+                "percentage": 73
+            },
+            "accurateCrosses": {
+                "value": 6,
+                "percentage": 24
+            },
+            "tackles": 11,
+            "interceptions": 6,
+            "blocks": 3,
+            "clearances": 30,
+            "keeperSaves": 1,
+            "shotsOffTarget": 4,
+            "blockedShots": 6,
+            "duelsWon": 51,
+            "groundDuelsWon": {
+                "value": 35,
+                "percentage": 51
+            },
+            "aerialDuelsWon": {
+                "value": 16,
+                "percentage": 70
+            },
+            "successfulDribbles": {
+                "value": 13,
+                "percentage": 76
+            },
+            "xGOpenPlay": "1.96",
+            "xGSetPlay": "0.31",
+            "xGOT": "2.09"
+        },
+        "scorers": [
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 39,
+                "assist": "Frenkie de Jong"
+            },
+            {
+                "player": "Ronald Araujo",
+                "team": "barca",
+                "minute": 56,
+                "assist": "Marcus Rashford"
+            },
+            {
+                "player": "Javi Moreno",
+                "team": "opponent",
+                "minute": 87,
+                "assist": "José Carlos Lazo"
+            }
+        ],
+        "formation": "4-2-3-1"
     }
 ]
