@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-02-05T05:16:24.611Z
+// Date: 2026-02-06T05:15:07.117Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8375,10 +8375,10 @@ export const INGESTED_MATCHES: MatchData[] = [
         "stats": {
             "available": true,
             "possession": 73,
-            "xG": "2.27",
+            "xG": "2.17",
             "totalShots": 17,
-            "shotsOnTarget": 7,
-            "bigChances": 8,
+            "shotsOnTarget": 6,
+            "bigChances": 7,
             "bigChancesMissed": 6,
             "corners": 6,
             "fouls": 15,
@@ -8386,40 +8386,40 @@ export const INGESTED_MATCHES: MatchData[] = [
                 "value": 603,
                 "percentage": 92
             },
-            "oppositionHalfPasses": 378,
-            "ownHalfPasses": 225,
-            "touchesInOppBox": 42,
+            "oppositionHalfPasses": 375,
+            "ownHalfPasses": 228,
+            "touchesInOppBox": 43,
             "accurateLongBalls": {
-                "value": 36,
-                "percentage": 73
+                "value": 34,
+                "percentage": 72
             },
             "accurateCrosses": {
                 "value": 6,
                 "percentage": 24
             },
             "tackles": 11,
-            "interceptions": 6,
+            "interceptions": 8,
             "blocks": 3,
-            "clearances": 30,
+            "clearances": 29,
             "keeperSaves": 1,
             "shotsOffTarget": 4,
-            "blockedShots": 6,
-            "duelsWon": 51,
+            "blockedShots": 7,
+            "duelsWon": 53,
             "groundDuelsWon": {
-                "value": 35,
-                "percentage": 51
+                "value": 37,
+                "percentage": 52
             },
             "aerialDuelsWon": {
                 "value": 16,
                 "percentage": 70
             },
             "successfulDribbles": {
-                "value": 13,
-                "percentage": 76
+                "value": 15,
+                "percentage": 79
             },
-            "xGOpenPlay": "1.96",
-            "xGSetPlay": "0.31",
-            "xGOT": "2.09"
+            "xGOpenPlay": "1.94",
+            "xGSetPlay": "0.24",
+            "xGOT": "2.00"
         },
         "scorers": [
             {
