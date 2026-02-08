@@ -8437,5 +8437,84 @@
             }
         ],
         "formation": "4-2-3-1"
+    },
+    {
+        "id": 4837333,
+        "date": "2026-02-07T15:15:00.000Z",
+        "opponent": "Mallorca",
+        "score": "3 - 0",
+        "isHome": true,
+        "competition": "LaLiga",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 76,
+            "xG": "2.63",
+            "totalShots": 24,
+            "shotsOnTarget": 7,
+            "bigChances": 4,
+            "bigChancesMissed": 2,
+            "corners": 12,
+            "fouls": 7,
+            "accuratePasses": {
+                "value": 706,
+                "percentage": 91
+            },
+            "oppositionHalfPasses": 450,
+            "ownHalfPasses": 256,
+            "touchesInOppBox": 36,
+            "accurateLongBalls": {
+                "value": 23,
+                "percentage": 59
+            },
+            "accurateCrosses": {
+                "value": 1,
+                "percentage": 7
+            },
+            "tackles": 14,
+            "interceptions": 7,
+            "blocks": 2,
+            "clearances": 15,
+            "keeperSaves": 4,
+            "shotsOffTarget": 6,
+            "blockedShots": 11,
+            "duelsWon": 45,
+            "groundDuelsWon": {
+                "value": 32,
+                "percentage": 50
+            },
+            "aerialDuelsWon": {
+                "value": 13,
+                "percentage": 57
+            },
+            "successfulDribbles": {
+                "value": 9,
+                "percentage": 41
+            },
+            "xGOpenPlay": "1.44",
+            "xGSetPlay": "1.19",
+            "xGOT": "2.48"
+        },
+        "scorers": [
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 29,
+                "assist": "Dani Olmo"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 61,
+                "assist": "Dani Olmo"
+            },
+            {
+                "player": "Marc Bernal",
+                "team": "barca",
+                "minute": 83,
+                "assist": "Fermin Lopez"
+            }
+        ],
+        "formation": "4-3-3"
     }
 ]
