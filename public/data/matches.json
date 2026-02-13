@@ -8516,5 +8516,90 @@
             }
         ],
         "formation": "4-3-3"
+    },
+    {
+        "id": 5173360,
+        "date": "2026-02-12T20:00:00.000Z",
+        "opponent": "Atletico Madrid",
+        "score": "4 - 0",
+        "isHome": false,
+        "competition": "Copa del Rey",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 66,
+            "xG": "1.02",
+            "totalShots": 14,
+            "shotsOnTarget": 4,
+            "bigChances": 2,
+            "bigChancesMissed": 2,
+            "corners": 8,
+            "fouls": 9,
+            "accuratePasses": {
+                "value": 578,
+                "percentage": 89
+            },
+            "oppositionHalfPasses": 329,
+            "ownHalfPasses": 249,
+            "touchesInOppBox": 23,
+            "accurateLongBalls": {
+                "value": 20,
+                "percentage": 57
+            },
+            "accurateCrosses": {
+                "value": 7,
+                "percentage": 41
+            },
+            "tackles": 11,
+            "interceptions": 5,
+            "blocks": 4,
+            "clearances": 11,
+            "keeperSaves": 3,
+            "shotsOffTarget": 6,
+            "blockedShots": 4,
+            "duelsWon": 46,
+            "groundDuelsWon": {
+                "value": 39,
+                "percentage": 57
+            },
+            "aerialDuelsWon": {
+                "value": 7,
+                "percentage": 54
+            },
+            "successfulDribbles": {
+                "value": 12,
+                "percentage": 46
+            },
+            "xGOpenPlay": "0.68",
+            "xGSetPlay": "0.34",
+            "xGOT": "1.41"
+        },
+        "scorers": [
+            {
+                "player": "Eric Garcia",
+                "team": "opponent",
+                "minute": 6,
+                "assist": null
+            },
+            {
+                "player": "Antoine Griezmann",
+                "team": "opponent",
+                "minute": 14,
+                "assist": "Nahuel Molina"
+            },
+            {
+                "player": "Ademola Lookman",
+                "team": "opponent",
+                "minute": 33,
+                "assist": "Julián Álvarez"
+            },
+            {
+                "player": "Julián Álvarez",
+                "team": "opponent",
+                "minute": 45,
+                "assist": "Ademola Lookman"
+            }
+        ],
+        "formation": "4-2-3-1"
     }
 ]
