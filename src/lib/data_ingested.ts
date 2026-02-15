@@ -1,5 +1,5 @@
 // Auto-generated via scripts/ingest_data.js (Source: FotMob API)
-// Date: 2026-02-14T05:08:00.173Z
+// Date: 2026-02-15T05:19:07.584Z
 
 import { MatchData } from './matchHelpers';
 
@@ -8533,7 +8533,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "stats": {
             "available": true,
             "possession": 66,
-            "xG": "1.02",
+            "xG": "1.18",
             "totalShots": 14,
             "shotsOnTarget": 4,
             "bigChances": 2,
@@ -8548,36 +8548,36 @@ export const INGESTED_MATCHES: MatchData[] = [
             "ownHalfPasses": 249,
             "touchesInOppBox": 23,
             "accurateLongBalls": {
-                "value": 20,
-                "percentage": 57
+                "value": 19,
+                "percentage": 58
             },
             "accurateCrosses": {
                 "value": 7,
                 "percentage": 41
             },
             "tackles": 11,
-            "interceptions": 5,
+            "interceptions": 6,
             "blocks": 4,
-            "clearances": 11,
+            "clearances": 12,
             "keeperSaves": 3,
             "shotsOffTarget": 6,
             "blockedShots": 4,
             "duelsWon": 46,
             "groundDuelsWon": {
-                "value": 39,
+                "value": 40,
                 "percentage": 57
             },
             "aerialDuelsWon": {
-                "value": 7,
-                "percentage": 54
+                "value": 6,
+                "percentage": 46
             },
             "successfulDribbles": {
                 "value": 12,
                 "percentage": 46
             },
-            "xGOpenPlay": "0.68",
-            "xGSetPlay": "0.34",
-            "xGOT": "1.41"
+            "xGOpenPlay": "0.74",
+            "xGSetPlay": "0.44",
+            "xGOT": "1.63"
         },
         "scorers": [
             {
