@@ -46,6 +46,10 @@ async function workerMode(matchId, fixtureJsonStr) {
         const fixtureInfo = JSON.parse(fixtureJsonStr);
         const url = `${BASE_URL}/matchDetails?matchId=${matchId}`;
         const details = await fetchJson(url);
+        if (!details || !details.header) {
+            console.error(`Invalid API response for match ${matchId}. Keys:`, Object.keys(details || {}));
+            if (details && details.error) console.error("API Error:", details.error);
+        }
 
         const matchData = parseMatchData(details, fixtureInfo);
 
@@ -55,7 +59,9 @@ async function workerMode(matchId, fixtureJsonStr) {
         console.log("JSON_END");
 
     } catch (e) {
+        console.error("Worker Execution Failed:");
         console.error(e);
+        // Log the first 500 chars of the data we got if possible (via another try/catch or just checking if details exists)
         process.exit(1);
     }
 }
@@ -311,7 +317,8 @@ async function masterMode() {
             try {
                 const fixtureArg = Buffer.from(JSON.stringify(f)).toString('base64');
                 const cmd = `node "${__filename}" --worker ${f.id} "${fixtureArg}"`;
-                const output = execSync(cmd, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+                // Capture stderr by using stdio: ['ignore', 'pipe', 'pipe']
+                const output = execSync(cmd, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
 
                 const match = output.match(/JSON_START\n([\s\S]*?)\nJSON_END/);
                 if (match && match[1]) {
@@ -327,11 +334,13 @@ async function masterMode() {
                         console.log("OK (No stats)");
                     }
                 } else {
-                    console.log("FAILED (Invalid output)");
+                    console.log("FAILED (No JSON match)");
                 }
 
             } catch (e) {
                 console.log("FAILED");
+                if (e.stderr) console.error("Worker Error:", e.stderr.toString());
+                else console.error("Exec Error:", e.message);
             }
 
             // Rate limiting
@@ -347,6 +356,12 @@ import { MatchData } from './matchHelpers';
 
 export const INGESTED_MATCHES: MatchData[] = ${JSON.stringify(allMatches, null, 4)};
 `;
+
+        if (allMatches.length === 0) {
+            console.error("\nFATAL: No matches were successfully processed (FotMob blocked or network error).");
+            console.error("Aborting write to prevent data loss.");
+            process.exit(1);
+        }
 
         fs.writeFileSync(OUTPUT_FILE, fileContent);
         console.log(`\nSUCCESS: Scraped ${allMatches.length} matches to ${OUTPUT_FILE}`);

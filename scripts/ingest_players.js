@@ -188,6 +188,12 @@ async function run() {
 export const TITANS_DATA: Player[] = ${JSON.stringify(titansData, null, 4)};`;
 
 
+    if (titansData.length === 0) {
+        console.error("\nFATAL: No players were successfully processed. This likely means public/data/matches.json is empty or invalid.");
+        console.error("Aborting write to src/lib/titans_data.ts to prevent data loss.");
+        process.exit(1);
+    }
+
     fs.writeFileSync(OUTPUT_FILE, fileContent);
     console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE} (excluded ${allPlayers.length - titansData.length} bench-only players)`);
 }
