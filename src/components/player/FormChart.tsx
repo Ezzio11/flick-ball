@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendDataPoint } from '@/lib/playerHelpers';
+import { TrendDataPoint } from '@/lib/types';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ComposedChart } from 'recharts';
 import { Star, CircleDot, ArrowUpRight } from 'lucide-react';
 

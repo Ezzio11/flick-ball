@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from 'react';
-import { AggregatedStats } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Tooltip } from 'recharts';
 
 interface PerformanceRadarProps {

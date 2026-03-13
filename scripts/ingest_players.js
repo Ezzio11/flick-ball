@@ -183,7 +183,10 @@ async function run() {
     });
 
     // Add header
-    const fileContent = `export const TITANS_DATA = ${JSON.stringify(titansData, null, 4)};`;
+    const fileContent = `import { Player } from './types';
+
+export const TITANS_DATA: Player[] = ${JSON.stringify(titansData, null, 4)};`;
+
 
     fs.writeFileSync(OUTPUT_FILE, fileContent);
     console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE} (excluded ${allPlayers.length - titansData.length} bench-only players)`);

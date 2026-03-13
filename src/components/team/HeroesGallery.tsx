@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Target, Brain, Zap } from 'lucide-react';
-import { Player, AggregatedStats } from '@/lib/playerHelpers';
+import { Player, AggregatedStats } from '@/lib/types';
 
 // Extend the Player type to include what we exposed in getAllPlayers
 interface GalleryPlayer extends Player {

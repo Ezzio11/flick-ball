@@ -1,1 +1,3 @@
-export const TITANS_DATA = [];
+import { Player } from './types';
+
+export const TITANS_DATA: Player[] = [];

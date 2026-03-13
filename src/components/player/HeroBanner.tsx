@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { AggregatedStats } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import PerformanceRadar, { MetricSet, METRIC_SETS, getDefaultSet, getAvailableSets } from './PerformanceRadar';
 

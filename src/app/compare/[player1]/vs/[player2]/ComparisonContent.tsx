@@ -4,7 +4,9 @@ import { use, useState, useEffect } from 'react';
 import Image from 'next/image';
 import BackButton from '@/components/ui/BackButton';
 import { useRouter } from 'next/navigation';
-import { getPlayerBySlug, aggregatePlayerStats, AggregatedStats, getAllPlayers } from '@/lib/playerHelpers';
+import { getPlayerBySlug, aggregatePlayerStats, getAllPlayers } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
+
 import Footer from '@/components/layout/Footer';
 import { Match } from '@/lib/teamStatistics';
 import { Crown, ChevronDown } from 'lucide-react';

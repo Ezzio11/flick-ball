@@ -1,4 +1,6 @@
 import { TITANS_DATA } from './titans_data';
+import { Player, AggregatedStats, TrendDataPoint } from './types';
+
 // import { INGESTED_MATCHES } from './data_ingested';
 import { calculateFBI, Position as FBIPosition, TitanMatch } from './fbi-rating';
 
@@ -91,98 +93,9 @@ function mapToFBIPosition(fullPosition: string): FBIPosition {
     return roleMap[fullPosition] || 'MID'; // Default fallback
 }
 
-export interface Player {
-    id: number;
-    name: string;
-    position: string;
-    appearances: number;
-    matches: any[];
-    slug?: string;
-}
+// interface definitions removed and moved to types.ts
 
-export interface AggregatedStats {
-    appearances: number;
-    totalGoals: number;
-    totalAssists: number;
-    totalMinutes: number;
-    avgRating: number;
-    totalPOTM: number;
-
-    // Attacking
-    totalShots?: number;
-    totalShotsOnTarget?: number;
-    totalBigChances?: number;
-    totalDribbles?: number;
-    totalChancesCreated?: number;
-    totalTouches?: number;
-    totalTouchesBox?: number;
-
-    // Expected Stats
-    totalxG?: number;
-    totalxA?: number;
-    totalxGxA?: number;
-    totalxGOnTarget?: number;
-    totalxGNonPenalty?: number;
-
-    // Passing
-    totalPasses?: number;
-    avgPassAccuracy?: number;
-    totalKeyPasses?: number;
-    totalLongBalls?: number;
-    totalCrosses?: number;
-    totalPassesFinalThird?: number;
-    totalCorners?: number;
-
-    // Defending
-    totalTackles?: number;
-    totalInterceptions?: number;
-    totalClearances?: number;
-    totalDuelsWon?: number;
-    totalDuelsLost?: number;
-    totalAerialsWon?: number;
-    totalBlocks?: number;
-    totalRecoveries?: number;
-    totalDribbledPast?: number;
-
-    // Discipline
-    totalFouls?: number;
-    totalWasFouled?: number;
-    totalDispossessed?: number;
-    totalYellowCards?: number;
-    totalRedCards?: number;
-
-    // Physical
-    totalDistance?: number;
-    avgTopSpeed?: number;
-    totalSprints?: number;
-    avgWalking?: number;
-    avgRunning?: number;
-    avgSprinting?: number;
-
-    // Goalkeeper specific
-    totalSaves?: number;
-    totalGoalsConceded?: number;
-    totalCleanSheets?: number;
-    avgGoalsPrevented?: number;
-}
-
-export interface TrendDataPoint {
-    date: string;
-    opponent: string;
-    goals: number;
-    assists: number;
-    rating: number;
-    ratingSource: string;
-    competition: string;
-    // Extended Metrics
-    saves?: number;
-    conceded?: number;
-    cleanSheet?: number; // 1 or 0
-    tackles?: number;
-    interceptions?: number;
-    duelsWon?: number;
-    xg?: number;
-}
+// interface definitions removed and moved to types.ts
 
 // Position mapping for Barcelona squad
 const PLAYER_POSITIONS: Record<string, string> = {
@@ -307,13 +220,8 @@ export function aggregatePlayerStats(player: Player): AggregatedStats {
     let totalxGOnTarget = 0;
     let totalxGNonPenalty = 0;
 
-    const totalAccuratePasses = 0;
-    const passCount = 0;
+    // Passing
     let totalKeyPasses = 0;
-    const totalLongBalls = 0;
-    const totalCrosses = 0;
-    const totalPassesFinalThird = 0;
-    const totalCorners = 0;
 
     // Use loop to sum values
     let accuratePassesSum = 0;
@@ -367,8 +275,8 @@ export function aggregatePlayerStats(player: Player): AggregatedStats {
         totalAssists += match.assists || 0;
         totalMinutes += match.minutes || 0;
 
-        if (match.fbiRating && parseFloat(match.fbiRating) > 0) {
-            totalRating += parseFloat(match.fbiRating);
+        if (match.fbiRating && Number(match.fbiRating) > 0) {
+            totalRating += Number(match.fbiRating);
             ratingCount++;
         }
 
@@ -513,8 +421,8 @@ export function getTrendData(player: Player): TrendDataPoint[] {
             opponent: match.opponent,
             goals: match.goals || 0,
             assists: match.assists || 0,
-            rating: match.fbiRating || parseFloat(match.rating) || 0,
-            ratingSource: (match.fbiRating && match.fbiRating > 0) ? 'FBI' : 'FotMob',
+            rating: Number(match.fbiRating || match.rating || 0),
+            ratingSource: (match.fbiRating && Number(match.fbiRating) > 0) ? 'FBI' : 'FotMob',
             competition: match.competition || 'Unknown',
             // Extended Metrics
             saves: match.saves || 0,

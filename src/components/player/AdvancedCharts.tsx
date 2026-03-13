@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from 'react';
-import { AggregatedStats } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
 import { Zap } from 'lucide-react';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
@@ -155,13 +155,13 @@ export default function AdvancedCharts({ stats, matches, playerName, position }:
                 // Default Workrate for Outfield
                 const workData = filteredMatches
                     .filter(m => {
-                        const dist = Number(m.physical_metrics_distance_covered);
-                        return !isNaN(dist) && dist > 100; // Filter out 0 or tiny values
+                        const dist = Number(m.totalDistance);
+                        return !isNaN(dist) && dist > 0.1; // Filter out 0 or tiny values (0.1km = 100m)
                     })
                     .map((m, i) => ({
                         uniqueId: `${m.opponent.substring(0, 3).toUpperCase()}-${i}`, // Unique key for Recharts
                         opponent: m.opponent.substring(0, 3).toUpperCase(), // Display label
-                        distance: Number(m.physical_metrics_distance_covered || 0) / 1000,
+                        distance: Number(m.totalDistance || 0),
                         sprints: m.physical_metrics_number_of_sprints || 0
                     }))
                     .slice(-10);

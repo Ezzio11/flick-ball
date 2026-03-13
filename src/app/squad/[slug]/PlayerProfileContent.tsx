@@ -14,7 +14,7 @@ import AICommentary from '@/components/player/AICommentary';
 import ComparisonButton from '@/components/player/ComparisonButton';
 import FilterBar from '@/components/player/FilterBar';
 import dynamicImport from 'next/dynamic';
-import { Player } from '@/lib/playerHelpers';
+import { Player } from '@/lib/types';
 
 const AdvancedCharts = dynamicImport(() => import('@/components/player/AdvancedCharts'), {
     ssr: false,

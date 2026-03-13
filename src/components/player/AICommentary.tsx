@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { AggregatedStats } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
 
 interface AICommentaryProps {
     playerName: string;

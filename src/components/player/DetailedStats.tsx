@@ -1,4 +1,4 @@
-import { AggregatedStats } from '@/lib/playerHelpers';
+import { AggregatedStats } from '@/lib/types';
 import { cn } from '@/lib/utils';
 
 interface DetailedStatsProps {
