@@ -31,6 +31,7 @@ export interface Match {
         assist?: string | null;
         isPenalty?: boolean;
     }>;
+    formation?: string;
     _isFriendly?: boolean;
 }
 

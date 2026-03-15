@@ -11,6 +11,10 @@ const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
 
+const CACHE_DIR = path.join(__dirname, '../.cache');
+const MATCHES_FILE = path.join(__dirname, '../public/data/matches.json');
+const COMPETITION_BLOCKLIST = ["Club Friendlies", "Trofeu Joan Gamper", "International Friendlies", "Friendly", "Other Friendlies", "Club Friendlies 2024", "Club Friendlies 2025"];
+
 const OUTPUT_FILE = path.join(__dirname, '../src/lib/data_ingested.ts');
 const TEAM_ID = 8634; // FC Barcelona
 const BASE_URL = "https://www.fotmob.com/api";
@@ -204,12 +208,12 @@ function parseMatchData(details, fixtureInfo) {
 
     // Formation extraction
     // Try to find lineup info
-    let formation = null;
+    let formation = "";
     try {
         const lineupObj = content?.lineup;
         if (lineupObj) {
             const teamLineup = isHome ? lineupObj.homeTeam : lineupObj.awayTeam;
-            formation = teamLineup?.formation || null;
+            formation = teamLineup?.formation || "";
         }
     } catch (e) {
         // ignore
@@ -233,120 +237,184 @@ function parseMatchData(details, fixtureInfo) {
 // ------------------------------------------------------------------
 // MASTER MODE
 // ------------------------------------------------------------------
+const MATCHES_URL = `${BASE_URL}/teams/8634/fixtures/barcelona`;
+
 async function masterMode() {
+    const isCacheOnly = process.argv.includes('--use-cache');
+    const matchesMap = new Map();
+
     try {
         let allMatches = [];
-        const matchesMap = new Map(); // Use Map to deduplicate by ID
 
-        // 1. Fetch CURRENT Season (2025/2026) from Teams Endpoint
-        // This works reliably for the active season
-        console.log(`\n[1/2] Fetching CURRENT season (25/26) from Team endpoint...`);
-        const currentSeasonUrl = `${BASE_URL}/teams?id=${TEAM_ID}&season=2025-2026&tab=fixtures`;
-        try {
-            const data = await fetchJson(currentSeasonUrl);
-            if (data.fixtures?.allFixtures?.fixtures) {
-                const fixtures = data.fixtures.allFixtures.fixtures;
-                console.log(`Found ${fixtures.length} fixtures for 25/26.`);
-                for (const f of fixtures) {
-                    if (f.status.finished) {
-                        matchesMap.set(f.id, { ...f, _seasonLabel: "25/26" });
-                    }
-                }
-            }
-        } catch (e) {
-            console.error("Error fetching current season:", e.message);
-        }
-
-        // 2. Fetch HISTORICAL Season (2024/2025) from League Endpoints
-        // The teams endpoint fails for history, so we query leagues directly and filter for Barca
-        console.log(`\n[2/2] Fetching HISTORICAL season (24/25) from League endpoints...`);
-        const LEAGUES = [
-            { id: 87, name: "LaLiga" },
-            { id: 42, name: "Champions League" },
-            { id: 138, name: "Copa del Rey" },
-            { id: 139, name: "Supercopa" }
-        ];
-
-        for (const league of LEAGUES) {
-            console.log(`  - Fetching ${league.name} (ID ${league.id})...`);
-            // Note: Using "2024/2025" encoded as 2024%2F2025 which seems standard for FotMob
-            const url = `${BASE_URL}/leagues?id=${league.id}&season=2024%2F2025&tab=matches`;
-
+        // Load existing matches to preserve history
+        if (fs.existsSync(MATCHES_FILE)) {
             try {
-                const data = await fetchJson(url);
-                // League endpoint structure: data.fixtures.allMatches (Confirmed via debug)
-                let fixtures = [];
-                if (data.matches?.allMatches) {
-                    fixtures = data.matches.allMatches;
-                } else if (data.fixtures?.allMatches) {
-                    fixtures = data.fixtures.allMatches;
-                } else if (data.fixtures?.allFixtures?.fixtures) {
-                    // Fallback for team endpoint style (unlikely for leagues but safe to keep)
-                    fixtures = data.fixtures.allFixtures.fixtures;
-                }
-
-                // Filter for Barcelona (ID 8634)
-                const barcaMatches = fixtures.filter(f =>
-                    (String(f.home.id) === String(TEAM_ID) || String(f.away.id) === String(TEAM_ID)) && f.status.finished
-                );
-
-                console.log(`    Found ${barcaMatches.length} Barca matches.`);
-                for (const f of barcaMatches) {
-                    // Ensure we don't overwrite if it somehow exists (e.g. from team endpoint)
-                    if (!matchesMap.has(f.id)) {
-                        matchesMap.set(f.id, { ...f, _seasonLabel: "24/25" });
+                const existingMatches = JSON.parse(fs.readFileSync(MATCHES_FILE, 'utf8'));
+                console.log(`Loaded ${existingMatches.length} existing matches from ${MATCHES_FILE}`);
+                existingMatches.forEach(m => {
+                    if (m.id && !COMPETITION_BLOCKLIST.includes(m.competition)) {
+                        const sid = String(m.id);
+                        m.id = Number(m.id) || m.id;
+                        matchesMap.set(sid, m);
+                    } else if (m.id) {
+                        console.log(`  - Dropping ${m.competition} match: ${m.id}`);
                     }
-                }
-
+                });
             } catch (e) {
-                console.error(`    Failed to fetch ${league.name}: ${e.message}`);
+                console.warn("Could not parse existing matches.json, proceeding with empty history.");
             }
-
-            // Rate limit
-            await new Promise(r => setTimeout(r, 500));
         }
 
-        // Convert Map to Array
-        const finalFixtureList = Array.from(matchesMap.values());
-        console.log(`\nTotal unique matches to process: ${finalFixtureList.length}`);
+        if (isCacheOnly) {
+            console.log("CACHE-ONLY MODE: Scanning .cache/ for match data...");
+            if (!fs.existsSync(CACHE_DIR)) {
+                fs.mkdirSync(CACHE_DIR, { recursive: true });
+            }
 
-        // Process all matches
-        for (const f of finalFixtureList) {
-            process.stdout.write(`Processing match ${f.id} (${f.home.name} vs ${f.away.name}) [${f._seasonLabel}]... `);
+            // 1. Check for batch_export.json (Preferred)
+            const BATCH_FILE = path.join(CACHE_DIR, 'batch_export.json');
+            if (fs.existsSync(BATCH_FILE)) {
+                console.log("Found batch_export.json. Processing...");
+                try {
+                    const batchData = JSON.parse(fs.readFileSync(BATCH_FILE, 'utf8'));
+                    if (Array.isArray(batchData)) {
+                        for (const item of batchData) {
+                            const matchId = item.id;
+                            const content = item.data;
+                            if (!content.header) continue;
+                            
+                            const fixtureInfo = {
+                                id: matchId,
+                                status: content.header.status,
+                                leagueName: content.general?.leagueName,
+                                home: content.header.teams[0],
+                                away: content.header.teams[1],
+                                _seasonLabel: "25/26"
+                            };
+                            
+                            const result = parseMatchData(content, fixtureInfo);
+                            
+                            if (COMPETITION_BLOCKLIST.includes(result.competition)) {
+                                console.log(`⏩ Skipping blocklisted competition: ${result.competition} (${matchId})`);
+                                continue;
+                            }
 
+                            result.season = fixtureInfo._seasonLabel;
+                            result.id = Number(matchId) || matchId; // Ensure numeric ID in output
+                            matchesMap.set(String(matchId), result);
+                            console.log(`✅ Processed ${matchId} (${result.opponent}) from batch.`);
+                        }
+                    }
+                } catch (e) {
+                    console.error("❌ Failed to process batch_export.json:", e.message);
+                }
+            }
+
+            // 2. Check for individual match_*.json files
+            const files = fs.readdirSync(CACHE_DIR).filter(f => f.startsWith('match_') && f.endsWith('.json'));
+            if (files.length > 0) {
+                console.log(`Found ${files.length} individual match files in cache.`);
+                for (const file of files) {
+                    const matchId = file.replace('match_', '').replace('.json', '');
+                    try {
+                        const content = JSON.parse(fs.readFileSync(path.join(CACHE_DIR, file), 'utf8'));
+                        
+                        const fixtureInfo = {
+                            id: matchId,
+                            status: content.header.status,
+                            leagueName: content.general?.leagueName,
+                            home: content.header.teams[0],
+                            away: content.header.teams[1],
+                            _seasonLabel: "25/26"
+                        };
+                        
+                        const result = parseMatchData(content, fixtureInfo);
+                        result.season = fixtureInfo._seasonLabel;
+                        matchesMap.set(String(matchId), result);
+                        console.log(`✅ Processed ${matchId} (${result.opponent}) from individual file.`);
+                    } catch (e) {
+                        console.error(`❌ Failed to process cached file ${file}:`, e.message);
+                    }
+                }
+            }
+        } else {
+            // Original fetching logic...
+            
+            // 1. Fetch CURRENT Season (2025/2026) from Teams Endpoint
+            console.log(`\n[1/2] Fetching CURRENT season (25/26) from Team endpoint...`);
+            const currentSeasonUrl = `${BASE_URL}/teams?id=${TEAM_ID}&season=2025-2026&tab=fixtures`;
             try {
-                const fixtureArg = Buffer.from(JSON.stringify(f)).toString('base64');
-                const cmd = `node "${__filename}" --worker ${f.id} "${fixtureArg}"`;
-                // Capture stderr by using stdio: ['ignore', 'pipe', 'pipe']
-                const output = execSync(cmd, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+                const data = await fetchJson(currentSeasonUrl);
+                if (data.fixtures?.allFixtures?.fixtures) {
+                    const fixtures = data.fixtures.allFixtures.fixtures;
+                    console.log(`Found ${fixtures.length} fixtures for 25/26.`);
+                    for (const f of fixtures) {
+                        if (f.status.finished) {
+                            matchesMap.set(f.id, { ...f, _seasonLabel: "25/26" });
+                        }
+                    }
+                }
+            } catch (e) {
+                console.error("Error fetching current season:", e.message);
+            }
 
-                const match = output.match(/JSON_START\n([\s\S]*?)\nJSON_END/);
-                if (match && match[1]) {
-                    const result = JSON.parse(match[1]);
+            // 2. Fetch HISTORICAL Season (2024/2025)
+            console.log(`\n[2/2] Fetching HISTORICAL season (24/25) from League endpoints...`);
+            const LEAGUES = [
+                { id: 87, name: "LaLiga" },
+                { id: 42, name: "Champions League" },
+                { id: 138, name: "Copa del Rey" },
+                { id: 139, name: "Supercopa" }
+            ];
 
-                    // Assign correct season label
-                    result.season = f._seasonLabel;
+            for (const league of LEAGUES) {
+                console.log(`  - Fetching ${league.name} (ID ${league.id})...`);
+                const url = `${BASE_URL}/leagues?id=${league.id}&season=2024%2F2025&tab=matches`;
+                try {
+                    const data = await fetchJson(url);
+                    let fixtures = data.matches?.allMatches || data.fixtures?.allMatches || data.fixtures?.allFixtures?.fixtures || [];
+                    const barcaMatches = fixtures.filter(f =>
+                        (String(f.home.id) === String(TEAM_ID) || String(f.away.id) === String(TEAM_ID)) && f.status.finished
+                    );
+                    console.log(`    Found ${barcaMatches.length} Barca matches.`);
+                    for (const f of barcaMatches) {
+                        if (!matchesMap.has(f.id)) {
+                            matchesMap.set(f.id, { ...f, _seasonLabel: "24/25" });
+                        }
+                    }
+                } catch (e) {
+                    console.error(`    Failed to fetch ${league.name}: ${e.message}`);
+                }
+                await new Promise(r => setTimeout(r, 500));
+            }
 
-                    allMatches.push(result);
-                    if (result.stats.available) {
-                        console.log("OK (Stats found)");
+            const finalFixtureList = Array.from(matchesMap.values());
+            console.log(`\nTotal unique matches to process via API: ${finalFixtureList.length}`);
+
+            for (const f of finalFixtureList) {
+                process.stdout.write(`Processing match ${f.id} (${f.home.name} vs ${f.away.name}) [${f._seasonLabel}]... `);
+                try {
+                    const fixtureArg = Buffer.from(JSON.stringify(f)).toString('base64');
+                    const cmd = `node "${__filename}" --worker ${f.id} "${fixtureArg}"`;
+                    const output = execSync(cmd, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+                    const match = output.match(/JSON_START\n([\s\S]*?)\nJSON_END/);
+                    if (match && match[1]) {
+                        const result = JSON.parse(match[1]);
+                        result.season = f._seasonLabel;
+                        matchesMap.set(String(f.id), result);
+                        console.log(result.stats.available ? "OK (Stats found)" : "OK (No stats)");
                     } else {
-                        console.log("OK (No stats)");
+                        console.log("FAILED (No JSON match)");
                     }
-                } else {
-                    console.log("FAILED (No JSON match)");
+                } catch (e) {
+                    console.log("FAILED");
+                    if (e.stderr) console.error("Worker Error:", e.stderr.toString());
                 }
-
-            } catch (e) {
-                console.log("FAILED");
-                if (e.stderr) console.error("Worker Error:", e.stderr.toString());
-                else console.error("Exec Error:", e.message);
+                await new Promise(r => setTimeout(r, 800));
             }
-
-            // Rate limiting
-            await new Promise(r => setTimeout(r, 800));
         }
 
+        allMatches = Array.from(matchesMap.values());
         allMatches.sort((a, b) => new Date(a.date) - new Date(b.date));
 
         const fileContent = `// Auto-generated via scripts/ingest_data.js (Source: FotMob API)
@@ -358,15 +426,13 @@ export const INGESTED_MATCHES: MatchData[] = ${JSON.stringify(allMatches, null, 
 `;
 
         if (allMatches.length === 0) {
-            console.error("\nFATAL: No matches were successfully processed (FotMob blocked or network error).");
-            console.error("Aborting write to prevent data loss.");
+            console.error("\nFATAL: No matches were successfully processed.");
             process.exit(1);
         }
 
         fs.writeFileSync(OUTPUT_FILE, fileContent);
         console.log(`\nSUCCESS: Scraped ${allMatches.length} matches to ${OUTPUT_FILE}`);
 
-        // ALSO WRITE JSON FOR DYNAMIC INGESTION
         const JSON_OUTPUT_FILE = path.join(__dirname, '../public/data/matches.json');
         fs.writeFileSync(JSON_OUTPUT_FILE, JSON.stringify(allMatches, null, 4));
         console.log(`SUCCESS: Saved JSON data to ${JSON_OUTPUT_FILE}`);
@@ -382,19 +448,13 @@ const args = process.argv.slice(2);
 if (args[0] === '--worker') {
     const matchId = args[1];
     let fixtureJsonStr = args[2];
-
-    // Check if argument is a file path
     if (fs.existsSync(fixtureJsonStr)) {
         fixtureJsonStr = fs.readFileSync(fixtureJsonStr, 'utf8');
     } else {
-        // Assume base64
         try {
             fixtureJsonStr = Buffer.from(fixtureJsonStr, 'base64').toString('utf8');
-        } catch (e) {
-            // If not base64, maybe it's just raw json string?
-        }
+        } catch (e) {}
     }
-
     workerMode(matchId, fixtureJsonStr);
 } else {
     masterMode();

@@ -8,8 +8,12 @@ import { calculateFBI, Position as FBIPosition, TitanMatch } from './fbi-rating'
 export function enrichPlayerMatches(player: Player, matches: any[]): Player {
     const enrichedMatches = player.matches.map(match => {
         // Find corresponding match in ingested data by ID
-        // NOTE: data_ingested uses string IDs, titans uses numbers - must convert
-        const ingestedMatch = matches.find((m: any) => m.id === String(match.matchId));
+        const matchIdStr = String(match.matchId);
+        const ingestedMatch = matches.find((m: any) => m.id === matchIdStr);
+
+        // Universal Minutes Filter: Only count matches where the player actually played
+        const playedMinutes = (match.minutes_played !== undefined) ? match.minutes_played : (match.minutes || 0);
+        if (playedMinutes === 0) return null;
 
         if (ingestedMatch) {
             // Parse score "Home - Away" (e.g., "1 - 2")
@@ -58,8 +62,17 @@ export function enrichPlayerMatches(player: Player, matches: any[]): Player {
         };
     }).filter(Boolean); // Remove nulls
 
+    // Deduplicate by matchId (String normalized)
+    const seenMatchIds = new Set();
+    const uniqueMatches = enrichedMatches.filter((match: any) => {
+        const id = String(match.matchId);
+        if (seenMatchIds.has(id)) return false;
+        seenMatchIds.add(id);
+        return true;
+    });
+
     // Sort chronologically (oldest first) so timeline starts from Aug 2024
-    const sortedMatches = enrichedMatches.sort((a: any, b: any) => {
+    const sortedMatches = uniqueMatches.sort((a: any, b: any) => {
         return new Date(a.date).getTime() - new Date(b.date).getTime();
     });
 
@@ -82,12 +95,12 @@ export function enrichPlayerMatches(player: Player, matches: any[]): Player {
 }
 
 function mapToFBIPosition(fullPosition: string): FBIPosition {
-    // Map specific roles to generic FBI categories
+    // Map specific roles and categorical positions to generic FBI categories
     const roleMap: Record<string, FBIPosition> = {
-        'GK': 'GK',
-        'CB': 'DEF', 'RB': 'DEF', 'LB': 'DEF', 'RWB': 'DEF', 'LWB': 'DEF',
-        'CDM': 'MID', 'CM': 'MID', 'CAM': 'MID', 'RM': 'MID', 'LM': 'MID',
-        'ST': 'FWD', 'CF': 'FWD', 'LW': 'FWD', 'RW': 'FWD'
+        'GK': 'GK', 'Goalkeeper': 'GK',
+        'CB': 'DEF', 'RB': 'DEF', 'LB': 'DEF', 'RWB': 'DEF', 'LWB': 'DEF', 'Defender': 'DEF',
+        'CDM': 'MID', 'CM': 'MID', 'CAM': 'MID', 'RM': 'MID', 'LM': 'MID', 'Midfielder': 'MID',
+        'ST': 'FWD', 'CF': 'FWD', 'LW': 'FWD', 'RW': 'FWD', 'Attacker': 'FWD', 'Forward': 'FWD', 'Forward ': 'FWD'
     };
 
     return roleMap[fullPosition] || 'MID'; // Default fallback
@@ -101,8 +114,8 @@ function mapToFBIPosition(fullPosition: string): FBIPosition {
 const PLAYER_POSITIONS: Record<string, string> = {
     // Goalkeepers
     'Inaki Pena': 'GK',
-    'Marc-Andre ter Stegen': 'GK',
     'Wojciech Szczesny': 'GK',
+    'Marc-Andre ter Stegen': 'GK',
     'Joan Garcia': 'GK',
 
     // Defenders
@@ -168,9 +181,12 @@ export function getPlayerBySlug(slug: string, matches: any[]): Player | null {
 
     // Enrich with correct dates and competitions from ingested data
     const enriched = enrichPlayerMatches(player, matches);
-    // Inject correct position and slug
+    const stats = aggregatePlayerStats(enriched);
+    
+    // Inject correct position, slug, and aggregated appearances
     return {
         ...enriched,
+        appearances: stats.appearances,
         position: getPlayerPosition(player.name),
         slug: slug  // Add the slug so it's accessible
     };
@@ -183,6 +199,7 @@ export function getAllPlayers(matches: any[]): Array<Player & { slug: string; go
         const stats = aggregatePlayerStats(enriched);
         return {
             ...enriched,
+            appearances: stats.appearances,
             position: getPlayerPosition(player.name), // Inject correct position
             slug: nameToSlug(player.name),
             goals: stats.totalGoals,
