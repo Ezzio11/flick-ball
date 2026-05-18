@@ -1,4 +1,5 @@
 import { INGESTED_MATCHES } from './data_ingested';
+import { MatchData } from './matchHelpers';
 
 export interface TeamStats {
     totalMatches: number;
@@ -39,7 +40,7 @@ function getResult(goalsFor: number, goalsAgainst: number): 'W' | 'D' | 'L' {
 }
 
 // Aggregate team stats from matches
-export function aggregateTeamStats(matches: any[]): TeamStats {
+export function aggregateTeamStats(matches: MatchData[]): TeamStats {
     const validMatches = matches.filter(m => {
         // Only count finished matches (not future 0-0s)
         const isFuture = new Date(m.date) > new Date();
@@ -105,7 +106,7 @@ export function aggregateTeamStats(matches: any[]): TeamStats {
 }
 
 // Get stats breakdown by competition
-export function getCompetitionBreakdown(matches: any[]): CompetitionStats[] {
+export function getCompetitionBreakdown(matches: MatchData[]): CompetitionStats[] {
     const competitions = ['LaLiga', 'Champions League', 'Copa del Rey', 'Supercopa'];
     return competitions.map(comp => {
         const compMatches = matches.filter(m => m.competition === comp);
@@ -117,7 +118,7 @@ export function getCompetitionBreakdown(matches: any[]): CompetitionStats[] {
 }
 
 // Get form (last N matches)
-export function getFormStreak(matches: any[], count: number = 5): Array<{ result: 'W' | 'D' | 'L'; opponent: string; score: string }> {
+export function getFormStreak(matches: MatchData[], count: number = 5): Array<{ result: 'W' | 'D' | 'L'; opponent: string; score: string }> {
     const validMatches = matches
         .filter(m => {
             const isFuture = new Date(m.date) > new Date();

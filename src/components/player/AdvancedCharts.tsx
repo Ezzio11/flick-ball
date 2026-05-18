@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from 'react';
-import { AggregatedStats } from '@/lib/types';
+import { AggregatedStats, PlayerMatch } from '@/lib/types';
 import { Zap } from 'lucide-react';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
@@ -11,12 +11,12 @@ import EfficiencyScatter from './EfficiencyScatter';
 
 interface AdvancedChartsProps {
     stats: AggregatedStats;
-    matches: any[];
+    matches: PlayerMatch[];
     playerName: string;
     position: string;
 }
 
-export default function AdvancedCharts({ stats, matches, playerName, position }: AdvancedChartsProps) {
+export default function AdvancedCharts({ matches, playerName, position }: AdvancedChartsProps) {
     const [activeTab, setActiveTab] = useState<ChartTab>('consistency');
     const [period, setPeriod] = useState<FilterPeriod>('all');
 
@@ -74,8 +74,8 @@ export default function AdvancedCharts({ stats, matches, playerName, position }:
         const wins = matches.filter(m => m.isWin !== undefined ? m.isWin : (m.goals_scored || 0) > (m.goals_conceded || 0));
         const notWins = matches.filter(m => m.isWin !== undefined ? !m.isWin : (m.goals_scored || 0) <= (m.goals_conceded || 0));
 
-        const avgWin = wins.reduce((sum, m) => sum + (parseFloat(m.fbiRating) || 0), 0) / (wins.length || 1);
-        const avgNotWin = notWins.reduce((sum, m) => sum + (parseFloat(m.fbiRating) || 0), 0) / (notWins.length || 1);
+        const avgWin = wins.reduce((sum, m) => sum + (m.fbiRating || 0), 0) / (wins.length || 1);
+        const avgNotWin = notWins.reduce((sum, m) => sum + (m.fbiRating || 0), 0) / (notWins.length || 1);
 
         return { avgRatingWins: avgWin, avgRatingNotWins: avgNotWin };
     }, [matches]);

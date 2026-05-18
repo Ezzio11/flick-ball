@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidateTag, revalidatePath } from 'next/cache';
+import { revalidatePath } from 'next/cache';
 
 export async function GET(request: NextRequest) {
     const secret = request.nextUrl.searchParams.get('secret');

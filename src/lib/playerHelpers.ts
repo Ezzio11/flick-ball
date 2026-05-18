@@ -1,15 +1,20 @@
 import { TITANS_DATA } from './titans_data';
-import { Player, AggregatedStats, TrendDataPoint } from './types';
+import { Player, EnrichedPlayer, AggregatedStats, TrendDataPoint } from './types';
 
-// import { INGESTED_MATCHES } from './data_ingested';
+import { MatchData } from './matchHelpers';
+import { PlayerMatch } from './types';
+
+interface EnrichedMatchData extends MatchData {
+    _isFriendly?: boolean;
+}
 import { calculateFBI, Position as FBIPosition, TitanMatch } from './fbi-rating';
 
 // Cross-reference titans player data with ingested match metadata
-export function enrichPlayerMatches(player: Player, matches: any[]): Player {
+export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]): Player {
     const enrichedMatches = player.matches.map(match => {
         // Find corresponding match in ingested data by ID
         const matchIdStr = String(match.matchId);
-        const ingestedMatch = matches.find((m: any) => m.id === matchIdStr);
+        const ingestedMatch = matches.find((m: EnrichedMatchData) => String(m.id) === matchIdStr);
 
         // Universal Minutes Filter: Only count matches where the player actually played
         const playedMinutes = (match.minutes_played !== undefined) ? match.minutes_played : (match.minutes || 0);
@@ -64,7 +69,7 @@ export function enrichPlayerMatches(player: Player, matches: any[]): Player {
 
     // Deduplicate by matchId (String normalized)
     const seenMatchIds = new Set();
-    const uniqueMatches = enrichedMatches.filter((match: any) => {
+    const uniqueMatches = (enrichedMatches as PlayerMatch[]).filter((match) => {
         const id = String(match.matchId);
         if (seenMatchIds.has(id)) return false;
         seenMatchIds.add(id);
@@ -72,13 +77,13 @@ export function enrichPlayerMatches(player: Player, matches: any[]): Player {
     });
 
     // Sort chronologically (oldest first) so timeline starts from Aug 2024
-    const sortedMatches = uniqueMatches.sort((a: any, b: any) => {
+    const sortedMatches = uniqueMatches.sort((a, b) => {
         return new Date(a.date).getTime() - new Date(b.date).getTime();
     });
 
     // Calculate FBI Ratings for each match
     const positionType = mapToFBIPosition(player.position);
-    const matchesWithFBI = sortedMatches.map((match: any) => {
+    const matchesWithFBI = sortedMatches.map((match) => {
         const fbiStats = calculateFBI(match as TitanMatch, positionType);
         return {
             ...match,
@@ -175,7 +180,7 @@ export function nameToSlug(name: string): string {
 
 
 // Get player by slug
-export function getPlayerBySlug(slug: string, matches: any[]): Player | null {
+export function getPlayerBySlug(slug: string, matches: EnrichedMatchData[]): Player | null {
     const player = TITANS_DATA.find(p => nameToSlug(p.name) === slug);
     if (!player) return null;
 
@@ -193,7 +198,7 @@ export function getPlayerBySlug(slug: string, matches: any[]): Player | null {
 }
 
 // Get all players (for navigation/listing) with basic stats
-export function getAllPlayers(matches: any[]): Array<Player & { slug: string; goals: number; assists: number; cleanSheets?: number; avgRating: number; minutes?: number; stats?: AggregatedStats }> {
+export function getAllPlayers(matches: EnrichedMatchData[]): EnrichedPlayer[] {
     return TITANS_DATA.map(player => {
         const enriched = enrichPlayerMatches(player, matches);
         const stats = aggregatePlayerStats(enriched);

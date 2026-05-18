@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Target, Shield, Zap, Footprints, Check, X, Info, Trophy } from 'lucide-react';
+import { Target, Shield, Zap, Check, X, Info, Trophy } from 'lucide-react';
 import BackButton from '@/components/ui/BackButton';
 
 export const metadata = {
@@ -31,7 +30,7 @@ export default function AboutFBIPage() {
                         </p>
                     </div>
                     <p className="text-xl md:text-2xl text-center text-black font-bold max-w-3xl mx-auto leading-tight" style={{ fontFamily: 'var(--font-comic)' }}>
-                        The world's first <span className="text-[#a50044] bg-white px-1 border border-black">100% transparent</span>, mathematically rigorous player rating system.
+                        The world&apos;s first <span className="text-[#a50044] bg-white px-1 border border-black">100% transparent</span>, mathematically rigorous player rating system.
                     </p>
                 </div>
             </div>
@@ -56,11 +55,11 @@ export default function AboutFBIPage() {
                                 <strong className="text-[#a50044] bg-[#ffed02] px-1 border border-black inline-block transform -skew-x-6">Why we built it:</strong> Traditional ratings measure
                                 <em>individual accumulation</em>. If you get 3 assists, you get a 10—even if you lost the ball 6 times.
                                 <br /><br />
-                                In Flick's high-line system, losing the ball is fatal. <strong>FBI measures System Fit.</strong> We reward the high press and punish the specific risks that leave the team exposed.
+                                In Flick&apos;s high-line system, losing the ball is fatal. <strong>FBI measures System Fit.</strong> We reward the high press and punish the specific risks that leave the team exposed.
                             </p>
                             <div className="bg-[#004d98] text-white p-6 border-4 border-black shadow-[6px_6px_0_#a50044] mt-6 transform rotate-1">
                                 <p className="text-2xl font-black text-center uppercase" style={{ fontFamily: 'var(--font-bangers)' }}>
-                                    "Traditional ratings ignore tactical context. We don't."
+                                    &quot;Traditional ratings ignore tactical context. We don&apos;t.&quot;
                                 </p>
                             </div>
                         </div>
@@ -241,7 +240,7 @@ export default function AboutFBIPage() {
                                 POSITION FAIR
                             </h3>
                             <p className="text-white font-medium leading-normal text-sm">
-                                Defenders aren't penalized for low assists. Weighted perfectly for each role.
+                                Defenders aren&apos;t penalized for low assists. Weighted perfectly for each role.
                             </p>
                         </div>
 
@@ -253,7 +252,7 @@ export default function AboutFBIPage() {
                                 RUTHLESS
                             </h3>
                             <p className="text-black font-medium leading-normal text-sm">
-                                We punish inefficiency. Goals don't hide poor reliability. We demand perfection.
+                                We punish inefficiency. Goals don&apos;t hide poor reliability. We demand perfection.
                             </p>
                         </div>
                     </div>

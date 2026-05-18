@@ -3,11 +3,12 @@ import { notFound } from 'next/navigation';
 import { getMatchById, parseMatchScore, getMatchResult } from '@/lib/matchHelpers';
 import MatchPageContent from './MatchPageContent';
 import { fetchAllMatches } from '@/lib/dataFetcher';
+import { Match } from '@/lib/teamStatistics';
 
 // Generate static params for all matches
 export async function generateStaticParams() {
     const matches = await fetchAllMatches(); // Fetch dynamically
-    return matches.map((match: any) => ({
+    return matches.map((match: Match) => ({
         id: String(match.id), // Ensure ID is string
     }));
 }

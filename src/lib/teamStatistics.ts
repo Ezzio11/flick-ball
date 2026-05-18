@@ -22,6 +22,7 @@ export interface Match {
         totalShots?: number;
         shotsOnTarget?: number;
         bigChances?: number;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [key: string]: any;
     };
     scorers?: Array<{
@@ -457,7 +458,6 @@ export function getUCLProgress(matches: Match[]): {
 
     // Check if in knockout phase
     const inKnockouts = leagueGamesPlayed >= LEAGUE_PHASE_GAMES;
-    const knockoutGamesPlayed = Math.max(0, sortedCompleted.length - LEAGUE_PHASE_GAMES);
 
     // Estimate position based on points (rough approximation)
     // ~18 pts usually top 8, ~12 pts usually 9-16
@@ -782,7 +782,7 @@ export function getFormationStats(matches: Match[]): FormationStats[] {
     const formationMap: Record<string, { played: number; won: number; goals: number }> = {};
 
     matches.filter(m => m.stats?.available).forEach(m => {
-        const form = (m as any).formation || '4-3-3'; // Default to 4-3-3 if missing (common Flick)
+        const form = m.formation || '4-3-3'; // Default to 4-3-3 if missing (common Flick)
         if (!formationMap[form]) formationMap[form] = { played: 0, won: 0, goals: 0 };
 
         formationMap[form].played++;

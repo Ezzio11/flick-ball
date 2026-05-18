@@ -1,8 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import { Trophy, Calendar, ArrowRight } from 'lucide-react';
-import type { SeasonProjection, MatchPrediction } from '@/lib/monteCarloSimulator';
+import { Trophy, Calendar } from 'lucide-react';
+import type { SeasonProjection } from '@/lib/monteCarloSimulator';
 
 interface TrophyRaceProps {
     projection: SeasonProjection;
@@ -10,7 +10,7 @@ interface TrophyRaceProps {
     isSimulating: boolean;
 }
 
-export default function VisionBanner({ projection, currentPoints, isSimulating }: TrophyRaceProps) {
+export default function VisionBanner({ projection, isSimulating }: TrophyRaceProps) {
     const titleProbability = projection.positionOdds.first;
     const upcomingMatches = projection.matchPredictions.slice(0, 5);
 

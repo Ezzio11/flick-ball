@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useState, useEffect } from 'react';
+import { use, useState } from 'react';
 import Image from 'next/image';
 import BackButton from '@/components/ui/BackButton';
 import { useRouter } from 'next/navigation';
@@ -73,6 +73,40 @@ const STATS_CONFIG: Record<MetricSet, { label: string; key: keyof AggregatedStat
     ],
 };
 
+interface ComparisonRowProps {
+    label: string;
+    val1: number;
+    val2: number;
+    suffix?: string;
+    inverted?: boolean;
+}
+
+const ComparisonRow = ({ label, val1, val2, suffix = '', inverted = false }: ComparisonRowProps) => {
+    let p1Wins = val1 > val2;
+    let p2Wins = val2 > val1;
+    if (inverted) {
+        p1Wins = val1 < val2;
+        p2Wins = val2 < val1;
+    }
+    // Handle undefined/null gracefully
+    const v1Display = val1 ?? 0;
+    const v2Display = val2 ?? 0;
+
+    return (
+        <div className="grid grid-cols-3 border-b-2 border-black/10 last:border-0 hover:bg-white/50 transition-colors">
+            <div className={`p-3 text-center font-bold text-lg border-r border-black/10 flex items-center justify-center gap-1 ${p1Wins ? 'text-[#a50044] bg-[#a50044]/10' : 'text-gray-600'}`} style={{ fontFamily: "var(--font-comic)" }}>
+                {v1Display.toFixed(suffix ? 1 : 0)}{suffix} {p1Wins && <Crown size={16} className="text-[#ffed02] fill-[#ffed02] stroke-black" />}
+            </div>
+            <div className="p-3 text-center text-sm font-bold uppercase tracking-wider flex items-center justify-center text-black/70" style={{ fontFamily: "var(--font-comic)" }}>
+                {label}
+            </div>
+            <div className={`p-3 text-center font-bold text-lg border-l border-black/10 flex items-center justify-center gap-1 ${p2Wins ? 'text-[#004d98] bg-[#004d98]/10' : 'text-gray-600'}`} style={{ fontFamily: "var(--font-comic)" }}>
+                {v2Display.toFixed(suffix ? 1 : 0)}{suffix} {p2Wins && <Crown size={16} className="text-[#ffed02] fill-[#ffed02] stroke-black" />}
+            </div>
+        </div>
+    )
+};
+
 export default function ComparisonContent({ params, matches }: { params: Promise<{ player1: string; player2: string }>, matches: Match[] }) {
     const { player1: player1Slug, player2: player2Slug } = use(params);
     const router = useRouter();
@@ -94,13 +128,18 @@ export default function ComparisonContent({ params, matches }: { params: Promise
         return 'attacking';
     };
 
-    const [activeMetricSet, setActiveMetricSet] = useState<MetricSet>('attacking');
+    const initialMetricSet = player1 && player2 ? getDefaultMetricSet(player1.position, player2.position) : 'attacking';
 
-    useEffect(() => {
-        if (player1 && player2) {
+    const [prevPlayersKey, setPrevPlayersKey] = useState(player1 && player2 ? `${player1.slug}-${player2.slug}` : '');
+    const [activeMetricSet, setActiveMetricSet] = useState<MetricSet>(initialMetricSet);
+
+    if (player1 && player2) {
+        const currentPlayersKey = `${player1.slug}-${player2.slug}`;
+        if (currentPlayersKey !== prevPlayersKey) {
+            setPrevPlayersKey(currentPlayersKey);
             setActiveMetricSet(getDefaultMetricSet(player1.position, player2.position));
         }
-    }, [player1, player2]);
+    }
 
     if (!player1 || !player2) {
         return (
@@ -179,32 +218,7 @@ export default function ComparisonContent({ params, matches }: { params: Promise
 
     const chartData = getChartData(activeMetricSet);
 
-    // Helper for table comparison
-    const ComparisonRow = ({ label, val1, val2, suffix = '', inverted = false }: { label: string, val1: number, val2: number, suffix?: string, inverted?: boolean }) => {
-        let p1Wins = val1 > val2;
-        let p2Wins = val2 > val1;
-        if (inverted) {
-            p1Wins = val1 < val2;
-            p2Wins = val2 < val1;
-        }
-        // Handle undefined/null gracefully
-        const v1Display = val1 ?? 0;
-        const v2Display = val2 ?? 0;
 
-        return (
-            <div className="grid grid-cols-3 border-b-2 border-black/10 last:border-0 hover:bg-white/50 transition-colors">
-                <div className={`p-3 text-center font-bold text-lg border-r border-black/10 flex items-center justify-center gap-1 ${p1Wins ? 'text-[#a50044] bg-[#a50044]/10' : 'text-gray-600'}`} style={{ fontFamily: "var(--font-comic)" }}>
-                    {v1Display.toFixed(suffix ? 1 : 0)}{suffix} {p1Wins && <Crown size={16} className="text-[#ffed02] fill-[#ffed02] stroke-black" />}
-                </div>
-                <div className="p-3 text-center text-sm font-bold uppercase tracking-wider flex items-center justify-center text-black/70" style={{ fontFamily: "var(--font-comic)" }}>
-                    {label}
-                </div>
-                <div className={`p-3 text-center font-bold text-lg border-l border-black/10 flex items-center justify-center gap-1 ${p2Wins ? 'text-[#004d98] bg-[#004d98]/10' : 'text-gray-600'}`} style={{ fontFamily: "var(--font-comic)" }}>
-                    {v2Display.toFixed(suffix ? 1 : 0)}{suffix} {p2Wins && <Crown size={16} className="text-[#ffed02] fill-[#ffed02] stroke-black" />}
-                </div>
-            </div>
-        )
-    };
 
     return (
         <div className="min-h-screen bg-[#e5e5f7] relative flex flex-col">

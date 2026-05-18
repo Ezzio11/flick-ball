@@ -8,6 +8,7 @@ import StatsComparison from '@/components/match/StatsComparison';
 import TeamStatsGrid from '@/components/match/TeamStatsGrid';
 import RainEffect from '@/components/effects/RainEffect';
 import dynamicImport from 'next/dynamic';
+import { Match } from '@/lib/teamStatistics';
 
 // Lazy load heavy components
 const GoalTimeline = dynamicImport(() => import('@/components/match/GoalTimeline'), {
@@ -19,7 +20,7 @@ const MatchCharts = dynamicImport(() => import('@/components/match/MatchCharts')
 });
 
 interface MatchPageContentProps {
-    match: any;
+    match: Match;
     barcelonaGoals: number;
     opponentGoals: number;
     result: MatchResult;

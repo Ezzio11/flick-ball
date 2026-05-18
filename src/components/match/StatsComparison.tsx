@@ -1,5 +1,4 @@
 import { MatchData } from '@/lib/matchHelpers';
-import { Trophy, Target, Activity, Shield, Footprints } from 'lucide-react';
 
 interface StatsComparisonProps {
     match: MatchData;

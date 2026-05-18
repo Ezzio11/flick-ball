@@ -1,7 +1,7 @@
 "use client";
 
 import { TrendDataPoint } from '@/lib/types';
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ComposedChart } from 'recharts';
+import { Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ComposedChart } from 'recharts';
 import { Star, CircleDot, ArrowUpRight } from 'lucide-react';
 
 interface FormChartProps {
@@ -10,13 +10,26 @@ interface FormChartProps {
     position: string;
 }
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+interface TooltipPayloadEntry {
+    name: string;
+    value: string | number;
+    color?: string;
+    fill?: string;
+}
+
+interface CustomTooltipProps {
+    active?: boolean;
+    payload?: TooltipPayloadEntry[];
+    label?: string;
+}
+
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
     if (active && payload && payload.length) {
         return (
             <div className="bg-white border-[3px] border-black shadow-[4px_4px_0_#000] p-3 min-w-[150px]">
                 <p className="font-header-main text-lg border-b-2 border-black mb-2 pb-1">{label}</p>
                 <div className="space-y-1 font-mono text-xs">
-                    {payload.map((entry: any, index: number) => (
+                    {payload.map((entry, index: number) => (
                         <div key={index} className="flex justify-between items-center font-bold" style={{ color: entry.color || entry.fill }}>
                             <span className="flex items-center gap-1">
                                 {entry.name === 'Avg Rating' && <Star size={12} fill="currentColor" />}
@@ -34,7 +47,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     return null;
 };
 
-export default function FormChart({ data, playerName, position }: FormChartProps) {
+export default function FormChart({ data, position }: FormChartProps) {
     // ... (data aggregation logic remains same)
     // Aggregate data by month
     const monthlyData = data.reduce((acc, point) => {

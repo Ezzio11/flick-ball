@@ -71,6 +71,7 @@ export interface TitanMatch {
     punches?: number;
     player_throws?: number; // Quick distribution
     conceded_penalties?: number; // Penalties given away by GK
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key: string]: any; // Allow additional fields
 }
 
@@ -266,9 +267,12 @@ function getOpponentDifficulty(match: TitanMatch): number {
 }
 
 function getResultModifier(match: TitanMatch): number {
-    const score = match.result || match.score || '0 - 0';
+    let score = match.result || match.score || '0 - 0';
+    if (typeof score !== 'string') {
+        score = String(score);
+    }
     const parts = score.split('-').map(s => parseInt(s.trim()));
-    if (parts.length !== 2) return 0;
+    if (parts.length !== 2 || parts.some(isNaN)) return 0;
 
     if (parts[0] > parts[1]) return 0.3;  // Win
     if (parts[0] < parts[1]) return -0.2; // Loss

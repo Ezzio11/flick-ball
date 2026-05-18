@@ -1,16 +1,17 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { X, Trophy, Calendar, MapPin, Gauge, Shield, Activity, Footprints, ChartBar, Info, Calculator, ChevronDown, ChevronUp, Goal, ArrowUpRight, Crosshair, Target, ArrowRightLeft, Key, Fingerprint, Swords, RefreshCcw, Magnet, AlertTriangle, Ban } from 'lucide-react';
+import { X, Trophy, Calendar, Gauge, Shield, Activity, Footprints, Goal, ArrowUpRight, Crosshair, Target, ArrowRightLeft, Key, Fingerprint, Swords, RefreshCcw, Magnet, AlertTriangle, Ban } from 'lucide-react';
+import { PlayerMatch } from '@/lib/types';
 
 interface MatchDetailModalProps {
-    match: any;
+    match: PlayerMatch;
     onClose: () => void;
 }
 
 // Helper: Reconstruct the math for display
 // NOTE: These weights must match src/lib/fbi-rating.ts
-const POSITION_WEIGHTS: Record<string, any> = {
+const POSITION_WEIGHTS: Record<string, { offensive: number; passing: number; defensive: number; retention: number }> = {
     GK: { offensive: 0.2, passing: 0.3, defensive: 1.0, retention: 0.2 },
     DEF: { offensive: 0.4, passing: 0.6, defensive: 1.0, retention: 0.5 },
     MID: { offensive: 0.7, passing: 1.0, defensive: 0.6, retention: 0.8 },
@@ -37,8 +38,6 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
 
     if (!match) return null;
 
-    // Helper to calculate percentage for progress bars
-    const getPercentage = (val: number, max: number = 10) => Math.min(100, Math.max(0, (val / max) * 100));
 
     // Determine colors based on rating
     const getRatingColor = (rating: number) => {
@@ -94,7 +93,7 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
 
                             <div className="relative z-10 flex flex-col items-center">
                                 <span className="text-[10px] uppercase font-bold tracking-widest mb-1">FBI Rating</span>
-                                <span className={`text-8xl leading-none font-black ${getRatingColor(match.fbiRating)}`} style={{ fontFamily: 'var(--font-bangers)' }}>
+                                <span className={`text-8xl leading-none font-black ${getRatingColor(match.fbiRating || 0)}`} style={{ fontFamily: 'var(--font-bangers)' }}>
                                     {match.fbiBreakdown.final.toFixed(1)}
                                 </span>
                             </div>
@@ -257,7 +256,7 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
 }
 
 // Sub-component for a comic panel section
-function ComicPanel({ title, score, color, icon, stats }: { title: string, score: number, color: string, icon: React.ReactNode, stats: { label: string, value: any, icon?: React.ReactNode, highlight?: boolean }[] }) {
+function ComicPanel({ title, score, color, icon, stats }: { title: string, score: number, color: string, icon: React.ReactNode, stats: { label: string, value: string | number | undefined | null, icon?: React.ReactNode, highlight?: boolean }[] }) {
     const colorClasses: Record<string, string> = {
         red: 'bg-red-50 border-red-200 text-red-700 bar-red',
         blue: 'bg-blue-50 border-blue-200 text-blue-700 bar-blue',

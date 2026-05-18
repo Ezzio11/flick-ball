@@ -16,6 +16,7 @@ export interface PlayerMatch {
     isDraw?: boolean;
     isLoss?: boolean;
     potm?: boolean;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key: string]: any; // Allow for dynamic stats from FotMob
 }
 
@@ -26,6 +27,16 @@ export interface Player {
     appearances: number;
     matches: PlayerMatch[];
     slug?: string;
+}
+
+export interface EnrichedPlayer extends Player {
+    slug: string;
+    goals: number;
+    assists: number;
+    cleanSheets?: number;
+    avgRating: number;
+    minutes?: number;
+    stats?: AggregatedStats;
 }
 
 export interface AggregatedStats {

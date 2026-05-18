@@ -1,5 +1,5 @@
 import { MatchData } from '@/lib/matchHelpers';
-import { Target, Activity, Shield, Zap, Footprints, AlertTriangle } from 'lucide-react';
+import { Target, Activity, Shield, Zap } from 'lucide-react';
 
 interface TeamStatsGridProps {
     match: MatchData;

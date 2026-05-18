@@ -1,10 +1,9 @@
 "use client";
 
-import { Suspense, useState, useEffect } from 'react';
+import { Suspense, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getAllPlayers } from '@/lib/playerHelpers';
-import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Match } from '@/lib/teamStatistics';
 
@@ -17,15 +16,16 @@ function CompareContent({ matches }: { matches: Match[] }) {
     const allPlayers = getAllPlayers(matches).sort((a, b) => a.name.localeCompare(b.name));
 
     // Initialize with query param if present
+    const [prevSelectedSlug, setPrevSelectedSlug] = useState(selectedSlug);
     const [player1, setPlayer1] = useState(selectedSlug || '');
     const [player2, setPlayer2] = useState('');
 
-    // Update state if query param changes (e.g. navigation)
-    useEffect(() => {
+    if (selectedSlug !== prevSelectedSlug) {
+        setPrevSelectedSlug(selectedSlug);
         if (selectedSlug) {
             setPlayer1(selectedSlug);
         }
-    }, [selectedSlug]);
+    }
 
     const handleCompare = () => {
         if (player1 && player2) {
@@ -52,7 +52,7 @@ function CompareContent({ matches }: { matches: Match[] }) {
                         PLAYER<br />COMPARISON
                     </h1>
                     <p className="text-xl font-bold uppercase tracking-wider text-blue-900 mt-4" style={{ fontFamily: "var(--font-comic)" }}>
-                        "Choose Your Titans. Witness the Battle!"
+                        &quot;Choose Your Titans. Witness the Battle!&quot;
                     </p>
                 </div>
             </div>

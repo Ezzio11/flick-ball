@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '@/components/layout/Footer';
-import { Trophy, Star, Crown, Zap, TrendingUp, Shield, Target, Flame, Activity, Users } from 'lucide-react';
+import { Star, Crown, Zap, TrendingUp, Shield, Target, Flame, Activity } from 'lucide-react';
 
 export default function AchievementsPage() {
     return (
@@ -141,7 +141,7 @@ export default function AchievementsPage() {
                             <div className="p-8 text-center bg-[#fff] relative">
                                 <div className="text-6xl font-black text-black mb-2" style={{ fontFamily: 'var(--font-bangers)' }}>2x</div>
                                 <div className="text-sm font-bold uppercase text-black">Super Cup KOs</div>
-                                <div className="text-xs text-gray-600 mt-2">Eliminated Madrid in '25 & '26</div>
+                                <div className="text-xs text-gray-600 mt-2">Eliminated Madrid in &apos;25 &amp; &apos;26</div>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ export default function AchievementsPage() {
                                     <Crown className="text-[#EDBB00] fill-current" size={32} />
                                     <span className="text-4xl font-black text-black" style={{ fontFamily: 'var(--font-bangers)' }}>100%</span>
                                 </div>
-                                <h4 className="font-bold text-black uppercase text-md border-b-2 border-black/20 pb-2 mb-2">The "Perfect Final"</h4>
+                                <h4 className="font-bold text-black uppercase text-md border-b-2 border-black/20 pb-2 mb-2">The &quot;Perfect Final&quot;</h4>
                                 <p className="text-gray-600 text-xs font-mono">8 Consecutive Finals Won (Career). 3/3 at Barcelona.</p>
                             </div>
 
@@ -264,7 +264,7 @@ export default function AchievementsPage() {
                                     <span className="text-4xl font-black text-[#FFED02]" style={{ fontFamily: 'var(--font-bangers)' }}>19</span>
                                 </div>
                                 <h4 className="font-bold text-white uppercase text-md border-b-2 border-white/20 pb-2 mb-2">Dream Team Reborn</h4>
-                                <p className="text-white/80 text-xs font-mono">19-Game Unbeaten Run (Jan-Apr 2025). Matches Cruyff's 1993/94 Record.</p>
+                                <p className="text-white/80 text-xs font-mono">19-Game Unbeaten Run (Jan-Apr 2025). Matches Cruyff&apos;s 1993/94 Record.</p>
                             </div>
 
                             {/* Card: Contract */}
@@ -335,7 +335,7 @@ export default function AchievementsPage() {
                                         The <span className="text-[#FFED02]">Fitness</span><br />Architects
                                     </h4>
                                     <p className="text-gray-400 text-sm mb-4 leading-relaxed font-mono">
-                                        The masterminds behind the team's relentless 90-minute pressing intensity. Transforming the squad into physical monsters.
+                                        The masterminds behind the team&apos;s relentless 90-minute pressing intensity. Transforming the squad into physical monsters.
                                     </p>
 
                                     <div className="space-y-3">
@@ -381,7 +381,7 @@ export default function AchievementsPage() {
                                         <Activity size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-black uppercase text-xl" style={{ fontFamily: 'var(--font-bangers)' }}>The "Flick" Effect</h4>
+                                        <h4 className="font-black uppercase text-xl" style={{ fontFamily: 'var(--font-bangers)' }}>The &quot;Flick&quot; Effect</h4>
                                         <p className="text-xs font-mono opacity-90">Verticality. Intensity. No sideways passing.</p>
                                     </div>
                                 </div>

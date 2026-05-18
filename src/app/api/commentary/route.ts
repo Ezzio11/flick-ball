@@ -175,27 +175,27 @@ export async function POST(req: Request) {
             // 1. Groq (Fastest)
             console.log("Attempting GROQ...");
             commentary = await callGroq(fullPrompt);
-        } catch (e) {
+        } catch {
             try {
                 // 2. Gemini (Best Quality)
                 console.log("Groq failed. Attempting GEMINI...");
                 commentary = await callGemini(fullPrompt);
-            } catch (e) {
+            } catch {
                 try {
                     // 3. Cerebras (Fast)
                     console.log("Gemini failed. Attempting CEREBRAS...");
                     commentary = await callCerebras(fullPrompt);
-                } catch (e) {
+                } catch {
                     try {
                         // 4. OpenRouter
                         console.log("Cerebras failed. Attempting OPENROUTER...");
                         commentary = await callOpenRouter(fullPrompt);
-                    } catch (e) {
+                    } catch {
                         try {
                             // 5. HuggingFace
                             console.log("OpenRouter failed. Attempting HUGGINGFACE...");
                             commentary = await callHuggingFace(fullPrompt);
-                        } catch (e) {
+                        } catch {
                             // 6. Pollinations (Fallback)
                             console.log("All failed. Falling back to POLLINATIONS...");
                             commentary = await callPollinations(fullPrompt);

@@ -558,7 +558,6 @@ export function simulateUCL(
 
     // Split matches into league phase and knockouts
     const leagueMatches = futureUCLMatches.slice(0, leagueGamesRemaining);
-    const knockoutMatches = futureUCLMatches.slice(leagueGamesRemaining);
 
     let qualifyCount = 0;
     let trophyWins = 0;
@@ -591,7 +590,6 @@ export function simulateUCL(
 
             // Simulate knockouts (4 rounds: R16, QF, SF, Final)
             let stillAlive = true;
-            const knockoutCount = Math.min(knockoutMatches.length, 4);
 
             for (let r = 0; r < 4 && stillAlive; r++) {
                 // Two-leg tie: simulate both legs

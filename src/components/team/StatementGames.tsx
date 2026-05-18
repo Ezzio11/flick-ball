@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Trophy, Zap, MessageCircle, BarChart2, User, Activity } from 'lucide-react';
+import { User } from 'lucide-react';
 import { getMatchResult, type Match } from '@/lib/teamStatistics';
 
 interface BigGameStats {
@@ -116,7 +116,7 @@ export default function StatementGames({ bigGameStats }: StatementGamesProps) {
                                             <div className="flex flex-wrap gap-2">
                                                 {match.scorers.filter(s => s.team === 'barca').map((scorer, i) => (
                                                     <span key={i} className="inline-block bg-black text-[#EDBB00] text-xs font-bold px-2 py-0.5 border border-black transform rotate-1">
-                                                        {scorer.player} {scorer.minute}'
+                                                        {scorer.player} {scorer.minute}&apos;
                                                     </span>
                                                 ))}
                                             </div>

@@ -5,18 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import Footer from '@/components/layout/Footer';
-import VisionBanner from '@/components/team/TrophyRace';
 import StatementGames from '@/components/team/StatementGames';
 import BiggestWins from '@/components/team/BiggestWins';
 import {
     getCompletedMatches,
-    getFutureMatches,
-    getCurrentSeasonPoints,
-    getMatchesByCompetition,
     calculateTeamStatistics,
-    analyzeTacticalTrends,
     getMatchResult,
-    getBiggestWin,
     getBigGameStats,
     getTopStatementWins,
     getPossessionStats,
@@ -28,11 +22,6 @@ import {
     getFormationStats
 } from '@/lib/teamStatistics';
 import { getAllPlayers } from '@/lib/playerHelpers';
-import {
-    simulateSeason,
-    estimateSimulationParameters,
-    type SeasonProjection,
-} from '@/lib/monteCarloSimulator';
 import FlickiFlackaStats from '@/components/team/FlickiFlackaStats';
 import TacticalWarfare from '@/components/team/TacticalWarfare';
 import CampaignTracker from '@/components/team/CampaignTracker';
@@ -42,9 +31,6 @@ import { Match } from '@/lib/teamStatistics';
 export default function TeamPageContent({ matches: initialMatches }: { matches: Match[] }) {
     // 1. hydrate from props, but allow client-side update
     const [matches, setMatches] = useState<Match[]>(initialMatches);
-    const [simCount] = useState<number>(10000);
-    const [isSimulating, setIsSimulating] = useState(false);
-    const [projection, setProjection] = useState<SeasonProjection | null>(null);
 
     // 2. Fetch fresh data on mount (bypassing the static build)
     useEffect(() => {
@@ -69,11 +55,7 @@ export default function TeamPageContent({ matches: initialMatches }: { matches: 
 
     // Data Hooks (use 'matches' state instead of 'initialMatches' prop)
     const completedMatches = useMemo(() => getCompletedMatches(matches), [matches]);
-    const futureMatches = useMemo(() => getFutureMatches(matches), [matches]);
-    const laLigaMatches = useMemo(() => getMatchesByCompetition(matches, 'LaLiga'), [matches]);
     const stats = useMemo(() => calculateTeamStatistics(completedMatches), [completedMatches]);
-    const currentPoints = useMemo(() => getCurrentSeasonPoints(matches), [matches]);
-    const simParams = useMemo(() => estimateSimulationParameters(stats), [stats]);
 
     // Statement Games Stats
     const topWins = useMemo(() => getTopStatementWins(completedMatches), [completedMatches]);
@@ -111,24 +93,7 @@ export default function TeamPageContent({ matches: initialMatches }: { matches: 
 
     const winRate = ((record.wins / record.total) * 100).toFixed(0);
 
-    useEffect(() => {
-        if (laLigaMatches.future.length === 0) {
-            setProjection(null);
-            return;
-        }
 
-        let cancelled = false;
-        setIsSimulating(true);
-
-        setTimeout(() => {
-            if (cancelled) return;
-            const result = simulateSeason(laLigaMatches.future, simParams, simCount, currentPoints.points);
-            setProjection(result);
-            setIsSimulating(false);
-        }, 50);
-
-        return () => { cancelled = true; };
-    }, [laLigaMatches.future, simParams, simCount, currentPoints.points]);
 
     return (
         <div className="min-h-screen bg-[#0a0f1c] font-sans selection:bg-[#A50044] selection:text-white">

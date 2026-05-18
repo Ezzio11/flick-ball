@@ -3,13 +3,68 @@
 import { useState } from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, ZAxis } from 'recharts';
 
+type ChartMode = 'xg-goals' | 'threat-gen' | 'warrior-stats' | 'ball-carrying' | 'progression' | 'wall-mode';
+
+interface ScatterMatchPoint {
+    opponent: string;
+    date: string;
+    expected_goals?: number;
+    goals?: number;
+    expected_assists?: number;
+    duel_won?: number;
+    recoveries?: number;
+    dribbles_succeeded?: number;
+    touches_opp_box?: number;
+    passes_into_final_third?: number;
+    saves?: number;
+    goals_prevented?: number;
+    fbiRating?: number;
+    rating?: number;
+}
+
 interface EfficiencyScatterProps {
-    matches: any[];
+    matches: ScatterMatchPoint[];
     playerName: string;
     position: string;
 }
 
-type ChartMode = 'xg-goals' | 'threat-gen' | 'warrior-stats' | 'ball-carrying' | 'progression' | 'wall-mode';
+interface CustomTooltipProps {
+    active?: boolean;
+    payload?: Array<{
+        payload: {
+            opponent: string;
+            date: string;
+            rating?: number;
+            x: number;
+            y: number;
+        };
+    }>;
+    mode: ChartMode;
+}
+
+const CustomTooltip = ({ active, payload, mode }: CustomTooltipProps) => {
+    if (active && payload && payload.length) {
+        const d = payload[0].payload;
+        return (
+            <div className="bg-black text-white p-3 border-2 border-white shadow-lg z-50">
+                <p className=" text-sm" style={{ fontFamily: "var(--font-bangers)" }}>vs {d.opponent}</p>
+                <p className="font-mono text-xs text-gray-400">{d.date}</p>
+                <div className="mt-2 space-y-1">
+                    <p className="font-mono text-sm">
+                        {mode === 'xg-goals' && `xG: ${d.x?.toFixed(2)} → Goals: ${d.y}`}
+                        {mode === 'threat-gen' && `xG: ${d.x?.toFixed(2)} / xA: ${d.y?.toFixed(2)}`}
+                        {mode === 'warrior-stats' && `Duels: ${d.x} / Recovs: ${d.y}`}
+                        {mode === 'ball-carrying' && `Dribbles: ${d.x} / Box: ${d.y}`}
+                        {mode === 'progression' && `Passes Final 3rd: ${d.x} / Recovs: ${d.y}`}
+                        {mode === 'wall-mode' && `Saves: ${d.x} / Prev: ${d.y?.toFixed(2)}`}
+                    </p>
+                    <p className="font-mono text-xs text-yellow-400">Rating: {typeof d.rating === 'string' ? parseFloat(d.rating).toFixed(1) : d.rating?.toFixed(1)}</p>
+                </div>
+            </div>
+        );
+    }
+    return null;
+};
 
 const MODES = [
     { id: 'xg-goals', label: 'xG vs Goals', description: 'Finishing Efficiency' },
@@ -20,7 +75,7 @@ const MODES = [
     { id: 'wall-mode', label: 'The Wall', description: 'Saves vs Goals Prevented' },
 ] as const;
 
-export default function EfficiencyScatter({ matches, playerName, position }: EfficiencyScatterProps) {
+export default function EfficiencyScatter({ matches, position }: EfficiencyScatterProps) {
     const getDefaultMode = (): ChartMode => {
         const p = (position || 'FWD').toUpperCase();
         if (p === 'GK') return 'wall-mode';
@@ -34,12 +89,13 @@ export default function EfficiencyScatter({ matches, playerName, position }: Eff
 
     const getData = () => {
         return matches
-            .map((m, i) => {
+            .map((m) => {
+                const ratingValue = m.fbiRating || m.rating || 0;
                 const base = {
                     opponent: m.opponent,
                     date: m.date,
-                    rating: m.fbiRating || m.rating,
-                    size: (m.fbiRating || m.rating) > 8 ? 150 : 80,
+                    rating: ratingValue,
+                    size: ratingValue > 8 ? 150 : 80,
                 };
 
                 if (mode === 'xg-goals') {
@@ -76,29 +132,7 @@ export default function EfficiencyScatter({ matches, playerName, position }: Eff
     // Only calculate overperformance for xG vs Goals
     const overperformance = mode === 'xg-goals' ? totalY - totalX : 0;
 
-    const CustomTooltip = ({ active, payload }: any) => {
-        if (active && payload && payload.length) {
-            const d = payload[0].payload;
-            return (
-                <div className="bg-black text-white p-3 border-2 border-white shadow-lg z-50">
-                    <p className=" text-sm" style={{ fontFamily: "var(--font-bangers)" }}>vs {d.opponent}</p>
-                    <p className="font-mono text-xs text-gray-400">{d.date}</p>
-                    <div className="mt-2 space-y-1">
-                        <p className="font-mono text-sm">
-                            {mode === 'xg-goals' && `xG: ${d.x?.toFixed(2)} → Goals: ${d.y}`}
-                            {mode === 'threat-gen' && `xG: ${d.x?.toFixed(2)} / xA: ${d.y?.toFixed(2)}`}
-                            {mode === 'warrior-stats' && `Duels: ${d.x} / Recovs: ${d.y}`}
-                            {mode === 'ball-carrying' && `Dribbles: ${d.x} / Box: ${d.y}`}
-                            {mode === 'progression' && `Passes Final 3rd: ${d.x} / Recovs: ${d.y}`}
-                            {mode === 'wall-mode' && `Saves: ${d.x} / Prev: ${d.y?.toFixed(2)}`}
-                        </p>
-                        <p className="font-mono text-xs text-yellow-400">Rating: {typeof d.rating === 'string' ? parseFloat(d.rating).toFixed(1) : d.rating?.toFixed(1)}</p>
-                    </div>
-                </div>
-            );
-        }
-        return null;
-    };
+
 
     const getAxisLabels = () => {
         switch (mode) {
@@ -173,7 +207,7 @@ export default function EfficiencyScatter({ matches, playerName, position }: Eff
                                 strokeWidth={2}
                             />
                         )}
-                        <Tooltip content={<CustomTooltip />} cursor={{ strokeDasharray: '3 3' }} />
+                        <Tooltip content={<CustomTooltip mode={mode} />} cursor={{ strokeDasharray: '3:3' }} />
                         <Scatter
                             data={data}
                             fill="#ef4444"

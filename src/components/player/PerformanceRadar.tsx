@@ -58,6 +58,30 @@ interface PerformanceRadarProps {
     activeSet?: MetricSet; // Now optional/controlled
 }
 
+interface CustomTooltipProps {
+    active?: boolean;
+    payload?: Array<{
+        payload: {
+            metric: string;
+            raw: string | number | undefined;
+            value: number;
+        };
+    }>;
+}
+
+const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
+    if (active && payload && payload.length) {
+        const data = payload[0].payload;
+        return (
+            <div className="bg-black text-white px-3 py-2 border-2 border-white shadow-lg">
+                <p className=" text-sm" style={{ fontFamily: "var(--font-bangers)" }}>{data.metric}</p>
+                <p className="font-mono text-lg font-bold">{data.raw || '0'}</p>
+            </div>
+        );
+    }
+    return null;
+};
+
 export default function PerformanceRadar({ stats, position, activeSet }: PerformanceRadarProps) {
     // Normalize position from specific role (e.g. "GK") to category (e.g. "Goalkeeper")
     const effectivePosition = useMemo(() => normalizePosition(position), [position]);
@@ -127,19 +151,7 @@ export default function PerformanceRadar({ stats, position, activeSet }: Perform
     const radarData = getRadarData(currentActiveSet);
     const filteredMetricSets = METRIC_SETS.filter(s => getAvailableSets(effectivePosition).includes(s.id));
 
-    // Custom tooltip for hover
-    const CustomTooltip = ({ active, payload }: any) => {
-        if (active && payload && payload.length) {
-            const data = payload[0].payload;
-            return (
-                <div className="bg-black text-white px-3 py-2 border-2 border-white shadow-lg">
-                    <p className=" text-sm" style={{ fontFamily: "var(--font-bangers)" }}>{data.metric}</p>
-                    <p className="font-mono text-lg font-bold">{data.raw || '0'}</p>
-                </div>
-            );
-        }
-        return null;
-    };
+
 
     return (
         <div className="w-full">

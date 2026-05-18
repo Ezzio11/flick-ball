@@ -1,7 +1,6 @@
 
 import ComparisonContent from './ComparisonContent';
 import { fetchAllMatches } from '@/lib/dataFetcher';
-import { getAllPlayers } from '@/lib/playerHelpers';
 
 // Enable ISR
 export const revalidate = 3600;

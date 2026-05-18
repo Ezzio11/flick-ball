@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Calendar, Trophy, Star, TrendingUp, Grid, List, CircleDot, ArrowUpRight, ClipboardList, ArrowUp, ArrowDown } from 'lucide-react';
+import { Star, TrendingUp, Grid, List, CircleDot, ArrowUpRight, ArrowUp, ArrowDown } from 'lucide-react';
 import FormTimeline from './FormTimeline';
 import MatchDetailModal from './MatchDetailModal';
+import Image from 'next/image';
+import { PlayerMatch } from '@/lib/types';
 
 interface MatchTimelineProps {
-    matches: any[];
+    matches: PlayerMatch[];
     playerName: string;
     playerSlug?: string;
 }
@@ -24,7 +26,7 @@ export default function MatchTimeline({ matches, playerName, playerSlug }: Match
     const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
     // Modal state
-    const [selectedMatch, setSelectedMatch] = useState<any | null>(null);
+    const [selectedMatch, setSelectedMatch] = useState<PlayerMatch | null>(null);
 
     // Handle back button / swipe to close modal
     useEffect(() => {
@@ -37,7 +39,7 @@ export default function MatchTimeline({ matches, playerName, playerSlug }: Match
         return () => window.removeEventListener('popstate', handlePopState);
     }, []);
 
-    const openMatchModal = (match: any) => {
+    const openMatchModal = (match: PlayerMatch) => {
         setSelectedMatch(match);
         // Push state so back button works
         window.history.pushState({ modalOpen: true }, '', window.location.href);
@@ -92,7 +94,7 @@ export default function MatchTimeline({ matches, playerName, playerSlug }: Match
     const aggregateHeatmapData = () => {
         const sourceMatches = matches;
 
-        const grouped: Record<string, any[]> = {};
+        const grouped: Record<string, PlayerMatch[]> = {};
         sourceMatches.forEach(match => {
             let key = '';
             if (heatmapMode === 'opponents') key = match.opponent || 'Unknown';
@@ -106,7 +108,7 @@ export default function MatchTimeline({ matches, playerName, playerSlug }: Match
         const data = Object.entries(grouped).map(([category, categoryMatches]) => {
             const totalMinutes = categoryMatches.reduce((sum, m) => sum + (m.minutes_played || 90), 0);
             const matchesCount = categoryMatches.length;
-            const avgRating = categoryMatches.reduce((sum, m) => sum + (parseFloat(m.fbiRating || m.rating) || 0), 0) / matchesCount;
+            const avgRating = categoryMatches.reduce((sum, m) => sum + (m.fbiRating || parseFloat(String(m.rating)) || 0), 0) / matchesCount;
             const totalGoals = categoryMatches.reduce((sum, m) => sum + (m.goals || 0), 0);
             const totalAssists = categoryMatches.reduce((sum, m) => sum + (m.assists || 0), 0);
             const goalsPer90 = (totalGoals / totalMinutes) * 90;
@@ -282,40 +284,42 @@ export default function MatchTimeline({ matches, playerName, playerSlug }: Match
                                 {/* Stats */}
                                 <div className="flex items-center gap-6">
                                     {/* Player Avatar for Goals/Assists */}
-                                    {(match.goals > 0 || match.assists > 0) && playerSlug && (
+                                    {((match.goals || 0) > 0 || (match.assists || 0) > 0) && playerSlug && (
                                         <div className="hidden sm:block relative w-10 h-10 rounded-full border-2 border-black overflow-hidden shadow-[2px_2px_0_rgba(0,0,0,0.2)] mr-2">
-                                            <img
+                                            <Image
                                                 src={`/images/players/${playerSlug}-profile.webp`}
                                                 alt={playerName}
+                                                width={40}
+                                                height={40}
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
                                     )}
 
                                     <div className="flex items-center gap-2">
-                                        {match.goals > 0 && (
+                                        {(match.goals || 0) > 0 && (
                                             <div className="flex items-center gap-1 bg-green-100 px-2 py-0.5 border border-green-500 rounded-full" title="Goals">
                                                 <CircleDot size={12} className="text-green-700" strokeWidth={3} />
-                                                <span className="font-bold text-green-800">{match.goals}</span>
+                                                <span className="font-bold text-green-800">{(match.goals || 0)}</span>
                                             </div>
                                         )}
-                                        {match.assists > 0 && (
+                                        {(match.assists || 0) > 0 && (
                                             <div className="flex items-center gap-1 bg-blue-100 px-2 py-0.5 border border-blue-500 rounded-full" title="Assists">
                                                 <ArrowUpRight size={12} className="text-blue-700" strokeWidth={3} />
-                                                <span className="font-bold text-blue-800">{match.assists}</span>
+                                                <span className="font-bold text-blue-800">{(match.assists || 0)}</span>
                                             </div>
                                         )}
 
-                                        {(match.fbiRating || (match.rating && parseFloat(match.rating) > 0)) && (
+                                        {(match.fbiRating || (match.rating && parseFloat(String(match.rating)) > 0)) && (
                                             <div className="flex flex-col items-end">
                                                 <div className="flex items-center gap-1">
                                                     <span className="text-[10px] font-bold text-gray-400 font-mono">
                                                         {(match.fbiRating && match.fbiRating > 0) ? "FBI" : "FOTMOB"}
                                                     </span>
-                                                    <span className={`text-xl font-black font-header-main leading-none ${(match.fbiRating || parseFloat(match.rating)) >= 8.0 ? 'text-[#ffed02] drop-shadow-[1px_1px_0_#000] text-stroke-comic-sm' :
-                                                        (match.fbiRating || parseFloat(match.rating)) >= 7.0 ? 'text-[#004d98]' : 'text-gray-500'
+                                                    <span className={`text-xl font-black font-header-main leading-none ${(match.fbiRating || parseFloat(String(match.rating))) >= 8.0 ? 'text-[#ffed02] drop-shadow-[1px_1px_0_#000] text-stroke-comic-sm' :
+                                                        (match.fbiRating || parseFloat(String(match.rating))) >= 7.0 ? 'text-[#004d98]' : 'text-gray-500'
                                                         }`} style={{ fontFamily: "var(--font-bangers)" }}>
-                                                        {((match.fbiRating && match.fbiRating > 0) ? match.fbiRating : parseFloat(match.rating)).toFixed(1)}
+                                                        {((match.fbiRating && match.fbiRating > 0) ? match.fbiRating : parseFloat(String(match.rating))).toFixed(1)}
                                                     </span>
                                                 </div>
                                             </div>

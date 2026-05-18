@@ -5,11 +5,57 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { Sparkles } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 
+interface FormTimelineMatch {
+    date?: string;
+    opponent: string;
+    fbiRating?: number;
+    rating?: string | number;
+    goals?: number;
+    assists?: number;
+    competition?: string;
+    result?: string;
+}
+
 interface FormTimelineProps {
-    matches: any[];
+    matches: FormTimelineMatch[];
     playerName: string;
     minimal?: boolean;
 }
+
+interface CustomTooltipProps {
+    active?: boolean;
+    payload?: Array<{
+        payload: {
+            opponent: string;
+            date?: string;
+            competition: string;
+            ratingSource: string;
+            rating: number;
+            goals: number;
+            assists: number;
+            result: string;
+        };
+    }>;
+}
+
+const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
+    if (active && payload && payload.length) {
+        const d = payload[0].payload;
+        return (
+            <div className="bg-black text-white p-3 border-2 border-yellow-400 shadow-lg max-w-xs">
+                <p className="text-sm font-bold mb-1" style={{ fontFamily: 'var(--font-bangers)' }}>vs {d.opponent}</p>
+                <p className="font-mono text-[10px] text-gray-400 mb-2">{d.date ? format(parseISO(d.date), 'MMM d, yyyy') : 'Unknown'} • {d.competition}</p>
+                <div className="space-y-1 font-mono text-xs">
+                    <p><span className="text-yellow-400">Rating ({d.ratingSource}):</span> {d.rating.toFixed(1)}</p>
+                    <p><span className="text-red-400">Goals:</span> {d.goals}</p>
+                    <p><span className="text-blue-400">Assists:</span> {d.assists}</p>
+                    <p><span className="text-gray-400">Result:</span> {d.result}</p>
+                </div>
+            </div>
+        );
+    }
+    return null;
+};
 
 type TimelineMetric = 'rating' | 'goals' | 'assists' | 'all';
 
@@ -33,7 +79,7 @@ export default function FormTimeline({ matches, playerName, minimal = false }: F
         index: idx + 1,
         date: m.date,
         opponent: m.opponent,
-        rating: (m.fbiRating && m.fbiRating > 0) ? m.fbiRating : (parseFloat(m.rating) || 0),
+        rating: (m.fbiRating && m.fbiRating > 0) ? m.fbiRating : (parseFloat(String(m.rating)) || 0),
         ratingSource: (m.fbiRating && m.fbiRating > 0) ? 'FBI' : 'FOTMOB',
         goals: m.goals || 0,
         assists: m.assists || 0,
@@ -45,24 +91,7 @@ export default function FormTimeline({ matches, playerName, minimal = false }: F
     const avgGoals = data.reduce((sum, d) => sum + d.goals, 0) / data.length;
     const avgAssists = data.reduce((sum, d) => sum + d.assists, 0) / data.length;
 
-    const CustomTooltip = ({ active, payload }: any) => {
-        if (active && payload && payload.length) {
-            const d = payload[0].payload;
-            return (
-                <div className="bg-black text-white p-3 border-2 border-yellow-400 shadow-lg max-w-xs">
-                    <p className="text-sm font-bold mb-1" style={{ fontFamily: 'var(--font-bangers)' }}>vs {d.opponent}</p>
-                    <p className="font-mono text-[10px] text-gray-400 mb-2">{d.date ? format(parseISO(d.date), 'MMM d, yyyy') : 'Unknown'} • {d.competition}</p>
-                    <div className="space-y-1 font-mono text-xs">
-                        <p><span className="text-yellow-400">Rating ({d.ratingSource}):</span> {d.rating.toFixed(1)}</p>
-                        <p><span className="text-red-400">Goals:</span> {d.goals}</p>
-                        <p><span className="text-blue-400">Assists:</span> {d.assists}</p>
-                        <p><span className="text-gray-400">Result:</span> {d.result}</p>
-                    </div>
-                </div>
-            );
-        }
-        return null;
-    };
+
 
     return (
         <div className={minimal ? "bg-white" : "bg-white border-4 border-black shadow-[8px_8px_0_#000]"}>

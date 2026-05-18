@@ -1,12 +1,13 @@
 import { organizeScorersByTime } from '@/lib/matchHelpers';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface GoalTimelineProps {
     scorers: Array<{
         player: string;
         team: string;
         minute: number;
-        assist?: string;
+        assist?: string | null;
     }>;
     isHome: boolean;
     score: string;
@@ -73,15 +74,17 @@ export default function GoalTimeline({ scorers, isHome, score }: GoalTimelinePro
                                                         </div>
                                                         {/* PLAYER AVATAR */}
                                                         <div className="w-12 h-12 rounded-full border-2 border-black overflow-hidden shadow-[2px_2px_0_#000] flex-shrink-0 bg-white">
-                                                            <img
+                                                            <Image
                                                                 src={`/images/players/${slugifiedPlayer}-profile.webp`}
                                                                 alt={scorer.player}
+                                                                width={48}
+                                                                height={48}
                                                                 className="w-full h-full object-cover"
                                                             />
                                                         </div>
                                                         <div className="w-12 h-12 bg-[#ffed02] border-2 border-black flex items-center justify-center flex-shrink-0">
                                                             <span className="text-2xl font-black text-black" style={{ fontFamily: 'var(--font-bangers)' }}>
-                                                                {scorer.minute}'
+                                                                {scorer.minute}&apos;
                                                             </span>
                                                         </div>
                                                     </div>
@@ -105,7 +108,7 @@ export default function GoalTimeline({ scorers, isHome, score }: GoalTimelinePro
                                                     <div className="flex items-center gap-3">
                                                         <div className="w-12 h-12 bg-red-500 border-2 border-black flex items-center justify-center flex-shrink-0">
                                                             <span className="text-2xl font-black text-white" style={{ fontFamily: 'var(--font-bangers)' }}>
-                                                                {scorer.minute}'
+                                                                {scorer.minute}&apos;
                                                             </span>
                                                         </div>
                                                         <div>

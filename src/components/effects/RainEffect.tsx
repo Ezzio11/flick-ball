@@ -21,11 +21,11 @@ class Drop {
         this.pos = [xpos, ypos];
 
         // set drop size based on weighted distribution
-        let sizeRange = Drop.maxSize - Drop.minSize;
+        const sizeRange = Drop.maxSize - Drop.minSize;
         let sizeRandMin = Drop.minSize;
         let sizeRandMax = Drop.maxSize;
 
-        let rand = Math.random();
+        const rand = Math.random();
         if (rand < 0.7) { // small 70%
             sizeRandMin = Drop.minSize;
             sizeRandMax = Drop.minSize + sizeRange / 3;
@@ -55,8 +55,8 @@ class Drop {
 
     // Draw this drop on the given context
     draw(ctx: CanvasRenderingContext2D) {
-        let startPos = this.pos;
-        let endPos = [
+        const startPos = this.pos;
+        const endPos = [
             this.pos[0] + this.size / 2 * Math.cos(this.angle),
             this.pos[1] + this.size
         ];
@@ -71,16 +71,16 @@ class Drop {
 }
 
 function newDrop(winWidth: number, winHeight: number, x?: number, y?: number) {
-    let minX = -winWidth;
-    let maxX = winWidth;
-    let minY = -winHeight;
-    let maxY = 0;
+    const minX = -winWidth;
+    const maxX = winWidth;
+    const minY = -winHeight;
+    const maxY = 0;
 
-    let randX = Math.random() * (maxX - minX) + minX;
-    let randY = Math.random() * (maxY - minY) + minY;
+    const randX = Math.random() * (maxX - minX) + minX;
+    const randY = Math.random() * (maxY - minY) + minY;
 
-    let xPos = x === undefined ? randX - Drop.maxSize : x;
-    let yPos = y === undefined ? randY - Drop.maxSize : y;
+    const xPos = x === undefined ? randX - Drop.maxSize : x;
+    const yPos = y === undefined ? randY - Drop.maxSize : y;
 
     return new Drop(xPos, yPos);
 }
@@ -103,7 +103,7 @@ export default function RainEffect() {
         Drop.totalCount = 512;
         Drop.speed = 1.0;
 
-        let drops: Drop[] = [];
+        const drops: Drop[] = [];
         let winWidth = window.innerWidth;
         let winHeight = window.innerHeight;
 

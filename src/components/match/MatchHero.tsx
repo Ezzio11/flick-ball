@@ -1,4 +1,3 @@
-import { Calendar, MapPin, Trophy, Crown } from 'lucide-react';
 import { MatchData, MatchResult } from '@/lib/matchHelpers';
 import Image from 'next/image';
 
@@ -85,7 +84,7 @@ const MATCH_CONFIGS: Record<string, {
     }
 };
 
-export default function MatchHero({ match, barcelonaGoals, opponentGoals, result, formattedDate }: MatchHeroProps) {
+export default function MatchHero({ match, barcelonaGoals, opponentGoals, formattedDate }: MatchHeroProps) {
     const config = MATCH_CONFIGS[match.id] || {
         atmosphere: 'Match Day',
         background: 'linear-gradient(to bottom, #004d98 0%, #0066cc 100%)'

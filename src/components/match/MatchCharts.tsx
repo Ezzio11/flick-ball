@@ -1,7 +1,7 @@
 "use client";
 
 import { MatchData } from '@/lib/matchHelpers';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface MatchChartsProps {
     match: MatchData;
@@ -107,7 +107,7 @@ export default function MatchCharts({ match }: MatchChartsProps) {
                                         border: '2px solid #000',
                                         fontFamily: 'monospace'
                                     }}
-                                    formatter={(value: any) => {
+                                    formatter={(value: unknown) => {
                                         const val = Number(value);
                                         const total = shotData.reduce((acc, curr) => acc + (curr.value as number), 0);
                                         if (total === 0) return '0%';

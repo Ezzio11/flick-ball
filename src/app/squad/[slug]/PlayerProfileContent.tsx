@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { History as HistoryIcon } from 'lucide-react';
-import { aggregatePlayerStats, getTrendData, enrichPlayerMatches } from '@/lib/playerHelpers';
+import { aggregatePlayerStats, getTrendData } from '@/lib/playerHelpers';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import HeroBanner from '@/components/player/HeroBanner';

@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { getAllPlayers } from '@/lib/playerHelpers';
 import { format } from 'date-fns';
 import { useState } from 'react';
-import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import BackButton from '@/components/ui/BackButton';
 import { Match } from '@/lib/teamStatistics';
+import { EnrichedPlayer } from '@/lib/types';
 
 export default function SquadContent({ matches }: { matches: Match[] }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -84,12 +84,12 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
                                 <div className="bg-black text-white px-3 py-1  text-xl transform rotate-2 inline-block mb-1" style={{ fontFamily: "var(--font-bangers)" }}>
                                     ISS. #25/26
                                 </div>
-                                <p className=" font-bold text-sm" style={{ fontFamily: "var(--font-comic)" }}>Flick's Titans</p>
+                                <p className=" font-bold text-sm" style={{ fontFamily: "var(--font-comic)" }}>Flick&apos;s Titans</p>
                                 <p className=" text-xs text-gray-500 uppercase" style={{ fontFamily: "var(--font-comic)" }}>{format(new Date(), 'MMMM yyyy')}</p>
                             </div>
                         </div>
                         <p className=" text-lg md:text-xl font-bold text-center uppercase tracking-wider text-blue-900" style={{ fontFamily: "var(--font-comic)" }}>
-                            "Total Football. Total Domination. The New Era begins now!"
+                            &quot;Total Football. Total Domination. The New Era begins now!&quot;
                         </p>
                     </div>
                 )}
@@ -116,8 +116,8 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                                     {players
                                         .sort((a, b) => b.appearances - a.appearances) // Sort by appearances descending
-                                        .map((player, index) => (
-                                            <PlayerCard key={player.id} player={player} index={index} category={position} />
+                                        .map((player) => (
+                                            <PlayerCard key={player.id} player={player} />
                                         ))}
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
 }
 
 // Player Card with mobile long-press support
-function PlayerCard({ player, index, category }: { player: any; index: number; category: string }) {
+function PlayerCard({ player }: { player: EnrichedPlayer }) {
     const [touchActive, setTouchActive] = useState(false);
     const [touchTimeout, setTouchTimeout] = useState<NodeJS.Timeout | null>(null);
 

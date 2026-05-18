@@ -3,26 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowLeft, Github, Linkedin, ExternalLink, Sparkles, Zap, Heart, Globe, Home, Users, Swords, Cpu, Trophy, X, ZoomIn } from 'lucide-react';
+import { ArrowLeft, Github, Linkedin, Sparkles, Zap, Heart, Globe, Home, Users, Swords, Cpu, Trophy, X, ZoomIn } from 'lucide-react';
 
 const AboutPage = () => {
     const [selectedImage, setSelectedImage] = useState<{ src: string; caption: string; alt: string } | null>(null);
 
     // Team Members
-    const teamMembers = [
-        {
-            name: "Hansi Flick",
-            role: "Head Coach",
-            image: "/images/flick.webp",
-            quote: "We don't just win. We dominate."
-        },
-        {
-            name: "Xavi Hernandez",
-            role: "The Architect",
-            image: "/images/xavi.webp",
-            quote: "The foundation was laid for this moment."
-        }
-    ];
 
     const journeyImages = [
         { src: '/images/about/raph-profile-clean.webp', caption: 'VOL 1: The Clean Look', alt: 'Early clean design' },
@@ -148,7 +134,7 @@ const AboutPage = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-4 left-4 text-[#ffed02] font-black text-3xl uppercase italic" style={{ fontFamily: 'var(--font-bangers)' }}>
-                                    "WE BALL."
+                                    &quot;WE BALL.&quot;
                                 </div>
                             </div>
                         </div>
@@ -238,7 +224,7 @@ const AboutPage = () => {
                                     <div className="bg-white border-2 border-black p-4 my-4 shadow-[4px_4px_0_rgba(0,0,0,0.2)]">
                                         <h4 className="font-black uppercase text-sm mb-1 text-[#004d98]">The Solution: FBI (FlickBall Index)</h4>
                                         <p className="text-sm">
-                                            A <strong>100% transparent</strong> rating system tailored to Hansi Flick&apos;s system. We weigh high pressing, carries into the final third, and positioning—not just the usual goals & assists.
+                                            A <strong>100% transparent</strong> rating system tailored to Hansi Flick&apos;s system. We weigh high pressing, carries into the final third, and positioning&mdash;not just the usual goals &amp; assists.
                                         </p>
                                     </div>
                                 </div>

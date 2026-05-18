@@ -10,6 +10,7 @@ export interface MatchData {
     competition: string;
     season: string;
     formation?: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     stats?: any;
     scorers?: Array<{
         player: string;
@@ -85,8 +86,8 @@ export function getOpponentXG(match: MatchData): number {
 }
 
 // Organize scorers chronologically
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function organizeScorersByTime(scorers: MatchData['scorers'], isHome: boolean, score: string) {
-    const { barcelonaGoals, opponentGoals } = parseMatchScore(score, isHome);
 
     const safeScorers = scorers || [];
     return safeScorers

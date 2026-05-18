@@ -12,7 +12,7 @@ interface TacticalWarfareProps {
     setPieces: SetPieceStats;
 }
 
-import { Shield, Plane, AlertTriangle, Crosshair } from 'lucide-react';
+import { Shield, Plane, AlertTriangle } from 'lucide-react';
 
 export default function TacticalWarfare({ pressing, duels, setPieces }: TacticalWarfareProps) {
     return (

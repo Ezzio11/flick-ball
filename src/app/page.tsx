@@ -11,8 +11,6 @@ function ComicPanel({
   href,
   className = "",
   children,
-  bgClass = "bg-white",
-  baseShadow = "md",
   diagonal = ""
 }: {
   href: string,
@@ -229,7 +227,7 @@ export default function Home() {
               <div className="absolute inset-0 comic-halftone opacity-10 mix-blend-multiply pointer-events-none"></div>
             </div>
             <div className="absolute bottom-4 right-4 bg-[#a50044] border-3 border-black p-2 shadow-[4px_4px_0_#000] z-20 transform rotate-2">
-              <h2 className="text-xl md:text-2xl font-black text-white uppercase leading-none" style={{ fontFamily: 'var(--font-bangers)' }}>Pedri "Potter"</h2>
+              <h2 className="text-xl md:text-2xl font-black text-white uppercase leading-none" style={{ fontFamily: 'var(--font-bangers)' }}>Pedri &quot;Potter&quot;</h2>
             </div>
           </ComicPanel>
 
