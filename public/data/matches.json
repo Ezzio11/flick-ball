@@ -61,7 +61,7 @@
                 "player": "Hugo Duro",
                 "team": "opponent",
                 "minute": 44,
-                "assist": "Diego Lopez"
+                "assist": "Diego López"
             },
             {
                 "player": "Robert Lewandowski",
@@ -498,7 +498,7 @@
                 "player": "Lamine Yamal",
                 "team": "barca",
                 "minute": 28,
-                "assist": "Marc Casado"
+                "assist": "Marc Casadó"
             },
             {
                 "player": "George Ilenikhena",
@@ -744,10 +744,10 @@
                 "assist": "Pablo Ibánez"
             },
             {
-                "player": "Pau Victor",
+                "player": "Pau Víctor",
                 "team": "barca",
                 "minute": 53,
-                "assist": "Gerard Martin"
+                "assist": "Gerard Martín"
             },
             {
                 "player": "Ante Budimir",
@@ -765,7 +765,7 @@
                 "player": "Lamine Yamal",
                 "team": "barca",
                 "minute": 89,
-                "assist": "Ferran Torres"
+                "assist": "Ferrán Torres"
             }
         ],
         "formation": "4-2-3-1"
@@ -841,7 +841,7 @@
                 "assist": null
             },
             {
-                "player": "Inigo Martinez",
+                "player": "Iñigo Martínez",
                 "team": "barca",
                 "minute": 37,
                 "assist": "Pedri"
@@ -850,7 +850,7 @@
                 "player": "Robert Lewandowski",
                 "team": "barca",
                 "minute": 51,
-                "assist": "Inigo Martinez"
+                "assist": "Iñigo Martínez"
             },
             {
                 "player": "Mohamed Aly Camara",
@@ -864,7 +864,7 @@
     {
         "id": 4506837,
         "date": "2024-10-06T14:15:00Z",
-        "opponent": "Deportivo Alaves",
+        "opponent": "Deportivo Alavés",
         "score": "0 - 3",
         "isHome": false,
         "competition": "LaLiga",
@@ -935,7 +935,7 @@
                 "player": "Robert Lewandowski",
                 "team": "barca",
                 "minute": 32,
-                "assist": "Eric Garcia"
+                "assist": "Eric García"
             }
         ],
         "formation": "4-2-3-1"
@@ -1099,7 +1099,7 @@
                 "player": "Raphinha",
                 "team": "barca",
                 "minute": 1,
-                "assist": "Fermin Lopez"
+                "assist": "Fermín López"
             },
             {
                 "player": "Harry Kane",
@@ -1111,13 +1111,13 @@
                 "player": "Robert Lewandowski",
                 "team": "barca",
                 "minute": 36,
-                "assist": "Fermin Lopez"
+                "assist": "Fermín López"
             },
             {
                 "player": "Raphinha",
                 "team": "barca",
                 "minute": 45,
-                "assist": "Marc Casado"
+                "assist": "Marc Casadó"
             },
             {
                 "player": "Raphinha",
@@ -1357,7 +1357,7 @@
         },
         "scorers": [
             {
-                "player": "Inigo Martinez",
+                "player": "Iñigo Martínez",
                 "team": "barca",
                 "minute": 13,
                 "assist": "Raphinha"
@@ -1366,7 +1366,7 @@
                 "player": "Silas Katompa Mvumpa",
                 "team": "opponent",
                 "minute": 27,
-                "assist": "Rade Krunic"
+                "assist": "Rade Krunić"
             },
             {
                 "player": "Robert Lewandowski",
@@ -1387,7 +1387,7 @@
                 "assist": "Jules Koundé"
             },
             {
-                "player": "Fermin Lopez",
+                "player": "Fermín López",
                 "team": "barca",
                 "minute": 76,
                 "assist": "Jules Koundé"
@@ -1621,7 +1621,7 @@
                 "player": "Dani Olmo",
                 "team": "barca",
                 "minute": 66,
-                "assist": "Gerard Martin"
+                "assist": "Gerard Martín"
             },
             {
                 "player": "Robert Lewandowski",
@@ -1964,19 +1964,19 @@
                 "assist": null
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 75,
-                "assist": "Fermin Lopez"
+                "assist": "Fermín López"
             },
             {
                 "player": "Serhou Guirassy",
                 "team": "opponent",
                 "minute": 78,
-                "assist": "Pascal Gross"
+                "assist": "Pascal Groß"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 85,
                 "assist": "Lamine Yamal"
@@ -2447,7 +2447,7 @@
                 "player": "Vangelis Pavlidis",
                 "team": "opponent",
                 "minute": 2,
-                "assist": "Alvaro Carreras"
+                "assist": "Álvaro Carreras"
             },
             {
                 "player": "Robert Lewandowski",
@@ -2486,7 +2486,7 @@
                 "assist": null
             },
             {
-                "player": "Eric Garcia",
+                "player": "Eric García",
                 "team": "barca",
                 "minute": 86,
                 "assist": "Pedri"
@@ -2495,7 +2495,7 @@
                 "player": "Raphinha",
                 "team": "barca",
                 "minute": 90,
-                "assist": "Ferran Torres"
+                "assist": "Ferrán Torres"
             }
         ],
         "formation": "4-2-3-1"
@@ -2686,7 +2686,7 @@
                 "assist": "Raphinha"
             },
             {
-                "player": "Mario Pasalic",
+                "player": "Mario Pašalić",
                 "team": "opponent",
                 "minute": 79,
                 "assist": "Marten de Roon"
@@ -3898,7 +3898,7 @@
                 "player": "Raphinha",
                 "team": "barca",
                 "minute": 25,
-                "assist": "Pau Cubarsi"
+                "assist": "Pau Cubarsí"
             },
             {
                 "player": "Robert Lewandowski",
@@ -3910,7 +3910,7 @@
                 "player": "Robert Lewandowski",
                 "team": "barca",
                 "minute": 66,
-                "assist": "Fermin Lopez"
+                "assist": "Fermín López"
             },
             {
                 "player": "Lamine Yamal",
@@ -4411,7 +4411,7 @@
                 "assist": null
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 38,
                 "assist": "Raphinha"
@@ -4420,7 +4420,7 @@
                 "player": "Denzel Dumfries",
                 "team": "opponent",
                 "minute": 64,
-                "assist": "Hakan Calhanoglu"
+                "assist": "Hakan Çalhanoglu"
             },
             {
                 "player": "Yann Sommer",
@@ -4569,28 +4569,28 @@
         },
         "scorers": [
             {
-                "player": "Lautaro Martinez",
+                "player": "Lautaro Martínez",
                 "team": "opponent",
                 "minute": 21,
                 "assist": "Denzel Dumfries"
             },
             {
-                "player": "Hakan Calhanoglu",
+                "player": "Hakan Çalhanoglu",
                 "team": "opponent",
                 "minute": 45,
                 "assist": null
             },
             {
-                "player": "Eric Garcia",
+                "player": "Eric García",
                 "team": "barca",
                 "minute": 54,
-                "assist": "Gerard Martin"
+                "assist": "Gerard Martín"
             },
             {
                 "player": "Dani Olmo",
                 "team": "barca",
                 "minute": 60,
-                "assist": "Gerard Martin"
+                "assist": "Gerard Martín"
             },
             {
                 "player": "Raphinha",
@@ -4963,156 +4963,168 @@
         "id": 4837114,
         "date": "2025-08-16T17:30:00.000Z",
         "opponent": "Mallorca",
-        "score": "3 - 0",
-        "isHome": true,
+        "score": "0 - 3",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 76,
-            "xG": "2.73",
+            "possession": 71,
+            "xG": "2.15",
             "totalShots": 24,
-            "shotsOnTarget": 7,
-            "bigChances": 4,
-            "bigChancesMissed": 2,
-            "corners": 12,
-            "fouls": 7,
+            "shotsOnTarget": 8,
+            "bigChances": 1,
+            "bigChancesMissed": 0,
+            "corners": 6,
+            "fouls": 17,
             "accuratePasses": {
-                "value": 705,
-                "percentage": 91
+                "value": 505,
+                "percentage": 89
             },
-            "oppositionHalfPasses": 450,
-            "ownHalfPasses": 255,
-            "touchesInOppBox": 36,
+            "oppositionHalfPasses": 362,
+            "ownHalfPasses": 143,
+            "touchesInOppBox": 43,
             "accurateLongBalls": {
-                "value": 24,
-                "percentage": 62
+                "value": 21,
+                "percentage": 66
             },
             "accurateCrosses": {
-                "value": 1,
-                "percentage": 6
+                "value": 3,
+                "percentage": 30
             },
             "tackles": 15,
-            "interceptions": 8,
-            "blocks": 2,
-            "clearances": 15,
-            "keeperSaves": 4,
-            "shotsOffTarget": 6,
-            "blockedShots": 11,
-            "duelsWon": 44,
+            "interceptions": 7,
+            "blocks": 1,
+            "clearances": 14,
+            "keeperSaves": 1,
+            "shotsOffTarget": 9,
+            "blockedShots": 7,
+            "duelsWon": 43,
             "groundDuelsWon": {
-                "value": 32,
+                "value": 31,
                 "percentage": 51
             },
             "aerialDuelsWon": {
                 "value": 12,
-                "percentage": 50
+                "percentage": 67
             },
             "successfulDribbles": {
                 "value": 8,
-                "percentage": 38
+                "percentage": 50
             },
-            "xGOpenPlay": "1.56",
-            "xGSetPlay": "1.17",
-            "xGOT": "2.49"
+            "xGOpenPlay": "1.99",
+            "xGSetPlay": "0.15",
+            "xGOT": "2.46"
         },
         "scorers": [
             {
-                "player": "Robert Lewandowski",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 29,
-                "assist": "Dani Olmo"
+                "minute": 7,
+                "assist": "Lamine Yamal"
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 23,
+                "assist": null
             },
             {
                 "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 61,
-                "assist": "Dani Olmo"
-            },
-            {
-                "player": "Marc Bernal",
-                "team": "barca",
-                "minute": 83,
-                "assist": "Fermin Lopez"
+                "minute": 90,
+                "assist": "Gavi"
             }
         ],
-        "formation": "4-3-3"
+        "formation": "4-2-3-1"
     },
     {
         "id": 4837124,
         "date": "2025-08-23T19:30:00.000Z",
         "opponent": "Levante",
-        "score": "3 - 0",
-        "isHome": true,
+        "score": "2 - 3",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 73,
-            "xG": "2.88",
-            "totalShots": 22,
-            "shotsOnTarget": 9,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 13,
-            "fouls": 12,
+            "possession": 82,
+            "xG": "1.93",
+            "totalShots": 26,
+            "shotsOnTarget": 10,
+            "bigChances": 3,
+            "bigChancesMissed": 2,
+            "corners": 11,
+            "fouls": 8,
             "accuratePasses": {
-                "value": 728,
-                "percentage": 95
+                "value": 699,
+                "percentage": 92
             },
-            "oppositionHalfPasses": 472,
-            "ownHalfPasses": 256,
-            "touchesInOppBox": 46,
+            "oppositionHalfPasses": 530,
+            "ownHalfPasses": 169,
+            "touchesInOppBox": 60,
             "accurateLongBalls": {
-                "value": 20,
-                "percentage": 71
+                "value": 10,
+                "percentage": 43
             },
             "accurateCrosses": {
-                "value": 5,
-                "percentage": 18
+                "value": 8,
+                "percentage": 27
             },
-            "tackles": 10,
+            "tackles": 11,
             "interceptions": 5,
             "blocks": 1,
-            "clearances": 21,
-            "keeperSaves": 2,
+            "clearances": 12,
+            "keeperSaves": 3,
             "shotsOffTarget": 8,
-            "blockedShots": 5,
-            "duelsWon": 34,
+            "blockedShots": 8,
+            "duelsWon": 46,
             "groundDuelsWon": {
-                "value": 30,
-                "percentage": 47
+                "value": 33,
+                "percentage": 42
             },
             "aerialDuelsWon": {
-                "value": 4,
-                "percentage": 44
+                "value": 13,
+                "percentage": 62
             },
             "successfulDribbles": {
-                "value": 10,
-                "percentage": 48
+                "value": 12,
+                "percentage": 41
             },
-            "xGOpenPlay": "2.49",
-            "xGSetPlay": "0.39",
-            "xGOT": "2.51"
+            "xGOpenPlay": "1.49",
+            "xGSetPlay": "0.44",
+            "xGOT": "2.56"
         },
         "scorers": [
             {
-                "player": "Marc Bernal",
-                "team": "barca",
-                "minute": 4,
-                "assist": "Eric Garcia"
+                "player": "Iván Romero",
+                "team": "opponent",
+                "minute": 15,
+                "assist": "Jeremy Toljan"
             },
             {
-                "player": "Frenkie de Jong",
-                "team": "barca",
-                "minute": 32,
-                "assist": "Joao Cancelo"
+                "player": "José Luis Morales",
+                "team": "opponent",
+                "minute": 45,
+                "assist": null
             },
             {
-                "player": "Fermin Lopez",
+                "player": "Pedri",
                 "team": "barca",
-                "minute": 81,
+                "minute": 49,
                 "assist": "Lamine Yamal"
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 52,
+                "assist": "Raphinha"
+            },
+            {
+                "player": "Unai Elgezabal",
+                "team": "barca",
+                "minute": 90,
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
@@ -5121,65 +5133,71 @@
         "id": 4837136,
         "date": "2025-08-31T19:30:00.000Z",
         "opponent": "Rayo Vallecano",
-        "score": "1 - 0",
-        "isHome": true,
+        "score": "1 - 1",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 61,
-            "xG": "1.39",
-            "totalShots": 15,
-            "shotsOnTarget": 4,
-            "bigChances": 3,
-            "bigChancesMissed": 2,
-            "corners": 6,
-            "fouls": 12,
+            "possession": 57,
+            "xG": "1.82",
+            "totalShots": 12,
+            "shotsOnTarget": 3,
+            "bigChances": 4,
+            "bigChancesMissed": 3,
+            "corners": 4,
+            "fouls": 8,
             "accuratePasses": {
-                "value": 416,
-                "percentage": 86
+                "value": 364,
+                "percentage": 82
             },
-            "oppositionHalfPasses": 193,
-            "ownHalfPasses": 223,
-            "touchesInOppBox": 22,
+            "oppositionHalfPasses": 172,
+            "ownHalfPasses": 192,
+            "touchesInOppBox": 23,
             "accurateLongBalls": {
-                "value": 17,
-                "percentage": 46
+                "value": 12,
+                "percentage": 39
             },
             "accurateCrosses": {
-                "value": 5,
-                "percentage": 33
+                "value": 4,
+                "percentage": 50
             },
-            "tackles": 27,
-            "interceptions": 10,
-            "blocks": 1,
-            "clearances": 28,
-            "keeperSaves": 4,
+            "tackles": 18,
+            "interceptions": 8,
+            "blocks": 3,
+            "clearances": 24,
+            "keeperSaves": 5,
             "shotsOffTarget": 6,
-            "blockedShots": 5,
-            "duelsWon": 64,
+            "blockedShots": 3,
+            "duelsWon": 61,
             "groundDuelsWon": {
-                "value": 53,
-                "percentage": 52
+                "value": 45,
+                "percentage": 59
             },
             "aerialDuelsWon": {
-                "value": 11,
-                "percentage": 65
+                "value": 16,
+                "percentage": 73
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 48
+                "value": 11,
+                "percentage": 50
             },
-            "xGOpenPlay": "1.07",
-            "xGSetPlay": "0.32",
-            "xGOT": "1.76"
+            "xGOpenPlay": "0.83",
+            "xGSetPlay": "0.20",
+            "xGOT": "0.90"
         },
         "scorers": [
             {
-                "player": "Ronald Araujo",
+                "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 24,
-                "assist": "João Cancelo"
+                "minute": 40,
+                "assist": null
+            },
+            {
+                "player": "Fran Pérez",
+                "team": "opponent",
+                "minute": 67,
+                "assist": "Isi Palazón"
             }
         ],
         "formation": "4-2-3-1"
@@ -5285,113 +5303,77 @@
         "id": 4947153,
         "date": "2025-09-18T19:00:00.000Z",
         "opponent": "Newcastle United",
-        "score": "7 - 2",
-        "isHome": true,
+        "score": "1 - 2",
+        "isHome": false,
         "competition": "Champions League Final Stage",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 63,
-            "xG": "4.29",
-            "totalShots": 18,
-            "shotsOnTarget": 13,
-            "bigChances": 10,
-            "bigChancesMissed": 3,
-            "corners": 6,
-            "fouls": 9,
+            "possession": 64,
+            "xG": "1.13",
+            "totalShots": 19,
+            "shotsOnTarget": 5,
+            "bigChances": 1,
+            "bigChancesMissed": 1,
+            "corners": 4,
+            "fouls": 12,
             "accuratePasses": {
-                "value": 401,
-                "percentage": 87
+                "value": 461,
+                "percentage": 85
             },
-            "oppositionHalfPasses": 158,
-            "ownHalfPasses": 243,
-            "touchesInOppBox": 29,
+            "oppositionHalfPasses": 315,
+            "ownHalfPasses": 146,
+            "touchesInOppBox": 38,
             "accurateLongBalls": {
-                "value": 10,
-                "percentage": 36
+                "value": 26,
+                "percentage": 60
             },
             "accurateCrosses": {
-                "value": 5,
-                "percentage": 42
+                "value": 2,
+                "percentage": 22
             },
-            "tackles": 11,
-            "interceptions": 6,
-            "blocks": 1,
-            "clearances": 24,
-            "keeperSaves": 3,
-            "shotsOffTarget": 2,
-            "blockedShots": 3,
-            "duelsWon": 44,
+            "tackles": 18,
+            "interceptions": 13,
+            "blocks": 3,
+            "clearances": 26,
+            "keeperSaves": 5,
+            "shotsOffTarget": 8,
+            "blockedShots": 6,
+            "duelsWon": 52,
             "groundDuelsWon": {
-                "value": 30,
-                "percentage": 57
+                "value": 38,
+                "percentage": 54
             },
             "aerialDuelsWon": {
                 "value": 14,
-                "percentage": 58
+                "percentage": 52
             },
             "successfulDribbles": {
-                "value": 6,
-                "percentage": 50
+                "value": 9,
+                "percentage": 56
             },
-            "xGOpenPlay": "2.92",
-            "xGSetPlay": "0.58",
-            "xGOT": "6.78"
+            "xGOpenPlay": "1.04",
+            "xGSetPlay": "0.09",
+            "xGOT": "1.35"
         },
         "scorers": [
             {
-                "player": "Raphinha",
+                "player": "Marcus Rashford",
                 "team": "barca",
-                "minute": 6,
-                "assist": "Fermín López"
+                "minute": 58,
+                "assist": "Jules Koundé"
             },
             {
-                "player": "Anthony Elanga",
-                "team": "opponent",
-                "minute": 15,
-                "assist": "Lewis Hall"
-            },
-            {
-                "player": "Marc Bernal",
+                "player": "Marcus Rashford",
                 "team": "barca",
-                "minute": 18,
-                "assist": "Gerard Martín"
-            },
-            {
-                "player": "Anthony Elanga",
-                "team": "opponent",
-                "minute": 28,
-                "assist": "Harvey Barnes"
-            },
-            {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 45,
+                "minute": 67,
                 "assist": null
             },
             {
-                "player": "Fermín López",
-                "team": "barca",
-                "minute": 51,
-                "assist": "Raphinha"
-            },
-            {
-                "player": "Robert Lewandowski",
-                "team": "barca",
-                "minute": 56,
-                "assist": "Raphinha"
-            },
-            {
-                "player": "Robert Lewandowski",
-                "team": "barca",
-                "minute": 61,
-                "assist": "Lamine Yamal"
-            },
-            {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 72,
-                "assist": null
+                "player": "Anthony Gordon",
+                "team": "opponent",
+                "minute": 90,
+                "assist": "Jacob Murphy"
             }
         ],
         "formation": "4-2-3-1"
@@ -5400,71 +5382,77 @@
         "id": 4837150,
         "date": "2025-09-21T19:00:00.000Z",
         "opponent": "Getafe",
-        "score": "0 - 2",
-        "isHome": false,
+        "score": "3 - 0",
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 75,
-            "xG": "1.88",
-            "totalShots": 13,
-            "shotsOnTarget": 4,
-            "bigChances": 4,
+            "possession": 71,
+            "xG": "1.98",
+            "totalShots": 16,
+            "shotsOnTarget": 7,
+            "bigChances": 5,
             "bigChancesMissed": 2,
             "corners": 3,
-            "fouls": 8,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 553,
+                "value": 664,
                 "percentage": 90
             },
-            "oppositionHalfPasses": 262,
-            "ownHalfPasses": 291,
-            "touchesInOppBox": 19,
+            "oppositionHalfPasses": 389,
+            "ownHalfPasses": 275,
+            "touchesInOppBox": 22,
             "accurateLongBalls": {
-                "value": 24,
-                "percentage": 63
+                "value": 31,
+                "percentage": 69
             },
             "accurateCrosses": {
-                "value": 7,
+                "value": 1,
+                "percentage": 20
+            },
+            "tackles": 12,
+            "interceptions": 7,
+            "blocks": 0,
+            "clearances": 21,
+            "keeperSaves": 2,
+            "shotsOffTarget": 7,
+            "blockedShots": 2,
+            "duelsWon": 50,
+            "groundDuelsWon": {
+                "value": 37,
                 "percentage": 50
             },
-            "tackles": 16,
-            "interceptions": 3,
-            "blocks": 2,
-            "clearances": 36,
-            "keeperSaves": 0,
-            "shotsOffTarget": 6,
-            "blockedShots": 3,
-            "duelsWon": 61,
-            "groundDuelsWon": {
-                "value": 40,
-                "percentage": 66
-            },
             "aerialDuelsWon": {
-                "value": 21,
-                "percentage": 70
+                "value": 13,
+                "percentage": 59
             },
             "successfulDribbles": {
                 "value": 11,
-                "percentage": 73
+                "percentage": 41
             },
-            "xGOpenPlay": "1.79",
+            "xGOpenPlay": "1.89",
             "xGSetPlay": "0.09",
-            "xGOT": "1.70"
+            "xGOT": "3.33"
         },
         "scorers": [
             {
-                "player": "Fermín López",
+                "player": "Ferrán Torres",
                 "team": "barca",
-                "minute": 45,
-                "assist": "Pedri"
+                "minute": 15,
+                "assist": "Dani Olmo"
             },
             {
-                "player": "Marcus Rashford",
+                "player": "Ferrán Torres",
                 "team": "barca",
-                "minute": 74,
-                "assist": "Robert Lewandowski"
+                "minute": 34,
+                "assist": "Raphinha"
+            },
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 62,
+                "assist": "Marcus Rashford"
             }
         ],
         "formation": "4-2-3-1"
@@ -5473,77 +5461,83 @@
         "id": 4837166,
         "date": "2025-09-25T19:30:00.000Z",
         "opponent": "Real Oviedo",
-        "score": "3 - 0",
-        "isHome": true,
+        "score": "1 - 3",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 73,
-            "xG": "2.09",
-            "totalShots": 15,
-            "shotsOnTarget": 7,
-            "bigChances": 5,
-            "bigChancesMissed": 4,
-            "corners": 10,
-            "fouls": 8,
+            "possession": 80,
+            "xG": "2.07",
+            "totalShots": 22,
+            "shotsOnTarget": 10,
+            "bigChances": 2,
+            "bigChancesMissed": 0,
+            "corners": 9,
+            "fouls": 6,
             "accuratePasses": {
-                "value": 607,
-                "percentage": 90
+                "value": 717,
+                "percentage": 91
             },
-            "oppositionHalfPasses": 259,
-            "ownHalfPasses": 348,
-            "touchesInOppBox": 46,
+            "oppositionHalfPasses": 490,
+            "ownHalfPasses": 227,
+            "touchesInOppBox": 43,
             "accurateLongBalls": {
-                "value": 24,
-                "percentage": 59
+                "value": 17,
+                "percentage": 52
             },
             "accurateCrosses": {
-                "value": 8,
-                "percentage": 40
+                "value": 3,
+                "percentage": 19
             },
-            "tackles": 14,
-            "interceptions": 10,
-            "blocks": 4,
-            "clearances": 14,
-            "keeperSaves": 3,
+            "tackles": 18,
+            "interceptions": 6,
+            "blocks": 3,
+            "clearances": 15,
+            "keeperSaves": 2,
             "shotsOffTarget": 4,
-            "blockedShots": 4,
-            "duelsWon": 43,
+            "blockedShots": 8,
+            "duelsWon": 49,
             "groundDuelsWon": {
-                "value": 34,
-                "percentage": 49
+                "value": 35,
+                "percentage": 53
             },
             "aerialDuelsWon": {
-                "value": 9,
-                "percentage": 64
+                "value": 14,
+                "percentage": 50
             },
             "successfulDribbles": {
-                "value": 4,
-                "percentage": 27
+                "value": 8,
+                "percentage": 44
             },
-            "xGOpenPlay": "1.90",
-            "xGSetPlay": "0.19",
-            "xGOT": "2.77"
+            "xGOpenPlay": "0.86",
+            "xGSetPlay": "1.21",
+            "xGOT": "2.49"
         },
         "scorers": [
             {
-                "player": "Dani Olmo",
-                "team": "barca",
-                "minute": 52,
+                "player": "Alberto Reina",
+                "team": "opponent",
+                "minute": 33,
                 "assist": null
             },
             {
-                "player": "Raphinha",
+                "player": "Eric García",
                 "team": "barca",
-                "minute": 57,
+                "minute": 56,
                 "assist": null
             },
             {
-                "player": "Lamine Yamal",
+                "player": "Robert Lewandowski",
                 "team": "barca",
-                "minute": 73,
-                "assist": "Dani Olmo"
+                "minute": 70,
+                "assist": "Frenkie de Jong"
+            },
+            {
+                "player": "Ronald Araujo",
+                "team": "barca",
+                "minute": 88,
+                "assist": "Marcus Rashford"
             }
         ],
         "formation": "4-2-3-1"
@@ -5553,76 +5547,76 @@
         "date": "2025-09-28T16:30:00.000Z",
         "opponent": "Real Sociedad",
         "score": "2 - 1",
-        "isHome": false,
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 72,
-            "xG": "3.68",
-            "totalShots": 25,
-            "shotsOnTarget": 9,
-            "bigChances": 8,
-            "bigChancesMissed": 7,
-            "corners": 8,
-            "fouls": 8,
+            "possession": 74,
+            "xG": "2.22",
+            "totalShots": 22,
+            "shotsOnTarget": 12,
+            "bigChances": 5,
+            "bigChancesMissed": 4,
+            "corners": 12,
+            "fouls": 6,
             "accuratePasses": {
-                "value": 535,
-                "percentage": 89
+                "value": 684,
+                "percentage": 92
             },
-            "oppositionHalfPasses": 299,
-            "ownHalfPasses": 236,
-            "touchesInOppBox": 54,
+            "oppositionHalfPasses": 475,
+            "ownHalfPasses": 209,
+            "touchesInOppBox": 47,
             "accurateLongBalls": {
-                "value": 27,
-                "percentage": 56
+                "value": 15,
+                "percentage": 44
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 27
+                "value": 5,
+                "percentage": 23
             },
-            "tackles": 15,
-            "interceptions": 6,
-            "blocks": 1,
-            "clearances": 29,
-            "keeperSaves": 3,
-            "shotsOffTarget": 11,
+            "tackles": 12,
+            "interceptions": 2,
+            "blocks": 2,
+            "clearances": 15,
+            "keeperSaves": 1,
+            "shotsOffTarget": 5,
             "blockedShots": 5,
-            "duelsWon": 65,
+            "duelsWon": 59,
             "groundDuelsWon": {
-                "value": 47,
-                "percentage": 58
+                "value": 44,
+                "percentage": 54
             },
             "aerialDuelsWon": {
-                "value": 18,
-                "percentage": 72
+                "value": 15,
+                "percentage": 83
             },
             "successfulDribbles": {
-                "value": 19,
-                "percentage": 73
+                "value": 20,
+                "percentage": 61
             },
-            "xGOpenPlay": "3.52",
-            "xGSetPlay": "0.16",
-            "xGOT": "2.40"
+            "xGOpenPlay": "1.85",
+            "xGSetPlay": "0.36",
+            "xGOT": "1.60"
         },
         "scorers": [
             {
-                "player": "Mikel Oyarzabal",
+                "player": "Álvaro Odriozola",
                 "team": "opponent",
-                "minute": 32,
-                "assist": "Goncalo Guedes"
+                "minute": 31,
+                "assist": "Ander Barrenetxea"
             },
             {
-                "player": "Marcus Rashford",
+                "player": "Jules Koundé",
                 "team": "barca",
-                "minute": 70,
-                "assist": "Lamine Yamal"
+                "minute": 43,
+                "assist": "Marcus Rashford"
             },
             {
-                "player": "Goncalo Guedes",
-                "team": "opponent",
-                "minute": 71,
-                "assist": "Carlos Soler"
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 59,
+                "assist": "Lamine Yamal"
             }
         ],
         "formation": "4-2-3-1"
@@ -5686,7 +5680,7 @@
         },
         "scorers": [
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 19,
                 "assist": "Marcus Rashford"
@@ -5710,101 +5704,89 @@
         "id": 4837185,
         "date": "2025-10-05T14:15:00.000Z",
         "opponent": "Sevilla",
-        "score": "5 - 2",
-        "isHome": true,
+        "score": "4 - 1",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
             "possession": 61,
-            "xG": "3.66",
-            "totalShots": 13,
+            "xG": "2.25",
+            "totalShots": 17,
             "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 3,
-            "corners": 3,
-            "fouls": 5,
+            "bigChances": 5,
+            "bigChancesMissed": 4,
+            "corners": 6,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 550,
-                "percentage": 89
+                "value": 363,
+                "percentage": 85
             },
-            "oppositionHalfPasses": 197,
-            "ownHalfPasses": 353,
-            "touchesInOppBox": 26,
+            "oppositionHalfPasses": 174,
+            "ownHalfPasses": 189,
+            "touchesInOppBox": 30,
             "accurateLongBalls": {
-                "value": 22,
-                "percentage": 54
+                "value": 7,
+                "percentage": 27
             },
             "accurateCrosses": {
-                "value": 3,
-                "percentage": 33
+                "value": 5,
+                "percentage": 36
             },
-            "tackles": 10,
-            "interceptions": 16,
+            "tackles": 19,
+            "interceptions": 4,
             "blocks": 2,
             "clearances": 15,
-            "keeperSaves": 2,
-            "shotsOffTarget": 5,
-            "blockedShots": 0,
-            "duelsWon": 49,
+            "keeperSaves": 1,
+            "shotsOffTarget": 4,
+            "blockedShots": 5,
+            "duelsWon": 56,
             "groundDuelsWon": {
-                "value": 37,
-                "percentage": 58
+                "value": 45,
+                "percentage": 60
             },
             "aerialDuelsWon": {
-                "value": 12,
-                "percentage": 52
+                "value": 11,
+                "percentage": 50
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 71
+                "value": 9,
+                "percentage": 60
             },
-            "xGOpenPlay": "1.60",
-            "xGSetPlay": "0.47",
-            "xGOT": "4.39"
+            "xGOpenPlay": "1.35",
+            "xGSetPlay": "0.11",
+            "xGOT": "2.37"
         },
         "scorers": [
             {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 9,
-                "assist": null
-            },
-            {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 21,
-                "assist": null
-            },
-            {
-                "player": "Dani Olmo",
-                "team": "barca",
-                "minute": 38,
-                "assist": null
-            },
-            {
-                "player": "Oso",
+                "player": "Alexis Sánchez",
                 "team": "opponent",
-                "minute": 45,
-                "assist": "Juanlu Sánchez"
-            },
-            {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 51,
-                "assist": "Fermín López"
-            },
-            {
-                "player": "João Cancelo",
-                "team": "barca",
-                "minute": 60,
+                "minute": 13,
                 "assist": null
             },
             {
-                "player": "Djibril Sow",
+                "player": "Isaac Romero",
+                "team": "opponent",
+                "minute": 36,
+                "assist": "Rubén Vargas"
+            },
+            {
+                "player": "Marcus Rashford",
+                "team": "barca",
+                "minute": 45,
+                "assist": "Pedri"
+            },
+            {
+                "player": "José Ángel Carmona",
                 "team": "opponent",
                 "minute": 90,
-                "assist": "Oso"
+                "assist": "Lucien Agoumé"
+            },
+            {
+                "player": "Akor Adams",
+                "team": "opponent",
+                "minute": 90,
+                "assist": "Chidera Ejuke"
             }
         ],
         "formation": "4-2-3-1"
@@ -5814,76 +5796,76 @@
         "date": "2025-10-18T14:15:00.000Z",
         "opponent": "Girona",
         "score": "2 - 1",
-        "isHome": false,
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 71,
-            "xG": "2.72",
+            "possession": 68,
+            "xG": "1.61",
             "totalShots": 27,
-            "shotsOnTarget": 4,
-            "bigChances": 3,
-            "bigChancesMissed": 3,
-            "corners": 7,
-            "fouls": 6,
+            "shotsOnTarget": 9,
+            "bigChances": 2,
+            "bigChancesMissed": 1,
+            "corners": 11,
+            "fouls": 10,
             "accuratePasses": {
-                "value": 667,
-                "percentage": 90
+                "value": 615,
+                "percentage": 92
             },
-            "oppositionHalfPasses": 396,
-            "ownHalfPasses": 271,
-            "touchesInOppBox": 58,
+            "oppositionHalfPasses": 385,
+            "ownHalfPasses": 230,
+            "touchesInOppBox": 42,
             "accurateLongBalls": {
-                "value": 22,
-                "percentage": 65
+                "value": 13,
+                "percentage": 50
             },
             "accurateCrosses": {
-                "value": 11,
-                "percentage": 37
+                "value": 4,
+                "percentage": 14
             },
-            "tackles": 19,
-            "interceptions": 9,
-            "blocks": 1,
+            "tackles": 20,
+            "interceptions": 5,
+            "blocks": 3,
             "clearances": 15,
-            "keeperSaves": 7,
+            "keeperSaves": 3,
             "shotsOffTarget": 12,
-            "blockedShots": 11,
-            "duelsWon": 46,
+            "blockedShots": 6,
+            "duelsWon": 49,
             "groundDuelsWon": {
-                "value": 37,
-                "percentage": 50
+                "value": 39,
+                "percentage": 62
             },
             "aerialDuelsWon": {
-                "value": 9,
-                "percentage": 50
+                "value": 10,
+                "percentage": 40
             },
             "successfulDribbles": {
-                "value": 8,
-                "percentage": 42
+                "value": 12,
+                "percentage": 63
             },
-            "xGOpenPlay": "1.19",
-            "xGSetPlay": "0.74",
-            "xGOT": "1.05"
+            "xGOpenPlay": "1.33",
+            "xGSetPlay": "0.29",
+            "xGOT": "2.28"
         },
         "scorers": [
             {
-                "player": "Pau Cubarsi",
+                "player": "Pedri",
                 "team": "barca",
-                "minute": 59,
-                "assist": "Jules Koundé"
+                "minute": 13,
+                "assist": "Lamine Yamal"
             },
             {
-                "player": "Thomas Lemar",
+                "player": "Axel Witsel",
                 "team": "opponent",
-                "minute": 61,
-                "assist": "Vladyslav Vanat"
+                "minute": 20,
+                "assist": "Arnau Martínez"
             },
             {
-                "player": "Fran Beltrán",
-                "team": "opponent",
-                "minute": 86,
-                "assist": "Joel Roca"
+                "player": "Ronald Araujo",
+                "team": "barca",
+                "minute": 90,
+                "assist": "Frenkie de Jong"
             }
         ],
         "formation": "4-3-3"
@@ -5995,71 +5977,77 @@
         "id": 4837206,
         "date": "2025-10-26T15:15:00.000Z",
         "opponent": "Real Madrid",
-        "score": "2 - 0",
-        "isHome": true,
+        "score": "2 - 1",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 57,
-            "xG": "1.01",
-            "totalShots": 10,
-            "shotsOnTarget": 7,
-            "bigChances": 3,
-            "bigChancesMissed": 2,
+            "possession": 68,
+            "xG": "1.13",
+            "totalShots": 15,
+            "shotsOnTarget": 6,
+            "bigChances": 2,
+            "bigChancesMissed": 1,
             "corners": 4,
-            "fouls": 18,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 486,
-                "percentage": 92
+                "value": 574,
+                "percentage": 90
             },
-            "oppositionHalfPasses": 193,
-            "ownHalfPasses": 293,
-            "touchesInOppBox": 21,
+            "oppositionHalfPasses": 316,
+            "ownHalfPasses": 258,
+            "touchesInOppBox": 17,
             "accurateLongBalls": {
-                "value": 25,
-                "percentage": 69
+                "value": 13,
+                "percentage": 46
             },
             "accurateCrosses": {
-                "value": 1,
-                "percentage": 8
+                "value": 3,
+                "percentage": 38
             },
-            "tackles": 13,
-            "interceptions": 5,
-            "blocks": 1,
-            "clearances": 25,
-            "keeperSaves": 1,
-            "shotsOffTarget": 2,
-            "blockedShots": 1,
-            "duelsWon": 29,
+            "tackles": 20,
+            "interceptions": 7,
+            "blocks": 7,
+            "clearances": 12,
+            "keeperSaves": 9,
+            "shotsOffTarget": 5,
+            "blockedShots": 4,
+            "duelsWon": 46,
             "groundDuelsWon": {
-                "value": 23,
-                "percentage": 39
+                "value": 40,
+                "percentage": 47
             },
             "aerialDuelsWon": {
                 "value": 6,
-                "percentage": 55
+                "percentage": 46
             },
             "successfulDribbles": {
-                "value": 1,
-                "percentage": 14
+                "value": 9,
+                "percentage": 43
             },
-            "xGOpenPlay": "0.87",
-            "xGSetPlay": "0.14",
-            "xGOT": "1.93"
+            "xGOpenPlay": "0.90",
+            "xGSetPlay": "0.24",
+            "xGOT": "1.07"
         },
         "scorers": [
             {
-                "player": "Marcus Rashford",
-                "team": "barca",
-                "minute": 9,
-                "assist": null
+                "player": "Kylian Mbappé",
+                "team": "opponent",
+                "minute": 22,
+                "assist": "Jude Bellingham"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Fermín López",
                 "team": "barca",
-                "minute": 18,
-                "assist": "Dani Olmo"
+                "minute": 38,
+                "assist": "Marcus Rashford"
+            },
+            {
+                "player": "Jude Bellingham",
+                "team": "opponent",
+                "minute": 43,
+                "assist": "Éder Militao"
             }
         ],
         "formation": "4-2-3-1"
@@ -6068,86 +6056,86 @@
         "id": 4837212,
         "date": "2025-11-02T17:30:00.000Z",
         "opponent": "Elche",
-        "score": "1 - 3",
-        "isHome": false,
+        "score": "3 - 1",
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 61,
-            "xG": "6.44",
-            "totalShots": 30,
-            "shotsOnTarget": 8,
-            "bigChances": 13,
-            "bigChancesMissed": 10,
-            "corners": 8,
-            "fouls": 9,
+            "possession": 49,
+            "xG": "1.88",
+            "totalShots": 17,
+            "shotsOnTarget": 5,
+            "bigChances": 5,
+            "bigChancesMissed": 3,
+            "corners": 6,
+            "fouls": 12,
             "accuratePasses": {
-                "value": 473,
-                "percentage": 86
+                "value": 342,
+                "percentage": 83
             },
-            "oppositionHalfPasses": 187,
-            "ownHalfPasses": 286,
-            "touchesInOppBox": 65,
+            "oppositionHalfPasses": 137,
+            "ownHalfPasses": 205,
+            "touchesInOppBox": 34,
             "accurateLongBalls": {
-                "value": 29,
-                "percentage": 59
-            },
-            "accurateCrosses": {
-                "value": 6,
+                "value": 24,
                 "percentage": 50
             },
-            "tackles": 14,
-            "interceptions": 7,
-            "blocks": 1,
-            "clearances": 15,
+            "accurateCrosses": {
+                "value": 4,
+                "percentage": 40
+            },
+            "tackles": 17,
+            "interceptions": 12,
+            "blocks": 2,
+            "clearances": 7,
             "keeperSaves": 2,
-            "shotsOffTarget": 15,
-            "blockedShots": 7,
-            "duelsWon": 54,
+            "shotsOffTarget": 6,
+            "blockedShots": 6,
+            "duelsWon": 51,
             "groundDuelsWon": {
-                "value": 41,
-                "percentage": 58
+                "value": 40,
+                "percentage": 50
             },
             "aerialDuelsWon": {
-                "value": 13,
-                "percentage": 68
+                "value": 11,
+                "percentage": 69
             },
             "successfulDribbles": {
-                "value": 12,
-                "percentage": 71
+                "value": 8,
+                "percentage": 47
             },
-            "xGOpenPlay": "6.14",
-            "xGSetPlay": "0.30",
-            "xGOT": "3.06"
+            "xGOpenPlay": "1.74",
+            "xGSetPlay": "0.14",
+            "xGOT": "2.82"
         },
         "scorers": [
             {
                 "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 6,
-                "assist": "Dani Olmo"
+                "minute": 9,
+                "assist": "Alejandro Balde"
             },
             {
-                "player": "Álvaro Rodriguez",
-                "team": "opponent",
-                "minute": 29,
-                "assist": "Germán Valera"
-            },
-            {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
-                "minute": 40,
-                "assist": "Frenkie de Jong"
+                "minute": 11,
+                "assist": "Fermín López"
+            },
+            {
+                "player": "Rafa Mir",
+                "team": "opponent",
+                "minute": 42,
+                "assist": "Álvaro Núñez"
             },
             {
                 "player": "Marcus Rashford",
                 "team": "barca",
-                "minute": 72,
-                "assist": null
+                "minute": 61,
+                "assist": "Fermín López"
             }
         ],
-        "formation": "4-3-3"
+        "formation": "4-2-3-1"
     },
     {
         "id": 4947147,
@@ -6214,7 +6202,7 @@
                 "assist": "Carlos Forbs"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 8,
                 "assist": "Fermín López"
@@ -6250,132 +6238,180 @@
         "id": 4837226,
         "date": "2025-11-09T20:00:00.000Z",
         "opponent": "Celta Vigo",
-        "score": "1 - 0",
-        "isHome": true,
-        "competition": "LaLiga",
-        "season": "25/26",
-        "stats": {
-            "available": true,
-            "possession": 61,
-            "xG": "1.30",
-            "totalShots": 10,
-            "shotsOnTarget": 3,
-            "bigChances": 2,
-            "bigChancesMissed": 1,
-            "corners": 5,
-            "fouls": 13,
-            "accuratePasses": {
-                "value": 665,
-                "percentage": 94
-            },
-            "oppositionHalfPasses": 360,
-            "ownHalfPasses": 305,
-            "touchesInOppBox": 23,
-            "accurateLongBalls": {
-                "value": 19,
-                "percentage": 54
-            },
-            "accurateCrosses": {
-                "value": 2,
-                "percentage": 15
-            },
-            "tackles": 21,
-            "interceptions": 11,
-            "blocks": 2,
-            "clearances": 19,
-            "keeperSaves": 3,
-            "shotsOffTarget": 5,
-            "blockedShots": 2,
-            "duelsWon": 50,
-            "groundDuelsWon": {
-                "value": 41,
-                "percentage": 51
-            },
-            "aerialDuelsWon": {
-                "value": 9,
-                "percentage": 75
-            },
-            "successfulDribbles": {
-                "value": 10,
-                "percentage": 45
-            },
-            "xGOpenPlay": "0.50",
-            "xGSetPlay": "0.01",
-            "xGOT": "1.13"
-        },
-        "scorers": [
-            {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 40,
-                "assist": null
-            }
-        ],
-        "formation": "4-2-3-1"
-    },
-    {
-        "id": 4837236,
-        "date": "2025-11-22T15:20:00.000Z",
-        "opponent": "Athletic Club",
-        "score": "0 - 1",
+        "score": "2 - 4",
         "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 70,
-            "xG": "0.40",
-            "totalShots": 7,
-            "shotsOnTarget": 2,
-            "bigChances": 1,
-            "bigChancesMissed": 0,
-            "corners": 4,
-            "fouls": 9,
+            "possession": 61,
+            "xG": "3.32",
+            "totalShots": 21,
+            "shotsOnTarget": 9,
+            "bigChances": 6,
+            "bigChancesMissed": 4,
+            "corners": 5,
+            "fouls": 10,
             "accuratePasses": {
-                "value": 586,
-                "percentage": 89
+                "value": 652,
+                "percentage": 91
             },
-            "oppositionHalfPasses": 208,
-            "ownHalfPasses": 378,
-            "touchesInOppBox": 13,
+            "oppositionHalfPasses": 423,
+            "ownHalfPasses": 229,
+            "touchesInOppBox": 37,
             "accurateLongBalls": {
-                "value": 26,
-                "percentage": 48
+                "value": 15,
+                "percentage": 45
             },
             "accurateCrosses": {
-                "value": 2,
-                "percentage": 20
+                "value": 4,
+                "percentage": 36
             },
-            "tackles": 21,
+            "tackles": 15,
             "interceptions": 12,
             "blocks": 1,
-            "clearances": 23,
-            "keeperSaves": 3,
-            "shotsOffTarget": 3,
-            "blockedShots": 2,
-            "duelsWon": 47,
+            "clearances": 15,
+            "keeperSaves": 1,
+            "shotsOffTarget": 4,
+            "blockedShots": 8,
+            "duelsWon": 43,
             "groundDuelsWon": {
-                "value": 41,
-                "percentage": 52
+                "value": 34,
+                "percentage": 47
             },
             "aerialDuelsWon": {
-                "value": 6,
-                "percentage": 50
+                "value": 9,
+                "percentage": 82
             },
             "successfulDribbles": {
-                "value": 9,
-                "percentage": 43
+                "value": 7,
+                "percentage": 32
             },
-            "xGOpenPlay": "0.30",
-            "xGSetPlay": "0.10",
-            "xGOT": "1.07"
+            "xGOpenPlay": "2.23",
+            "xGSetPlay": "0.30",
+            "xGOT": "3.14"
         },
         "scorers": [
             {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 10,
+                "assist": null
+            },
+            {
+                "player": "Sergio Carreira",
+                "team": "opponent",
+                "minute": 11,
+                "assist": "Borja Iglesias"
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 37,
+                "assist": "Marcus Rashford"
+            },
+            {
+                "player": "Borja Iglesias",
+                "team": "opponent",
+                "minute": 43,
+                "assist": "Ferrán Jutglà"
+            },
+            {
                 "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 68,
-                "assist": "Pedri"
+                "minute": 45,
+                "assist": null
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 73,
+                "assist": "Marcus Rashford"
+            }
+        ],
+        "formation": "4-3-3"
+    },
+    {
+        "id": 4837236,
+        "date": "2025-11-22T15:20:00.000Z",
+        "opponent": "Athletic Club",
+        "score": "4 - 0",
+        "isHome": true,
+        "competition": "LaLiga",
+        "season": "25/26",
+        "stats": {
+            "available": true,
+            "possession": 68,
+            "xG": "2.00",
+            "totalShots": 19,
+            "shotsOnTarget": 7,
+            "bigChances": 4,
+            "bigChancesMissed": 1,
+            "corners": 5,
+            "fouls": 9,
+            "accuratePasses": {
+                "value": 619,
+                "percentage": 89
+            },
+            "oppositionHalfPasses": 265,
+            "ownHalfPasses": 354,
+            "touchesInOppBox": 39,
+            "accurateLongBalls": {
+                "value": 17,
+                "percentage": 59
+            },
+            "accurateCrosses": {
+                "value": 1,
+                "percentage": 17
+            },
+            "tackles": 15,
+            "interceptions": 5,
+            "blocks": 3,
+            "clearances": 17,
+            "keeperSaves": 2,
+            "shotsOffTarget": 5,
+            "blockedShots": 7,
+            "duelsWon": 47,
+            "groundDuelsWon": {
+                "value": 35,
+                "percentage": 52
+            },
+            "aerialDuelsWon": {
+                "value": 12,
+                "percentage": 67
+            },
+            "successfulDribbles": {
+                "value": 12,
+                "percentage": 55
+            },
+            "xGOpenPlay": "1.91",
+            "xGSetPlay": "0.08",
+            "xGOT": "1.65"
+        },
+        "scorers": [
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 4,
+                "assist": null
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 45,
+                "assist": "Lamine Yamal"
+            },
+            {
+                "player": "Fermín López",
+                "team": "barca",
+                "minute": 48,
+                "assist": null
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 90,
+                "assist": "Lamine Yamal"
             }
         ],
         "formation": "4-2-3-1"
@@ -6462,66 +6498,84 @@
     {
         "id": 4837246,
         "date": "2025-11-29T15:15:00.000Z",
-        "opponent": "Deportivo Alaves",
-        "score": "1 - 0",
-        "isHome": false,
+        "opponent": "Deportivo Alavés",
+        "score": "3 - 1",
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 77,
-            "xG": "0.60",
-            "totalShots": 8,
-            "shotsOnTarget": 0,
-            "bigChances": 0,
-            "bigChancesMissed": 0,
-            "corners": 4,
-            "fouls": 8,
+            "possession": 69,
+            "xG": "2.23",
+            "totalShots": 18,
+            "shotsOnTarget": 6,
+            "bigChances": 4,
+            "bigChancesMissed": 1,
+            "corners": 5,
+            "fouls": 10,
             "accuratePasses": {
-                "value": 604,
+                "value": 622,
                 "percentage": 89
             },
-            "oppositionHalfPasses": 326,
-            "ownHalfPasses": 278,
-            "touchesInOppBox": 20,
+            "oppositionHalfPasses": 348,
+            "ownHalfPasses": 274,
+            "touchesInOppBox": 34,
             "accurateLongBalls": {
-                "value": 32,
-                "percentage": 65
+                "value": 17,
+                "percentage": 47
             },
             "accurateCrosses": {
                 "value": 3,
-                "percentage": 19
+                "percentage": 30
             },
-            "tackles": 10,
-            "interceptions": 7,
-            "blocks": 3,
-            "clearances": 21,
-            "keeperSaves": 3,
-            "shotsOffTarget": 5,
-            "blockedShots": 3,
-            "duelsWon": 49,
+            "tackles": 25,
+            "interceptions": 5,
+            "blocks": 1,
+            "clearances": 15,
+            "keeperSaves": 1,
+            "shotsOffTarget": 6,
+            "blockedShots": 6,
+            "duelsWon": 70,
             "groundDuelsWon": {
-                "value": 38,
-                "percentage": 58
+                "value": 61,
+                "percentage": 60
             },
             "aerialDuelsWon": {
-                "value": 11,
-                "percentage": 32
+                "value": 9,
+                "percentage": 56
             },
             "successfulDribbles": {
-                "value": 14,
-                "percentage": 61
+                "value": 20,
+                "percentage": 67
             },
-            "xGOpenPlay": "0.50",
-            "xGSetPlay": "0.11",
-            "xGOT": "0.00"
+            "xGOpenPlay": "1.82",
+            "xGSetPlay": "0.41",
+            "xGOT": "2.06"
         },
         "scorers": [
             {
-                "player": "Ibrahim Diabate",
+                "player": "Pablo Ibáñez",
                 "team": "opponent",
-                "minute": 45,
-                "assist": "Antonio Blanco"
+                "minute": 1,
+                "assist": "Víctor Parada"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 8,
+                "assist": "Robert Lewandowski"
+            },
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 26,
+                "assist": "Raphinha"
+            },
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 90,
+                "assist": "Lamine Yamal"
             }
         ],
         "formation": "4-2-3-1"
@@ -6529,78 +6583,84 @@
     {
         "id": 4837294,
         "date": "2025-12-02T20:00:00.000Z",
-        "opponent": "Atletico Madrid",
-        "score": "1 - 2",
-        "isHome": false,
+        "opponent": "Atlético Madrid",
+        "score": "3 - 1",
+        "isHome": true,
         "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 71,
-            "xG": "2.22",
-            "totalShots": 15,
-            "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 4,
-            "fouls": 8,
+            "possession": 58,
+            "xG": "3.60",
+            "totalShots": 19,
+            "shotsOnTarget": 6,
+            "bigChances": 6,
+            "bigChancesMissed": 3,
+            "corners": 5,
+            "fouls": 12,
             "accuratePasses": {
-                "value": 629,
-                "percentage": 90
+                "value": 480,
+                "percentage": 86
             },
-            "oppositionHalfPasses": 380,
-            "ownHalfPasses": 249,
-            "touchesInOppBox": 38,
+            "oppositionHalfPasses": 247,
+            "ownHalfPasses": 233,
+            "touchesInOppBox": 36,
             "accurateLongBalls": {
-                "value": 12,
-                "percentage": 55
+                "value": 25,
+                "percentage": 56
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 32
+                "value": 2,
+                "percentage": 20
             },
-            "tackles": 14,
-            "interceptions": 10,
-            "blocks": 4,
+            "tackles": 18,
+            "interceptions": 9,
+            "blocks": 1,
             "clearances": 29,
-            "keeperSaves": 4,
-            "shotsOffTarget": 3,
+            "keeperSaves": 1,
+            "shotsOffTarget": 9,
             "blockedShots": 4,
-            "duelsWon": 60,
+            "duelsWon": 54,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 49
+                "value": 46,
+                "percentage": 56
             },
             "aerialDuelsWon": {
-                "value": 17,
-                "percentage": 65
+                "value": 8,
+                "percentage": 50
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 47
+                "value": 19,
+                "percentage": 66
             },
-            "xGOpenPlay": "2.15",
-            "xGSetPlay": "0.06",
-            "xGOT": "3.02"
+            "xGOpenPlay": "2.82",
+            "xGSetPlay": "0.00",
+            "xGOT": "3.13"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 4,
-                "assist": "Ferran Torres"
-            },
-            {
-                "player": "Ferran Torres",
-                "team": "barca",
-                "minute": 24,
-                "assist": "Dani Olmo"
-            },
-            {
-                "player": "Ademola Lookman",
+                "player": "Álex Baena",
                 "team": "opponent",
-                "minute": 31,
-                "assist": "Marcos Llorente"
+                "minute": 19,
+                "assist": "Nahuel Molina"
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 26,
+                "assist": "Pedri"
+            },
+            {
+                "player": "Dani Olmo",
+                "team": "barca",
+                "minute": 65,
+                "assist": null
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 90,
+                "assist": "Alejandro Balde"
             }
         ],
         "formation": "4-2-3-1"
@@ -6609,83 +6669,107 @@
         "id": 4837254,
         "date": "2025-12-06T17:30:00.000Z",
         "opponent": "Real Betis",
-        "score": "3 - 1",
-        "isHome": true,
+        "score": "3 - 5",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 63,
-            "xG": "1.12",
-            "totalShots": 15,
-            "shotsOnTarget": 9,
-            "bigChances": 2,
-            "bigChancesMissed": 1,
-            "corners": 6,
-            "fouls": 7,
+            "possession": 62,
+            "xG": "2.83",
+            "totalShots": 16,
+            "shotsOnTarget": 8,
+            "bigChances": 6,
+            "bigChancesMissed": 3,
+            "corners": 7,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 639,
-                "percentage": 91
+                "value": 512,
+                "percentage": 89
             },
-            "oppositionHalfPasses": 269,
-            "ownHalfPasses": 370,
-            "touchesInOppBox": 27,
+            "oppositionHalfPasses": 159,
+            "ownHalfPasses": 353,
+            "touchesInOppBox": 28,
             "accurateLongBalls": {
-                "value": 18,
-                "percentage": 55
+                "value": 12,
+                "percentage": 38
             },
             "accurateCrosses": {
-                "value": 2,
-                "percentage": 17
+                "value": 3,
+                "percentage": 27
             },
-            "tackles": 16,
-            "interceptions": 8,
-            "blocks": 3,
-            "clearances": 10,
-            "keeperSaves": 1,
-            "shotsOffTarget": 5,
-            "blockedShots": 1,
-            "duelsWon": 38,
+            "tackles": 17,
+            "interceptions": 2,
+            "blocks": 5,
+            "clearances": 28,
+            "keeperSaves": 2,
+            "shotsOffTarget": 6,
+            "blockedShots": 2,
+            "duelsWon": 49,
             "groundDuelsWon": {
-                "value": 31,
-                "percentage": 56
+                "value": 39,
+                "percentage": 55
             },
             "aerialDuelsWon": {
-                "value": 7,
-                "percentage": 54
+                "value": 10,
+                "percentage": 59
             },
             "successfulDribbles": {
-                "value": 8,
-                "percentage": 42
+                "value": 9,
+                "percentage": 47
             },
-            "xGOpenPlay": "1.05",
-            "xGSetPlay": "0.07",
-            "xGOT": "1.98"
+            "xGOpenPlay": "1.96",
+            "xGSetPlay": "0.08",
+            "xGOT": "2.26"
         },
         "scorers": [
             {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 28,
-                "assist": null
-            },
-            {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 62,
-                "assist": null
-            },
-            {
-                "player": "Isco",
+                "player": "Antony",
                 "team": "opponent",
-                "minute": 69,
+                "minute": 6,
                 "assist": null
             },
             {
-                "player": "João Cancelo",
+                "player": "Ferrán Torres",
                 "team": "barca",
-                "minute": 74,
+                "minute": 11,
+                "assist": "Jules Koundé"
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 13,
+                "assist": "Roony Bardghji"
+            },
+            {
+                "player": "Roony Bardghji",
+                "team": "barca",
+                "minute": 31,
                 "assist": "Pedri"
+            },
+            {
+                "player": "Ferrán Torres",
+                "team": "barca",
+                "minute": 40,
+                "assist": "Pedri"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 59,
+                "assist": null
+            },
+            {
+                "player": "Diego Llorente",
+                "team": "opponent",
+                "minute": 85,
+                "assist": "Abdessamad Ezzalzouli"
+            },
+            {
+                "player": "Juan Hernández",
+                "team": "opponent",
+                "minute": 90,
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
@@ -6773,77 +6857,71 @@
         "id": 4837262,
         "date": "2025-12-13T17:30:00.000Z",
         "opponent": "Osasuna",
-        "score": "1 - 2",
-        "isHome": false,
+        "score": "2 - 0",
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 70,
-            "xG": "1.29",
-            "totalShots": 13,
-            "shotsOnTarget": 4,
+            "possession": 80,
+            "xG": "2.41",
+            "totalShots": 24,
+            "shotsOnTarget": 7,
             "bigChances": 3,
-            "bigChancesMissed": 1,
-            "corners": 7,
-            "fouls": 10,
+            "bigChancesMissed": 2,
+            "corners": 14,
+            "fouls": 5,
             "accuratePasses": {
-                "value": 593,
-                "percentage": 90
+                "value": 669,
+                "percentage": 91
             },
-            "oppositionHalfPasses": 390,
-            "ownHalfPasses": 203,
-            "touchesInOppBox": 30,
+            "oppositionHalfPasses": 463,
+            "ownHalfPasses": 206,
+            "touchesInOppBox": 49,
             "accurateLongBalls": {
-                "value": 16,
-                "percentage": 48
+                "value": 18,
+                "percentage": 67
             },
             "accurateCrosses": {
-                "value": 4,
-                "percentage": 20
+                "value": 2,
+                "percentage": 8
             },
-            "tackles": 22,
-            "interceptions": 7,
-            "blocks": 1,
-            "clearances": 31,
-            "keeperSaves": 3,
-            "shotsOffTarget": 6,
-            "blockedShots": 3,
-            "duelsWon": 48,
+            "tackles": 12,
+            "interceptions": 12,
+            "blocks": 0,
+            "clearances": 5,
+            "keeperSaves": 2,
+            "shotsOffTarget": 10,
+            "blockedShots": 7,
+            "duelsWon": 35,
             "groundDuelsWon": {
-                "value": 35,
-                "percentage": 51
+                "value": 29,
+                "percentage": 57
             },
             "aerialDuelsWon": {
-                "value": 13,
-                "percentage": 50
+                "value": 6,
+                "percentage": 32
             },
             "successfulDribbles": {
-                "value": 6,
-                "percentage": 50
+                "value": 9,
+                "percentage": 53
             },
-            "xGOpenPlay": "1.16",
-            "xGSetPlay": "0.13",
-            "xGOT": "1.68"
+            "xGOpenPlay": "2.16",
+            "xGSetPlay": "0.25",
+            "xGOT": "2.03"
         },
         "scorers": [
             {
-                "player": "Robert Lewandowski",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 81,
-                "assist": "Marcus Rashford"
+                "minute": 70,
+                "assist": "Pedri"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Raphinha",
                 "team": "barca",
                 "minute": 86,
-                "assist": "Fermín López"
-            },
-            {
-                "player": "Raúl García",
-                "team": "opponent",
-                "minute": 88,
-                "assist": "Abel Bretones"
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
@@ -6851,7 +6929,7 @@
     {
         "id": 5091468,
         "date": "2025-12-16T20:30:00.000Z",
-        "opponent": "Guadalajara",
+        "opponent": "CD Guadalajara",
         "score": "0 - 2",
         "isHome": false,
         "competition": "Copa del Rey",
@@ -6925,180 +7003,144 @@
         "id": 4837277,
         "date": "2025-12-21T15:15:00.000Z",
         "opponent": "Villarreal",
-        "score": "4 - 1",
-        "isHome": true,
+        "score": "0 - 2",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 74,
-            "xG": "3.20",
+            "possession": 80,
+            "xG": "2.72",
             "totalShots": 19,
-            "shotsOnTarget": 8,
-            "bigChances": 6,
-            "bigChancesMissed": 3,
-            "corners": 3,
-            "fouls": 11,
+            "shotsOnTarget": 5,
+            "bigChances": 3,
+            "bigChancesMissed": 2,
+            "corners": 10,
+            "fouls": 8,
             "accuratePasses": {
-                "value": 711,
+                "value": 730,
                 "percentage": 91
             },
-            "oppositionHalfPasses": 429,
-            "ownHalfPasses": 282,
-            "touchesInOppBox": 40,
+            "oppositionHalfPasses": 472,
+            "ownHalfPasses": 258,
+            "touchesInOppBox": 51,
             "accurateLongBalls": {
-                "value": 24,
-                "percentage": 71
+                "value": 26,
+                "percentage": 76
             },
             "accurateCrosses": {
-                "value": 1,
-                "percentage": 14
+                "value": 5,
+                "percentage": 31
             },
-            "tackles": 15,
-            "interceptions": 15,
-            "blocks": 2,
-            "clearances": 14,
-            "keeperSaves": 0,
-            "shotsOffTarget": 8,
-            "blockedShots": 3,
-            "duelsWon": 51,
+            "tackles": 13,
+            "interceptions": 6,
+            "blocks": 3,
+            "clearances": 23,
+            "keeperSaves": 5,
+            "shotsOffTarget": 9,
+            "blockedShots": 5,
+            "duelsWon": 54,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 51
+                "value": 39,
+                "percentage": 58
             },
             "aerialDuelsWon": {
-                "value": 8,
-                "percentage": 73
+                "value": 15,
+                "percentage": 65
             },
             "successfulDribbles": {
-                "value": 20,
-                "percentage": 57
+                "value": 16,
+                "percentage": 64
             },
-            "xGOpenPlay": "2.93",
-            "xGSetPlay": "0.27",
-            "xGOT": "2.72"
+            "xGOpenPlay": "1.84",
+            "xGSetPlay": "0.09",
+            "xGOT": "1.81"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 28,
-                "assist": "Fermín López"
+                "minute": 12,
+                "assist": null
             },
             {
                 "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 37,
-                "assist": "Fermín López"
-            },
-            {
-                "player": "Pape Gueye",
-                "team": "opponent",
-                "minute": 49,
-                "assist": "Santiago Mouriño"
-            },
-            {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 69,
-                "assist": "Pedri"
-            },
-            {
-                "player": "Robert Lewandowski",
-                "team": "barca",
-                "minute": 90,
-                "assist": "Jules Koundé"
+                "minute": 63,
+                "assist": "Frenkie de Jong"
             }
         ],
-        "formation": "4-3-3"
+        "formation": "4-2-3-1"
     },
     {
         "id": 4837285,
         "date": "2026-01-03T20:00:00.000Z",
         "opponent": "Espanyol",
-        "score": "4 - 1",
-        "isHome": true,
+        "score": "0 - 2",
+        "isHome": false,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 77,
-            "xG": "2.73",
-            "totalShots": 20,
-            "shotsOnTarget": 10,
-            "bigChances": 4,
-            "bigChancesMissed": 1,
+            "possession": 69,
+            "xG": "1.92",
+            "totalShots": 15,
+            "shotsOnTarget": 6,
+            "bigChances": 5,
+            "bigChancesMissed": 4,
             "corners": 7,
-            "fouls": 10,
+            "fouls": 14,
             "accuratePasses": {
-                "value": 676,
-                "percentage": 93
+                "value": 496,
+                "percentage": 89
             },
-            "oppositionHalfPasses": 311,
-            "ownHalfPasses": 365,
-            "touchesInOppBox": 35,
+            "oppositionHalfPasses": 261,
+            "ownHalfPasses": 235,
+            "touchesInOppBox": 27,
             "accurateLongBalls": {
                 "value": 16,
-                "percentage": 52
+                "percentage": 59
             },
             "accurateCrosses": {
-                "value": 3,
-                "percentage": 23
+                "value": 4,
+                "percentage": 31
             },
-            "tackles": 24,
-            "interceptions": 1,
-            "blocks": 3,
-            "clearances": 21,
-            "keeperSaves": 2,
-            "shotsOffTarget": 6,
+            "tackles": 18,
+            "interceptions": 9,
+            "blocks": 7,
+            "clearances": 19,
+            "keeperSaves": 6,
+            "shotsOffTarget": 5,
             "blockedShots": 4,
-            "duelsWon": 66,
+            "duelsWon": 48,
             "groundDuelsWon": {
-                "value": 55,
-                "percentage": 67
+                "value": 39,
+                "percentage": 50
             },
             "aerialDuelsWon": {
-                "value": 11,
-                "percentage": 65
+                "value": 9,
+                "percentage": 56
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 65
+                "value": 11,
+                "percentage": 48
             },
-            "xGOpenPlay": "2.35",
-            "xGSetPlay": "0.38",
-            "xGOT": "4.03"
+            "xGOpenPlay": "0.76",
+            "xGSetPlay": "1.16",
+            "xGOT": "1.97"
         },
         "scorers": [
             {
-                "player": "Ferran Torres",
+                "player": "Dani Olmo",
                 "team": "barca",
-                "minute": 9,
-                "assist": "Lamine Yamal"
+                "minute": 86,
+                "assist": "Fermín López"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Robert Lewandowski",
                 "team": "barca",
-                "minute": 25,
-                "assist": "Lamine Yamal"
-            },
-            {
-                "player": "Pol Lozano",
-                "team": "opponent",
-                "minute": 56,
-                "assist": null
-            },
-            {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 87,
-                "assist": null
-            },
-            {
-                "player": "Marcus Rashford",
-                "team": "barca",
-                "minute": 89,
-                "assist": "Frenkie de Jong"
+                "minute": 90,
+                "assist": "Fermín López"
             }
         ],
         "formation": "4-2-3-1"
@@ -7107,65 +7149,89 @@
         "id": 4889767,
         "date": "2026-01-07T19:00:00.000Z",
         "opponent": "Athletic Club",
-        "score": "0 - 1",
-        "isHome": false,
+        "score": "5 - 0",
+        "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 70,
-            "xG": "0.40",
-            "totalShots": 7,
-            "shotsOnTarget": 2,
-            "bigChances": 1,
-            "bigChancesMissed": 0,
-            "corners": 4,
-            "fouls": 9,
+            "possession": 79,
+            "xG": "2.04",
+            "totalShots": 13,
+            "shotsOnTarget": 7,
+            "bigChances": 3,
+            "bigChancesMissed": 1,
+            "corners": 5,
+            "fouls": 8,
             "accuratePasses": {
-                "value": 586,
-                "percentage": 89
+                "value": 776,
+                "percentage": 92
             },
-            "oppositionHalfPasses": 208,
-            "ownHalfPasses": 378,
-            "touchesInOppBox": 13,
+            "oppositionHalfPasses": 339,
+            "ownHalfPasses": 437,
+            "touchesInOppBox": 31,
             "accurateLongBalls": {
-                "value": 26,
-                "percentage": 48
+                "value": 20,
+                "percentage": 59
             },
             "accurateCrosses": {
-                "value": 2,
-                "percentage": 20
+                "value": 8,
+                "percentage": 47
             },
-            "tackles": 21,
-            "interceptions": 12,
-            "blocks": 1,
-            "clearances": 23,
+            "tackles": 16,
+            "interceptions": 10,
+            "blocks": 2,
+            "clearances": 22,
             "keeperSaves": 3,
             "shotsOffTarget": 3,
-            "blockedShots": 2,
-            "duelsWon": 47,
+            "blockedShots": 3,
+            "duelsWon": 44,
             "groundDuelsWon": {
-                "value": 41,
-                "percentage": 52
+                "value": 33,
+                "percentage": 53
             },
             "aerialDuelsWon": {
-                "value": 6,
-                "percentage": 50
+                "value": 11,
+                "percentage": 69
             },
             "successfulDribbles": {
-                "value": 9,
-                "percentage": 43
+                "value": 10,
+                "percentage": 53
             },
-            "xGOpenPlay": "0.30",
-            "xGSetPlay": "0.10",
-            "xGOT": "1.07"
+            "xGOpenPlay": "2.04",
+            "xGSetPlay": "0.00",
+            "xGOT": "2.50"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
+                "player": "Ferran Torres",
                 "team": "barca",
-                "minute": 68,
-                "assist": "Pedri"
+                "minute": 22,
+                "assist": "Fermin Lopez"
+            },
+            {
+                "player": "Fermin Lopez",
+                "team": "barca",
+                "minute": 30,
+                "assist": "Raphinha"
+            },
+            {
+                "player": "Roony Bardghji",
+                "team": "barca",
+                "minute": 34,
+                "assist": "Fermin Lopez"
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 38,
+                "assist": "Roony Bardghji"
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 52,
+                "assist": "Roony Bardghji"
             }
         ],
         "formation": "4-2-3-1"
@@ -7174,71 +7240,89 @@
         "id": 5039109,
         "date": "2026-01-11T19:00:00.000Z",
         "opponent": "Real Madrid",
-        "score": "2 - 0",
+        "score": "3 - 2",
         "isHome": true,
         "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 57,
-            "xG": "1.01",
-            "totalShots": 10,
+            "possession": 68,
+            "xG": "2.81",
+            "totalShots": 16,
             "shotsOnTarget": 7,
-            "bigChances": 3,
-            "bigChancesMissed": 2,
-            "corners": 4,
+            "bigChances": 4,
+            "bigChancesMissed": 3,
+            "corners": 5,
             "fouls": 18,
             "accuratePasses": {
-                "value": 486,
+                "value": 609,
                 "percentage": 92
             },
-            "oppositionHalfPasses": 193,
-            "ownHalfPasses": 293,
-            "touchesInOppBox": 21,
+            "oppositionHalfPasses": 373,
+            "ownHalfPasses": 236,
+            "touchesInOppBox": 42,
             "accurateLongBalls": {
-                "value": 25,
-                "percentage": 69
+                "value": 18,
+                "percentage": 64
             },
             "accurateCrosses": {
-                "value": 1,
-                "percentage": 8
+                "value": 4,
+                "percentage": 40
             },
-            "tackles": 13,
-            "interceptions": 5,
+            "tackles": 16,
+            "interceptions": 6,
             "blocks": 1,
-            "clearances": 25,
-            "keeperSaves": 1,
-            "shotsOffTarget": 2,
-            "blockedShots": 1,
-            "duelsWon": 29,
+            "clearances": 24,
+            "keeperSaves": 7,
+            "shotsOffTarget": 5,
+            "blockedShots": 4,
+            "duelsWon": 44,
             "groundDuelsWon": {
-                "value": 23,
-                "percentage": 39
+                "value": 36,
+                "percentage": 43
             },
             "aerialDuelsWon": {
-                "value": 6,
-                "percentage": 55
+                "value": 8,
+                "percentage": 53
             },
             "successfulDribbles": {
-                "value": 1,
-                "percentage": 14
+                "value": 9,
+                "percentage": 50
             },
-            "xGOpenPlay": "0.87",
-            "xGSetPlay": "0.14",
-            "xGOT": "1.93"
+            "xGOpenPlay": "2.51",
+            "xGSetPlay": "0.29",
+            "xGOT": "2.48"
         },
         "scorers": [
             {
-                "player": "Marcus Rashford",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 9,
+                "minute": 36,
+                "assist": "Fermín López"
+            },
+            {
+                "player": "Vinícius Júnior",
+                "team": "opponent",
+                "minute": 45,
+                "assist": "Gonzalo García"
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 45,
+                "assist": "Pedri"
+            },
+            {
+                "player": "Gonzalo García",
+                "team": "opponent",
+                "minute": 45,
                 "assist": null
             },
             {
-                "player": "Ferran Torres",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 18,
-                "assist": "Dani Olmo"
+                "minute": 73,
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
@@ -7371,14 +7455,14 @@
             },
             "xGOpenPlay": "3.52",
             "xGSetPlay": "0.16",
-            "xGOT": "2.40"
+            "xGOT": "2.41"
         },
         "scorers": [
             {
                 "player": "Mikel Oyarzabal",
                 "team": "opponent",
                 "minute": 32,
-                "assist": "Goncalo Guedes"
+                "assist": "Gonçalo Guedes"
             },
             {
                 "player": "Marcus Rashford",
@@ -7387,7 +7471,7 @@
                 "assist": "Lamine Yamal"
             },
             {
-                "player": "Goncalo Guedes",
+                "player": "Gonçalo Guedes",
                 "team": "opponent",
                 "minute": 71,
                 "assist": "Carlos Soler"
@@ -7454,10 +7538,10 @@
         },
         "scorers": [
             {
-                "player": "Vasil Kusej",
+                "player": "Vasil Kušej",
                 "team": "opponent",
                 "minute": 10,
-                "assist": "Tomás Holes"
+                "assist": "Tomás Holeš"
             },
             {
                 "player": "Fermín López",
@@ -7547,7 +7631,7 @@
             },
             "xGOpenPlay": "1.90",
             "xGSetPlay": "0.19",
-            "xGOT": "2.77"
+            "xGOT": "2.73"
         },
         "scorers": [
             {
@@ -7630,7 +7714,7 @@
         },
         "scorers": [
             {
-                "player": "Viktor Dadason",
+                "player": "Viktor Daðason",
                 "team": "opponent",
                 "minute": 4,
                 "assist": "Mohamed Elyounoussi"
@@ -7673,7 +7757,7 @@
         "stats": {
             "available": true,
             "possession": 61,
-            "xG": "6.44",
+            "xG": "6.16",
             "totalShots": 30,
             "shotsOnTarget": 8,
             "bigChances": 13,
@@ -7715,9 +7799,9 @@
                 "value": 12,
                 "percentage": 71
             },
-            "xGOpenPlay": "6.14",
-            "xGSetPlay": "0.30",
-            "xGOT": "3.06"
+            "xGOpenPlay": "5.87",
+            "xGSetPlay": "0.29",
+            "xGOT": "2.81"
         },
         "scorers": [
             {
@@ -7727,13 +7811,13 @@
                 "assist": "Dani Olmo"
             },
             {
-                "player": "Álvaro Rodriguez",
+                "player": "Álvaro Rodríguez",
                 "team": "opponent",
                 "minute": 29,
                 "assist": "Germán Valera"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 40,
                 "assist": "Frenkie de Jong"
@@ -7879,9 +7963,9 @@
                 "value": 8,
                 "percentage": 38
             },
-            "xGOpenPlay": "1.56",
+            "xGOpenPlay": "1.57",
             "xGSetPlay": "1.17",
-            "xGOT": "2.49"
+            "xGOT": "2.51"
         },
         "scorers": [
             {
@@ -7900,7 +7984,7 @@
                 "player": "Marc Bernal",
                 "team": "barca",
                 "minute": 83,
-                "assist": "Fermin Lopez"
+                "assist": "Fermín López"
             }
         ],
         "formation": "4-3-3"
@@ -7909,77 +7993,83 @@
         "id": 5173360,
         "date": "2026-02-12T20:00:00.000Z",
         "opponent": "Atletico Madrid",
-        "score": "1 - 2",
+        "score": "4 - 0",
         "isHome": false,
         "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 71,
-            "xG": "2.22",
-            "totalShots": 15,
-            "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 4,
-            "fouls": 8,
+            "possession": 66,
+            "xG": "1.18",
+            "totalShots": 14,
+            "shotsOnTarget": 4,
+            "bigChances": 2,
+            "bigChancesMissed": 2,
+            "corners": 8,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 629,
-                "percentage": 90
+                "value": 578,
+                "percentage": 89
             },
-            "oppositionHalfPasses": 380,
+            "oppositionHalfPasses": 329,
             "ownHalfPasses": 249,
-            "touchesInOppBox": 38,
+            "touchesInOppBox": 23,
             "accurateLongBalls": {
-                "value": 12,
-                "percentage": 55
+                "value": 19,
+                "percentage": 58
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 32
+                "value": 7,
+                "percentage": 41
             },
-            "tackles": 14,
-            "interceptions": 10,
+            "tackles": 11,
+            "interceptions": 6,
             "blocks": 4,
-            "clearances": 29,
-            "keeperSaves": 4,
-            "shotsOffTarget": 3,
+            "clearances": 12,
+            "keeperSaves": 3,
+            "shotsOffTarget": 6,
             "blockedShots": 4,
-            "duelsWon": 60,
+            "duelsWon": 46,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 49
+                "value": 40,
+                "percentage": 57
             },
             "aerialDuelsWon": {
-                "value": 17,
-                "percentage": 65
+                "value": 6,
+                "percentage": 46
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 47
+                "value": 12,
+                "percentage": 46
             },
-            "xGOpenPlay": "2.15",
-            "xGSetPlay": "0.06",
-            "xGOT": "3.02"
+            "xGOpenPlay": "0.74",
+            "xGSetPlay": "0.44",
+            "xGOT": "1.63"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 4,
-                "assist": "Ferran Torres"
+                "player": "Eric García",
+                "team": "opponent",
+                "minute": 6,
+                "assist": null
             },
             {
-                "player": "Ferran Torres",
-                "team": "barca",
-                "minute": 24,
-                "assist": "Dani Olmo"
+                "player": "Antoine Griezmann",
+                "team": "opponent",
+                "minute": 14,
+                "assist": "Nahuel Molina"
             },
             {
                 "player": "Ademola Lookman",
                 "team": "opponent",
-                "minute": 31,
-                "assist": "Marcos Llorente"
+                "minute": 33,
+                "assist": "Julián Álvarez"
+            },
+            {
+                "player": "Julián Álvarez",
+                "team": "opponent",
+                "minute": 45,
+                "assist": "Ademola Lookman"
             }
         ],
         "formation": "4-2-3-1"
@@ -7995,7 +8085,7 @@
         "stats": {
             "available": true,
             "possession": 71,
-            "xG": "2.72",
+            "xG": "2.71",
             "totalShots": 27,
             "shotsOnTarget": 4,
             "bigChances": 3,
@@ -8043,7 +8133,7 @@
         },
         "scorers": [
             {
-                "player": "Pau Cubarsi",
+                "player": "Pau Cubarsí",
                 "team": "barca",
                 "minute": 59,
                 "assist": "Jules Koundé"
@@ -8118,23 +8208,23 @@
             },
             "xGOpenPlay": "2.49",
             "xGSetPlay": "0.39",
-            "xGOT": "2.51"
+            "xGOT": "2.57"
         },
         "scorers": [
             {
                 "player": "Marc Bernal",
                 "team": "barca",
                 "minute": 4,
-                "assist": "Eric Garcia"
+                "assist": "Eric García"
             },
             {
                 "player": "Frenkie de Jong",
                 "team": "barca",
                 "minute": 32,
-                "assist": "Joao Cancelo"
+                "assist": "João Cancelo"
             },
             {
-                "player": "Fermin Lopez",
+                "player": "Fermín López",
                 "team": "barca",
                 "minute": 81,
                 "assist": "Lamine Yamal"
@@ -8153,7 +8243,7 @@
         "stats": {
             "available": true,
             "possession": 74,
-            "xG": "3.20",
+            "xG": "3.19",
             "totalShots": 19,
             "shotsOnTarget": 8,
             "bigChances": 6,
@@ -8195,9 +8285,9 @@
                 "value": 20,
                 "percentage": 57
             },
-            "xGOpenPlay": "2.93",
+            "xGOpenPlay": "2.92",
             "xGSetPlay": "0.27",
-            "xGOT": "2.72"
+            "xGOT": "2.68"
         },
         "scorers": [
             {
@@ -8237,77 +8327,77 @@
         "id": 5173361,
         "date": "2026-03-03T20:00:00.000Z",
         "opponent": "Atletico Madrid",
-        "score": "1 - 2",
-        "isHome": false,
+        "score": "3 - 0",
+        "isHome": true,
         "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
             "possession": 71,
-            "xG": "2.22",
-            "totalShots": 15,
-            "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 4,
-            "fouls": 8,
+            "xG": "3.22",
+            "totalShots": 21,
+            "shotsOnTarget": 9,
+            "bigChances": 4,
+            "bigChancesMissed": 1,
+            "corners": 15,
+            "fouls": 9,
             "accuratePasses": {
-                "value": 629,
+                "value": 614,
                 "percentage": 90
             },
-            "oppositionHalfPasses": 380,
-            "ownHalfPasses": 249,
-            "touchesInOppBox": 38,
+            "oppositionHalfPasses": 430,
+            "ownHalfPasses": 184,
+            "touchesInOppBox": 39,
             "accurateLongBalls": {
-                "value": 12,
-                "percentage": 55
+                "value": 39,
+                "percentage": 80
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 32
+                "value": 5,
+                "percentage": 11
             },
-            "tackles": 14,
-            "interceptions": 10,
-            "blocks": 4,
-            "clearances": 29,
-            "keeperSaves": 4,
-            "shotsOffTarget": 3,
-            "blockedShots": 4,
-            "duelsWon": 60,
+            "tackles": 23,
+            "interceptions": 4,
+            "blocks": 2,
+            "clearances": 6,
+            "keeperSaves": 2,
+            "shotsOffTarget": 10,
+            "blockedShots": 2,
+            "duelsWon": 68,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 49
+                "value": 55,
+                "percentage": 59
             },
             "aerialDuelsWon": {
-                "value": 17,
-                "percentage": 65
+                "value": 13,
+                "percentage": 62
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 47
+                "value": 25,
+                "percentage": 71
             },
-            "xGOpenPlay": "2.15",
-            "xGSetPlay": "0.06",
-            "xGOT": "3.02"
+            "xGOpenPlay": "1.03",
+            "xGSetPlay": "1.40",
+            "xGOT": "4.46"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
+                "player": "Marc Bernal",
                 "team": "barca",
-                "minute": 4,
-                "assist": "Ferran Torres"
+                "minute": 29,
+                "assist": "Lamine Yamal"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Raphinha",
                 "team": "barca",
-                "minute": 24,
-                "assist": "Dani Olmo"
+                "minute": 45,
+                "assist": null
             },
             {
-                "player": "Ademola Lookman",
-                "team": "opponent",
-                "minute": 31,
-                "assist": "Marcos Llorente"
+                "player": "Marc Bernal",
+                "team": "barca",
+                "minute": 72,
+                "assist": "João Cancelo"
             }
         ],
         "formation": "4-2-3-1"
@@ -8383,112 +8473,70 @@
         "id": 5205733,
         "date": "2026-03-10T20:00:00.000Z",
         "opponent": "Newcastle United",
-        "score": "7 - 2",
-        "isHome": true,
+        "score": "1 - 1",
+        "isHome": false,
         "competition": "Champions League Final Stage",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 63,
-            "xG": "4.29",
-            "totalShots": 18,
-            "shotsOnTarget": 13,
-            "bigChances": 10,
-            "bigChancesMissed": 3,
-            "corners": 6,
+            "possession": 54,
+            "xG": "1.42",
+            "totalShots": 9,
+            "shotsOnTarget": 2,
+            "bigChances": 2,
+            "bigChancesMissed": 1,
+            "corners": 4,
             "fouls": 9,
             "accuratePasses": {
-                "value": 401,
-                "percentage": 87
+                "value": 328,
+                "percentage": 81
             },
-            "oppositionHalfPasses": 158,
-            "ownHalfPasses": 243,
-            "touchesInOppBox": 29,
+            "oppositionHalfPasses": 143,
+            "ownHalfPasses": 185,
+            "touchesInOppBox": 20,
             "accurateLongBalls": {
-                "value": 10,
-                "percentage": 36
+                "value": 16,
+                "percentage": 30
             },
             "accurateCrosses": {
-                "value": 5,
-                "percentage": 42
+                "value": 2,
+                "percentage": 22
             },
-            "tackles": 11,
-            "interceptions": 6,
-            "blocks": 1,
-            "clearances": 24,
-            "keeperSaves": 3,
-            "shotsOffTarget": 2,
-            "blockedShots": 3,
-            "duelsWon": 44,
+            "tackles": 29,
+            "interceptions": 5,
+            "blocks": 7,
+            "clearances": 35,
+            "keeperSaves": 2,
+            "shotsOffTarget": 5,
+            "blockedShots": 2,
+            "duelsWon": 62,
             "groundDuelsWon": {
-                "value": 30,
-                "percentage": 57
+                "value": 50,
+                "percentage": 60
             },
             "aerialDuelsWon": {
-                "value": 14,
-                "percentage": 58
+                "value": 12,
+                "percentage": 43
             },
             "successfulDribbles": {
-                "value": 6,
-                "percentage": 50
+                "value": 8,
+                "percentage": 62
             },
-            "xGOpenPlay": "2.92",
-            "xGSetPlay": "0.58",
-            "xGOT": "6.78"
+            "xGOpenPlay": "0.46",
+            "xGSetPlay": "0.17",
+            "xGOT": "0.82"
         },
         "scorers": [
             {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 6,
-                "assist": "Fermín López"
-            },
-            {
-                "player": "Anthony Elanga",
+                "player": "Harvey Barnes",
                 "team": "opponent",
-                "minute": 15,
-                "assist": "Lewis Hall"
-            },
-            {
-                "player": "Marc Bernal",
-                "team": "barca",
-                "minute": 18,
-                "assist": "Gerard Martín"
-            },
-            {
-                "player": "Anthony Elanga",
-                "team": "opponent",
-                "minute": 28,
-                "assist": "Harvey Barnes"
+                "minute": 86,
+                "assist": "Jacob Murphy"
             },
             {
                 "player": "Lamine Yamal",
                 "team": "barca",
-                "minute": 45,
-                "assist": null
-            },
-            {
-                "player": "Fermín López",
-                "team": "barca",
-                "minute": 51,
-                "assist": "Raphinha"
-            },
-            {
-                "player": "Robert Lewandowski",
-                "team": "barca",
-                "minute": 56,
-                "assist": "Raphinha"
-            },
-            {
-                "player": "Robert Lewandowski",
-                "team": "barca",
-                "minute": 61,
-                "assist": "Lamine Yamal"
-            },
-            {
-                "player": "Raphinha",
-                "team": "barca",
-                "minute": 72,
+                "minute": 90,
                 "assist": null
             }
         ],
@@ -8505,7 +8553,7 @@
         "stats": {
             "available": true,
             "possession": 61,
-            "xG": "3.66",
+            "xG": "3.65",
             "totalShots": 13,
             "shotsOnTarget": 8,
             "bigChances": 7,
@@ -8549,7 +8597,7 @@
             },
             "xGOpenPlay": "1.60",
             "xGSetPlay": "0.47",
-            "xGOT": "4.39"
+            "xGOT": "4.35"
         },
         "scorers": [
             {
@@ -8782,78 +8830,78 @@
     {
         "id": 4837401,
         "date": "2026-04-04T19:00:00.000Z",
-        "opponent": "Atletico Madrid",
+        "opponent": "Atlético Madrid",
         "score": "1 - 2",
         "isHome": false,
         "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 71,
-            "xG": "2.22",
-            "totalShots": 15,
+            "possession": 67,
+            "xG": "2.51",
+            "totalShots": 22,
             "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 4,
-            "fouls": 8,
+            "bigChances": 5,
+            "bigChancesMissed": 3,
+            "corners": 9,
+            "fouls": 11,
             "accuratePasses": {
-                "value": 629,
-                "percentage": 90
+                "value": 579,
+                "percentage": 92
             },
-            "oppositionHalfPasses": 380,
-            "ownHalfPasses": 249,
-            "touchesInOppBox": 38,
+            "oppositionHalfPasses": 358,
+            "ownHalfPasses": 221,
+            "touchesInOppBox": 40,
             "accurateLongBalls": {
-                "value": 12,
-                "percentage": 55
+                "value": 24,
+                "percentage": 67
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 32
+                "value": 3,
+                "percentage": 23
             },
-            "tackles": 14,
-            "interceptions": 10,
-            "blocks": 4,
-            "clearances": 29,
-            "keeperSaves": 4,
-            "shotsOffTarget": 3,
-            "blockedShots": 4,
-            "duelsWon": 60,
+            "tackles": 11,
+            "interceptions": 5,
+            "blocks": 0,
+            "clearances": 15,
+            "keeperSaves": 1,
+            "shotsOffTarget": 7,
+            "blockedShots": 7,
+            "duelsWon": 49,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 49
+                "value": 40,
+                "percentage": 46
             },
             "aerialDuelsWon": {
-                "value": 17,
-                "percentage": 65
+                "value": 9,
+                "percentage": 69
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 47
+                "value": 17,
+                "percentage": 49
             },
-            "xGOpenPlay": "2.15",
-            "xGSetPlay": "0.06",
-            "xGOT": "3.02"
+            "xGOpenPlay": "2.14",
+            "xGSetPlay": "0.37",
+            "xGOT": "2.33"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 4,
-                "assist": "Ferran Torres"
+                "player": "Giuliano Simeone",
+                "team": "opponent",
+                "minute": 39,
+                "assist": "Clément Lenglet"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Marcus Rashford",
                 "team": "barca",
-                "minute": 24,
+                "minute": 42,
                 "assist": "Dani Olmo"
             },
             {
-                "player": "Ademola Lookman",
-                "team": "opponent",
-                "minute": 31,
-                "assist": "Marcos Llorente"
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 87,
+                "assist": null
             }
         ],
         "formation": "4-2-3-1"
@@ -8861,78 +8909,72 @@
     {
         "id": 5205793,
         "date": "2026-04-08T19:00:00.000Z",
-        "opponent": "Atletico Madrid",
-        "score": "1 - 2",
-        "isHome": false,
+        "opponent": "Atlético Madrid",
+        "score": "0 - 2",
+        "isHome": true,
         "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
-            "possession": 71,
-            "xG": "2.22",
-            "totalShots": 15,
-            "shotsOnTarget": 8,
-            "bigChances": 7,
-            "bigChancesMissed": 5,
-            "corners": 4,
-            "fouls": 8,
+            "possession": 58,
+            "xG": "1.10",
+            "totalShots": 18,
+            "shotsOnTarget": 7,
+            "bigChances": 2,
+            "bigChancesMissed": 2,
+            "corners": 7,
+            "fouls": 6,
             "accuratePasses": {
-                "value": 629,
+                "value": 536,
                 "percentage": 90
             },
-            "oppositionHalfPasses": 380,
-            "ownHalfPasses": 249,
-            "touchesInOppBox": 38,
+            "oppositionHalfPasses": 292,
+            "ownHalfPasses": 244,
+            "touchesInOppBox": 41,
             "accurateLongBalls": {
-                "value": 12,
-                "percentage": 55
+                "value": 21,
+                "percentage": 60
             },
             "accurateCrosses": {
-                "value": 6,
-                "percentage": 32
+                "value": 5,
+                "percentage": 38
             },
-            "tackles": 14,
+            "tackles": 11,
             "interceptions": 10,
-            "blocks": 4,
-            "clearances": 29,
-            "keeperSaves": 4,
-            "shotsOffTarget": 3,
+            "blocks": 1,
+            "clearances": 8,
+            "keeperSaves": 1,
+            "shotsOffTarget": 7,
             "blockedShots": 4,
             "duelsWon": 60,
             "groundDuelsWon": {
-                "value": 43,
-                "percentage": 49
+                "value": 48,
+                "percentage": 56
             },
             "aerialDuelsWon": {
-                "value": 17,
-                "percentage": 65
+                "value": 12,
+                "percentage": 80
             },
             "successfulDribbles": {
-                "value": 15,
-                "percentage": 47
+                "value": 21,
+                "percentage": 64
             },
-            "xGOpenPlay": "2.15",
-            "xGSetPlay": "0.06",
-            "xGOT": "3.02"
+            "xGOpenPlay": "0.86",
+            "xGSetPlay": "0.23",
+            "xGOT": "0.77"
         },
         "scorers": [
             {
-                "player": "Lamine Yamal",
-                "team": "barca",
-                "minute": 4,
-                "assist": "Ferran Torres"
-            },
-            {
-                "player": "Ferran Torres",
-                "team": "barca",
-                "minute": 24,
-                "assist": "Dani Olmo"
-            },
-            {
-                "player": "Ademola Lookman",
+                "player": "Julián Álvarez",
                 "team": "opponent",
-                "minute": 31,
-                "assist": "Marcos Llorente"
+                "minute": 45,
+                "assist": null
+            },
+            {
+                "player": "Alexander Sørloth",
+                "team": "opponent",
+                "minute": 70,
+                "assist": "Matteo Ruggeri"
             }
         ],
         "formation": "4-2-3-1"
@@ -8948,7 +8990,7 @@
         "stats": {
             "available": true,
             "possession": 77,
-            "xG": "2.73",
+            "xG": "2.74",
             "totalShots": 20,
             "shotsOnTarget": 10,
             "bigChances": 4,
@@ -8990,19 +9032,19 @@
                 "value": 15,
                 "percentage": 65
             },
-            "xGOpenPlay": "2.35",
+            "xGOpenPlay": "2.36",
             "xGSetPlay": "0.38",
             "xGOT": "4.03"
         },
         "scorers": [
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 9,
                 "assist": "Lamine Yamal"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 25,
                 "assist": "Lamine Yamal"
@@ -9031,7 +9073,7 @@
     {
         "id": 5205794,
         "date": "2026-04-14T19:00:00.000Z",
-        "opponent": "Atletico Madrid",
+        "opponent": "Atlético Madrid",
         "score": "1 - 2",
         "isHome": false,
         "competition": "Champions League",
@@ -9090,10 +9132,10 @@
                 "player": "Lamine Yamal",
                 "team": "barca",
                 "minute": 4,
-                "assist": "Ferran Torres"
+                "assist": "Ferrán Torres"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 24,
                 "assist": "Dani Olmo"
@@ -9162,7 +9204,7 @@
             },
             "xGOpenPlay": "0.50",
             "xGSetPlay": "0.01",
-            "xGOT": "1.13"
+            "xGOT": "1.12"
         },
         "scorers": [
             {
@@ -9185,7 +9227,7 @@
         "stats": {
             "available": true,
             "possession": 75,
-            "xG": "1.88",
+            "xG": "1.79",
             "totalShots": 13,
             "shotsOnTarget": 4,
             "bigChances": 4,
@@ -9193,43 +9235,43 @@
             "corners": 3,
             "fouls": 8,
             "accuratePasses": {
-                "value": 553,
+                "value": 551,
                 "percentage": 90
             },
-            "oppositionHalfPasses": 262,
-            "ownHalfPasses": 291,
+            "oppositionHalfPasses": 261,
+            "ownHalfPasses": 290,
             "touchesInOppBox": 19,
             "accurateLongBalls": {
                 "value": 24,
-                "percentage": 63
+                "percentage": 65
             },
             "accurateCrosses": {
                 "value": 7,
                 "percentage": 50
             },
-            "tackles": 16,
+            "tackles": 15,
             "interceptions": 3,
             "blocks": 2,
-            "clearances": 36,
+            "clearances": 38,
             "keeperSaves": 0,
             "shotsOffTarget": 6,
             "blockedShots": 3,
             "duelsWon": 61,
             "groundDuelsWon": {
                 "value": 40,
-                "percentage": 66
+                "percentage": 65
             },
             "aerialDuelsWon": {
                 "value": 21,
-                "percentage": 70
+                "percentage": 68
             },
             "successfulDribbles": {
-                "value": 11,
-                "percentage": 73
+                "value": 12,
+                "percentage": 80
             },
-            "xGOpenPlay": "1.79",
-            "xGSetPlay": "0.09",
-            "xGOT": "1.70"
+            "xGOpenPlay": "1.70",
+            "xGSetPlay": "0.10",
+            "xGOT": "1.71"
         },
         "scorers": [
             {
@@ -9258,7 +9300,7 @@
         "stats": {
             "available": true,
             "possession": 70,
-            "xG": "1.29",
+            "xG": "1.27",
             "totalShots": 13,
             "shotsOnTarget": 4,
             "bigChances": 3,
@@ -9300,9 +9342,9 @@
                 "value": 6,
                 "percentage": 50
             },
-            "xGOpenPlay": "1.16",
+            "xGOpenPlay": "1.14",
             "xGSetPlay": "0.13",
-            "xGOT": "1.68"
+            "xGOT": "1.64"
         },
         "scorers": [
             {
@@ -9312,7 +9354,7 @@
                 "assist": "Marcus Rashford"
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 86,
                 "assist": "Fermín López"
@@ -9381,7 +9423,7 @@
             },
             "xGOpenPlay": "0.87",
             "xGSetPlay": "0.14",
-            "xGOT": "1.93"
+            "xGOT": "1.94"
         },
         "scorers": [
             {
@@ -9391,7 +9433,7 @@
                 "assist": null
             },
             {
-                "player": "Ferran Torres",
+                "player": "Ferrán Torres",
                 "team": "barca",
                 "minute": 18,
                 "assist": "Dani Olmo"
@@ -9402,7 +9444,7 @@
     {
         "id": 4837460,
         "date": "2026-05-13T19:30:00.000Z",
-        "opponent": "Deportivo Alaves",
+        "opponent": "Deportivo Alavés",
         "score": "1 - 0",
         "isHome": false,
         "competition": "LaLiga",
@@ -9477,7 +9519,7 @@
         "stats": {
             "available": true,
             "possession": 63,
-            "xG": "1.12",
+            "xG": "1.35",
             "totalShots": 15,
             "shotsOnTarget": 9,
             "bigChances": 2,
@@ -9485,31 +9527,31 @@
             "corners": 6,
             "fouls": 7,
             "accuratePasses": {
-                "value": 639,
+                "value": 641,
                 "percentage": 91
             },
-            "oppositionHalfPasses": 269,
-            "ownHalfPasses": 370,
+            "oppositionHalfPasses": 270,
+            "ownHalfPasses": 371,
             "touchesInOppBox": 27,
             "accurateLongBalls": {
-                "value": 18,
-                "percentage": 55
+                "value": 19,
+                "percentage": 59
             },
             "accurateCrosses": {
                 "value": 2,
                 "percentage": 17
             },
-            "tackles": 16,
-            "interceptions": 8,
+            "tackles": 17,
+            "interceptions": 7,
             "blocks": 3,
             "clearances": 10,
             "keeperSaves": 1,
             "shotsOffTarget": 5,
             "blockedShots": 1,
-            "duelsWon": 38,
+            "duelsWon": 39,
             "groundDuelsWon": {
-                "value": 31,
-                "percentage": 56
+                "value": 32,
+                "percentage": 57
             },
             "aerialDuelsWon": {
                 "value": 7,
@@ -9519,9 +9561,9 @@
                 "value": 8,
                 "percentage": 42
             },
-            "xGOpenPlay": "1.05",
-            "xGSetPlay": "0.07",
-            "xGOT": "1.98"
+            "xGOpenPlay": "1.26",
+            "xGSetPlay": "0.09",
+            "xGOT": "1.95"
         },
         "scorers": [
             {

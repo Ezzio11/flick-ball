@@ -10,6 +10,7 @@ import { AggregatedStats } from '@/lib/types';
 import Footer from '@/components/layout/Footer';
 import { Match } from '@/lib/teamStatistics';
 import { Crown, ChevronDown } from 'lucide-react';
+import { positionGroup } from '@/lib/utils';
 import {
     Radar,
     RadarChart,
@@ -121,7 +122,8 @@ export default function ComparisonContent({ params, matches }: { params: Promise
     const player2 = getPlayerBySlug(player2Slug, matches);
 
     // Default Metric Set Logic
-    const getDefaultMetricSet = (p1Pos: string, p2Pos: string): MetricSet => {
+    const getDefaultMetricSet = (pos1: string, pos2: string): MetricSet => {
+        const p1Pos = positionGroup(pos1), p2Pos = positionGroup(pos2);
         if (p1Pos === 'Goalkeeper' || p2Pos === 'Goalkeeper') return 'goalkeeper';
         if (p1Pos === 'Defender' && p2Pos === 'Defender') return 'defensive';
         if (p1Pos === 'Midfielder' || p2Pos === 'Midfielder') return 'creative';

@@ -1,3 +1,4 @@
+import { isTeamIn } from './utils';
 /**
  * Team Statistical Analysis Engine
  * 
@@ -218,7 +219,7 @@ export function calculateTeamStatistics(matches: Match[]): TeamStatistics {
 
     tiers.forEach(tier => {
         const tierOpponents = OPPONENT_TIERS[tier];
-        const tierMatches = matches.filter(m => tierOpponents.includes(m.opponent));
+        const tierMatches = matches.filter(m => isTeamIn(tierOpponents, m.opponent));
         byTier[tier] = calculateSplitStats(tierMatches);
     });
 
@@ -314,9 +315,9 @@ export const OPPONENT_TIERS = {
 };
 
 export function getOpponentStrengthAdjustment(opponent: string): number {
-    if (OPPONENT_TIERS.elite.includes(opponent)) return -0.5;
-    if (OPPONENT_TIERS.strong.includes(opponent)) return -0.3;
-    if (OPPONENT_TIERS.weak.includes(opponent)) return 0.4;
+    if (isTeamIn(OPPONENT_TIERS.elite, opponent)) return -0.5;
+    if (isTeamIn(OPPONENT_TIERS.strong, opponent)) return -0.3;
+    if (isTeamIn(OPPONENT_TIERS.weak, opponent)) return 0.4;
     return 0; // Mid-tier
 }
 
@@ -535,7 +536,7 @@ const BIG_GAME_OPPONENTS = [
  * Get statistics against elite opponents
  */
 export function getBigGameStats(matches: Match[]): BigGameStats {
-    const bigGames = matches.filter(m => BIG_GAME_OPPONENTS.includes(m.opponent));
+    const bigGames = matches.filter(m => isTeamIn(BIG_GAME_OPPONENTS, m.opponent));
 
     let wins = 0;
     let draws = 0;

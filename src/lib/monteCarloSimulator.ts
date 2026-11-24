@@ -9,6 +9,7 @@
  */
 
 import { Match, TeamStatistics, OPPONENT_TIERS } from './teamStatistics';
+import { isTeamIn } from './utils';
 
 export interface SimulationParameters {
     // Attack strength (Using xG for better prediction)
@@ -152,9 +153,9 @@ function randomNormal(): number {
  * Get the tier of an opponent
  */
 function getOpponentTier(opponent: string): keyof typeof OPPONENT_TIERS | 'mid' {
-    if (OPPONENT_TIERS.elite.includes(opponent)) return 'elite';
-    if (OPPONENT_TIERS.strong.includes(opponent)) return 'strong';
-    if (OPPONENT_TIERS.weak.includes(opponent)) return 'weak';
+    if (isTeamIn(OPPONENT_TIERS.elite, opponent)) return 'elite';
+    if (isTeamIn(OPPONENT_TIERS.strong, opponent)) return 'strong';
+    if (isTeamIn(OPPONENT_TIERS.weak, opponent)) return 'weak';
     return 'mid';
 }
 

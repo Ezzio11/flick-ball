@@ -6,7 +6,28 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getMatch, COMPETITION_BLOCKLIST } = require('./fotmob');
+const { getMatch, lineupPositions, SLOT_ROLE, COMPETITION_BLOCKLIST } = require('./fotmob');
+
+/** Most frequent value; ties go to the one seen most recently (matches are date-sorted). */
+function mostCommon(values) {
+    const counts = new Map();
+    values.forEach(v => counts.set(v, (counts.get(v) || 0) + 1));
+    let best = null;
+    values.forEach(v => { if (best === null || counts.get(v) >= counts.get(best)) best = v; });
+    return best;
+}
+
+/**
+ * Position from what the player actually did for Barcelona: their most common
+ * starting slot, if it agrees with their usual broad role; otherwise the broad
+ * role (bench-only players, or a one-off start out of position).
+ */
+function derivePosition(matches, fallback) {
+    const role = mostCommon(matches.map(m => m.lineupRole).filter(Boolean));
+    const slot = mostCommon(matches.map(m => m.lineupPosition).filter(Boolean));
+    if (slot && SLOT_ROLE[slot] === role) return slot;
+    return role || fallback;
+}
 
 const BARCA_ID = 8634;
 const MATCHES_FILE = path.join(__dirname, '../public/data/matches.json');
@@ -50,19 +71,23 @@ async function run() {
         }
     }
 
-    if (!fs.existsSync(MATCHES_FILE)) {
-        console.error("Matches file not found!");
-        return;
-    }
+    if (!fs.existsSync(MATCHES_FILE)) throw new Error(`Matches file not found: ${MATCHES_FILE}`);
     const matches = JSON.parse(fs.readFileSync(MATCHES_FILE, 'utf8'));
     console.log(`Loaded ${matches.length} matches.`);
 
+    // --rebuild: discard every match record (keeping player identity) and rebuild from FotMob.
+    if (process.argv.includes('--rebuild')) Object.values(playersMap).forEach(p => { p.matches = []; });
+    const REFRESH_DAYS = 7; // same window as ingest_data.js: pick up FotMob's post-match revisions
+    const isRecent = (m) => Date.now() - new Date(m.date) < REFRESH_DAYS * 864e5;
+
     const ingested = new Set(Object.values(playersMap).flatMap(p => p.matches.map(m => String(m.matchId))));
+    // Records from before lineup positions were stored get backfilled once.
+    const missingLineup = new Set(Object.values(playersMap).flatMap(p => p.matches.filter(m => !('lineupRole' in m)).map(m => String(m.matchId))));
 
     for (const match of matches) {
         if (!match.id) continue;
         
-        if (COMPETITION_BLOCKLIST.includes(match.competition) || ingested.has(String(match.id))) {
+        if (COMPETITION_BLOCKLIST.includes(match.competition) || (ingested.has(String(match.id)) && !missingLineup.has(String(match.id)) && !isRecent(match))) {
             continue;
         }
 
@@ -70,6 +95,20 @@ async function run() {
 
         try {
             const matchData = await getMatch(match.id);
+
+            // Lineup slot/role for players already holding this match (old records, or
+            // pages whose playerStats is missing): fill independently of playerStats.
+            // Recent match with player stats available: rebuild its records from scratch.
+            if (isRecent(match) && matchData?.content?.playerStats) {
+                Object.values(playersMap).forEach(p => { p.matches = p.matches.filter(m => String(m.matchId) !== String(match.id)); });
+            }
+
+            const lineup = lineupPositions(matchData, BARCA_ID);
+            const noLineup = { lineupPosition: null, lineupRole: null };
+            for (const player of Object.values(playersMap)) {
+                const rec = player.matches.find(m => String(m.matchId) === String(match.id));
+                if (rec) Object.assign(rec, lineup.get(String(player.id)) || noLineup);
+            }
 
             if (!matchData || !matchData.content || !matchData.content.playerStats) {
                 continue;
@@ -95,7 +134,7 @@ async function run() {
                     playerRef = {
                         id: playerId,
                         name: playerName,
-                        position: p.isGoalkeeper ? 'Goalkeeper' : 'Player',
+                        position: p.isGoalkeeper ? 'Goalkeeper' : null, // set by derivePosition below
                         appearances: 0,
                         matches: []
                     };
@@ -103,10 +142,8 @@ async function run() {
                     nameToIdMap[playerName] = playerId;
                 }
 
-                const isMatchIngested = playerRef.matches.some(m => String(m.matchId) === String(match.id));
-                if (isMatchIngested) {
-                    continue;
-                }
+                const existing = playerRef.matches.find(m => String(m.matchId) === String(match.id));
+                if (existing) continue;
 
                 // Normalize opponent and score strings
                 const opponentName = typeof match.opponent === 'object' && match.opponent !== null
@@ -135,6 +172,7 @@ async function run() {
                     result: resultScore,
                     score: resultScore,
                     isHome: match.isHome === undefined ? true : match.isHome,
+                    ...(lineup.get(String(playerId)) || noLineup),
                 };
 
                 if (p.stats) {
@@ -191,6 +229,7 @@ async function run() {
         });
         p.matches = uniqueMatches;
         p.appearances = p.matches.length;
+        p.position = derivePosition(p.matches, p.position || 'Unknown');
         return p;
     });
 
@@ -215,7 +254,9 @@ async function run() {
     console.log(`Saved ${titansData.length} players to ${OUTPUT_FILE}`);
 }
 
-run().catch(err => {
+if (require.main === module) run().catch(err => {
     console.error("FATAL ERROR in run():", err);
     process.exit(1);
 });
+
+module.exports = { derivePosition };

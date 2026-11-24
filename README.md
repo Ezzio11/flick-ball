@@ -27,19 +27,21 @@ FotMob ──► scripts/ingest_data.js ───► public/data/matches.json + 
               └► scripts/ingest_players.js ─► src/lib/titans_data.ts
 ```
 
-- **[`scripts/fotmob.js`](scripts/fotmob.js)** is the only code that talks to FotMob: plain `fetch` with retries, a match-page cache, and the season rule (seasons roll over on Aug 1 UTC).
-- **`ingest_data.js`** collects finished fixtures for the current season (team endpoint) and every past Flick season (league endpoints for LaLiga, UCL, Copa del Rey and Supercopa, which fills any gap from a missed run). It parses each new match and merges it in. Existing matches are never dropped, and friendlies are excluded.
-- **`ingest_players.js`** reads the match list, fetches player stats only for matches it hasn't ingested yet, and appends them to each player's history.
+- **[`scripts/fotmob.js`](scripts/fotmob.js)** is the only code that talks to FotMob: plain `fetch` against its JSON API with retries, a match cache that rejects any payload whose `matchId` isn't the one asked for, the season rule (seasons roll over on Aug 1 UTC), and the lineup position codes.
+- **`ingest_data.js`** collects finished fixtures for the current season (team endpoint) and every past Flick season (league endpoints for LaLiga, UCL, Copa del Rey and Supercopa, which fills any gap from a missed run). It parses each new match and merges it in. Matches from the last 7 days are re-read every run, because FotMob revises xG and other stats after the final whistle. Existing matches are never dropped, and friendlies are excluded.
+- **`ingest_players.js`** reads the match list and adds player stats for new matches (and rebuilds the last 7 days). Each player-match record also stores the lineup slot the player started in (`lineupPosition`, e.g. `LW`) and their broad role (`lineupRole`).
+- **Positions** are derived, never typed by hand: a player's position is their most common starting slot for Barça, if it agrees with their usual role. Otherwise it's the broad role (`Attacker`, `Midfielder`, ...), for bench players or a one-off start out of position. In the app, `positionGroup()` in `src/lib/utils.ts` turns any of these into Goalkeeper/Defender/Midfielder/Forward.
 - **[GitHub Action](.github/workflows/update_stats.yml)** runs both scripts daily at 04:00 UTC and commits any change. Vercel deploys every push to `main`, so that commit is what updates the site.
 
 Run it yourself:
 
 ```bash
 npm run scrape   # both scripts, about 30s with no cache
-npm test         # offline parser tests (node:test, no deps)
+npm test         # offline tests (node:test, no deps)
+node scripts/ingest_players.js --rebuild   # rebuild every player-match record from FotMob (keeps player ids/names)
 ```
 
-If the Action goes red, read its log first. The usual cause is FotMob changing its page or API shape, and the fix belongs in `scripts/fotmob.js` or `parseMatchData` in `ingest_data.js`. The test in `scripts/ingest.test.js` replays a real saved match (`scripts/__fixtures__/`) against the stored record, so parser drift shows up there.
+If the Action goes red, read its log first. The usual cause is FotMob changing its API shape, and the fix belongs in `scripts/fotmob.js` or `parseMatchData` in `ingest_data.js`. The tests in `scripts/ingest.test.js` run the parser and the lineup and position logic against a real saved match (`scripts/__fixtures__/`), so drift shows up there. A warning like `Unknown FotMob slot 59` means FotMob used a lineup slot that isn't in `SLOT_CODES` yet: add it, taking the label from FotMob's `playerData` positions.
 
 ## Running locally
 

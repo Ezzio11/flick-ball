@@ -8,6 +8,7 @@ interface EnrichedMatchData extends MatchData {
     _isFriendly?: boolean;
 }
 import { calculateFBI, Position as FBIPosition, TitanMatch } from './fbi-rating';
+import { positionGroup } from './utils';
 
 // Cross-reference titans player data with ingested match metadata
 export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]): Player {
@@ -99,74 +100,14 @@ export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]
     };
 }
 
-function mapToFBIPosition(fullPosition: string): FBIPosition {
-    // Map specific roles and categorical positions to generic FBI categories
-    const roleMap: Record<string, FBIPosition> = {
-        'GK': 'GK', 'Goalkeeper': 'GK',
-        'CB': 'DEF', 'RB': 'DEF', 'LB': 'DEF', 'RWB': 'DEF', 'LWB': 'DEF', 'Defender': 'DEF',
-        'CDM': 'MID', 'CM': 'MID', 'CAM': 'MID', 'RM': 'MID', 'LM': 'MID', 'Midfielder': 'MID',
-        'ST': 'FWD', 'CF': 'FWD', 'LW': 'FWD', 'RW': 'FWD', 'Attacker': 'FWD', 'Forward': 'FWD', 'Forward ': 'FWD'
-    };
-
-    return roleMap[fullPosition] || 'MID'; // Default fallback
+function mapToFBIPosition(position: string): FBIPosition {
+    return ({ Goalkeeper: 'GK', Defender: 'DEF', Midfielder: 'MID', Forward: 'FWD' } as const)[positionGroup(position)];
 }
 
 // interface definitions removed and moved to types.ts
 
 // interface definitions removed and moved to types.ts
 
-// Position mapping for Barcelona squad
-const PLAYER_POSITIONS: Record<string, string> = {
-    // Goalkeepers
-    'Inaki Pena': 'GK',
-    'Wojciech Szczesny': 'GK',
-    'Marc-Andre ter Stegen': 'GK',
-    'Joan Garcia': 'GK',
-
-    // Defenders
-    'Jules Koundé': 'RB',
-    'Alejandro Balde': 'LB',
-    'Pau Cubarsi': 'CB',
-    'Inigo Martinez': 'CB',
-    'Eric Garcia': 'CB',
-    'Ronald Araujo': 'CB',
-    'Andreas Christensen': 'CB',
-    'Héctor Fort': 'RB',
-    'Gerard Martin': 'LB',
-    'Sergi Dominguez': 'CB',
-    'Andres Cuenca': 'CB',
-
-    // Midfielders
-    'Pedri': 'CM',
-    'Frenkie de Jong': 'CM',
-    'Gavi': 'CM',
-    'Dani Olmo': 'CAM',
-    'Fermin Lopez': 'CAM',
-    'Marc Casado': 'CDM',
-    'Pablo Torre': 'CAM',
-    'Marc Bernal': 'CDM',
-    'Toni Fernandez': 'CAM',
-    'Dro Fernandez': 'CM',
-
-    // Forwards
-    'Robert Lewandowski': 'ST',
-    'Lamine Yamal': 'RW',
-    'Raphinha': 'LW',
-    'Ferran Torres': 'ST',
-    'Ansu Fati': 'LW',
-    'Pau Victor': 'ST',
-    'Marcus Rashford': 'LW',
-    'Roony Bardghji': 'RW',
-    'Jofre Torrents': 'RW',
-    'Daniel Rodriguez': 'LW',
-    'Joao Cancelo': 'RB',
-    'Diego Kochen': 'GK',
-    'Guillermo Fernandez': 'CM',
-};
-
-function getPlayerPosition(name: string): string {
-    return PLAYER_POSITIONS[name] || 'Unknown';
-}
 
 // Convert name to URL-friendly slug
 export function nameToSlug(name: string): string {
@@ -188,11 +129,10 @@ export function getPlayerBySlug(slug: string, matches: EnrichedMatchData[]): Pla
     const enriched = enrichPlayerMatches(player, matches);
     const stats = aggregatePlayerStats(enriched);
     
-    // Inject correct position, slug, and aggregated appearances
+    // Inject slug and aggregated appearances
     return {
         ...enriched,
         appearances: stats.appearances,
-        position: getPlayerPosition(player.name),
         slug: slug  // Add the slug so it's accessible
     };
 }
@@ -205,7 +145,6 @@ export function getAllPlayers(matches: EnrichedMatchData[]): EnrichedPlayer[] {
         return {
             ...enriched,
             appearances: stats.appearances,
-            position: getPlayerPosition(player.name), // Inject correct position
             slug: nameToSlug(player.name),
             goals: stats.totalGoals,
             assists: stats.totalAssists,

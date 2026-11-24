@@ -10,7 +10,7 @@ import Footer from '@/components/layout/Footer';
 import BackButton from '@/components/ui/BackButton';
 import { Match } from '@/lib/teamStatistics';
 import { EnrichedPlayer } from '@/lib/types';
-import { flickSeasons } from '@/lib/utils';
+import { flickSeasons, positionGroup } from '@/lib/utils';
 
 export default function SquadContent({ matches }: { matches: Match[] }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -22,17 +22,11 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
     );
 
     // Map specific roles to broad categories for grouping
-    const roleToCategory: Record<string, string> = {
-        'ST': 'Forward', 'CF': 'Forward', 'LW': 'Forward', 'RW': 'Forward', 'Forward': 'Forward', 'Attacker': 'Forward',
-        'CAM': 'Midfielder', 'CM': 'Midfielder', 'CDM': 'Midfielder', 'RM': 'Midfielder', 'LM': 'Midfielder', 'Midfielder': 'Midfielder',
-        'CB': 'Defender', 'RB': 'Defender', 'LB': 'Defender', 'RWB': 'Defender', 'LWB': 'Defender', 'Defender': 'Defender',
-        'GK': 'Goalkeeper', 'Goalkeeper': 'Goalkeeper'
-    };
 
     // Group players by BROAD position category
     const positionOrder = ['Forward', 'Midfielder', 'Defender', 'Goalkeeper'];
     const playersByPosition = filteredPlayers.reduce((acc, player) => {
-        const category = roleToCategory[player.position] || 'Midfielder'; // Fallback
+        const category = positionGroup(player.position);
 
         if (!acc[category]) {
             acc[category] = [];

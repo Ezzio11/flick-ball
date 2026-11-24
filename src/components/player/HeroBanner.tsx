@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { AggregatedStats } from '@/lib/types';
-import { cn, flickSeasons } from '@/lib/utils';
+import { cn, flickSeasons, positionGroup } from '@/lib/utils';
 import PerformanceRadar, { MetricSet, METRIC_SETS, getDefaultSet, getAvailableSets } from './PerformanceRadar';
 
 interface HeroBannerProps {
@@ -17,10 +17,7 @@ export default function HeroBanner({ name, position, profileImage, stats }: Hero
     const [imageError, setImageError] = useState(false);
 
     // Determine initial category based on position
-    const effectivePosition = (['GK', 'Goalkeeper'].includes(position)) ? 'Goalkeeper' :
-        (['CB', 'RB', 'LB', 'RWB', 'LWB', 'DEF', 'Defender'].includes(position)) ? 'Defender' :
-            (['CDM', 'CM', 'CAM', 'RM', 'LM', 'MID', 'Midfielder'].includes(position)) ? 'Midfielder' :
-                'Forward';
+    const effectivePosition = positionGroup(position);
 
     const defaultCategory = getDefaultSet(effectivePosition);
     const [activeCategory, setActiveCategory] = useState<MetricSet>(defaultCategory);

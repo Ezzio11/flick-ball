@@ -1,3 +1,4 @@
+import { isTeamIn } from './utils';
 /**
  * FlickBall Index (FBI) - Player Rating System
  * 
@@ -259,10 +260,10 @@ function getOpponentDifficulty(match: TitanMatch): number {
     if (competition.includes('Champions League')) return 1.1;
 
     const topOpponents = ['Real Madrid', 'Atletico Madrid', 'Athletic Club', 'Girona'];
-    const midTableOpponents = ['Real Sociedad', 'Villarreal', 'Betis', 'Sevilla', 'Valencia', 'Celta Vigo', 'Osasuna'];
+    const midTableOpponents = ['Real Sociedad', 'Villarreal', 'Real Betis', 'Sevilla', 'Valencia', 'Celta Vigo', 'Osasuna'];
 
-    if (topOpponents.includes(opponent)) return 1.1;
-    if (midTableOpponents.includes(opponent)) return 1.0;
+    if (isTeamIn(topOpponents, opponent)) return 1.1;
+    if (isTeamIn(midTableOpponents, opponent)) return 1.0;
     return 0.9;
 }
 
