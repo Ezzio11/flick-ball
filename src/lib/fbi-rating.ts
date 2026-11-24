@@ -1,4 +1,4 @@
-import { isTeamIn } from './utils';
+import { tierOf } from './opponentData';
 /**
  * FlickBall Index (FBI) - Player Rating System
  * 
@@ -259,12 +259,9 @@ function getOpponentDifficulty(match: TitanMatch): number {
 
     if (competition.includes('Champions League')) return 1.1;
 
-    const topOpponents = ['Real Madrid', 'Atletico Madrid', 'Athletic Club', 'Girona'];
-    const midTableOpponents = ['Real Sociedad', 'Villarreal', 'Real Betis', 'Sevilla', 'Valencia', 'Celta Vigo', 'Osasuna'];
-
-    if (isTeamIn(topOpponents, opponent)) return 1.1;
-    if (isTeamIn(midTableOpponents, opponent)) return 1.0;
-    return 0.9;
+    // Tier from that season's LaLiga table (src/lib/opponents.ts).
+    const tier = tierOf({ opponent, date: match.date, competition });
+    return tier === 'elite' ? 1.1 : tier === 'weak' ? 0.9 : 1.0;
 }
 
 function getResultModifier(match: TitanMatch): number {

@@ -10,6 +10,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "1",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -89,6 +90,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -168,6 +170,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "3",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -247,6 +250,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "7 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "4",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -350,6 +354,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "5",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -441,6 +446,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -520,6 +526,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "6",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -617,6 +624,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "7",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -684,6 +692,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "8",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -781,6 +790,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 0",
         "isHome": true,
         "competition": "Champions League",
+        "round": "2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -872,6 +882,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "9",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -951,6 +962,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "10",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1048,6 +1060,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "3",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1139,6 +1152,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "11",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1224,6 +1238,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "12",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1309,6 +1324,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 5",
         "isHome": false,
         "competition": "Champions League",
+        "round": "4",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1412,6 +1428,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "13",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1479,6 +1496,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "14",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1564,6 +1582,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "Champions League",
+        "round": "5",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1643,6 +1662,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "15",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1722,6 +1742,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "19",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1819,6 +1840,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "16",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1904,6 +1926,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 3",
         "isHome": false,
         "competition": "Champions League",
+        "round": "6",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -1995,6 +2018,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "17",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2062,6 +2086,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "18",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2141,6 +2166,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 4",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/16",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2226,6 +2252,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "Super Cup",
+        "round": "1/2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2299,6 +2326,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 5",
         "isHome": false,
         "competition": "Super Cup",
+        "round": "final",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2402,6 +2430,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 1",
         "isHome": true,
         "competition": "Copa del Rey",
+        "round": "1/8",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2499,6 +2528,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "20",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2572,6 +2602,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 5",
         "isHome": false,
         "competition": "Champions League",
+        "round": "7",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2687,6 +2718,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "7 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "21",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2796,6 +2828,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 2",
         "isHome": true,
         "competition": "Champions League",
+        "round": "8",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2881,6 +2914,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "22",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -2948,6 +2982,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 5",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/4",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3039,6 +3074,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "23",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3130,6 +3166,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "24",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3197,6 +3234,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "25",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3270,6 +3308,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 4",
         "isHome": true,
         "competition": "Copa del Rey",
+        "round": "1/2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3379,6 +3418,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "26",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3464,6 +3504,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 1",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1/8",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3531,6 +3572,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1/8",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3616,6 +3658,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "28",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3713,6 +3756,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "27",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3792,6 +3836,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "29",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3883,6 +3928,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 1",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3950,6 +3996,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "30",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4023,6 +4070,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 0",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1/4",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4108,6 +4156,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "31",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4175,6 +4224,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1/4",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4260,6 +4310,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 3",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "32",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4363,6 +4414,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "33",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4430,6 +4482,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 2",
         "isHome": true,
         "competition": "Copa del Rey",
+        "round": "final",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4521,6 +4574,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 3",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1/2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4618,6 +4672,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "34",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4697,6 +4752,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 3",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1/2",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4800,6 +4856,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 3",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "35",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4903,6 +4960,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "36",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4976,6 +5034,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 3",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "37",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -5067,6 +5126,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "38",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -5146,6 +5206,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "1",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5225,6 +5286,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "2",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5316,6 +5378,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "3",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5389,6 +5452,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "6 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "4",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5486,6 +5550,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5565,6 +5630,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "5",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5644,6 +5710,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "6",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5729,6 +5796,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "7",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5808,6 +5876,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": true,
         "competition": "Champions League",
+        "round": "2",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5887,6 +5956,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "8",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -5978,6 +6048,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "9",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6057,6 +6128,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "6 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "3",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6160,6 +6232,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "10",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6239,6 +6312,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "11",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6324,6 +6398,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 3",
         "isHome": false,
         "competition": "Champions League",
+        "round": "4",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6421,6 +6496,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "12",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6518,6 +6594,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "13",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6603,6 +6680,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": false,
         "competition": "Champions League",
+        "round": "5",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6682,6 +6760,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "14",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6767,6 +6846,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "19",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6852,6 +6932,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "15",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6961,6 +7042,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "6",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7040,6 +7122,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "16",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7113,6 +7196,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/16",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7186,6 +7270,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "17",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7259,6 +7344,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "18",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7332,6 +7418,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 0",
         "isHome": true,
         "competition": "Super Cup",
+        "round": "1/2",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7423,6 +7510,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 2",
         "isHome": true,
         "competition": "Super Cup",
+        "round": "final",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7514,6 +7602,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/8",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7587,6 +7676,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "20",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7666,6 +7756,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 4",
         "isHome": false,
         "competition": "Champions League",
+        "round": "7",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7763,6 +7854,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "21",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7842,6 +7934,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "8",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7933,6 +8026,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "22",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8018,6 +8112,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/4",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8097,6 +8192,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "23",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8176,6 +8272,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 0",
         "isHome": false,
         "competition": "Copa del Rey",
+        "round": "1/2",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8261,6 +8358,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "24",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8340,6 +8438,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "25",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8419,6 +8518,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "26",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8510,6 +8610,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "Copa del Rey",
+        "round": "1/2",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8589,6 +8690,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "27",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8656,6 +8758,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 1",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1/8",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8729,6 +8832,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "28",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8832,6 +8936,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "7 - 2",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1/8",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8947,6 +9052,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "29",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9014,6 +9120,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "30",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9093,6 +9200,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1/4",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9166,6 +9274,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "31",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9257,6 +9366,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "Champions League",
+        "round": "1/4",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9336,6 +9446,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "33",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9403,6 +9514,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "32",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9476,6 +9588,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "34",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9555,6 +9668,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "35",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9628,6 +9742,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 0",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "36",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9695,6 +9810,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "37",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9780,6 +9896,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 1",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "38",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -9865,6 +9982,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "2",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -9956,6 +10074,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "1",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10029,6 +10148,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "3",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10132,6 +10252,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "0 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "4",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10223,6 +10344,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "5 - 1",
         "isHome": true,
         "competition": "Champions League",
+        "round": "1",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10320,6 +10442,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 4",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "5",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10417,6 +10540,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "7 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "6",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10532,6 +10656,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 3",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "7",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10617,6 +10742,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "8",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10696,6 +10822,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 4",
         "isHome": false,
         "competition": "Champions League",
+        "round": "2",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10787,6 +10914,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "2 - 5",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "9",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10890,6 +11018,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "4 - 2",
         "isHome": false,
         "competition": "Champions League",
+        "round": "3",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -10987,6 +11116,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "10",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -11066,6 +11196,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "6 - 1",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "11",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -11169,6 +11300,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 0",
         "isHome": true,
         "competition": "Champions League",
+        "round": "4",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -11248,6 +11380,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "1 - 2",
         "isHome": false,
         "competition": "LaLiga",
+        "round": "12",
         "season": "26/27",
         "stats": {
             "available": true,
@@ -11327,6 +11460,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "score": "3 - 2",
         "isHome": true,
         "competition": "LaLiga",
+        "round": "13",
         "season": "26/27",
         "stats": {
             "available": true,

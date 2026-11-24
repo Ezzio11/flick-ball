@@ -333,5 +333,95 @@
       "loss": 1,
       "pointsPerGame": 2.77
     }
-  ]
+  ],
+  "laligaTables": {
+    "24/25": [
+      "Barcelona",
+      "Real Madrid",
+      "Atlético Madrid",
+      "Athletic Club",
+      "Villarreal",
+      "Real Betis",
+      "Celta Vigo",
+      "Rayo Vallecano",
+      "Osasuna",
+      "Mallorca",
+      "Real Sociedad",
+      "Valencia",
+      "Getafe",
+      "Espanyol",
+      "Deportivo Alavés",
+      "Girona",
+      "Sevilla",
+      "Leganés",
+      "Las Palmas",
+      "Real Valladolid"
+    ],
+    "25/26": [
+      "Barcelona",
+      "Real Madrid",
+      "Villarreal",
+      "Atlético Madrid",
+      "Real Betis",
+      "Celta Vigo",
+      "Getafe",
+      "Rayo Vallecano",
+      "Valencia",
+      "Real Sociedad",
+      "Espanyol",
+      "Athletic Club",
+      "Sevilla",
+      "Deportivo Alavés",
+      "Elche",
+      "Levante",
+      "Osasuna",
+      "Mallorca",
+      "Girona",
+      "Real Oviedo"
+    ],
+    "26/27": [
+      "Barcelona",
+      "Real Madrid",
+      "Atlético Madrid",
+      "Real Betis",
+      "Real Sociedad",
+      "Sevilla",
+      "Racing Santander",
+      "Athletic Club",
+      "Deportivo Alavés",
+      "Villarreal",
+      "Espanyol",
+      "Deportivo A Coruña",
+      "Osasuna",
+      "Celta Vigo",
+      "Levante",
+      "Rayo Vallecano",
+      "Valencia",
+      "Getafe",
+      "Elche",
+      "Málaga"
+    ]
+  },
+  "uclQuarterFinalists": {
+    "24/25": [
+      "Arsenal",
+      "Real Madrid",
+      "Bayern München",
+      "Inter",
+      "Barcelona",
+      "Borussia Dortmund",
+      "Paris Saint-Germain",
+      "Aston Villa"
+    ],
+    "25/26": [
+      "Real Madrid",
+      "Bayern München",
+      "Sporting CP",
+      "Arsenal",
+      "Barcelona",
+      "Atlético Madrid",
+      "Paris Saint-Germain",
+      "Liverpool"
+    ]
+  }
 }

@@ -1,4 +1,5 @@
-import { isTeamIn } from './utils';
+import { tierOf, bigGame } from './opponentData';
+import { TIERS } from './opponents';
 /**
  * Team Statistical Analysis Engine
  * 
@@ -16,6 +17,7 @@ export interface Match {
     isHome: boolean;
     competition: string;
     season: string;
+    round?: string | null; // FotMob round: "13", "1/8", "final"
     stats?: {
         available: boolean;
         possession?: number;
@@ -215,12 +217,8 @@ export function calculateTeamStatistics(matches: Match[]): TeamStatistics {
 
     // Group by opponent tier
     const byTier: Record<string, SplitStats> = {};
-    const tiers = Object.keys(OPPONENT_TIERS) as Array<keyof typeof OPPONENT_TIERS>;
-
-    tiers.forEach(tier => {
-        const tierOpponents = OPPONENT_TIERS[tier];
-        const tierMatches = matches.filter(m => isTeamIn(tierOpponents, m.opponent));
-        byTier[tier] = calculateSplitStats(tierMatches);
+    TIERS.forEach(tier => {
+        byTier[tier] = calculateSplitStats(matches.filter(m => tierOf(m) === tier));
     });
 
     return {
@@ -304,22 +302,6 @@ export function calculateDispersionIndex(matches: Match[]): {
     };
 }
 
-/**
- * Opponent strength classification
- */
-export const OPPONENT_TIERS = {
-    elite: ['Real Madrid', 'Atletico Madrid', 'Athletic Club', 'Girona'],
-    strong: ['Real Sociedad', 'Villarreal', 'Real Betis', 'Sevilla'],
-    mid: ['Valencia', 'Celta Vigo', 'Osasuna', 'Mallorca', 'Rayo Vallecano'],
-    weak: ['Espanyol', 'Getafe', 'Levante', 'Deportivo Alaves', 'Elche', 'Real Oviedo']
-};
-
-export function getOpponentStrengthAdjustment(opponent: string): number {
-    if (isTeamIn(OPPONENT_TIERS.elite, opponent)) return -0.5;
-    if (isTeamIn(OPPONENT_TIERS.strong, opponent)) return -0.3;
-    if (isTeamIn(OPPONENT_TIERS.weak, opponent)) return 0.4;
-    return 0; // Mid-tier
-}
 
 /**
  * Tactical insights from the data
@@ -521,22 +503,12 @@ export interface BigGameStats {
     goalsAgainst: number;
 }
 
-const BIG_GAME_OPPONENTS = [
-    'Real Madrid',
-    'Atletico Madrid',
-    'Bayern München',
-    'Paris Saint-Germain',
-    'Chelsea',
-    'Inter',
-    'Athletic Club',
-    'Borussia Dortmund'
-];
 
 /**
- * Get statistics against elite opponents
+ * Big games: top-4 LaLiga sides that season, Champions League knockouts and finals (src/lib/opponents.ts).
  */
 export function getBigGameStats(matches: Match[]): BigGameStats {
-    const bigGames = matches.filter(m => isTeamIn(BIG_GAME_OPPONENTS, m.opponent));
+    const bigGames = matches.filter(bigGame);
 
     let wins = 0;
     let draws = 0;

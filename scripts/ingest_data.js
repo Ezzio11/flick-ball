@@ -150,6 +150,7 @@ function parseMatchData(details, fixtureInfo) {
         score: scoreStr.includes(" - ") ? scoreStr : scoreStr.replace("-", " - "),
         isHome: isHome,
         competition: details.general?.leagueName || fixtureInfo.leagueName || "Unknown", // the match's own label beats the fixture list's
+        round: details.general?.leagueRoundName ?? null, // "13", "1/8", "final"...
         season: seasonLabel(fixtureInfo.status.utcTime),
         stats: stats,
         scorers: scorers,
@@ -213,8 +214,19 @@ async function updateHonours() {
             season: c.season, coach: c.name, win: c.win, draw: c.draw, loss: c.loss, pointsPerGame: c.pointsPerGame,
         }));
         if (!trophies.some(t => t.name === 'LaLiga')) throw new Error('trophy list missing LaLiga');
-        fs.writeFileSync(HONOURS_FILE, JSON.stringify({ trophies, laligaByCoach }, null, 2) + '\n');
-        console.log(`Honours: ${trophies.length} competitions, ${laligaByCoach.length} coach-seasons.`);
+        // LaLiga table (team names in rank order) per Flick season: drives opponent tiers and "big games".
+        const laligaTables = {}, uclQuarterFinalists = {};
+        for (let y = FIRST_SEASON; y <= seasonStartYear(new Date()); y++) {
+            const d = await api('leagues', { id: 87, season: `${y}/${y + 1}`, tab: 'table' });
+            const rows = d.table?.[0]?.data?.table?.all || [];
+            if (rows.length) laligaTables[seasonLabel(`${y}-09-01`)] = rows.sort((a, b) => a.idx - b.idx).map(r => r.name);
+            // Champions League quarter-finalists: what makes a league-phase opponent a big game.
+            const ucl = await api('leagues', { id: 42, season: `${y}/${y + 1}`, tab: 'matches' });
+            const qf = (ucl.matches?.allMatches || ucl.fixtures?.allMatches || []).filter(m => m.roundName === 'Quarter-Finals');
+            if (qf.length) uclQuarterFinalists[seasonLabel(`${y}-09-01`)] = [...new Set(qf.flatMap(m => [m.home.name, m.away.name]))];
+        }
+        fs.writeFileSync(HONOURS_FILE, JSON.stringify({ trophies, laligaByCoach, laligaTables, uclQuarterFinalists }, null, 2) + '\n');
+        console.log(`Honours: ${trophies.length} competitions, ${laligaByCoach.length} coach-seasons, ${Object.keys(laligaTables).length} tables, ${Object.keys(uclQuarterFinalists).length} UCL quarter-final sets.`);
     } catch (e) {
         console.warn(`Honours not updated (keeping previous file): ${e.message}`);
     }

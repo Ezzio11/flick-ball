@@ -8,8 +8,9 @@
  * (see Maher 1982, Dixon & Coles 1997)
  */
 
-import { Match, TeamStatistics, OPPONENT_TIERS } from './teamStatistics';
-import { isTeamIn } from './utils';
+import { Match, TeamStatistics } from './teamStatistics';
+import { tierOf } from './opponentData';
+import { Tier } from './opponents';
 
 export interface SimulationParameters {
     // Attack strength (Using xG for better prediction)
@@ -152,11 +153,8 @@ function randomNormal(): number {
 /**
  * Get the tier of an opponent
  */
-function getOpponentTier(opponent: string): keyof typeof OPPONENT_TIERS | 'mid' {
-    if (isTeamIn(OPPONENT_TIERS.elite, opponent)) return 'elite';
-    if (isTeamIn(OPPONENT_TIERS.strong, opponent)) return 'strong';
-    if (isTeamIn(OPPONENT_TIERS.weak, opponent)) return 'weak';
-    return 'mid';
+function getOpponentTier(match: Match): Tier {
+    return tierOf(match);
 }
 
 /**
@@ -200,7 +198,7 @@ function simulateMatch(
     }
 
     // 6. Opponent strength adjustment (Affects our scoring)
-    const tier = getOpponentTier(match.opponent);
+    const tier = getOpponentTier(match);
 
     // Heuristic Adjustments based on Opponent Tier
     if (tier === 'elite') lambdaFor -= 0.6;
@@ -304,7 +302,7 @@ export function simulateSeason(
         if (match.isHome) lambdaFor += params.homeAdvantage;
         else lambdaFor -= 0.2;
 
-        const tier = getOpponentTier(match.opponent);
+        const tier = getOpponentTier(match);
         if (tier === 'elite') lambdaFor -= 0.6;
         else if (tier === 'strong') lambdaFor -= 0.3;
         else if (tier === 'weak') lambdaFor += 0.4;

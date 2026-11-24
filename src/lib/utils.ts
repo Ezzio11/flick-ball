@@ -23,14 +23,6 @@ export function flickSeasons(now: Date = new Date()) {
   return seasons
 }
 
-/** Team-name match that ignores accents and case: FotMob says "Atlético Madrid", our lists say "Atletico Madrid". */
-const foldName = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim()
-export function isTeamIn(teams: string[], name: string | undefined) {
-  if (!name) return false
-  const n = foldName(name)
-  return teams.some(t => foldName(t) === n)
-}
-
 export type PositionGroup = 'Goalkeeper' | 'Defender' | 'Midfielder' | 'Forward'
 const POSITION_GROUPS: Record<string, PositionGroup> = {
   GK: 'Goalkeeper', Goalkeeper: 'Goalkeeper',

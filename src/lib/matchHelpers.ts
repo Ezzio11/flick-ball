@@ -9,6 +9,7 @@ export interface MatchData {
     isHome: boolean;
     competition: string;
     season: string;
+    round?: string | null; // FotMob round: "13", "1/8", "final"
     formation?: string;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     stats?: any;
