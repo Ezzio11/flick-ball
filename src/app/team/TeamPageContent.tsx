@@ -12,7 +12,7 @@ import {
     calculateTeamStatistics,
     getMatchResult,
     getBigGameStats,
-    getTopStatementWins,
+    getSixGoalWins,
     getPossessionStats,
     getXGStats,
     getFlickPressStats,
@@ -58,7 +58,7 @@ export default function TeamPageContent({ matches: initialMatches }: { matches: 
     const stats = useMemo(() => calculateTeamStatistics(completedMatches), [completedMatches]);
 
     // Statement Games Stats
-    const topWins = useMemo(() => getTopStatementWins(completedMatches), [completedMatches]);
+    const sixGoalWins = useMemo(() => getSixGoalWins(completedMatches), [completedMatches]);
     const bigGameStats = useMemo(() => getBigGameStats(completedMatches), [completedMatches]);
 
     // Flick Era Advanced Stats (Chapter 5)
@@ -209,7 +209,7 @@ export default function TeamPageContent({ matches: initialMatches }: { matches: 
                ================================================================== */}
             <section className="bg-[#0a0f1c] py-24 px-6 relative border-t-8 border-[#EDBB00]">
                 <div className="max-w-[1400px] mx-auto">
-                    <BiggestWins topWins={topWins} />
+                    <BiggestWins wins={sixGoalWins} />
                     <StatementGames
                         bigGameStats={bigGameStats}
                     />

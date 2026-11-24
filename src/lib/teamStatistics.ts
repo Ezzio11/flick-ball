@@ -482,17 +482,14 @@ export function getUCLProgress(matches: Match[]): {
 /**
  * Get top 3 biggest wins for the highlight reel
  */
-export function getTopStatementWins(matches: Match[]): Match[] {
-    const wins = matches.filter(m => getMatchResult(m) === 'W');
-    if (wins.length === 0) return [];
-
-    // Sort by Goal Difference (descending), then Goals Scored (descending)
-    return wins.sort((a, b) => {
-        const diffA = extractGoalsScored(a) - extractGoalsConceded(a);
-        const diffB = extractGoalsScored(b) - extractGoalsConceded(b);
-        if (diffA !== diffB) return diffB - diffA;
-        return extractGoalsScored(b) - extractGoalsScored(a);
-    }).slice(0, 3);
+/** "The 6+ Club": every win with 6 or more goals, biggest margin first, then most goals, then newest. */
+export function getSixGoalWins(matches: Match[]): Match[] {
+    return matches
+        .filter(m => getMatchResult(m) === 'W' && extractGoalsScored(m) >= 6)
+        .sort((a, b) =>
+            (extractGoalsScored(b) - extractGoalsConceded(b)) - (extractGoalsScored(a) - extractGoalsConceded(a))
+            || extractGoalsScored(b) - extractGoalsScored(a)
+            || new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export interface BigGameStats {
@@ -505,7 +502,7 @@ export interface BigGameStats {
 
 
 /**
- * Big games: top-4 LaLiga sides that season, Champions League knockouts and finals (src/lib/opponents.ts).
+ * Big games: top-4 LaLiga sides that season, UCL knockouts and quarter-finalists, finals (src/lib/opponents.ts).
  */
 export function getBigGameStats(matches: Match[]): BigGameStats {
     const bigGames = matches.filter(bigGame);

@@ -92,8 +92,6 @@ export default function CampaignTracker({ homeAway, formations, stats }: Campaig
                     <div className="grid grid-cols-1 gap-4">
                         {Object.entries(stats.byCompetition).map(([comp, compStats], idx) => {
                             if (compStats.matches === 0) return null;
-                            // Filter out friendlies or specific low-relevance teams if mistaken for competitions
-                            if (['Olympiacos', 'Friendly', 'Club Friendlies', 'Milan', 'Man City', 'Monaco'].some(c => comp.includes(c))) return null;
                             return (
                                 <div key={idx} className="relative bg-white/10 backdrop-blur-sm p-3 border border-[#EDBB00]/30 rounded">
                                     <div className="flex justify-between items-start">

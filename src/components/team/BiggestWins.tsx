@@ -4,21 +4,21 @@ import Link from 'next/link';
 import type { Match } from '@/lib/teamStatistics';
 
 interface BiggestWinsProps {
-    topWins: Match[];
+    wins: Match[]; // every 6+ goal win (getSixGoalWins)
 }
 
-export default function BiggestWins({ topWins }: BiggestWinsProps) {
-    if (!topWins || topWins.length === 0) return null;
+export default function BiggestWins({ wins }: BiggestWinsProps) {
+    if (!wins || wins.length === 0) return null;
 
     return (
         <div className="w-full mb-16">
             <div className="inline-block bg-[#db0030] text-white border-4 border-black px-4 py-1 transform -skew-x-12 mb-6 shadow-[4px_4px_0_#000]">
-                <h3 className="text-2xl font-black uppercase">The 6+ Club</h3>
+                <h3 className="text-2xl font-black uppercase">The 6+ Club <span className="text-[#FFED02]">({wins.length})</span></h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {topWins.map((match, idx) => (
-                    <Link href={`/matches/${match.id}`} key={idx} className="block group cursor-pointer">
+                {wins.map((match) => (
+                    <Link href={`/matches/${match.id}`} key={match.id} className="block group cursor-pointer">
                         <div className="relative comic-panel bg-white p-4 transform transition-all duration-300 border-3 border-black group-hover:bg-[#FFED02] shadow-[4px_4px_0_#000]">
                             {/* Halftone BG */}
                             <div className="absolute inset-0 opacity-10 comic-halftone pointer-events-none"></div>
@@ -26,7 +26,7 @@ export default function BiggestWins({ topWins }: BiggestWinsProps) {
                             <div className="relative z-10 flex justify-between items-end gap-4">
                                 <div className="flex-1 min-w-0">
                                     <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-1">
-                                        {new Date(match.date).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}
+                                        {new Date(match.date).toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' })} · {match.competition}
                                     </div>
                                     <div className="text-xl font-black uppercase text-black leading-none break-words">
                                         vs {match.opponent}
