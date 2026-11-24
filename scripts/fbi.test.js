@@ -45,7 +45,7 @@ test('short appearances: volume is a per-90 rate blended toward average, events 
     assert.strictEqual(goal, goal90);                                    // a goal off the bench is a goal
 });
 
-test('midfielders and forwards are calibrated by role from their stored position', async () => {
+test('outfield players are calibrated by role from their stored position', async () => {
     const { calibrationGroup } = await load();
     assert.strictEqual(calibrationGroup('FWD', 'LW'), 'W');
     assert.strictEqual(calibrationGroup('FWD', 'RW'), 'W');
@@ -54,7 +54,11 @@ test('midfielders and forwards are calibrated by role from their stored position
     assert.strictEqual(calibrationGroup('MID', 'CAM'), 'AM');
     assert.strictEqual(calibrationGroup('MID', 'CDM'), 'DM');
     assert.strictEqual(calibrationGroup('MID', 'Midfielder'), 'DM'); // broad role: central default
-    assert.strictEqual(calibrationGroup('DEF', 'LB'), 'DEF');        // defenders and keepers aren't split
+    assert.strictEqual(calibrationGroup('DEF', 'LB'), 'FB');
+    assert.strictEqual(calibrationGroup('DEF', 'RWB'), 'FB');
+    assert.strictEqual(calibrationGroup('DEF', 'CB'), 'CB');
+    assert.strictEqual(calibrationGroup('DEF', 'Defender'), 'CB');   // broad role: central default
+    assert.strictEqual(calibrationGroup('GK', 'GK'), 'GK')
 });
 
 test('softCap leaves ratings to 9.0 alone and keeps a 10.0 rare', async () => {

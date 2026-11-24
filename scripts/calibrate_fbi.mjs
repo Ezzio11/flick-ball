@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { loadRows, mean, sd } from './fbi_dataset.mjs';
 
 const FILE = new URL('../src/lib/fbi-rating.ts', import.meta.url);
-const POSITION_OF = { GK: 'GK', DEF: 'DEF', DM: 'MID', AM: 'MID', ST: 'FWD', W: 'FWD' };
+const POSITION_OF = { GK: 'GK', CB: 'DEF', FB: 'DEF', DM: 'MID', AM: 'MID', ST: 'FWD', W: 'FWD' };
 const POSITIONS = Object.keys(POSITION_OF); // calibration groups
 
 async function fbi() {

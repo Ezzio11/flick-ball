@@ -278,24 +278,26 @@ export function volumePer90(volume: number, minutes: number, averagePer90: numbe
 }
 
 /**
- * Calibration groups: midfielders and forwards keep one set of weights each but are scaled per role,
- * so a poacher isn't measured against wingers on the ball all game, nor a No.10 against the pivots
- * who make the most passes.
+ * Calibration groups: each outfield line keeps one set of weights but is scaled per role, so a
+ * poacher isn't measured against wingers on the ball all game, a No.10 against the pivots, or a
+ * full-back against centre-backs.
  */
-export type CalibrationGroup = 'GK' | 'DEF' | 'DM' | 'AM' | 'ST' | 'W';
-export const CALIBRATION_GROUPS: CalibrationGroup[] = ['GK', 'DEF', 'DM', 'AM', 'ST', 'W'];
+export type CalibrationGroup = 'GK' | 'CB' | 'FB' | 'DM' | 'AM' | 'ST' | 'W';
+export const CALIBRATION_GROUPS: CalibrationGroup[] = ['GK', 'CB', 'FB', 'DM', 'AM', 'ST', 'W'];
 
 /** `role` is the player's position as stored (e.g. 'CAM', 'LW', 'ST', 'Midfielder'). */
 export function calibrationGroup(position: Position, role?: string): CalibrationGroup {
+    if (position === 'DEF') return ['LB', 'RB', 'LWB', 'RWB'].includes(role ?? '') ? 'FB' : 'CB';    // CB, broad role
     if (position === 'MID') return ['CAM', 'RM', 'LM'].includes(role ?? '') ? 'AM' : 'DM'; // CDM, CM, broad role
     if (position === 'FWD') return ['LW', 'RW'].includes(role ?? '') ? 'W' : 'ST';           // ST, broad role
-    return position;
+    return 'GK';
 }
 
 // CALIBRATION:START (written by `node scripts/calibrate_fbi.mjs`; do not edit by hand)
 export const CALIBRATION: Record<CalibrationGroup, { volumeMean: number; rawMean: number; rawSd: number; scaleMean: number }> = {
     GK: { volumeMean: 2.8891, rawMean: 3.4828, rawSd: 1.6912, scaleMean: 6.6051 },
-    DEF: { volumeMean: 5.9672, rawMean: 6.2121, rawSd: 0.7806, scaleMean: 6.6008 },
+    CB: { volumeMean: 6.3944, rawMean: 6.5641, rawSd: 0.7778, scaleMean: 6.5921 },
+    FB: { volumeMean: 5.2935, rawMean: 5.6578, rawSd: 0.7722, scaleMean: 6.6149 },
     DM: { volumeMean: 7.0007, rawMean: 7.6316, rawSd: 1.2668, scaleMean: 6.5956 },
     AM: { volumeMean: 4.4292, rawMean: 5.6649, rawSd: 1.2860, scaleMean: 6.6274 },
     ST: { volumeMean: 1.8713, rawMean: 3.4713, rawSd: 1.8100, scaleMean: 6.6270 },
