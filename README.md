@@ -44,6 +44,21 @@ node scripts/ingest_players.js --rebuild   # rebuild every player-match record f
 
 If the Action goes red, read its log first. The usual cause is FotMob changing its API shape, and the fix belongs in `scripts/fotmob.js` or `parseMatchData` in `ingest_data.js`. The tests in `scripts/ingest.test.js` run the parser and the lineup and position logic against a real saved match (`scripts/__fixtures__/`), so drift shows up there. A warning like `Unknown FotMob slot 59` means FotMob used a lineup slot that isn't in `SLOT_CODES` yet: add it, taking the label from FotMob's `playerData` positions.
 
+## Player portraits
+
+Every player gets a comic-style portrait at `public/images/players/<slug>-profile.webp` (1078×1280, transparent background, no crest, sponsor or kit-maker logos). New players are drawn automatically:
+
+```bash
+npm run player-images -- --dry-run   # who is missing, and which official photo each will use
+npm run player-images                # generate them (about 1.5 min per player, 3 in parallel)
+npm run player-images -- --only rodri --force   # redo one
+npm run test:images                  # offline tests for the script
+```
+
+[`scripts/player_images.py`](scripts/player_images.py) takes the official portrait from the player's fcbarcelona.com page, has the local **Codex CLI** redraw it in the style of an existing portrait (Pedri's) while keeping the likeness and removing every logo, cuts out the background with `rembg`, and places the figure like the rest of the set. It never overwrites an existing image without `--force`, and it writes a source-vs-result sheet to `.cache/player-images/review.png`: **look at it before committing**, because AI likeness can miss.
+
+Players without an official portrait (Barça Atlètic call-ups) need a photo in [`scripts/player_images_sources.json`](scripts/player_images_sources.json): a URL plus a `hint` saying which person in the photo is the player. Codex was chosen over Gemini (`agy`) after a side-by-side: Gemini kept the style but changed hair colour and faces. Needs `codex` logged in, plus Pillow and `rembg` (`pip install pillow rembg`).
+
 ## Running locally
 
 Requires Node 20+.

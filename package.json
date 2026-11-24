@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "scrape": "node scripts/ingest_data.js && node scripts/ingest_players.js",
-    "test": "node --test scripts/*.test.js"
+    "test": "node --test scripts/*.test.js",
+    "player-images": "python3 scripts/player_images.py",
+    "test:images": "python3 -m unittest scripts/test_player_images.py"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

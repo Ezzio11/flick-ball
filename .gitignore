@@ -42,3 +42,4 @@ next-env.d.ts
 
 # FotMob match-page cache (rebuilt on demand by scripts/fotmob.js)
 /.cache/
+__pycache__/
