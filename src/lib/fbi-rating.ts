@@ -277,12 +277,26 @@ export function volumePer90(volume: number, minutes: number, averagePer90: numbe
     return (volume * 90 + SHRINK_MINUTES * averagePer90) / (Math.max(0, minutes) + SHRINK_MINUTES);
 }
 
+/**
+ * Calibration groups: forwards share one set of weights but are scaled separately as strikers and
+ * wingers, so a poacher isn't measured against wingers who are on the ball all game.
+ */
+export type CalibrationGroup = 'GK' | 'DEF' | 'MID' | 'ST' | 'W';
+export const CALIBRATION_GROUPS: CalibrationGroup[] = ['GK', 'DEF', 'MID', 'ST', 'W'];
+
+/** `role` is the player's position as stored (e.g. 'LW', 'ST', 'Attacker'). */
+export function calibrationGroup(position: Position, role?: string): CalibrationGroup {
+    if (position !== 'FWD') return position;
+    return ['LW', 'RW', 'LM', 'RM'].includes(role ?? '') ? 'W' : 'ST';
+}
+
 // CALIBRATION:START (written by `node scripts/calibrate_fbi.mjs`; do not edit by hand)
-export const CALIBRATION: Record<Position, { volumeMean: number; rawMean: number; rawSd: number; scaleMean: number }> = {
+export const CALIBRATION: Record<CalibrationGroup, { volumeMean: number; rawMean: number; rawSd: number; scaleMean: number }> = {
     GK: { volumeMean: 2.8891, rawMean: 3.4828, rawSd: 1.6912, scaleMean: 6.6051 },
     DEF: { volumeMean: 5.9672, rawMean: 6.2121, rawSd: 0.7806, scaleMean: 6.6008 },
     MID: { volumeMean: 6.1607, rawMean: 6.9947, rawSd: 1.2801, scaleMean: 6.6065 },
-    FWD: { volumeMean: 3.5054, rawMean: 5.7270, rawSd: 2.2914, scaleMean: 6.6017 },
+    ST: { volumeMean: 1.8713, rawMean: 3.4713, rawSd: 1.8100, scaleMean: 6.6270 },
+    W: { volumeMean: 4.2926, rawMean: 6.9659, rawSd: 2.3152, scaleMean: 6.5915 },
 };
 // CALIBRATION:END
 
@@ -366,18 +380,19 @@ export function fbiParts(match: TitanMatch, position: Position) {
 const minutesOf = (match: TitanMatch) => match.minutes_played ?? match.minutes ?? 90;
 
 /** Events in full plus volume as a blended per-90 rate. */
-export function rawFBI(match: TitanMatch, position: Position): number {
+export function rawFBI(match: TitanMatch, position: Position, role?: string): number {
     const parts = fbiParts(match, position);
-    return parts.event + volumePer90(parts.volume, minutesOf(match), CALIBRATION[position].volumeMean);
+    return parts.event + volumePer90(parts.volume, minutesOf(match), CALIBRATION[calibrationGroup(position, role)].volumeMean);
 }
 
 /**
  * FBI for one player in one match. `opponentTier` comes from src/lib/opponents.ts (that season's
- * real league table); passed in so this file stays free of app imports.
+ * real league table); passed in so this file stays free of app imports. `role` is the player's
+ * stored position ('LW', 'ST'...), used to calibrate strikers and wingers separately.
  */
-export function calculateFBI(match: TitanMatch, position: Position, opponentTier: OpponentTier = 'mid'): FBIBreakdown {
+export function calculateFBI(match: TitanMatch, position: Position, opponentTier: OpponentTier = 'mid', role?: string): FBIBreakdown {
     const parts = fbiParts(match, position);
-    const cal = CALIBRATION[position];
+    const cal = CALIBRATION[calibrationGroup(position, role)];
     const raw = parts.event + volumePer90(parts.volume, minutesOf(match), cal.volumeMean);
     const scaled = cal.scaleMean + ((raw - cal.rawMean) / cal.rawSd) * TARGET_SD;
     const opponentBonus = OPPONENT_BONUS[opponentTier];

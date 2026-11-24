@@ -45,6 +45,15 @@ test('short appearances: volume is a per-90 rate blended toward average, events 
     assert.strictEqual(goal, goal90);                                    // a goal off the bench is a goal
 });
 
+test('forwards are calibrated as strikers or wingers by their stored position', async () => {
+    const { calibrationGroup } = await load();
+    assert.strictEqual(calibrationGroup('FWD', 'LW'), 'W');
+    assert.strictEqual(calibrationGroup('FWD', 'RW'), 'W');
+    assert.strictEqual(calibrationGroup('FWD', 'ST'), 'ST');
+    assert.strictEqual(calibrationGroup('FWD', 'Attacker'), 'ST'); // broad role, no wing slot
+    assert.strictEqual(calibrationGroup('MID', 'LW'), 'MID');       // only forwards are split
+});
+
 test('softCap leaves ratings to 9.0 alone and keeps a 10.0 rare', async () => {
     const { softCap } = await load();
     assert.strictEqual(softCap(7.3), 7.3);
@@ -54,12 +63,12 @@ test('softCap leaves ratings to 9.0 alone and keeps a 10.0 rare', async () => {
 });
 
 test('on the real data: calibrated scale, rare 10s, agreement with FotMob, fair to subs', async () => {
-    const { calculateFBI, matchOutcome } = await load();
+    const { calculateFBI, matchOutcome, calibrationGroup, CALIBRATION_GROUPS } = await load();
     const { loadRows, mean, sd } = await dataset();
-    const rows = loadRows().map(r => ({ ...r, f: calculateFBI(r.match, r.position, r.tier) }));
+    const rows = loadRows().map(r => ({ ...r, group: calibrationGroup(r.position, r.role), f: calculateFBI(r.match, r.position, r.tier, r.role) }));
     const hint = ' (data drifted: run `node scripts/calibrate_fbi.mjs`)';
-    for (const p of ['GK', 'DEF', 'MID', 'FWD']) {
-        const x = rows.filter(r => r.position === p).map(r => r.f.final);
+    for (const p of CALIBRATION_GROUPS) {
+        const x = rows.filter(r => r.group === p).map(r => r.f.final);
         assert.ok(Math.abs(mean(x) - 6.8) <= 0.15, `${p} mean ${mean(x).toFixed(2)}${hint}`);
         assert.ok(Math.abs(sd(x) - 1.3) <= 0.15, `${p} spread ${sd(x).toFixed(2)}${hint}`);
     }
@@ -69,7 +78,7 @@ test('on the real data: calibrated scale, rare 10s, agreement with FotMob, fair 
     const pr = rows.filter(r => r.match.rating);
     const a = pr.map(r => r.f.final), b = pr.map(r => r.match.rating), ma = mean(a), mb = mean(b);
     const corr = a.reduce((s, x, i) => s + (x - ma) * (b[i] - mb), 0) / Math.sqrt(a.reduce((s, x) => s + (x - ma) ** 2, 0) * b.reduce((s, y) => s + (y - mb) ** 2, 0));
-    assert.ok(corr >= 0.72, `agreement with FotMob fell to ${corr.toFixed(3)} (0.77 when this test was written)`);
+    assert.ok(corr >= 0.72, `agreement with FotMob fell to ${corr.toFixed(3)} (0.75 when this test was written)`);
     const benchGoals = rows.filter(r => (r.match.minutes_played ?? r.match.minutes) <= 20 && r.match.goals >= 1).map(r => r.f.final);
     assert.ok(mean(benchGoals) > 6.8, `goals off the bench average ${mean(benchGoals).toFixed(2)}`);
 });

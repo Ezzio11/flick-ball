@@ -228,7 +228,7 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
                                 <div className="mb-6 bg-white p-4 border border-black/10 rounded-lg">
                                     <div className="text-[10px] text-gray-400 uppercase font-bold mb-2 tracking-wider">Step 2: On the 1-10 Scale</div>
                                     <p className="text-[10px] text-gray-500 leading-tight mb-2">
-                                        Calibrated per position: an average {pos} game is 6.8.
+                                        Calibrated per role (strikers and wingers separately): an average game in this role is 6.8.
                                     </p>
                                     <div className="flex items-center justify-between">
                                         <span className="text-xs font-bold text-gray-500">PERFORMANCE</span>

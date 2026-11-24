@@ -24,7 +24,7 @@ export function loadRows() {
             const [h, a] = im.score.split('-').map(x => parseInt(x.trim()));
             const match = { ...m, date: im.date, competition: im.competition, opponent: im.opponent, isHome: im.isHome,
                 teamScore: im.isHome ? h : a, opponentScore: im.isHome ? a : h };
-            rows.push({ player: p.name, position, match, tier: opponentTier(ctx, match) });
+            rows.push({ player: p.name, position, role: p.position, match, tier: opponentTier(ctx, match) });
         }
     }
     return rows;

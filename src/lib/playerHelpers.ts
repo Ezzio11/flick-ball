@@ -86,7 +86,7 @@ export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]
     // Calculate FBI Ratings for each match
     const positionType = mapToFBIPosition(player.position);
     const matchesWithFBI = sortedMatches.map((match) => {
-        const fbiStats = calculateFBI(match as TitanMatch, positionType, tierOf(match));
+        const fbiStats = calculateFBI(match as TitanMatch, positionType, tierOf(match), player.position);
         return {
             ...match,
             fbiRating: fbiStats.final,
