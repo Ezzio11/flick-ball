@@ -1,16 +1,19 @@
+/**
+ * ingest_players.js - per-player, per-match stats into src/lib/titans_data.ts.
+ * Run after ingest_data.js (it reads public/data/matches.json). Only matches no
+ * player has yet are fetched; existing player history is kept.
+ */
+
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright');
+const { getMatch, COMPETITION_BLOCKLIST } = require('./fotmob');
 
 const BARCA_ID = 8634;
 const MATCHES_FILE = path.join(__dirname, '../public/data/matches.json');
 const OUTPUT_FILE = path.join(__dirname, '../src/lib/titans_data.ts');
-const COMPETITION_BLOCKLIST = ["Club Friendlies", "Trofeu Joan Gamper", "International Friendlies", "Friendly", "Other Friendlies"];
 
 async function run() {
     console.log("Starting Player Ingestion...");
-    const isCacheOnly = process.argv.includes('--use-cache');
-    const CACHE_DIR = path.join(__dirname, '../.cache');
 
     const playersMap = {}; 
     const nameToIdMap = {}; 
@@ -54,53 +57,19 @@ async function run() {
     const matches = JSON.parse(fs.readFileSync(MATCHES_FILE, 'utf8'));
     console.log(`Loaded ${matches.length} matches.`);
 
-    let browser = null;
-    let page = null;
-
-    if (!isCacheOnly) {
-        console.log("Launching Playwright to clear Cloudflare...");
-        browser = await chromium.launch({ headless: false });
-        const context = await browser.newContext();
-        page = await context.newPage();
-
-        console.log("Navigating to FotMob...");
-        await page.goto('https://www.fotmob.com');
-        
-        console.log("Waiting for Cloudflare verification to pass...");
-        await page.waitForSelector('input[type="search"], nav', { timeout: 60000 });
-        console.log("Cloudflare cleared successfully!");
-    }
+    const ingested = new Set(Object.values(playersMap).flatMap(p => p.matches.map(m => String(m.matchId))));
 
     for (const match of matches) {
         if (!match.id) continue;
         
-        if (COMPETITION_BLOCKLIST.includes(match.competition)) {
+        if (COMPETITION_BLOCKLIST.includes(match.competition) || ingested.has(String(match.id))) {
             continue;
         }
 
         console.log(`Processing match: ${match.opponent} (${match.date})...`);
 
-        let matchData;
         try {
-            const cachePath = path.join(__dirname, `../.cache/match_${match.id}.json`);
-            if (fs.existsSync(cachePath)) {
-                matchData = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
-            } else if (!isCacheOnly && page) {
-                if (!fs.existsSync(path.dirname(cachePath))) fs.mkdirSync(path.dirname(cachePath), { recursive: true });
-
-                await page.goto(`https://www.fotmob.com/match/${match.id}`);
-                await page.waitForSelector('#__NEXT_DATA__', { state: 'attached', timeout: 15000 });
-                matchData = await page.evaluate(() => {
-                    const el = document.getElementById('__NEXT_DATA__');
-                    return el ? JSON.parse(el.textContent).props.pageProps : null;
-                });
-
-                fs.writeFileSync(cachePath, JSON.stringify(matchData, null, 2));
-                await new Promise(r => setTimeout(r, 500));
-            } else {
-                console.warn(`Match ${match.id} not found in cache. Skipping...`);
-                continue;
-            }
+            const matchData = await getMatch(match.id);
 
             if (!matchData || !matchData.content || !matchData.content.playerStats) {
                 continue;
@@ -207,8 +176,6 @@ async function run() {
             console.error(`Error processing match ${match.id}:`, err.message);
         }
     }
-
-    if (browser) await browser.close();
 
     console.log("\nFinalizing player data...");
     const finalPlayers = Object.values(playersMap).map(p => {

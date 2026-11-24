@@ -1,6 +1,7 @@
 "use client";
 
 import { Search } from 'lucide-react';
+import { flickSeasons } from '@/lib/utils';
 
 interface FilterBarProps {
     season: string;
@@ -10,7 +11,7 @@ interface FilterBarProps {
 }
 
 export default function FilterBar({ season, competition, onSeasonChange, onCompetitionChange }: FilterBarProps) {
-    const seasons = ['All', '24/25', '25/26'];
+    const seasons = ['All', ...flickSeasons()];
     const competitions = ['All', 'La Liga', 'Champions League', 'Copa del Rey', 'Supercopa'];
 
     return (

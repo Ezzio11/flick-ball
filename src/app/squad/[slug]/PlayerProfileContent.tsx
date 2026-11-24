@@ -15,6 +15,7 @@ import ComparisonButton from '@/components/player/ComparisonButton';
 import FilterBar from '@/components/player/FilterBar';
 import dynamicImport from 'next/dynamic';
 import { Player } from '@/lib/types';
+import { seasonLabel } from '@/lib/utils';
 
 const AdvancedCharts = dynamicImport(() => import('@/components/player/AdvancedCharts'), {
     ssr: false,
@@ -46,11 +47,7 @@ export default function PlayerProfileContent({ player }: PlayerProfileContentPro
         ...player,
         matches: player.matches.filter(m => {
             // Season filter
-            if (season !== 'All') {
-                const matchDate = new Date(m.date);
-                if (season === '24/25' && (matchDate < new Date('2024-08-01') || matchDate >= new Date('2025-08-01'))) return false;
-                if (season === '25/26' && (matchDate < new Date('2025-08-01') || matchDate >= new Date('2026-08-01'))) return false;
-            }
+            if (season !== 'All' && seasonLabel(m.date) !== season) return false;
             // Competition filter (normalized)
             if (competition !== 'All') {
                 const normalizedMatch = normalizeCompetition(m.competition);

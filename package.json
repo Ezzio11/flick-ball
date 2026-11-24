@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "scrape": "node scripts/ingest_data.js && node scripts/ingest_players.js"
+    "scrape": "node scripts/ingest_data.js && node scripts/ingest_players.js",
+    "test": "node --test scripts/*.test.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -33,7 +34,6 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "^16.2.6",
-    "playwright": "^1.60.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

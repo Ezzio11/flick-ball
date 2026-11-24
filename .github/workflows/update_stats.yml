@@ -2,48 +2,42 @@ name: Update Match Stats
 
 on:
   schedule:
-    # Run daily at 04:00 AM UTC (after late matches)
-    - cron: '0 4 * * *'
-  workflow_dispatch: # Adds a "Run workflow" button in GitHub UI
+    - cron: '0 4 * * *' # daily 04:00 UTC, after late kickoffs
+  workflow_dispatch:
+
+concurrency: update-stats
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
-    
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          
-      - name: Run Ingestion Scripts
+          node-version: '22'
+
+      # Scripts use only Node built-ins: no npm install needed.
+      - name: Test parser
+        run: npm test
+
+      - name: Ingest from FotMob
+        run: npm run scrape
+
+      - name: Commit & push
         run: |
-          node scripts/ingest_data.js
-          node scripts/ingest_players.js
-        
-      - name: Commit & Push Changes
-        run: |
-          git config --global user.name 'Stats Bot'
-          git config --global user.email 'stats-bot@noreply.github.com'
-          
-          # Check if files changed (using || true to avoid exit 1 if no changes)
+          git config user.name 'Stats Bot'
+          git config user.email 'stats-bot@noreply.github.com'
           git add src/lib/data_ingested.ts public/data/matches.json src/lib/titans_data.ts
-          
-          if [[ -n $(git status -s) ]]; then
-            # [skip ci] tells Vercel/GitHub to not trigger a build (we use on-demand revalidation instead)
+          if git diff --cached --quiet; then
+            echo "::notice::No new matches."
+          else
+            # Vercel deploys every push to main (it ignores [skip ci]), so this push is the site update.
             git commit -m "chore(stats): update match and player data [skip ci]"
             git push
-            echo "::notice::Stats updated and pushed!"
-          else
-            echo "::notice::No changes in match statistics."
+            echo "::notice::Stats updated and pushed."
           fi
-
-      - name: Trigger On-Demand Revalidation
-        run: |
-          curl "https://flickball.ezzio.me/api/revalidate?secret=${{ secrets.REVALIDATION_TOKEN }}"
-

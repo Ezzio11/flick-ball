@@ -1,22 +1,18 @@
 /**
- * ingest_data.js
- *
- * FOTMOB SCRAPER IMPLEMENTATION v3.0 (Playwright Hybrid)
- * Fetches comprehensive match data from FotMob's internal API for FC Barcelona (ID 8634).
- * Uses a visible Playwright browser to inherit anti-bot headers and bypass Cloudflare Turnstile.
+ * ingest_data.js - match-level stats for FC Barcelona (FotMob team 8634).
+ * Merges new finished matches into public/data/matches.json and
+ * src/lib/data_ingested.ts. Existing matches are never dropped.
  */
 
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright');
+const { api, getMatch, seasonStartYear, seasonLabel, COMPETITION_BLOCKLIST } = require('./fotmob');
 
-const CACHE_DIR = path.join(__dirname, '../.cache');
 const MATCHES_FILE = path.join(__dirname, '../public/data/matches.json');
-const COMPETITION_BLOCKLIST = ["Club Friendlies", "Trofeu Joan Gamper", "International Friendlies", "Friendly", "Other Friendlies", "Club Friendlies 2024", "Club Friendlies 2025"];
-
 const OUTPUT_FILE = path.join(__dirname, '../src/lib/data_ingested.ts');
 const TEAM_ID = 8634; // FC Barcelona
-const BASE_URL = "https://www.fotmob.com/api/data";
+const FIRST_SEASON = 2024; // Flick's first season (2024/25)
+const LEAGUES = [87, 42, 138, 139]; // LaLiga, Champions League, Copa del Rey, Supercopa
 
 function parseMatchData(details, fixtureInfo) {
     const content = details.content;
@@ -150,169 +146,89 @@ function parseMatchData(details, fixtureInfo) {
         score: scoreStr.includes(" - ") ? scoreStr : scoreStr.replace("-", " - "),
         isHome: isHome,
         competition: fixtureInfo.leagueName || details.general?.leagueName || "Unknown",
-        season: fixtureInfo._seasonLabel || "24/25",
+        season: seasonLabel(fixtureInfo.status.utcTime),
         stats: stats,
         scorers: scorers,
         formation: formation
     };
 }
 
-async function fetchWithPlaywright(page, url) {
-    return await page.evaluate(async (targetUrl) => {
-        const res = await fetch(targetUrl);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return await res.json();
-    }, url);
+
+/** Finished fixtures to consider, keyed by String(id): current season + every past Flick season. */
+async function collectFixtures() {
+    const fixtures = new Map();
+    const add = (f) => { if (f.status?.finished) fixtures.set(String(f.id), f); };
+
+    // A failure here means FotMob changed or blocked us: fail loudly so CI goes red.
+    const team = await api('teams', { id: TEAM_ID, tab: 'fixtures' });
+    const current = team.fixtures?.allFixtures?.fixtures;
+    if (!Array.isArray(current)) throw new Error('Team endpoint returned no fixtures list');
+    current.forEach(add);
+
+    // Past seasons via league endpoints: fills any gap left by a missed run.
+    for (let y = FIRST_SEASON; y < seasonStartYear(new Date()); y++) {
+        for (const league of LEAGUES) {
+            try {
+                const data = await api('leagues', { id: league, season: `${y}/${y + 1}`, tab: 'matches' });
+                const all = data.matches?.allMatches || data.fixtures?.allMatches || [];
+                all.filter(f => String(f.home?.id) === String(TEAM_ID) || String(f.away?.id) === String(TEAM_ID)).forEach(add);
+            } catch (e) {
+                console.warn(`League ${league} ${y}/${y + 1}: ${e.message}`);
+            }
+        }
+    }
+    return fixtures;
 }
 
 async function runScraper() {
-    const isCacheOnly = process.argv.includes('--use-cache');
-    const matchesMap = new Map();
-
-    try {
-        if (fs.existsSync(MATCHES_FILE)) {
-            try {
-                const existingMatches = JSON.parse(fs.readFileSync(MATCHES_FILE, 'utf8'));
-                console.log(`Loaded ${existingMatches.length} existing matches from ${MATCHES_FILE}`);
-                existingMatches.forEach(m => {
-                    if (m.id && !COMPETITION_BLOCKLIST.includes(m.competition)) {
-                        const sid = String(m.id);
-                        m.id = Number(m.id) || m.id;
-                        matchesMap.set(sid, m);
-                    }
-                });
-            } catch (e) {
-                console.warn("Could not parse existing matches.json, proceeding with empty history.");
-            }
+    const matchesMap = new Map(); // String(id) -> parsed match
+    if (fs.existsSync(MATCHES_FILE)) {
+        for (const m of JSON.parse(fs.readFileSync(MATCHES_FILE, 'utf8'))) {
+            if (m.id && !COMPETITION_BLOCKLIST.includes(m.competition)) matchesMap.set(String(m.id), m);
         }
+        console.log(`Loaded ${matchesMap.size} existing matches.`);
+    }
+    const before = matchesMap.size;
 
-        console.log("Launching Playwright (Visible Mode) to clear Cloudflare...");
-        const browser = await chromium.launch({ headless: false });
-        const context = await browser.newContext();
-        const page = await context.newPage();
+    const fixtures = await collectFixtures();
+    let added = 0, failed = 0;
+    for (const [id, f] of fixtures) {
+        if (matchesMap.get(id)?.stats?.available) continue;
+        if (COMPETITION_BLOCKLIST.includes(f.tournament?.name || f.leagueName)) continue;
 
-        console.log("Navigating to FotMob...");
-        await page.goto('https://www.fotmob.com');
-        
-        console.log("Waiting for Cloudflare verification to pass... (Please click the checkbox if prompted!)");
-        // We wait until the main FotMob search bar or content appears
-        await page.waitForSelector('input[type="search"], nav', { timeout: 60000 });
-        console.log("Cloudflare cleared successfully!");
-
-        console.log(`\n[1/2] Fetching CURRENT season (25/26) from Team endpoint...`);
-        const currentSeasonUrl = `${BASE_URL}/teams?id=${TEAM_ID}&tab=fixtures`;
+        process.stdout.write(`Match ${id} (${f.home?.name} vs ${f.away?.name})... `);
         try {
-            const data = await fetchWithPlaywright(page, currentSeasonUrl);
-            if (data.fixtures?.allFixtures?.fixtures) {
-                const fixtures = data.fixtures.allFixtures.fixtures;
-                for (const f of fixtures) {
-                    if (f.status.finished) {
-                        matchesMap.set(f.id, { ...f, _seasonLabel: "25/26" });
-                    }
-                }
-            }
+            const details = await getMatch(id);
+            const result = parseMatchData(details, {
+                id: Number(id),
+                status: f.status,
+                leagueName: f.tournament?.name || f.leagueName || details.general?.leagueName,
+            });
+            if (COMPETITION_BLOCKLIST.includes(result.competition)) { console.log('skipped (friendly)'); continue; }
+            if (!matchesMap.has(id)) added++;
+            matchesMap.set(id, result);
+            console.log(result.stats.available ? 'OK' : 'OK (no stats yet)');
         } catch (e) {
-            console.error("Error fetching current season:", e.message);
+            failed++;
+            console.log(`FAILED: ${e.message}`); // keeps any existing entry for this match
         }
+    }
 
-        console.log(`\n[2/2] Fetching HISTORICAL season (24/25) from League endpoints...`);
-        const LEAGUES = [
-            { id: 87, name: "LaLiga" },
-            { id: 42, name: "Champions League" },
-            { id: 138, name: "Copa del Rey" },
-            { id: 139, name: "Supercopa" }
-        ];
+    const allMatches = [...matchesMap.values()].sort((a, b) => new Date(a.date) - new Date(b.date));
+    if (allMatches.length === 0) throw new Error('No matches to write');
 
-        for (const league of LEAGUES) {
-            const url = `${BASE_URL}/leagues?id=${league.id}&season=2024%2F2025&tab=matches`;
-            try {
-                const data = await fetchWithPlaywright(page, url);
-                let fixtures = data.matches?.allMatches || data.fixtures?.allMatches || data.fixtures?.allFixtures?.fixtures || [];
-                const barcaMatches = fixtures.filter(f =>
-                    (String(f.home.id) === String(TEAM_ID) || String(f.away.id) === String(TEAM_ID)) && f.status.finished
-                );
-                for (const f of barcaMatches) {
-                    if (!matchesMap.has(f.id)) {
-                        matchesMap.set(f.id, { ...f, _seasonLabel: "24/25" });
-                    }
-                }
-            } catch (e) {}
-            await new Promise(r => setTimeout(r, 500));
-        }
-
-        const finalFixtureList = Array.from(matchesMap.values());
-        console.log(`\nTotal unique matches to process: ${finalFixtureList.length}`);
-
-        for (const f of finalFixtureList) {
-            // Check if we already have full stats for this match so we don't re-fetch unnecessarily
-            if (f.stats && f.stats.available) {
-                continue; // Already processed
-            }
-
-            process.stdout.write(`Processing match ${f.id} (${f.home?.name || f.opponent}) [${f._seasonLabel || "Unknown"}]... `);
-            try {
-                await page.goto(`https://www.fotmob.com/match/${f.id}`);
-                await page.waitForSelector('#__NEXT_DATA__', { state: 'attached', timeout: 15000 });
-                const details = await page.evaluate(() => {
-                    const el = document.getElementById('__NEXT_DATA__');
-                    return el ? JSON.parse(el.textContent).props.pageProps : null;
-                });
-                
-                if (!details || !details.content) {
-                    throw new Error("Invalid __NEXT_DATA__ structure");
-                }
-                
-                const fixtureInfo = {
-                    id: f.id,
-                    status: f.status,
-                    leagueName: f.leagueName || details.general?.leagueName,
-                    home: f.home || details.header?.teams[0],
-                    away: f.away || details.header?.teams[1],
-                    _seasonLabel: f._seasonLabel || "24/25"
-                };
-
-                const result = parseMatchData(details, fixtureInfo);
-                matchesMap.set(String(f.id), result);
-                console.log(result.stats.available ? "OK (Stats found)" : "OK (No stats)");
-
-                // Cache it
-                if (!fs.existsSync(CACHE_DIR)) fs.mkdirSync(CACHE_DIR, { recursive: true });
-                fs.writeFileSync(path.join(CACHE_DIR, `match_${f.id}.json`), JSON.stringify(details, null, 2));
-
-            } catch (e) {
-                console.log("FAILED", e.message);
-                matchesMap.delete(String(f.id));
-                matchesMap.delete(f.id);
-            }
-            await new Promise(r => setTimeout(r, 800)); // Rate limiting
-        }
-
-        await browser.close();
-
-        let allMatches = Array.from(matchesMap.values());
-        allMatches.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-        const fileContent = `// Auto-generated via scripts/ingest_data.js (Source: FotMob API via Playwright)
-// Date: ${new Date().toISOString()}
+    fs.writeFileSync(MATCHES_FILE, JSON.stringify(allMatches, null, 4));
+    fs.writeFileSync(OUTPUT_FILE, `// Auto-generated by scripts/ingest_data.js (source: FotMob). Do not edit.
 
 import { MatchData } from './matchHelpers';
 
 export const INGESTED_MATCHES: MatchData[] = ${JSON.stringify(allMatches, null, 4)};
-`;
-
-        if (allMatches.length === 0) {
-            console.error("\nFATAL: No matches were successfully processed.");
-            process.exit(1);
-        }
-
-        fs.writeFileSync(OUTPUT_FILE, fileContent);
-        fs.writeFileSync(MATCHES_FILE, JSON.stringify(allMatches, null, 4));
-        console.log(`\nSUCCESS: Scraped ${allMatches.length} matches.`);
-
-    } catch (err) {
-        console.error("\nFATAL ERROR:", err);
-        process.exit(1);
-    }
+`);
+    console.log(`\nDone: ${allMatches.length} matches (${before} before, ${added} new, ${failed} failed).`);
 }
 
-runScraper();
+if (require.main === module) {
+    runScraper().catch(err => { console.error('FATAL:', err); process.exit(1); });
+}
+
+module.exports = { parseMatchData };

@@ -10,6 +10,7 @@ import Footer from '@/components/layout/Footer';
 import BackButton from '@/components/ui/BackButton';
 import { Match } from '@/lib/teamStatistics';
 import { EnrichedPlayer } from '@/lib/types';
+import { flickSeasons } from '@/lib/utils';
 
 export default function SquadContent({ matches }: { matches: Match[] }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -82,7 +83,7 @@ export default function SquadContent({ matches }: { matches: Match[] }) {
                             </div>
                             <div className="text-right flex flex-col items-center md:items-end">
                                 <div className="bg-black text-white px-3 py-1  text-xl transform rotate-2 inline-block mb-1" style={{ fontFamily: "var(--font-bangers)" }}>
-                                    ISS. #25/26
+                                    ISS. #{flickSeasons().at(-1)}
                                 </div>
                                 <p className=" font-bold text-sm" style={{ fontFamily: "var(--font-comic)" }}>Flick&apos;s Titans</p>
                                 <p className=" text-xs text-gray-500 uppercase" style={{ fontFamily: "var(--font-comic)" }}>{format(new Date(), 'MMMM yyyy')}</p>

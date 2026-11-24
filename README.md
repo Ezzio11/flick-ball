@@ -1,54 +1,69 @@
-# FlickBall ⚽🔵🔴
+# FlickBall
 
-**Tracking the Hansi Flick Era at FC Barcelona.**
+Stats, tactics and player ratings for FC Barcelona under Hansi Flick, from his first match in August 2024 onward. Comic-book look, real numbers.
 
-FlickBall is a next-generation football analytics platform dedicated to analyzing FC Barcelona's performance under Hansi Flick. It combines advanced statistical data with a high-impact, comic-book-inspired visual aesthetic ("Flicki-Flacka").
+**Live:** [flickball.ezzio.me](https://flickball.ezzio.me)
 
-## 🌟 Features
+## What's on the site
 
-*   **Match Center**: Detailed match logs, results, and statistics.
-*   **FBI Rating System**: The "FlickBall Index" - a custom, mathematically rigorous 1-10 player rating algorithm that accounts for position-specific roles (e.g., "High-Line Specialist" for defenders).
-*   **Squad & Staff**: Profiles of the first team and the "Fitness Architects" (Julio Tous & Pepe Conde).
-*   **Achievements**: Tracking the "Hall of Glory" and milestones.
-*   **AI Insights**: Leveraging LLMs for game analysis and tactical breakdowns.
+| Page | What it shows |
+|---|---|
+| `/` | Landing page: trophies, signature moments, the players who defined the era |
+| `/team` | Team stats: campaign tracker, biggest wins, statement games, tactical matchups |
+| `/matches/[id]` | One match: score, scorers, formation, full stat comparison |
+| `/squad` | Every player who has played minutes under Flick |
+| `/squad/[slug]` | Player profile, filterable by season and competition, with an AI-written tactical note |
+| `/compare` | Two players side by side |
+| `/achievements` | Trophies and milestones |
+| `/about-fbi` | How the FBI rating works |
 
-## 🛠️ Tech Stack
+**FBI (FlickBall Index)** is the site's own 1 to 10 player rating, weighted per position toward what Flick's system asks for (pressing, verticality, risk-taking). Formula: [`public/documentation/FBI_FORMULA.md`](public/documentation/FBI_FORMULA.md). Code: [`src/lib/fbi-rating.ts`](src/lib/fbi-rating.ts).
 
-*   **Framework**: [Next.js 16](https://nextjs.org) (App Router)
-*   **Styling**: [Tailwind CSS 4](https://tailwindcss.com) + Framer Motion for animations.
-*   **Data**: FotMob integration (Ingested & cached).
-*   **AI**: Multi-Provider Waterfall Engine (Groq, Gemini, Cerebras, OpenRouter) for robust tactical narratives.
-*   **Utils**: `date-fns` for robust date handling.
+## How the data gets in
 
-## 🚀 Getting Started
+```
+FotMob ──► scripts/ingest_data.js ───► public/data/matches.json + src/lib/data_ingested.ts
+              │  (match pages cached in .cache/)
+              └► scripts/ingest_players.js ─► src/lib/titans_data.ts
+```
 
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
+- **[`scripts/fotmob.js`](scripts/fotmob.js)** is the only code that talks to FotMob: plain `fetch` with retries, a match-page cache, and the season rule (seasons roll over on Aug 1 UTC).
+- **`ingest_data.js`** collects finished fixtures for the current season (team endpoint) and every past Flick season (league endpoints for LaLiga, UCL, Copa del Rey and Supercopa, which fills any gap from a missed run). It parses each new match and merges it in. Existing matches are never dropped, and friendlies are excluded.
+- **`ingest_players.js`** reads the match list, fetches player stats only for matches it hasn't ingested yet, and appends them to each player's history.
+- **[GitHub Action](.github/workflows/update_stats.yml)** runs both scripts daily at 04:00 UTC and commits any change. Vercel deploys every push to `main`, so that commit is what updates the site.
 
-2.  **Run Development Server**:
-    ```bash
-    npm run dev
-    ```
+Run it yourself:
 
-3.  **Build for Production**:
-    ```bash
-    npm run build
-    ```
+```bash
+npm run scrape   # both scripts, about 30s with no cache
+npm test         # offline parser tests (node:test, no deps)
+```
 
-## 🎨 Design Philosophy
+If the Action goes red, read its log first. The usual cause is FotMob changing its page or API shape, and the fix belongs in `scripts/fotmob.js` or `parseMatchData` in `ingest_data.js`. The test in `scripts/ingest.test.js` replays a real saved match (`scripts/__fixtures__/`) against the stored record, so parser drift shows up there.
 
-The project uses a **"Comic Book / Pop Art"** aesthetic:
-*   **Fonts**: 'Bangers' for headings, 'Inter' for UI.
-*   **Colors**: FC Barcelona heritage colors (Blaugrana) mixed with vibrant comic accents (#FFED02 Yellow, #EDBB00 Gold).
-*   **Vibe**: Dynamic, aggressive pressing, high energy ("We don't just run. We suffocate.").
+## Running locally
 
-## 🤝 Credits
+Requires Node 20+.
 
-*   **Created by**: Ezzio
-*   **Data Source**: FotMob
-*   **Inspiration**: Hansi Flick's FC Barcelona team.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build, prerenders every match and player page
+npm run lint
+```
 
----
-*For educational and analytical purposes only. Not affiliated with FC Barcelona.*
+### Environment variables (all optional)
+
+| Variable | Used by |
+|---|---|
+| `GROQ_API_KEY`, `GEMINI_API_KEY`, `CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`, `HUGGING_FACE_TOKEN` | `/api/commentary`, tried in that order. Falls back to keyless Pollinations if none are set. |
+| `REVALIDATION_TOKEN` | `/api/revalidate?secret=...` to purge cached pages by hand |
+| `DATA_URL` | Load matches from a URL instead of the bundled `data_ingested.ts` |
+
+## Stack
+
+Next.js 16 (App Router, React Compiler), React 19, Tailwind CSS 4, Recharts, lucide-react, date-fns. Deployed on Vercel.
+
+## Credits
+
+Built by Ezzio. Data from [FotMob](https://www.fotmob.com). Not affiliated with FC Barcelona or FotMob.

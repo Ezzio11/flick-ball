@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { AggregatedStats } from '@/lib/types';
-import { cn } from '@/lib/utils';
+import { cn, flickSeasons } from '@/lib/utils';
 import PerformanceRadar, { MetricSet, METRIC_SETS, getDefaultSet, getAvailableSets } from './PerformanceRadar';
 
 interface HeroBannerProps {
@@ -84,7 +84,7 @@ export default function HeroBanner({ name, position, profileImage, stats }: Hero
                     <span className="uppercase text-xl ml-2 tracking-wide" style={{ fontFamily: 'var(--font-bangers)' }}>PLAYER FILE</span>
                 </div>
                 <div className="font-mono font-bold text-xs uppercase bg-black text-white px-2 py-1 transform -rotate-1">
-                    SEASON 24/25
+                    SEASON {flickSeasons().at(-1)}
                 </div>
             </div>
 
