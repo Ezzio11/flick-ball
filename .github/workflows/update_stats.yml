@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name 'Stats Bot'
           git config user.email 'stats-bot@noreply.github.com'
-          git add src/lib/data_ingested.ts public/data/matches.json src/lib/titans_data.ts
+          git add src/lib/data_ingested.ts public/data/matches.json src/lib/titans_data.ts src/lib/honours.json
           if git diff --cached --quiet; then
             echo "::notice::No new matches."
           else

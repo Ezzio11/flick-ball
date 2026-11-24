@@ -10,8 +10,11 @@ const { api, getMatch, seasonStartYear, seasonLabel, COMPETITION_BLOCKLIST } = r
 
 const MATCHES_FILE = path.join(__dirname, '../public/data/matches.json');
 const OUTPUT_FILE = path.join(__dirname, '../src/lib/data_ingested.ts');
+const HONOURS_FILE = path.join(__dirname, '../src/lib/honours.json');
+const MAJOR_HONOURS = ['LaLiga', 'Champions League', 'Copa del Rey', 'Supercopa de España', 'UEFA Super Cup', 'FIFA Club World Cup'];
 const TEAM_ID = 8634; // FC Barcelona
 const FIRST_SEASON = 2024; // Flick's first season (2024/25)
+const FLICK_START = new Date('2024-07-01T00:00:00Z');
 const LEAGUES = [87, 42, 138, 139];
 const REFRESH_DAYS = 7; // FotMob revises xG and other stats for a few days after a match // LaLiga, Champions League, Copa del Rey, Supercopa
 
@@ -146,7 +149,7 @@ function parseMatchData(details, fixtureInfo) {
         opponent: opponentName,
         score: scoreStr.includes(" - ") ? scoreStr : scoreStr.replace("-", " - "),
         isHome: isHome,
-        competition: fixtureInfo.leagueName || details.general?.leagueName || "Unknown",
+        competition: details.general?.leagueName || fixtureInfo.leagueName || "Unknown", // the match's own label beats the fixture list's
         season: seasonLabel(fixtureInfo.status.utcTime),
         stats: stats,
         scorers: scorers,
@@ -166,13 +169,16 @@ async function collectFixtures() {
     if (!Array.isArray(current)) throw new Error('Team endpoint returned no fixtures list');
     current.forEach(add);
 
-    // Past seasons via league endpoints: fills any gap left by a missed run.
-    for (let y = FIRST_SEASON; y < seasonStartYear(new Date()); y++) {
+    // Past seasons via league endpoints: fills any gap left by a missed run. Starts a season
+    // early because FotMob files each Supercopa under the previous season's label
+    // (its "2023/2024" holds the January 2025 edition); the date filter drops pre-Flick games.
+    for (let y = FIRST_SEASON - 1; y < seasonStartYear(new Date()); y++) {
         for (const league of LEAGUES) {
             try {
                 const data = await api('leagues', { id: league, season: `${y}/${y + 1}`, tab: 'matches' });
                 const all = data.matches?.allMatches || data.fixtures?.allMatches || [];
-                all.filter(f => String(f.home?.id) === String(TEAM_ID) || String(f.away?.id) === String(TEAM_ID)).forEach(add);
+                all.filter(f => (String(f.home?.id) === String(TEAM_ID) || String(f.away?.id) === String(TEAM_ID))
+                    && new Date(f.status?.utcTime) >= FLICK_START).forEach(add);
             } catch (e) {
                 console.warn(`League ${league} ${y}/${y + 1}: ${e.message}`);
             }
@@ -193,6 +199,25 @@ import { MatchData } from './matchHelpers';
 export const INGESTED_MATCHES: MatchData[] = ${JSON.stringify(allMatches, null, 4)};
 `);
     return allMatches;
+}
+
+/** Trophy cabinet + LaLiga points-per-game by coach/season, for the achievements page. */
+async function updateHonours() {
+    try {
+        const { history } = await api('teams', { id: TEAM_ID, tab: 'history' });
+        const split = (s) => String(s || '').split(',').map(x => x.trim()).filter(Boolean);
+        const trophies = (history.trophyList || []).filter(t => MAJOR_HONOURS.includes(t.name)).map(t => ({
+            name: t.name, won: t.won, seasonsWon: split(t.seasonsWon), seasonsRunnerup: split(t.seasonsRunnerup),
+        }));
+        const laligaByCoach = (history.coachHistory || []).filter(c => c.leagueId === 87).map(c => ({
+            season: c.season, coach: c.name, win: c.win, draw: c.draw, loss: c.loss, pointsPerGame: c.pointsPerGame,
+        }));
+        if (!trophies.some(t => t.name === 'LaLiga')) throw new Error('trophy list missing LaLiga');
+        fs.writeFileSync(HONOURS_FILE, JSON.stringify({ trophies, laligaByCoach }, null, 2) + '\n');
+        console.log(`Honours: ${trophies.length} competitions, ${laligaByCoach.length} coach-seasons.`);
+    } catch (e) {
+        console.warn(`Honours not updated (keeping previous file): ${e.message}`);
+    }
 }
 
 async function runScraper() {
@@ -232,6 +257,7 @@ async function runScraper() {
     }
 
     const allMatches = writeMatches([...matchesMap.values()]);
+    await updateHonours();
     console.log(`\nDone: ${allMatches.length} matches (${before} before, ${added} new, ${failed} failed).`);
 }
 

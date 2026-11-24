@@ -2220,6 +2220,182 @@ export const INGESTED_MATCHES: MatchData[] = [
         "formation": "4-2-3-1"
     },
     {
+        "id": 4579037,
+        "date": "2025-01-08T19:00:00Z",
+        "opponent": "Athletic Club",
+        "score": "0 - 2",
+        "isHome": false,
+        "competition": "Super Cup",
+        "season": "24/25",
+        "stats": {
+            "available": true,
+            "possession": 56,
+            "xG": "0.00",
+            "totalShots": 14,
+            "shotsOnTarget": 8,
+            "bigChances": 7,
+            "bigChancesMissed": 5,
+            "corners": 2,
+            "fouls": 8,
+            "accuratePasses": {
+                "value": 437,
+                "percentage": 84
+            },
+            "oppositionHalfPasses": 123,
+            "ownHalfPasses": 314,
+            "touchesInOppBox": 21,
+            "accurateLongBalls": {
+                "value": 31,
+                "percentage": 54
+            },
+            "accurateCrosses": {
+                "value": 1,
+                "percentage": 13
+            },
+            "tackles": 24,
+            "interceptions": 13,
+            "blocks": 1,
+            "clearances": 23,
+            "keeperSaves": 5,
+            "shotsOffTarget": 4,
+            "blockedShots": 2,
+            "duelsWon": 50,
+            "groundDuelsWon": {
+                "value": 43,
+                "percentage": 57
+            },
+            "aerialDuelsWon": {
+                "value": 7,
+                "percentage": 35
+            },
+            "successfulDribbles": {
+                "value": 6,
+                "percentage": 38
+            },
+            "xGOpenPlay": "0.00",
+            "xGSetPlay": "0.00",
+            "xGOT": "0.00"
+        },
+        "scorers": [
+            {
+                "player": "Gavi",
+                "team": "barca",
+                "minute": 17,
+                "assist": "Alejandro Balde"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 52,
+                "assist": "Gavi"
+            }
+        ],
+        "formation": "4-2-3-1"
+    },
+    {
+        "id": 4582241,
+        "date": "2025-01-12T19:00:00Z",
+        "opponent": "Real Madrid",
+        "score": "2 - 5",
+        "isHome": false,
+        "competition": "Super Cup",
+        "season": "24/25",
+        "stats": {
+            "available": true,
+            "possession": 51,
+            "xG": "0.00",
+            "totalShots": 14,
+            "shotsOnTarget": 8,
+            "bigChances": 6,
+            "bigChancesMissed": 1,
+            "corners": 5,
+            "fouls": 13,
+            "accuratePasses": {
+                "value": 376,
+                "percentage": 87
+            },
+            "oppositionHalfPasses": 204,
+            "ownHalfPasses": 172,
+            "touchesInOppBox": 20,
+            "accurateLongBalls": {
+                "value": 24,
+                "percentage": 51
+            },
+            "accurateCrosses": {
+                "value": 2,
+                "percentage": 18
+            },
+            "tackles": 15,
+            "interceptions": 3,
+            "blocks": 6,
+            "clearances": 19,
+            "keeperSaves": 5,
+            "shotsOffTarget": 3,
+            "blockedShots": 3,
+            "duelsWon": 44,
+            "groundDuelsWon": {
+                "value": 39,
+                "percentage": 54
+            },
+            "aerialDuelsWon": {
+                "value": 5,
+                "percentage": 29
+            },
+            "successfulDribbles": {
+                "value": 10,
+                "percentage": 63
+            },
+            "xGOpenPlay": "0.00",
+            "xGSetPlay": "0.00",
+            "xGOT": "0.00"
+        },
+        "scorers": [
+            {
+                "player": "Kylian Mbappé",
+                "team": "opponent",
+                "minute": 5,
+                "assist": "Vinicius Junior"
+            },
+            {
+                "player": "Lamine Yamal",
+                "team": "barca",
+                "minute": 22,
+                "assist": "Robert Lewandowski"
+            },
+            {
+                "player": "Robert Lewandowski",
+                "team": "barca",
+                "minute": 36,
+                "assist": null
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 39,
+                "assist": "Jules Koundé"
+            },
+            {
+                "player": "Alejandro Balde",
+                "team": "barca",
+                "minute": 45,
+                "assist": "Raphinha"
+            },
+            {
+                "player": "Raphinha",
+                "team": "barca",
+                "minute": 48,
+                "assist": "Marc Casado"
+            },
+            {
+                "player": "Rodrygo",
+                "team": "opponent",
+                "minute": 60,
+                "assist": null
+            }
+        ],
+        "formation": "4-2-3-1"
+    },
+    {
         "id": 4707274,
         "date": "2025-01-15T20:00:00Z",
         "opponent": "Real Betis",
@@ -3287,7 +3463,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Benfica",
         "score": "0 - 1",
         "isHome": false,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3354,7 +3530,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Benfica",
         "score": "3 - 1",
         "isHome": true,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3846,7 +4022,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Borussia Dortmund",
         "score": "4 - 0",
         "isHome": true,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -3998,7 +4174,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Borussia Dortmund",
         "score": "3 - 1",
         "isHome": false,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4344,7 +4520,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Inter",
         "score": "3 - 3",
         "isHome": true,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -4520,7 +4696,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Inter",
         "score": "4 - 3",
         "isHome": false,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "24/25",
         "stats": {
             "available": true,
@@ -5309,7 +5485,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Newcastle United",
         "score": "1 - 2",
         "isHome": false,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -6590,7 +6766,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Atlético Madrid",
         "score": "3 - 1",
         "isHome": true,
-        "competition": "Champions League",
+        "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7155,7 +7331,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Athletic Club",
         "score": "5 - 0",
         "isHome": true,
-        "competition": "LaLiga",
+        "competition": "Super Cup",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7246,7 +7422,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Real Madrid",
         "score": "3 - 2",
         "isHome": true,
-        "competition": "LaLiga",
+        "competition": "Super Cup",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -7999,7 +8175,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Atletico Madrid",
         "score": "4 - 0",
         "isHome": false,
-        "competition": "Champions League",
+        "competition": "Copa del Rey",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8333,7 +8509,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Atletico Madrid",
         "score": "3 - 0",
         "isHome": true,
-        "competition": "Champions League",
+        "competition": "Copa del Rey",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8479,7 +8655,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Newcastle United",
         "score": "1 - 1",
         "isHome": false,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8655,7 +8831,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Newcastle United",
         "score": "7 - 2",
         "isHome": true,
-        "competition": "Champions League Final Stage",
+        "competition": "Champions League",
         "season": "25/26",
         "stats": {
             "available": true,
@@ -8837,7 +9013,7 @@ export const INGESTED_MATCHES: MatchData[] = [
         "opponent": "Atlético Madrid",
         "score": "1 - 2",
         "isHome": false,
-        "competition": "Champions League",
+        "competition": "LaLiga",
         "season": "25/26",
         "stats": {
             "available": true,

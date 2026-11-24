@@ -30,6 +30,7 @@ FotMob ──► scripts/ingest_data.js ───► public/data/matches.json + 
 - **[`scripts/fotmob.js`](scripts/fotmob.js)** is the only code that talks to FotMob: plain `fetch` against its JSON API with retries, a match cache that rejects any payload whose `matchId` isn't the one asked for, the season rule (seasons roll over on Aug 1 UTC), and the lineup position codes.
 - **`ingest_data.js`** collects finished fixtures for the current season (team endpoint) and every past Flick season (league endpoints for LaLiga, UCL, Copa del Rey and Supercopa, which fills any gap from a missed run). It parses each new match and merges it in. Matches from the last 7 days are re-read every run, because FotMob revises xG and other stats after the final whistle. Existing matches are never dropped, and friendlies are excluded.
 - **`ingest_players.js`** reads the match list and adds player stats for new matches (and rebuilds the last 7 days). Each player-match record also stores the lineup slot the player started in (`lineupPosition`, e.g. `LW`) and their broad role (`lineupRole`).
+- **Honours** (`src/lib/honours.json`): FotMob's trophy list and LaLiga points-per-game by coach, refreshed each run. The `/achievements` page computes everything it can (trophies and title counts, Clásico record, points per game against past coaches, unbeaten run, finals, player season bests) in `src/lib/achievements.ts`. Only fixed historical events are written as text, in the `HISTORY` block at the top of the page.
 - **Positions** are derived, never typed by hand: a player's position is their most common starting slot for Barça, if it agrees with their usual role. Otherwise it's the broad role (`Attacker`, `Midfielder`, ...), for bench players or a one-off start out of position. In the app, `positionGroup()` in `src/lib/utils.ts` turns any of these into Goalkeeper/Defender/Midfielder/Forward.
 - **[GitHub Action](.github/workflows/update_stats.yml)** runs both scripts daily at 04:00 UTC and commits any change. Vercel deploys every push to `main`, so that commit is what updates the site.
 
@@ -37,7 +38,7 @@ Run it yourself:
 
 ```bash
 npm run scrape   # both scripts, about 30s with no cache
-npm test         # offline tests (node:test, no deps)
+npm test         # offline tests (node:test, no deps; Node 22.18+ for the TS module tests)
 node scripts/ingest_players.js --rebuild   # rebuild every player-match record from FotMob (keeps player ids/names)
 ```
 
