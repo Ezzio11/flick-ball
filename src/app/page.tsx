@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/layout/Footer";
+import TrophyStamp from "@/components/layout/TrophyStamp";
 import { Shirt, BarChart3 } from "lucide-react";
 import { useState } from "react";
 
@@ -91,13 +92,7 @@ export default function Home() {
 
           {/* CENTER: Trophy Room Sticker (Absolute Overlay) */}
           <Link href="/achievements" className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 transform rotate-3 hover:rotate-1 hover:scale-105 transition-all duration-300 cursor-pointer">
-            <Image
-              src="/images/trophy-stamp.webp"
-              alt="Trophy Room"
-              width={190}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-            />
+            <TrophyStamp width={190} />
           </Link>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
@@ -118,14 +113,7 @@ export default function Home() {
 
             {/* MOBILE ONLY: Trophy Room Sticker (Between Logo and Nav) */}
             <Link href="/achievements" className="md:hidden relative z-20 transform rotate-2 hover:scale-105 transition-transform my-1">
-              <Image
-                src="/images/trophy-stamp.webp"
-                alt="Trophy Room"
-                width={140}
-                height={74}
-                style={{ width: 'auto', height: 'auto' }}
-                priority
-              />
+              <TrophyStamp width={140} priority />
             </Link>
 
 
