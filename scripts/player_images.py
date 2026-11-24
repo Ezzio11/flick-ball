@@ -5,6 +5,7 @@ Comic-style portraits for players who don't have one yet.
     python3 scripts/player_images.py            # every player in titans_data.ts without an image
     python3 scripts/player_images.py --only gabriel-jesus,rodri --force
     python3 scripts/player_images.py --dry-run  # just list what's missing and where the photo comes from
+    python3 scripts/player_images.py --refresh-squad   # + redraw current players with a newer official photo
 
 Steps per player:
   1. source: the official portrait from fcbarcelona.com (first-team page og:image, a transparent cut-out),
@@ -36,7 +37,9 @@ PLAYERS_DIR = ROOT / 'public' / 'images' / 'players'
 TITANS = ROOT / 'src' / 'lib' / 'titans_data.ts'
 OVERRIDES = Path(__file__).resolve().parent / 'player_images_sources.json'
 WORK = ROOT / '.cache' / 'player-images'
-STYLE_REFS = [PLAYERS_DIR / 'pedri-profile.webp', PLAYERS_DIR / 'marcus-rashford-profile.webp']  # full portraits; face close-ups are cropped from them
+# Hand-made portraits of players who have left, so --refresh-squad never redraws a reference.
+# Full portraits; face close-ups are cropped from them.
+STYLE_REFS = [PLAYERS_DIR / 'marcus-rashford-profile.webp', PLAYERS_DIR / 'robert-lewandowski-profile.webp']
 SQUAD_URL = 'https://www.fcbarcelona.com/en/football/first-team/players'
 SITE = 'https://www.fcbarcelona.com'
 SIZE = (1078, 1280)   # every existing portrait
@@ -90,6 +93,17 @@ def og_image(page: str):
     return m.group(1).split('?')[0] + '?width=3200'  # the image server needs a width; 3200 is the max
 
 
+def photo_date(url: str):
+    """Upload date of an official photo, from its URL (/photo-resources/2026/09/03/...), as 'YYYY-MM-DD'."""
+    m = re.search(r'/(20\d\d)/(\d\d)/(\d\d)/', url or '')
+    return '-'.join(m.groups()) if m else None
+
+
+def is_stale(portrait_date, official_date):
+    """A portrait needs redrawing when the club has published a newer photo than it was made from."""
+    return bool(official_date) and (portrait_date is None or official_date > portrait_date)
+
+
 def prepare(img):
     """Source for the generator: a cut-out is cropped to the player and centred on white in 5:6;
     an ordinary photo is passed through (downscaled)."""
@@ -130,10 +144,38 @@ def coverage(img):
 
 # ---------- I/O ----------
 
-def fetch(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={'User-Agent': UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read()
+def fetch(url: str, tries: int = 5) -> bytes:
+    """GET with retries: the club site rate-limits (429) when many player pages are read in a row."""
+    import time
+    import urllib.error
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == tries - 1:
+                raise
+            wait = int(e.headers.get('Retry-After') or 0) or 5 * 2 ** attempt
+            time.sleep(min(wait, 120))
+
+
+_portraits = {}
+
+
+def official_portrait(path: str):
+    """og:image portrait URL for a player page, fetched once per run and spaced out (rate limit)."""
+    import time
+    if path not in _portraits:
+        _portraits[path] = og_image(fetch(SITE + path).decode('utf-8', 'replace'))
+        time.sleep(1)
+    return _portraits[path]
+
+
+def portrait_date(path: Path):
+    """Date the portrait was last committed ('YYYY-MM-DD'), or None if it isn't in git yet."""
+    out = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', str(path)], cwd=ROOT, capture_output=True, text=True)
+    return out.stdout.strip() or None
 
 
 def players_from_data():
@@ -228,6 +270,8 @@ def main():
     ap.add_argument('--force', action='store_true', help='regenerate even if the image exists')
     ap.add_argument('--dry-run', action='store_true', help='list players and photo sources, generate nothing')
     ap.add_argument('--jobs', type=int, default=3, help='players generated in parallel (default 3)')
+    ap.add_argument('--refresh-squad', action='store_true',
+                    help='also redraw current first-team players whose official photo is newer than their portrait')
     args = ap.parse_args()
     if args.force and not args.only:
         ap.error('--force needs --only: it would otherwise redraw every hand-made portrait')
@@ -236,6 +280,18 @@ def main():
     only = set(args.only.split(',')) if args.only else None
     todo = {s: n for s, n in names.items()
             if (only is None or s in only) and (args.force or not (PLAYERS_DIR / f'{s}-profile.webp').exists())}
+    squad = parse_squad(fetch(SQUAD_URL).decode('utf-8', 'replace'))
+    refresh = set()
+    if args.refresh_squad:
+        # Only players still at the club (on the official page); departed players keep their portrait.
+        for s, n in names.items():
+            dest = PLAYERS_DIR / f'{s}-profile.webp'
+            hit = match_player(n, squad) if dest.exists() and s not in todo else None
+            url = official_portrait(hit[1]) if hit else None
+            if url and is_stale(portrait_date(dest), photo_date(url)):
+                todo[s] = n
+                refresh.add(s)
+                print(f'refresh {s:<22} portrait {portrait_date(dest)} < official photo {photo_date(url)}')
     if only and only - set(names):
         print(f'Unknown slugs: {", ".join(sorted(only - set(names)))}', file=sys.stderr)
     if not todo:
@@ -243,14 +299,13 @@ def main():
         return 0
 
     overrides = json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
-    squad = parse_squad(fetch(SQUAD_URL).decode('utf-8', 'replace'))
     sources, problems = {}, []
     for slug, name in sorted(todo.items()):
         if slug in overrides:
             sources[slug] = overrides[slug]
             continue
         hit = match_player(name, squad)
-        url = og_image(fetch(SITE + hit[1]).decode('utf-8', 'replace')) if hit else None
+        url = official_portrait(hit[1]) if hit else None
         if url:
             sources[slug] = {'url': url}
         else:
@@ -265,7 +320,7 @@ def main():
 
     done = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.jobs)) as pool:
-        futures = {pool.submit(make, s, src, refs, args.force): s for s, src in sources.items()}
+        futures = {pool.submit(make, s, src, refs, args.force or s in refresh): s for s, src in sources.items()}
         for f in concurrent.futures.as_completed(futures):
             slug = futures[f]
             try:

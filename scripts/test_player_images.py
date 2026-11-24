@@ -115,6 +115,24 @@ class Prompt(unittest.TestCase):
         self.assertIn('Note: the one in orange', P.PROMPT.format(out='x.png', hint='Note: the one in orange\n'))
 
 
+class Refresh(unittest.TestCase):
+    def test_photo_date_from_url(self):
+        self.assertEqual(P.photo_date('https://www.fcbarcelona.com/photo-resources/2026/09/03/f8d9/09-Gabriel_Jesus.png?width=3200'), '2026-09-03')
+        self.assertIsNone(P.photo_date('https://x/i/elements/fcb-share.png'))
+        self.assertIsNone(P.photo_date(None))
+
+    def test_stale_only_when_official_photo_is_newer(self):
+        self.assertTrue(P.is_stale('2026-03-13', '2026-09-03'))
+        self.assertFalse(P.is_stale('2026-11-24', '2026-09-03'))  # drawn after the photo came out
+        self.assertFalse(P.is_stale('2026-09-03', '2026-09-03'))
+        self.assertTrue(P.is_stale(None, '2026-09-03'))           # not committed yet
+        self.assertFalse(P.is_stale('2026-03-13', None))          # no dated official photo: leave it
+
+    def test_style_references_are_departed_players(self):
+        # A refreshed portrait must never become the style reference for the next run.
+        self.assertEqual([r.name for r in P.STYLE_REFS], ['marcus-rashford-profile.webp', 'robert-lewandowski-profile.webp'])
+
+
 class Cli(unittest.TestCase):
     def test_force_without_only_is_refused(self):
         import subprocess

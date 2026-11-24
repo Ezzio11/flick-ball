@@ -52,10 +52,11 @@ Every player gets a comic-style portrait at `public/images/players/<slug>-profil
 npm run player-images -- --dry-run   # who is missing, and which official photo each will use
 npm run player-images                # generate them (about 1.5 min per player, 3 in parallel)
 npm run player-images -- --only rodri --force   # redo one
+npm run player-images -- --refresh-squad      # also redraw current players whose official photo is newer (new season kit)
 npm run test:images                  # offline tests for the script
 ```
 
-[`scripts/player_images.py`](scripts/player_images.py) takes the official portrait from the player's fcbarcelona.com page, has the local **Codex CLI** convert it to comic style (hand-inked like two existing portraits) while keeping the person, pose and kit from the photo and removing every logo, cuts out the background with `rembg`, and places the figure like the rest of the set. It never overwrites an existing image without `--force`, and it writes a source-vs-result sheet to `.cache/player-images/review.png`: **look at it before committing**, because AI likeness can miss.
+[`scripts/player_images.py`](scripts/player_images.py) takes the official portrait from the player's fcbarcelona.com page, has the local **Codex CLI** convert it to comic style (hand-inked like the hand-made Rashford and Lewandowski portraits, which never get redrawn) while keeping the person, pose and kit from the photo and removing every logo, cuts out the background with `rembg`, and places the figure like the rest of the set. It never overwrites an existing image without `--force`, and it writes a source-vs-result sheet to `.cache/player-images/review.png`: **look at it before committing**, because AI likeness can miss.
 
 Players without an official portrait (Barça Atlètic call-ups) need a photo in [`scripts/player_images_sources.json`](scripts/player_images_sources.json): a URL plus a `hint` saying which person in the photo is the player. Codex was chosen over Gemini (`agy`) after a side-by-side: Gemini kept the style but changed hair colour and faces. Needs `codex` logged in, plus Pillow and `rembg` (`pip install pillow rembg`).
 
