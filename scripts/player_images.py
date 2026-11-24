@@ -9,9 +9,9 @@ Comic-style portraits for players who don't have one yet.
 Steps per player:
   1. source: the official portrait from fcbarcelona.com (first-team page og:image, a transparent cut-out),
      or an entry in scripts/player_images_sources.json for players without one (e.g. Barça Atlètic).
-  2. generate: local Codex CLI (its image tool) redraws the photo in the style of two existing portraits
-     (full + face close-ups, so it copies the pen work rather than filtering the photo),
-     keeping the likeness and removing every crest/sponsor/manufacturer mark.
+  2. generate: local Codex CLI (its image tool) converts the photo to comic style, hand-inked like two
+     existing portraits (full + face close-ups). Only the drawing style changes: person, pose, framing
+     and kit stay as in the photo; crests, sponsors and badges are removed.
   3. finish: rembg removes the background; the figure is placed like the existing images
      (1078x1280, bottom-aligned, centred) and saved as public/images/players/<slug>-profile.webp.
   4. review: a contact sheet (source | result) is written to .cache/player-images/review.png. Look at it.
@@ -41,20 +41,12 @@ SQUAD_URL = 'https://www.fcbarcelona.com/en/football/first-team/players'
 SITE = 'https://www.fcbarcelona.com'
 SIZE = (1078, 1280)   # every existing portrait
 TOP_MARGIN = 30       # head sits ~30px below the top edge in the existing set
-KIT_OUTFIELD = "FC Barcelona home shirt in the references' design (blue sleeves, red and blue vertical stripes with soft gradient)."
-KIT_KEEPER = "He is a goalkeeper: keep his goalkeeper shirt from image 1 (same colours and pattern), not the outfield kit."
 UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36'
 
-PROMPT = """Image 1 is a photo of a real footballer. Images 2-5 are from a series of illustrated player portraits (2 and 3 full portraits, 4 and 5 close-ups of their faces). Draw the footballer from image 1 as a new portrait in that series.
+PROMPT = """Convert image 1 into a comic book style, hand-inked like images 2-5 (2 and 3 full portraits, 4 and 5 face close-ups).
+Change only the drawing style. Keep everything else from image 1 exactly: the person, his pose, the framing and the kit.
+Remove all logos, crests, sponsors and badges. Do not add text. Plain white background.
 {hint}
-LIKENESS: instantly recognisable as the person in image 1: exact hair colour, hairstyle, eyes, nose, jaw, facial hair (or lack of it), skin tone, tattoos, age and expression. Do not change his hair colour, age him or generalise his face.
-
-ART STYLE, this is what matters most: it must look HAND-INKED, like the face close-ups (images 4 and 5), NOT like a filtered photograph. Heavy black ink cross-hatching for every shadow on the face, neck and arms; visible pen strokes across the skin; a thick black contour line around the head, hair and body; hair drawn as inked strands with black shadow areas; colour laid as flat warm tones with halftone dots, not photographic skin gradients; no photographic skin texture, pores or blemishes.
-
-POSE AND KIT (copy images 2 and 3): waist-up, centred, facing the viewer, hands clasped behind his back, head near the top edge, shirt reaching the bottom edge. {kit} Remove every logo and mark: no club crest, no sponsor, no manufacturer logo, no sleeve badge, no text, no numbers.
-
-BACKGROUND: plain solid white, nothing else. Portrait orientation, about 5:6.
-
 Use your image generation tool. Save the final image as ./{out} in the current directory."""
 
 
@@ -145,17 +137,15 @@ def fetch(url: str) -> bytes:
 
 
 def players_from_data():
-    """{name: is_goalkeeper} for every player in titans_data.ts."""
     s = TITANS.read_text(encoding='utf-8')
     data = json.loads(s[s.index('[', s.index('=')):s.rindex(']') + 1])
-    return {p['name']: p.get('position') in ('GK', 'Goalkeeper') for p in data}
+    return [p['name'] for p in data]
 
 
-def generate(src: Path, refs: list, workdir: Path, hint: str, keeper: bool) -> Path:
+def generate(src: Path, refs: list, workdir: Path, hint: str) -> Path:
     out = workdir / 'comic.png'
     out.unlink(missing_ok=True)
-    prompt = PROMPT.format(out=out.name, hint=f'\nWhich person: {hint}\n' if hint else '',
-                           kit=KIT_KEEPER if keeper else KIT_OUTFIELD)
+    prompt = PROMPT.format(out=out.name, hint=f'Note: {hint}\n' if hint else '')
     # -i takes several files, so the prompt goes on stdin (as an argument it is swallowed as an image).
     images = [arg for path in [src, *refs] for arg in ('-i', str(path))]
     run = subprocess.run(['codex', 'exec', '--skip-git-repo-check', '-s', 'workspace-write', '-C', str(workdir), *images],
@@ -166,7 +156,7 @@ def generate(src: Path, refs: list, workdir: Path, hint: str, keeper: bool) -> P
     return out
 
 
-def make(slug: str, keeper: bool, source: dict, refs: list, force: bool):
+def make(slug: str, source: dict, refs: list, force: bool):
     from PIL import Image
     from rembg import remove
     dest = PLAYERS_DIR / f'{slug}-profile.webp'
@@ -177,7 +167,7 @@ def make(slug: str, keeper: bool, source: dict, refs: list, force: bool):
     (wd / 'source_raw').write_bytes(fetch(source['url']))
     src = wd / 'source.png'
     prepare(Image.open(wd / 'source_raw')).save(src)
-    comic = generate(src, refs, wd, source.get('hint', ''), keeper)
+    comic = generate(src, refs, wd, source.get('hint', ''))
     final = place(remove(Image.open(comic).convert('RGBA')))
     cov = coverage(final)
     if not 0.15 <= cov <= 0.8:  # existing portraits: 22%-65%
@@ -242,8 +232,7 @@ def main():
     if args.force and not args.only:
         ap.error('--force needs --only: it would otherwise redraw every hand-made portrait')
 
-    roster = players_from_data()
-    names = {slugify(n): n for n in roster}
+    names = {slugify(n): n for n in players_from_data()}
     only = set(args.only.split(',')) if args.only else None
     todo = {s: n for s, n in names.items()
             if (only is None or s in only) and (args.force or not (PLAYERS_DIR / f'{s}-profile.webp').exists())}
@@ -276,7 +265,7 @@ def main():
 
     done = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.jobs)) as pool:
-        futures = {pool.submit(make, s, roster[todo[s]], src, refs, args.force): s for s, src in sources.items()}
+        futures = {pool.submit(make, s, src, refs, args.force): s for s, src in sources.items()}
         for f in concurrent.futures.as_completed(futures):
             slug = futures[f]
             try:

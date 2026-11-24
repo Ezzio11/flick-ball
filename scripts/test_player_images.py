@@ -104,18 +104,15 @@ class Geometry(unittest.TestCase):
 
 
 class Prompt(unittest.TestCase):
-    def test_kit_rule_by_position(self):
-        keeper = P.PROMPT.format(out='x.png', hint='', kit=P.KIT_KEEPER)
-        outfield = P.PROMPT.format(out='x.png', hint='', kit=P.KIT_OUTFIELD)
-        self.assertIn('goalkeeper shirt from image 1', keeper)
-        self.assertNotIn('blue sleeves', keeper)
-        self.assertIn('blue sleeves', outfield)
-        self.assertIn('no sponsor', keeper)  # logos go either way
+    def test_only_the_style_changes(self):
+        prompt = P.PROMPT.format(out='x.png', hint='')
+        self.assertIn('Keep everything else from image 1 exactly', prompt)
+        self.assertIn('Remove all logos', prompt)
+        for forced in ('behind his back', 'blue sleeves', 'home shirt'):  # no pose or kit imposed
+            self.assertNotIn(forced, prompt)
 
-    def test_roster_flags_goalkeepers(self):
-        roster = P.players_from_data()
-        self.assertTrue(roster['Dominik Livaković'])
-        self.assertFalse(roster['Pedri'])
+    def test_hint_is_appended(self):
+        self.assertIn('Note: the one in orange', P.PROMPT.format(out='x.png', hint='Note: the one in orange\n'))
 
 
 class Cli(unittest.TestCase):
