@@ -53,7 +53,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -103,7 +105,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -151,7 +155,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -201,7 +207,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -247,7 +255,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -295,7 +305,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4000,
                 "physical_metrics_running": 1636,
                 "physical_metrics_sprinting": 184,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -344,7 +356,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -395,7 +409,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -442,7 +458,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -498,7 +516,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3994,
                 "physical_metrics_running": 1483,
                 "physical_metrics_sprinting": 113,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -546,7 +566,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -597,7 +619,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -652,7 +676,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4926,
                 "physical_metrics_running": 2177,
                 "physical_metrics_sprinting": 188,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -703,7 +729,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -749,7 +777,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -805,7 +835,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4079,
                 "physical_metrics_running": 1640,
                 "physical_metrics_sprinting": 165,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -848,7 +880,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -895,7 +929,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -950,7 +986,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5656,
                 "physical_metrics_running": 1812,
                 "physical_metrics_sprinting": 100,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -998,7 +1036,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -1047,7 +1087,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -1102,7 +1144,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4197,
                 "physical_metrics_running": 1945,
                 "physical_metrics_sprinting": 141,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -1150,7 +1194,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -1199,7 +1245,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -1246,7 +1294,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -1291,7 +1341,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -1335,7 +1387,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -1384,7 +1438,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -1443,7 +1499,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4991,
                 "physical_metrics_running": 1912,
                 "physical_metrics_sprinting": 167,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -1486,7 +1544,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -1541,7 +1601,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3570,
                 "physical_metrics_running": 1900,
                 "physical_metrics_sprinting": 258,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -1590,7 +1652,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -1638,7 +1702,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -1690,7 +1756,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -1736,7 +1804,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -1783,7 +1853,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -1832,7 +1904,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -1888,7 +1962,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4510,
                 "physical_metrics_running": 2141,
                 "physical_metrics_sprinting": 188,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -1943,7 +2019,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3671,
                 "physical_metrics_running": 1685,
                 "physical_metrics_sprinting": 185,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -1991,7 +2069,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -2035,7 +2115,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -2086,7 +2168,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -2133,7 +2217,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -2178,7 +2264,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -2235,7 +2323,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4525,
                 "physical_metrics_running": 1826,
                 "physical_metrics_sprinting": 258,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -2282,7 +2372,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -2332,7 +2424,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4907,
                 "physical_metrics_running": 2408,
                 "physical_metrics_sprinting": 207,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -2377,7 +2471,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -2428,7 +2524,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2319,
                 "physical_metrics_running": 1097,
                 "physical_metrics_sprinting": 57,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -2473,7 +2571,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -2523,7 +2623,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -2571,7 +2673,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -2605,7 +2709,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -2642,7 +2748,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -2685,7 +2793,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -2743,7 +2853,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3229,
                 "physical_metrics_running": 1425,
                 "physical_metrics_sprinting": 133,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -2791,7 +2903,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -2839,7 +2953,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -2890,7 +3006,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -2930,7 +3048,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1103,
                 "physical_metrics_running": 713,
                 "physical_metrics_sprinting": 27,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -2982,7 +3102,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -3026,7 +3148,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -3076,7 +3200,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1759,
                 "physical_metrics_running": 539,
                 "physical_metrics_sprinting": 30,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -3125,7 +3251,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -3175,7 +3303,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -3229,7 +3359,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3135,
                 "physical_metrics_running": 1639,
                 "physical_metrics_sprinting": 228,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -3277,7 +3409,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -3325,7 +3459,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -3379,7 +3515,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3395,
                 "physical_metrics_running": 1322,
                 "physical_metrics_sprinting": 189,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -3424,7 +3562,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -3470,7 +3610,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -3514,7 +3656,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -3558,7 +3702,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -3604,7 +3750,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -3661,7 +3809,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4918,
                 "physical_metrics_running": 2494,
                 "physical_metrics_sprinting": 241,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -3712,7 +3862,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -3771,7 +3923,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4394,
                 "physical_metrics_running": 1643,
                 "physical_metrics_sprinting": 205,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -3820,7 +3974,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -3866,7 +4022,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -3916,7 +4074,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -3960,7 +4120,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -4005,7 +4167,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -4050,7 +4214,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -4096,7 +4262,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -4139,7 +4307,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -4195,7 +4365,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3915,
                 "physical_metrics_running": 1860,
                 "physical_metrics_sprinting": 230,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -4243,7 +4415,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -4300,7 +4474,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3337,
                 "physical_metrics_running": 1800,
                 "physical_metrics_sprinting": 207,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -4336,7 +4512,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -4379,7 +4557,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -4430,7 +4610,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2788,
                 "physical_metrics_running": 1398,
                 "physical_metrics_sprinting": 173,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -4482,7 +4664,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1260,
                 "physical_metrics_running": 547,
                 "physical_metrics_sprinting": 50,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -4532,7 +4716,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -4581,7 +4767,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -4622,7 +4810,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -4663,7 +4853,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -4710,7 +4902,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -4759,7 +4953,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -4802,7 +4998,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -4838,7 +5036,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 1
+                "interceptions": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -4873,7 +5073,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "fouls": 1,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4621537,
@@ -4920,7 +5122,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1711,
                 "physical_metrics_running": 240,
                 "physical_metrics_sprinting": 7,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -4956,7 +5160,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -4999,7 +5205,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2067,
                 "physical_metrics_running": 324,
                 "physical_metrics_sprinting": 4,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -5033,7 +5241,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -5068,7 +5278,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 2,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -5106,7 +5318,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 1,
                 "passes_into_final_third": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -5141,7 +5355,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -5177,7 +5393,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -5212,7 +5430,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -5244,7 +5464,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -5291,7 +5513,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 4091,
                 "physical_metrics_jogging": 1939,
                 "physical_metrics_running": 181,
-                "physical_metrics_sprinting": 3
+                "physical_metrics_sprinting": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -5334,7 +5558,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3887,
                 "physical_metrics_jogging": 1788,
                 "physical_metrics_running": 145,
-                "physical_metrics_sprinting": 5
+                "physical_metrics_sprinting": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -5370,7 +5596,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -5406,7 +5634,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "dribbles_succeeded": 1,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -5441,7 +5671,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -5477,7 +5709,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -5514,7 +5748,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -5560,7 +5796,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3703,
                 "physical_metrics_jogging": 1731,
                 "physical_metrics_running": 167,
-                "physical_metrics_sprinting": 3
+                "physical_metrics_sprinting": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -5595,7 +5833,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -5643,7 +5883,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3809,
                 "physical_metrics_jogging": 1616,
                 "physical_metrics_running": 155,
-                "physical_metrics_sprinting": 1
+                "physical_metrics_sprinting": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -5680,7 +5922,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -5713,7 +5957,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 2,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -5749,7 +5995,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -5793,7 +6041,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1452,
                 "physical_metrics_running": 191,
                 "physical_metrics_sprinting": 13,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -5835,7 +6085,9 @@ export const TITANS_DATA: Player[] = [
                 "totalDistance": 7.009,
                 "physical_metrics_walking": 5001,
                 "physical_metrics_jogging": 1819,
-                "physical_metrics_running": 189
+                "physical_metrics_running": 189,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -5874,7 +6126,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 1,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -5910,7 +6164,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -5945,7 +6201,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -5988,7 +6246,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3799,
                 "physical_metrics_jogging": 1708,
                 "physical_metrics_running": 183,
-                "physical_metrics_sprinting": 5
+                "physical_metrics_sprinting": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -6024,7 +6284,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -6061,7 +6323,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -6104,7 +6368,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3591,
                 "physical_metrics_jogging": 1586,
                 "physical_metrics_running": 210,
-                "physical_metrics_sprinting": 2
+                "physical_metrics_sprinting": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -6140,7 +6406,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 3,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -6177,7 +6445,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 4,
                 "line_breaking_passes": 8,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -6222,7 +6492,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3691,
                 "physical_metrics_jogging": 1304,
                 "physical_metrics_running": 139,
-                "physical_metrics_sprinting": 0
+                "physical_metrics_sprinting": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -6258,7 +6530,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -6297,7 +6571,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 352,
                 "physical_metrics_jogging": 299,
                 "physical_metrics_running": 114,
-                "physical_metrics_sprinting": 10
+                "physical_metrics_sprinting": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -6334,7 +6610,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -6371,7 +6649,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -6410,7 +6690,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -6454,7 +6736,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -6490,7 +6774,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -6529,7 +6815,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -6565,7 +6853,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -6603,7 +6893,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -6648,7 +6940,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3736,
                 "physical_metrics_jogging": 1790,
                 "physical_metrics_running": 135,
-                "physical_metrics_sprinting": 3
+                "physical_metrics_sprinting": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -6685,7 +6979,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -6720,7 +7016,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -6755,7 +7053,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -6790,7 +7090,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -6845,7 +7147,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -6884,7 +7188,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -6932,7 +7238,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -6978,7 +7286,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -7023,7 +7333,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -7070,7 +7382,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5135,
                 "physical_metrics_running": 2171,
                 "physical_metrics_sprinting": 171,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -7108,7 +7422,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -7146,7 +7462,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -7200,7 +7518,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4353,
                 "physical_metrics_running": 1443,
                 "physical_metrics_sprinting": 178,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -7241,7 +7561,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 3,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -7280,7 +7602,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -7333,7 +7657,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5789,
                 "physical_metrics_running": 2678,
                 "physical_metrics_sprinting": 193,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -7381,7 +7707,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -7422,7 +7750,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -7478,7 +7808,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5296,
                 "physical_metrics_running": 2098,
                 "physical_metrics_sprinting": 147,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -7524,7 +7856,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -7562,7 +7896,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 1,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -7610,7 +7946,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5396,
                 "physical_metrics_running": 1656,
                 "physical_metrics_sprinting": 134,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -7657,7 +7995,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -7698,7 +8038,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -7739,7 +8081,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -7787,7 +8131,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5505,
                 "physical_metrics_running": 2169,
                 "physical_metrics_sprinting": 169,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -7828,7 +8174,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -7875,7 +8223,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -7914,7 +8264,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -7950,7 +8302,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -7986,7 +8340,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -8033,7 +8389,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -8074,7 +8432,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -8115,7 +8475,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -8163,7 +8525,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -8212,7 +8576,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5334,
                 "physical_metrics_running": 1737,
                 "physical_metrics_sprinting": 121,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -8259,7 +8625,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5186,
                 "physical_metrics_running": 2160,
                 "physical_metrics_sprinting": 130,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -8302,7 +8670,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 11,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -8343,7 +8713,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -8383,7 +8755,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -8423,7 +8797,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -8471,7 +8847,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4727,
                 "physical_metrics_running": 1862,
                 "physical_metrics_sprinting": 75,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -8514,7 +8892,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -8561,7 +8941,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -8607,7 +8989,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -8648,7 +9032,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -8698,7 +9084,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5338,
                 "physical_metrics_running": 2319,
                 "physical_metrics_sprinting": 234,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -8747,7 +9135,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3677,
                 "physical_metrics_running": 1574,
                 "physical_metrics_sprinting": 186,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -8794,7 +9184,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -8836,7 +9228,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -8886,7 +9280,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 3,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -8929,7 +9325,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -8971,7 +9369,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 4,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -9004,7 +9404,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -9041,7 +9443,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -9093,7 +9497,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -9144,7 +9550,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -9193,7 +9601,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -9248,7 +9658,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4792,
                 "physical_metrics_running": 2520,
                 "physical_metrics_sprinting": 425,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -9298,7 +9710,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -9349,7 +9763,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3645,
                 "physical_metrics_running": 1864,
                 "physical_metrics_sprinting": 190,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -9401,7 +9817,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 13,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -9453,7 +9871,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -9511,7 +9931,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5027,
                 "physical_metrics_running": 2503,
                 "physical_metrics_sprinting": 307,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -9560,7 +9982,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -9610,7 +10034,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4910,
                 "physical_metrics_running": 2146,
                 "physical_metrics_sprinting": 318,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -9649,7 +10075,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -9694,7 +10122,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -9738,7 +10168,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -9782,7 +10214,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -9820,7 +10254,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -9871,7 +10307,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -9912,7 +10350,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -9949,7 +10389,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -9985,7 +10427,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -10027,7 +10471,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -10084,7 +10530,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5716,
                 "physical_metrics_running": 2698,
                 "physical_metrics_sprinting": 326,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -10125,7 +10573,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -10179,7 +10629,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -10229,7 +10681,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -10288,7 +10742,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4831,
                 "physical_metrics_running": 2072,
                 "physical_metrics_sprinting": 314,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -10343,7 +10799,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6002,
                 "physical_metrics_running": 2904,
                 "physical_metrics_sprinting": 379,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -10389,7 +10847,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -10432,7 +10892,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -10490,7 +10952,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5455,
                 "physical_metrics_running": 2577,
                 "physical_metrics_sprinting": 349,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -10532,7 +10996,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -10544,6 +11010,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "LB",
                 "lineupRole": "Defender",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 8.03,
                 "rating": 8.03,
                 "minutes_played": 90,
@@ -10632,7 +11100,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -10676,7 +11146,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -10718,7 +11190,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 719,
                 "physical_metrics_running": 267,
                 "physical_metrics_sprinting": 19,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -10757,7 +11231,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -10792,7 +11268,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -10831,7 +11309,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -10871,7 +11351,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -10911,7 +11393,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -10954,7 +11438,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -10995,7 +11481,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1503,
                 "physical_metrics_running": 566,
                 "physical_metrics_sprinting": 49,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -11037,7 +11525,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -11070,7 +11560,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -11115,7 +11607,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -11153,7 +11647,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 523,
                 "physical_metrics_running": 263,
                 "physical_metrics_sprinting": 96,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -11185,7 +11681,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -11225,7 +11723,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -11258,7 +11758,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -11306,7 +11808,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1729,
                 "physical_metrics_running": 927,
                 "physical_metrics_sprinting": 155,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -11338,7 +11842,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -11368,7 +11874,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -11402,7 +11910,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -11439,7 +11949,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 111,
                 "physical_metrics_jogging": 413,
                 "physical_metrics_running": 231,
-                "physical_metrics_sprinting": 6
+                "physical_metrics_sprinting": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -11472,7 +11984,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -11521,7 +12035,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -11568,7 +12084,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -11607,7 +12125,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -11655,7 +12175,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -11690,7 +12212,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -11737,7 +12261,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5443,
                 "physical_metrics_running": 2014,
                 "physical_metrics_sprinting": 174,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -11778,7 +12304,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -11827,7 +12355,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -11874,7 +12404,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -11911,7 +12443,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -11964,7 +12498,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -12016,7 +12552,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 641,
                 "physical_metrics_running": 270,
                 "physical_metrics_sprinting": 30,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -12060,7 +12598,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -12093,7 +12633,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -12142,7 +12684,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -12198,7 +12742,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1953,
                 "physical_metrics_running": 960,
                 "physical_metrics_sprinting": 142,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -12246,7 +12792,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -12278,7 +12826,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -12316,7 +12866,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -12365,7 +12917,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1602,
                 "physical_metrics_running": 775,
                 "physical_metrics_sprinting": 84,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -12425,7 +12979,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -12479,7 +13035,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -12527,7 +13085,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -12574,7 +13134,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1020,
                 "physical_metrics_running": 598,
                 "physical_metrics_sprinting": 45,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -12619,7 +13181,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -12668,7 +13232,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -12713,7 +13279,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2074,
                 "physical_metrics_running": 999,
                 "physical_metrics_sprinting": 110,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -12761,7 +13329,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -12811,7 +13381,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -12869,7 +13441,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4664,
                 "physical_metrics_running": 2076,
                 "physical_metrics_sprinting": 52,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -12918,7 +13492,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -12967,7 +13543,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -13025,7 +13603,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4488,
                 "physical_metrics_running": 2289,
                 "physical_metrics_sprinting": 164,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -13071,7 +13651,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -13118,7 +13700,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -13157,7 +13741,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -13206,7 +13792,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -13246,7 +13834,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -13293,7 +13883,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -13330,7 +13922,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -13371,7 +13965,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -13419,7 +14015,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -13469,7 +14067,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 1,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -13518,7 +14118,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -13574,7 +14176,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1544,
                 "physical_metrics_running": 719,
                 "physical_metrics_sprinting": 98,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -13631,7 +14235,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4278,
                 "physical_metrics_running": 2349,
                 "physical_metrics_sprinting": 333,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -13672,7 +14278,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -13720,7 +14328,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -13760,7 +14370,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 568,
                 "physical_metrics_running": 366,
                 "physical_metrics_sprinting": 43,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -13807,7 +14419,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -13858,7 +14472,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -13906,7 +14522,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -13964,7 +14582,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4230,
                 "physical_metrics_running": 2015,
                 "physical_metrics_sprinting": 139,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -14011,7 +14631,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -14070,7 +14692,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4618,
                 "physical_metrics_running": 2173,
                 "physical_metrics_sprinting": 157,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -14118,7 +14742,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -14165,7 +14791,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -14204,7 +14832,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -14254,7 +14884,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -14304,7 +14936,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -14353,7 +14987,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -14399,7 +15035,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -14444,7 +15082,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -14497,7 +15137,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 972,
                 "physical_metrics_running": 547,
                 "physical_metrics_sprinting": 105,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -14551,7 +15193,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -14600,7 +15244,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -14651,7 +15297,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -14708,7 +15356,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4642,
                 "physical_metrics_running": 2403,
                 "physical_metrics_sprinting": 261,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -14754,7 +15404,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -14793,7 +15445,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -14847,7 +15501,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1973,
                 "physical_metrics_running": 1012,
                 "physical_metrics_sprinting": 57,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -14898,7 +15554,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -14946,7 +15604,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -14987,7 +15647,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 825,
                 "physical_metrics_running": 533,
                 "physical_metrics_sprinting": 57,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -15038,7 +15700,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 10,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -15089,7 +15753,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -15137,7 +15803,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -15175,7 +15843,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -15218,7 +15888,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -15266,7 +15938,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -15319,7 +15993,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -15372,7 +16048,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1966,
                 "physical_metrics_running": 1178,
                 "physical_metrics_sprinting": 61,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -15423,7 +16101,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -15480,7 +16160,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4570,
                 "physical_metrics_running": 1883,
                 "physical_metrics_sprinting": 122,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -15531,7 +16213,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -15583,7 +16267,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -15633,7 +16319,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -15684,7 +16372,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -15735,7 +16425,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -15784,7 +16476,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -15834,7 +16528,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -15874,7 +16570,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -15923,7 +16621,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -15972,7 +16672,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1325,
                 "physical_metrics_running": 727,
                 "physical_metrics_sprinting": 59,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -16024,7 +16726,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -16072,7 +16776,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1329,
                 "physical_metrics_running": 670,
                 "physical_metrics_sprinting": 40,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -16119,7 +16825,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -16168,7 +16876,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -16223,7 +16933,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6036,
                 "physical_metrics_running": 3017,
                 "physical_metrics_sprinting": 286,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -16261,7 +16973,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 3,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -16318,7 +17032,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5130,
                 "physical_metrics_running": 2671,
                 "physical_metrics_sprinting": 225,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -16370,7 +17086,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -16422,7 +17140,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -16472,7 +17192,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -16521,7 +17243,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 5,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -16570,7 +17294,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -16610,7 +17336,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -16657,7 +17385,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -16704,7 +17434,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -16754,7 +17486,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -16805,7 +17539,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -16854,7 +17590,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -16914,7 +17652,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5179,
                 "physical_metrics_running": 2574,
                 "physical_metrics_sprinting": 264,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -16956,7 +17696,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -17009,7 +17751,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -17059,7 +17803,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -17112,7 +17858,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -17173,7 +17921,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3657,
                 "physical_metrics_running": 2028,
                 "physical_metrics_sprinting": 156,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -17220,7 +17970,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -17270,7 +18022,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1762,
                 "physical_metrics_running": 1134,
                 "physical_metrics_sprinting": 125,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -17282,6 +18036,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": null,
                 "lineupRole": "Midfielder",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 6.4,
                 "rating": 6.4,
                 "minutes_played": 22,
@@ -17372,7 +18128,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1254,
                 "physical_metrics_running": 571,
                 "physical_metrics_sprinting": 96,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -17404,7 +18162,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -17457,7 +18217,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2038,
                 "physical_metrics_running": 1064,
                 "physical_metrics_sprinting": 94,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -17497,7 +18259,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -17535,7 +18299,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -17582,7 +18348,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4594,
                 "physical_metrics_running": 1964,
                 "physical_metrics_sprinting": 114,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -17629,7 +18397,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -17669,7 +18439,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -17706,7 +18478,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 150,
                 "physical_metrics_jogging": 215,
                 "physical_metrics_running": 91,
-                "physical_metrics_sprinting": 15
+                "physical_metrics_sprinting": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -17745,7 +18519,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -17791,7 +18567,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -17832,7 +18610,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -17876,7 +18656,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1606,
                 "physical_metrics_running": 1023,
                 "physical_metrics_sprinting": 79,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -17917,7 +18699,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -17959,7 +18743,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -17999,7 +18785,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -18047,7 +18835,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -18101,7 +18891,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1999,
                 "physical_metrics_running": 1140,
                 "physical_metrics_sprinting": 76,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -18147,7 +18939,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -18195,7 +18989,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6149,
                 "physical_metrics_running": 2623,
                 "physical_metrics_sprinting": 157,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -18235,7 +19031,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -18273,7 +19071,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -18314,7 +19114,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -18356,7 +19158,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -18389,7 +19193,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -18430,7 +19236,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -18468,7 +19276,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -18517,7 +19327,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5815,
                 "physical_metrics_running": 2204,
                 "physical_metrics_sprinting": 157,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -18569,7 +19381,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5908,
                 "physical_metrics_running": 2615,
                 "physical_metrics_sprinting": 200,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -18608,7 +19422,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -18649,7 +19465,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -18689,7 +19507,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -18725,7 +19545,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -18773,7 +19595,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6127,
                 "physical_metrics_running": 2480,
                 "physical_metrics_sprinting": 41,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -18813,7 +19637,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -18863,7 +19689,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6336,
                 "physical_metrics_running": 2540,
                 "physical_metrics_sprinting": 206,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -18903,7 +19731,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -18933,7 +19763,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -18973,7 +19805,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -19020,7 +19854,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6394,
                 "physical_metrics_running": 2359,
                 "physical_metrics_sprinting": 80,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -19060,7 +19896,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -19109,7 +19947,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 7639,
                 "physical_metrics_running": 3406,
                 "physical_metrics_sprinting": 179,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -19147,7 +19987,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -19193,7 +20035,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -19233,7 +20077,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -19265,7 +20111,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -19306,7 +20154,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -19347,7 +20197,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -19396,7 +20248,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5747,
                 "physical_metrics_running": 2642,
                 "physical_metrics_sprinting": 179,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -19438,7 +20292,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -19480,7 +20336,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -19521,7 +20379,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -19569,7 +20429,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6386,
                 "physical_metrics_running": 2863,
                 "physical_metrics_sprinting": 259,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -19609,7 +20471,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -19658,7 +20522,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -19709,7 +20575,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2169,
                 "physical_metrics_running": 1090,
                 "physical_metrics_sprinting": 69,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -19751,7 +20619,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -19795,7 +20665,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -19842,7 +20714,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6611,
                 "physical_metrics_running": 2597,
                 "physical_metrics_sprinting": 185,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -19889,7 +20763,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": true
             },
             {
                 "matchId": 4947109,
@@ -19937,7 +20813,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5879,
                 "physical_metrics_running": 3315,
                 "physical_metrics_sprinting": 161,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -19978,7 +20856,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -20025,7 +20905,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2061,
                 "physical_metrics_running": 878,
                 "physical_metrics_sprinting": 73,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -20061,7 +20943,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -20102,7 +20986,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -20152,7 +21038,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -20198,7 +21086,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -20239,7 +21129,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -20280,7 +21172,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4837308,
@@ -20323,7 +21217,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -20374,7 +21270,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6158,
                 "physical_metrics_running": 2527,
                 "physical_metrics_sprinting": 168,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -20422,7 +21320,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -20466,7 +21366,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -20507,7 +21409,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -20548,7 +21452,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -20588,7 +21494,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -20637,7 +21545,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -20670,7 +21580,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -20715,7 +21627,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1226,
                 "physical_metrics_running": 730,
                 "physical_metrics_sprinting": 56,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -20754,7 +21668,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -20792,7 +21708,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -20833,7 +21751,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -20874,7 +21794,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -20909,7 +21831,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -20955,7 +21879,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -20995,7 +21921,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -21039,7 +21967,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1864,
                 "physical_metrics_running": 1111,
                 "physical_metrics_sprinting": 51,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -21081,7 +22011,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -21093,6 +22025,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "CB",
                 "lineupRole": "Midfielder",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 7.54,
                 "rating": 7.54,
                 "minutes_played": 90,
@@ -21169,7 +22103,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -21211,7 +22147,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -21259,7 +22197,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -21308,7 +22248,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6036,
                 "physical_metrics_running": 2701,
                 "physical_metrics_sprinting": 157,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -21351,7 +22293,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -21398,7 +22342,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -21447,7 +22393,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -21489,7 +22437,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -21544,7 +22494,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6307,
                 "physical_metrics_running": 3111,
                 "physical_metrics_sprinting": 71,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -21592,7 +22544,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -21640,7 +22594,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2638,
                 "physical_metrics_running": 1559,
                 "physical_metrics_sprinting": 83,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -21690,7 +22646,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -21733,7 +22691,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -21779,7 +22739,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2985,
                 "physical_metrics_running": 1528,
                 "physical_metrics_sprinting": 90,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -21822,7 +22784,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -21870,7 +22834,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -21920,7 +22886,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -21971,7 +22939,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -22031,7 +23001,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3939,
                 "physical_metrics_running": 1452,
                 "physical_metrics_sprinting": 359,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -22078,7 +23050,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -22131,7 +23105,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -22180,7 +23156,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -22240,7 +23218,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4306,
                 "physical_metrics_running": 2101,
                 "physical_metrics_sprinting": 284,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -22291,7 +23271,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -22346,7 +23328,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -22407,7 +23391,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5023,
                 "physical_metrics_running": 1800,
                 "physical_metrics_sprinting": 212,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -22459,7 +23445,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -22514,7 +23502,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -22572,7 +23562,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4839,
                 "physical_metrics_running": 1757,
                 "physical_metrics_sprinting": 275,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -22627,7 +23619,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -22671,7 +23665,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2565,
                 "physical_metrics_running": 1212,
                 "physical_metrics_sprinting": 142,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -22714,7 +23710,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -22763,7 +23761,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -22815,7 +23815,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -22872,7 +23874,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2551,
                 "physical_metrics_running": 1184,
                 "physical_metrics_sprinting": 169,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -22925,7 +23929,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -22975,7 +23981,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -23027,7 +24035,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -23070,7 +24080,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -23119,7 +24131,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -23162,7 +24176,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -23215,7 +24231,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -23263,7 +24281,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -23318,7 +24338,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1874,
                 "physical_metrics_running": 889,
                 "physical_metrics_sprinting": 237,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -23375,7 +24397,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1166,
                 "physical_metrics_running": 645,
                 "physical_metrics_sprinting": 128,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -23427,7 +24451,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -23477,7 +24503,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -23528,7 +24556,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -23578,7 +24608,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -23619,7 +24651,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -23668,7 +24702,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -23719,7 +24755,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1321,
                 "physical_metrics_running": 711,
                 "physical_metrics_sprinting": 96,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -23753,7 +24791,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -23805,7 +24845,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -23862,7 +24904,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4444,
                 "physical_metrics_running": 1707,
                 "physical_metrics_sprinting": 270,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -23905,7 +24949,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -23953,7 +24999,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1388,
                 "physical_metrics_running": 597,
                 "physical_metrics_sprinting": 128,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -23991,7 +25039,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -24041,7 +25091,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -24087,7 +25139,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -24138,7 +25192,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -24190,7 +25246,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -24232,7 +25290,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -24294,7 +25354,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -24347,7 +25409,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -24397,7 +25461,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -24448,7 +25514,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -24498,7 +25566,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -24556,7 +25626,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4361,
                 "physical_metrics_running": 2703,
                 "physical_metrics_sprinting": 538,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -24608,7 +25680,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -24661,7 +25735,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -24710,7 +25786,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -24768,7 +25846,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5374,
                 "physical_metrics_running": 2495,
                 "physical_metrics_sprinting": 357,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -24820,7 +25900,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -24873,7 +25955,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -24929,7 +26013,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3768,
                 "physical_metrics_running": 2860,
                 "physical_metrics_sprinting": 466,
-                "physical_metrics_number_of_sprints": 25
+                "physical_metrics_number_of_sprints": 25,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -24979,7 +26065,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -25029,7 +26117,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -25084,7 +26174,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3130,
                 "physical_metrics_running": 1502,
                 "physical_metrics_sprinting": 342,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -25134,7 +26226,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -25187,7 +26281,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -25246,7 +26342,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4592,
                 "physical_metrics_running": 2564,
                 "physical_metrics_sprinting": 343,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -25300,7 +26398,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -25351,7 +26451,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -25403,7 +26505,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -25461,7 +26565,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3460,
                 "physical_metrics_running": 1931,
                 "physical_metrics_sprinting": 357,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -25514,7 +26620,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -25568,7 +26676,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -25618,7 +26728,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -25664,7 +26776,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -25714,7 +26828,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -25765,7 +26881,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -25824,7 +26942,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5328,
                 "physical_metrics_running": 2697,
                 "physical_metrics_sprinting": 371,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -25877,7 +26997,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -25936,7 +27058,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4177,
                 "physical_metrics_running": 2577,
                 "physical_metrics_sprinting": 542,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -25985,7 +27109,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -26033,7 +27159,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -26082,7 +27210,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -26132,7 +27262,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -26184,7 +27316,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -26236,7 +27370,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -26284,7 +27420,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -26345,7 +27483,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5037,
                 "physical_metrics_running": 2922,
                 "physical_metrics_sprinting": 535,
-                "physical_metrics_number_of_sprints": 25
+                "physical_metrics_number_of_sprints": 25,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -26404,7 +27544,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4853,
                 "physical_metrics_running": 2880,
                 "physical_metrics_sprinting": 376,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -26454,7 +27596,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -26506,7 +27650,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -26554,7 +27700,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -26616,7 +27764,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4897,
                 "physical_metrics_running": 2525,
                 "physical_metrics_sprinting": 498,
-                "physical_metrics_number_of_sprints": 25
+                "physical_metrics_number_of_sprints": 25,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -26667,7 +27817,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -26725,7 +27877,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5001,
                 "physical_metrics_running": 2866,
                 "physical_metrics_sprinting": 369,
-                "physical_metrics_number_of_sprints": 21
+                "physical_metrics_number_of_sprints": 21,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -26777,7 +27931,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -26825,7 +27981,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -26877,7 +28035,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -26938,7 +28098,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4964,
                 "physical_metrics_running": 2529,
                 "physical_metrics_sprinting": 294,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -26988,7 +28150,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -27047,7 +28211,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6478,
                 "physical_metrics_running": 3132,
                 "physical_metrics_sprinting": 531,
-                "physical_metrics_number_of_sprints": 22
+                "physical_metrics_number_of_sprints": 22,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -27097,7 +28263,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -27145,7 +28313,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -27196,7 +28366,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -27242,7 +28414,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -27293,7 +28467,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -27344,7 +28520,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -27394,7 +28572,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -27442,7 +28622,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -27501,7 +28683,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4767,
                 "physical_metrics_running": 2659,
                 "physical_metrics_sprinting": 530,
-                "physical_metrics_number_of_sprints": 27
+                "physical_metrics_number_of_sprints": 27,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -27551,7 +28735,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -27604,7 +28790,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -27645,7 +28833,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -27697,7 +28887,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1557,
                 "physical_metrics_running": 919,
                 "physical_metrics_sprinting": 236,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -27750,7 +28942,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -27802,7 +28996,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -27862,7 +29058,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3526,
                 "physical_metrics_running": 1588,
                 "physical_metrics_sprinting": 317,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -27914,7 +29112,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -27969,7 +29169,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -28017,7 +29219,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -28068,7 +29272,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -28121,7 +29327,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -28165,7 +29373,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -28224,7 +29434,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4394,
                 "physical_metrics_running": 2351,
                 "physical_metrics_sprinting": 498,
-                "physical_metrics_number_of_sprints": 22
+                "physical_metrics_number_of_sprints": 22,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -28275,7 +29487,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -28333,7 +29547,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4306,
                 "physical_metrics_running": 2337,
                 "physical_metrics_sprinting": 579,
-                "physical_metrics_number_of_sprints": 24
+                "physical_metrics_number_of_sprints": 24,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -28382,7 +29598,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 4,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -28432,7 +29650,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -28485,7 +29705,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -28536,7 +29758,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -28586,7 +29810,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -28621,7 +29847,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -28680,7 +29908,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4332,
                 "physical_metrics_running": 2827,
                 "physical_metrics_sprinting": 456,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -28730,7 +29960,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -28790,7 +30022,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4333,
                 "physical_metrics_running": 2683,
                 "physical_metrics_sprinting": 449,
-                "physical_metrics_number_of_sprints": 21
+                "physical_metrics_number_of_sprints": 21,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -28842,7 +30076,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -28890,7 +30126,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -28942,7 +30180,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -28997,7 +30237,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -29052,7 +30294,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -29106,7 +30350,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -29158,7 +30404,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -29217,7 +30465,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3834,
                 "physical_metrics_running": 2307,
                 "physical_metrics_sprinting": 296,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -29269,7 +30519,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -29323,7 +30575,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -29373,7 +30627,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -29420,7 +30676,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -29479,7 +30737,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3072,
                 "physical_metrics_running": 1941,
                 "physical_metrics_sprinting": 391,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -29530,7 +30790,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -29577,7 +30839,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -29633,7 +30897,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3270,
                 "physical_metrics_running": 1975,
                 "physical_metrics_sprinting": 375,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -29682,7 +30948,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -29694,6 +30962,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "ST",
                 "lineupRole": "Attacker",
+                "yellowCard": true,
+                "redCard": false,
                 "rating_title": 6.97,
                 "rating": 6.97,
                 "minutes_played": 90,
@@ -29781,7 +31051,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -29824,7 +31096,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -29873,7 +31147,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -29920,7 +31196,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -29967,7 +31245,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -30018,7 +31298,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5181,
                 "physical_metrics_running": 2769,
                 "physical_metrics_sprinting": 291,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -30068,7 +31350,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -30111,7 +31395,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -30161,7 +31447,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -30215,7 +31503,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4954,
                 "physical_metrics_running": 2206,
                 "physical_metrics_sprinting": 345,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -30258,7 +31548,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -30300,7 +31592,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -30348,7 +31642,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5628,
                 "physical_metrics_running": 2704,
                 "physical_metrics_sprinting": 343,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -30391,7 +31687,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -30430,7 +31728,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -30479,7 +31779,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5041,
                 "physical_metrics_running": 2284,
                 "physical_metrics_sprinting": 466,
-                "physical_metrics_number_of_sprints": 22
+                "physical_metrics_number_of_sprints": 22,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -30520,7 +31822,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -30563,7 +31867,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -30613,7 +31919,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5632,
                 "physical_metrics_running": 2763,
                 "physical_metrics_sprinting": 355,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -30661,7 +31969,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -30701,7 +32011,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -30750,7 +32062,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -30807,7 +32121,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5276,
                 "physical_metrics_running": 2575,
                 "physical_metrics_sprinting": 434,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -30857,7 +32173,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -30898,7 +32216,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -30946,7 +32266,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -30987,7 +32309,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -31032,7 +32356,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -31084,7 +32410,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -31136,7 +32464,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -31195,7 +32525,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4135,
                 "physical_metrics_running": 1969,
                 "physical_metrics_sprinting": 352,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -31238,7 +32570,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -31288,7 +32622,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5038,
                 "physical_metrics_running": 2417,
                 "physical_metrics_sprinting": 503,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -31329,7 +32665,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -31369,7 +32707,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -31415,7 +32755,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -31453,7 +32795,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -31496,7 +32840,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -31538,7 +32884,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -31579,7 +32927,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -31629,7 +32979,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5451,
                 "physical_metrics_running": 2426,
                 "physical_metrics_sprinting": 305,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -31679,7 +33031,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5339,
                 "physical_metrics_running": 2471,
                 "physical_metrics_sprinting": 305,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -31727,7 +33081,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -31771,7 +33127,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -31814,7 +33172,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -31863,7 +33223,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 4,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -31910,7 +33272,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -31960,7 +33324,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5211,
                 "physical_metrics_running": 2310,
                 "physical_metrics_sprinting": 329,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -32009,7 +33375,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -32059,7 +33427,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5387,
                 "physical_metrics_running": 2211,
                 "physical_metrics_sprinting": 355,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -32100,7 +33470,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -32148,7 +33520,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -32193,7 +33567,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2496,
                 "physical_metrics_running": 1404,
                 "physical_metrics_sprinting": 154,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -32228,7 +33604,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -32271,7 +33649,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -32314,7 +33694,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -32356,7 +33738,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -32413,7 +33797,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4908,
                 "physical_metrics_running": 2829,
                 "physical_metrics_sprinting": 431,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -32457,7 +33843,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 6,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -32496,7 +33884,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -32546,7 +33936,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -32596,7 +33988,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5548,
                 "physical_metrics_running": 2784,
                 "physical_metrics_sprinting": 362,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -32644,7 +34038,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -32685,7 +34081,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -32741,7 +34139,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4078,
                 "physical_metrics_running": 1998,
                 "physical_metrics_sprinting": 238,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -32789,7 +34189,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -32833,7 +34235,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -32890,7 +34294,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5362,
                 "physical_metrics_running": 2815,
                 "physical_metrics_sprinting": 443,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -32937,7 +34343,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -32987,7 +34395,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4849,
                 "physical_metrics_running": 2494,
                 "physical_metrics_sprinting": 433,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -33026,7 +34436,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -33068,7 +34480,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 9,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -33112,7 +34526,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -33170,7 +34586,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5737,
                 "physical_metrics_running": 2890,
                 "physical_metrics_sprinting": 386,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -33214,7 +34632,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -33254,7 +34674,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -33296,7 +34718,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -33347,7 +34771,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -33390,7 +34816,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -33432,7 +34860,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -33473,7 +34903,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -33524,7 +34956,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -33574,7 +35008,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5242,
                 "physical_metrics_running": 2880,
                 "physical_metrics_sprinting": 260,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -33615,7 +35051,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -33666,7 +35104,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5444,
                 "physical_metrics_running": 2338,
                 "physical_metrics_sprinting": 366,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -33709,7 +35149,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -33747,7 +35189,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -33797,7 +35241,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -33841,7 +35287,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -33884,7 +35332,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -33933,7 +35383,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -33983,7 +35435,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -34019,7 +35473,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -34060,7 +35516,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -34109,7 +35567,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4630,
                 "physical_metrics_running": 1969,
                 "physical_metrics_sprinting": 235,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -34158,7 +35618,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5106,
                 "physical_metrics_running": 2496,
                 "physical_metrics_sprinting": 328,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -34201,7 +35663,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -34250,7 +35714,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -34294,7 +35760,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -34342,7 +35810,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -34378,7 +35848,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -34415,7 +35887,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -34458,7 +35932,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -34501,7 +35977,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -34558,7 +36036,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5026,
                 "physical_metrics_running": 2452,
                 "physical_metrics_sprinting": 392,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -34610,7 +36090,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -34655,7 +36137,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1211,
                 "physical_metrics_running": 587,
                 "physical_metrics_sprinting": 55,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -34697,7 +36181,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -34709,6 +36195,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": null,
                 "lineupRole": "Defender",
+                "yellowCard": false,
+                "redCard": false,
                 "minutes_played": 6,
                 "minutes": 6,
                 "goals": 0,
@@ -34785,7 +36273,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -34832,7 +36322,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -34879,7 +36371,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -34922,7 +36416,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -34959,7 +36455,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4621541,
@@ -35000,7 +36498,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 760,
                 "physical_metrics_running": 445,
                 "physical_metrics_sprinting": 31,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -35036,7 +36536,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -35086,7 +36588,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -35143,7 +36647,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4843,
                 "physical_metrics_running": 2034,
                 "physical_metrics_sprinting": 365,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -35173,7 +36679,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -35221,7 +36729,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -35270,7 +36780,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -35315,7 +36827,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -35365,7 +36879,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1169,
                 "physical_metrics_running": 594,
                 "physical_metrics_sprinting": 206,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -35401,7 +36917,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -35441,7 +36959,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -35480,7 +37000,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -35514,7 +37036,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -35558,7 +37082,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -35590,7 +37116,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -35641,7 +37169,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1206,
                 "physical_metrics_running": 563,
                 "physical_metrics_sprinting": 80,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -35693,7 +37223,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -35749,7 +37281,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1191,
                 "physical_metrics_running": 570,
                 "physical_metrics_sprinting": 106,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -35796,7 +37330,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -35843,7 +37379,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -35876,7 +37414,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -35915,7 +37455,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -35962,7 +37504,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -36007,7 +37551,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -36051,7 +37597,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2131,
                 "physical_metrics_running": 1048,
                 "physical_metrics_sprinting": 246,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -36106,7 +37654,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1069,
                 "physical_metrics_running": 519,
                 "physical_metrics_sprinting": 140,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -36148,7 +37698,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -36199,7 +37751,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -36243,7 +37797,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -36291,7 +37847,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -36341,7 +37899,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -36385,7 +37945,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 593,
                 "physical_metrics_running": 319,
                 "physical_metrics_sprinting": 97,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -36428,7 +37990,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -36472,7 +38036,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1454,
                 "physical_metrics_running": 738,
                 "physical_metrics_sprinting": 105,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -36520,7 +38086,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -36566,7 +38134,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -36618,7 +38188,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -36674,7 +38246,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4778,
                 "physical_metrics_running": 1549,
                 "physical_metrics_sprinting": 169,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -36726,7 +38300,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4015,
                 "physical_metrics_running": 1475,
                 "physical_metrics_sprinting": 275,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -36774,7 +38350,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -36819,7 +38397,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -36870,7 +38450,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -36913,7 +38495,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -36964,7 +38548,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -37015,7 +38601,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1470,
                 "physical_metrics_running": 742,
                 "physical_metrics_sprinting": 181,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -37066,7 +38654,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -37114,7 +38704,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -37153,7 +38745,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -37210,7 +38804,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4261,
                 "physical_metrics_running": 2492,
                 "physical_metrics_sprinting": 481,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -37248,7 +38844,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -37292,7 +38890,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -37342,7 +38942,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -37397,7 +38999,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2923,
                 "physical_metrics_running": 1116,
                 "physical_metrics_sprinting": 167,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -37432,7 +39036,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -37481,7 +39087,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -37536,7 +39144,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2236,
                 "physical_metrics_running": 1125,
                 "physical_metrics_sprinting": 296,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -37574,7 +39184,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -37617,7 +39229,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -37665,7 +39279,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -37719,7 +39335,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1446,
                 "physical_metrics_running": 714,
                 "physical_metrics_sprinting": 173,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -37764,7 +39382,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -37809,7 +39429,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -37855,7 +39477,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -37903,7 +39527,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -37945,7 +39571,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -37991,7 +39619,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -38037,7 +39667,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -38084,7 +39716,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 627,
                 "physical_metrics_running": 339,
                 "physical_metrics_sprinting": 78,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -38137,7 +39771,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -38184,7 +39820,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -38223,7 +39861,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -38271,7 +39911,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -38319,7 +39961,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -38362,7 +40006,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -38410,7 +40056,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -38453,7 +40101,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -38497,7 +40147,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -38537,7 +40189,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 465,
                 "physical_metrics_running": 267,
                 "physical_metrics_sprinting": 10,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -38584,7 +40238,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1199,
                 "physical_metrics_running": 540,
                 "physical_metrics_sprinting": 114,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -38629,7 +40285,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -38675,7 +40333,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -38716,7 +40376,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1285,
                 "physical_metrics_running": 591,
                 "physical_metrics_sprinting": 89,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -38765,7 +40427,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -38821,7 +40485,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3282,
                 "physical_metrics_running": 1417,
                 "physical_metrics_sprinting": 385,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -38868,7 +40534,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -38917,7 +40585,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -38970,7 +40640,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -39011,7 +40683,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -39062,7 +40736,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -39117,7 +40793,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -39169,7 +40847,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -39221,7 +40901,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -39269,7 +40951,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -39323,7 +41007,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1530,
                 "physical_metrics_running": 743,
                 "physical_metrics_sprinting": 107,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -39364,7 +41050,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -39414,7 +41102,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -39465,7 +41155,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -39523,7 +41215,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2761,
                 "physical_metrics_running": 1371,
                 "physical_metrics_sprinting": 370,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -39569,7 +41263,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -39617,7 +41313,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5356,
                 "physical_metrics_running": 2392,
                 "physical_metrics_sprinting": 517,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -39665,7 +41363,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -39709,7 +41409,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -39768,7 +41470,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4649,
                 "physical_metrics_running": 2606,
                 "physical_metrics_sprinting": 399,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -39816,7 +41520,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -39828,6 +41534,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": null,
                 "lineupRole": "Attacker",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 6.82,
                 "rating": 6.82,
                 "minutes_played": 22,
@@ -39922,7 +41630,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -39960,7 +41670,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -40000,7 +41712,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -40040,7 +41754,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -40096,7 +41812,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4915,
                 "physical_metrics_running": 1855,
                 "physical_metrics_sprinting": 320,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -40150,7 +41868,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4913,
                 "physical_metrics_running": 1963,
                 "physical_metrics_sprinting": 278,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -40190,7 +41910,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -40229,7 +41951,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -40277,7 +42001,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -40323,7 +42049,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3749,
                 "physical_metrics_running": 1327,
                 "physical_metrics_sprinting": 110,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -40377,7 +42105,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5108,
                 "physical_metrics_running": 1977,
                 "physical_metrics_sprinting": 171,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -40408,7 +42138,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -40455,7 +42187,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -40493,7 +42227,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -40532,7 +42268,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -40568,7 +42306,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 387,
                 "physical_metrics_jogging": 662,
                 "physical_metrics_running": 296,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -40606,7 +42346,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -40661,7 +42403,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4929,
                 "physical_metrics_running": 1683,
                 "physical_metrics_sprinting": 190,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -40708,7 +42452,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -40744,7 +42490,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -40790,7 +42538,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2148,
                 "physical_metrics_running": 923,
                 "physical_metrics_sprinting": 176,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -40830,7 +42580,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -40876,7 +42628,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2884,
                 "physical_metrics_running": 1104,
                 "physical_metrics_sprinting": 85,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -40914,7 +42668,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -40955,7 +42711,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -41001,7 +42759,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 4,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -41041,7 +42801,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -41089,7 +42851,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4476,
                 "physical_metrics_running": 1765,
                 "physical_metrics_sprinting": 228,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -41122,7 +42886,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -41170,7 +42936,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -41217,7 +42985,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -41257,7 +43027,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -41299,7 +43071,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -41341,7 +43115,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 586,
                 "physical_metrics_jogging": 1103,
                 "physical_metrics_running": 295,
-                "physical_metrics_sprinting": 4
+                "physical_metrics_sprinting": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -41383,7 +43159,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -41424,7 +43202,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -41472,7 +43252,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4453,
                 "physical_metrics_running": 1725,
                 "physical_metrics_sprinting": 267,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -41512,7 +43294,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -41552,7 +43336,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -41594,7 +43380,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2385,
                 "physical_metrics_running": 1040,
                 "physical_metrics_sprinting": 129,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": true
             },
             {
                 "matchId": 5039109,
@@ -41627,7 +43415,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -41671,7 +43461,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 788,
                 "physical_metrics_running": 418,
                 "physical_metrics_sprinting": 137,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -41715,7 +43507,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1233,
                 "physical_metrics_running": 446,
                 "physical_metrics_sprinting": 46,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -41746,7 +43540,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -41794,7 +43590,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -41829,7 +43627,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -41873,7 +43673,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -41904,7 +43706,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -41942,7 +43746,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -41977,7 +43783,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -42012,7 +43820,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -42067,7 +43877,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4506,
                 "physical_metrics_running": 2021,
                 "physical_metrics_sprinting": 312,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -42108,7 +43920,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -42164,7 +43978,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3305,
                 "physical_metrics_running": 1536,
                 "physical_metrics_sprinting": 198,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -42212,7 +44028,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -42251,7 +44069,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -42304,7 +44124,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1506,
                 "physical_metrics_running": 792,
                 "physical_metrics_sprinting": 95,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -42354,7 +44176,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -42400,7 +44224,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 493,
                 "physical_metrics_running": 218,
                 "physical_metrics_sprinting": 24,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -42446,7 +44272,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -42481,7 +44309,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -42519,7 +44349,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -42563,7 +44395,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 3,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 6
+                "duel_won": 6,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -42607,7 +44441,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -42639,7 +44475,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -42680,7 +44518,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -42719,7 +44559,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -42764,7 +44606,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 659,
                 "physical_metrics_running": 278,
                 "physical_metrics_sprinting": 24,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4506802,
@@ -42813,7 +44657,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -42860,7 +44706,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -42909,7 +44757,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -42955,7 +44805,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -42987,7 +44839,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -43024,7 +44878,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 138,
                 "physical_metrics_running": 158,
                 "physical_metrics_sprinting": 10,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -43064,7 +44920,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -43111,7 +44969,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -43159,7 +45019,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -43192,7 +45054,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -43228,7 +45092,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -43278,7 +45144,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1137,
                 "physical_metrics_running": 594,
                 "physical_metrics_sprinting": 119,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -43324,7 +45192,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -43372,7 +45242,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3920,
                 "physical_metrics_running": 1782,
                 "physical_metrics_sprinting": 126,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -43411,7 +45283,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -43451,7 +45325,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -43495,7 +45371,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -43527,7 +45405,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -43575,7 +45455,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -43608,7 +45490,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -43646,7 +45530,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -43684,7 +45570,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 83,
                 "physical_metrics_jogging": 294,
                 "physical_metrics_running": 286,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -43724,7 +45612,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -43764,7 +45654,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -43810,7 +45702,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -43851,7 +45745,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -43890,7 +45786,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -43931,7 +45829,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 702,
                 "physical_metrics_running": 446,
                 "physical_metrics_sprinting": 58,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -43970,7 +45870,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 4,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -44020,7 +45922,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1633,
                 "physical_metrics_running": 721,
                 "physical_metrics_sprinting": 88,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -44051,7 +45955,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -44099,7 +46005,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -44144,7 +46052,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -44192,7 +46102,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2827,
                 "physical_metrics_running": 1329,
                 "physical_metrics_sprinting": 225,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -44232,7 +46144,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -44291,7 +46205,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5519,
                 "physical_metrics_running": 2355,
                 "physical_metrics_sprinting": 409,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -44339,7 +46255,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -44380,7 +46298,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -44430,7 +46350,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -44471,7 +46393,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -44519,7 +46443,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -44568,7 +46494,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -44614,7 +46542,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -44661,7 +46591,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -44704,7 +46636,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 930,
                 "physical_metrics_running": 385,
                 "physical_metrics_sprinting": 63,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -44744,7 +46678,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -44794,7 +46730,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -44837,7 +46775,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -44887,7 +46827,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5260,
                 "physical_metrics_running": 2403,
                 "physical_metrics_sprinting": 235,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -44934,7 +46876,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -44981,7 +46925,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -45036,7 +46982,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5410,
                 "physical_metrics_running": 2011,
                 "physical_metrics_sprinting": 155,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -45083,7 +47031,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -45125,7 +47075,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -45180,7 +47132,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4592,
                 "physical_metrics_running": 1780,
                 "physical_metrics_sprinting": 363,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -45222,7 +47176,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -45263,7 +47219,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -45307,7 +47265,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5473,
                 "physical_metrics_running": 2499,
                 "physical_metrics_sprinting": 279,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -45353,7 +47313,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -45394,7 +47356,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -45433,7 +47397,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -45487,7 +47453,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6160,
                 "physical_metrics_running": 2058,
                 "physical_metrics_sprinting": 192,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -45533,7 +47501,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -45583,7 +47553,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -45631,7 +47603,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -45682,7 +47656,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -45723,7 +47699,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -45770,7 +47748,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -45804,7 +47784,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -45851,7 +47833,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -45908,7 +47892,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5211,
                 "physical_metrics_running": 2159,
                 "physical_metrics_sprinting": 153,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -45958,7 +47944,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -46013,7 +48001,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3487,
                 "physical_metrics_running": 1075,
                 "physical_metrics_sprinting": 72,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -46062,7 +48052,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -46104,7 +48096,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -46145,7 +48139,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -46191,7 +48187,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4837347,
@@ -46239,7 +48237,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -46289,7 +48289,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -46331,7 +48333,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -46372,7 +48376,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -46416,7 +48422,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1054,
                 "physical_metrics_running": 572,
                 "physical_metrics_sprinting": 55,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -46458,7 +48466,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -46507,7 +48517,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6197,
                 "physical_metrics_running": 2742,
                 "physical_metrics_sprinting": 203,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -46557,7 +48569,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -46604,7 +48618,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4276,
                 "physical_metrics_running": 1535,
                 "physical_metrics_sprinting": 231,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4837431,
@@ -46646,7 +48662,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -46689,7 +48707,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -46731,7 +48751,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -46769,7 +48791,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -46814,7 +48838,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -46858,7 +48884,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -46906,7 +48934,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -46944,7 +48974,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -46992,7 +49024,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -47033,7 +49067,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -47081,7 +49117,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -47130,7 +49168,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -47180,7 +49220,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3929,
                 "physical_metrics_running": 2030,
                 "physical_metrics_sprinting": 386,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -47224,7 +49266,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -47261,7 +49305,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -47273,6 +49319,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "RB",
                 "lineupRole": "Defender",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 7.25,
                 "rating": 7.25,
                 "minutes_played": 84,
@@ -47370,7 +49418,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -47415,7 +49465,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -47462,7 +49514,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -47503,7 +49557,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -47559,7 +49615,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3617,
                 "physical_metrics_running": 1745,
                 "physical_metrics_sprinting": 360,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -47607,7 +49665,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -47660,7 +49720,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 2,
                 "duel_won": 12,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -47707,7 +49769,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -47747,7 +49811,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -47804,7 +49870,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1672,
                 "physical_metrics_running": 888,
                 "physical_metrics_sprinting": 181,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -47849,7 +49917,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -47903,7 +49973,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2010,
                 "physical_metrics_running": 1050,
                 "physical_metrics_sprinting": 241,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -47934,7 +50006,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -47983,7 +50057,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -48018,7 +50094,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -48030,6 +50108,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "LW",
                 "lineupRole": "Attacker",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 7.03,
                 "rating": 7.03,
                 "minutes_played": 68,
@@ -48112,7 +50192,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -48148,7 +50230,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -48185,7 +50269,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -48226,7 +50312,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3450,
                 "physical_metrics_jogging": 1174,
                 "physical_metrics_running": 144,
-                "physical_metrics_sprinting": 2
+                "physical_metrics_sprinting": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -48263,7 +50351,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -48299,7 +50389,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -48343,7 +50435,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2087,
                 "physical_metrics_running": 213,
                 "physical_metrics_sprinting": 12,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -48379,7 +50473,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -48415,7 +50511,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -48456,7 +50554,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3565,
                 "physical_metrics_jogging": 1410,
                 "physical_metrics_running": 149,
-                "physical_metrics_sprinting": 3
+                "physical_metrics_sprinting": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -48492,7 +50592,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -48528,7 +50630,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -48569,7 +50673,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3701,
                 "physical_metrics_jogging": 1535,
                 "physical_metrics_running": 159,
-                "physical_metrics_sprinting": 2
+                "physical_metrics_sprinting": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -48604,7 +50710,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -48640,7 +50748,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -48676,7 +50786,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -48719,7 +50831,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3691,
                 "physical_metrics_jogging": 1540,
                 "physical_metrics_running": 147,
-                "physical_metrics_sprinting": 1
+                "physical_metrics_sprinting": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -48755,7 +50869,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -48791,7 +50907,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -48825,7 +50943,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 8,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -48860,7 +50980,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -48895,7 +51017,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -48930,7 +51054,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -48983,7 +51109,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -49026,7 +51154,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -49076,7 +51206,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -49117,7 +51249,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -49165,7 +51299,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -49214,7 +51350,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5083,
                 "physical_metrics_running": 2749,
                 "physical_metrics_sprinting": 221,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -49260,7 +51398,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -49296,7 +51436,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -49339,7 +51481,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -49395,7 +51539,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4155,
                 "physical_metrics_running": 1949,
                 "physical_metrics_sprinting": 264,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -49445,7 +51591,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -49495,7 +51643,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -49545,7 +51695,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5945,
                 "physical_metrics_running": 3488,
                 "physical_metrics_sprinting": 263,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -49595,7 +51747,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -49636,7 +51790,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -49690,7 +51846,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4163,
                 "physical_metrics_running": 2471,
                 "physical_metrics_sprinting": 244,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -49738,7 +51896,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -49779,7 +51939,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -49828,7 +51990,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6382,
                 "physical_metrics_running": 2933,
                 "physical_metrics_sprinting": 124,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -49877,7 +52041,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -49919,7 +52085,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -49960,7 +52128,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -50009,7 +52179,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5785,
                 "physical_metrics_running": 3651,
                 "physical_metrics_sprinting": 293,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -50052,7 +52224,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -50102,7 +52276,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -50148,7 +52324,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -50191,7 +52369,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -50236,7 +52416,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -50282,7 +52464,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -50326,7 +52510,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -50385,7 +52571,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6536,
                 "physical_metrics_running": 3366,
                 "physical_metrics_sprinting": 297,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -50436,7 +52624,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5804,
                 "physical_metrics_running": 2798,
                 "physical_metrics_sprinting": 158,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -50484,7 +52674,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 6,
                 "fouls": 0,
-                "duel_won": 11
+                "duel_won": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -50529,7 +52721,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -50572,7 +52766,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -50616,7 +52812,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -50659,7 +52857,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -50708,7 +52908,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -50760,7 +52962,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -50811,7 +53015,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6335,
                 "physical_metrics_running": 3769,
                 "physical_metrics_sprinting": 376,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -50866,7 +53072,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6513,
                 "physical_metrics_running": 3467,
                 "physical_metrics_sprinting": 219,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -50909,7 +53117,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -50956,7 +53166,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -50999,7 +53211,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -51040,7 +53254,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -51091,7 +53307,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -51138,7 +53356,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5095,
                 "physical_metrics_running": 3588,
                 "physical_metrics_sprinting": 266,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -51180,7 +53400,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -51227,7 +53449,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2456,
                 "physical_metrics_running": 1737,
                 "physical_metrics_sprinting": 113,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -51268,7 +53492,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 11,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -51316,7 +53542,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -51365,7 +53593,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -51420,7 +53650,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5571,
                 "physical_metrics_running": 3031,
                 "physical_metrics_sprinting": 152,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -51462,7 +53694,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -51517,7 +53751,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 7196,
                 "physical_metrics_running": 3887,
                 "physical_metrics_sprinting": 249,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -51561,7 +53797,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -51607,7 +53845,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -51647,7 +53887,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -51688,7 +53930,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -51734,7 +53978,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -51784,7 +54030,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -51832,7 +54080,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -51879,7 +54129,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -51929,7 +54181,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5471,
                 "physical_metrics_running": 3056,
                 "physical_metrics_sprinting": 203,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -51969,7 +54223,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -52013,7 +54269,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -52064,7 +54322,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -52114,7 +54374,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5692,
                 "physical_metrics_running": 3359,
                 "physical_metrics_sprinting": 271,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -52166,7 +54428,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -52216,7 +54480,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -52264,7 +54530,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5304,
                 "physical_metrics_running": 2352,
                 "physical_metrics_sprinting": 199,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -52307,7 +54575,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 4,
                 "duel_won": 12,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": true,
+                "redCard": true
             },
             {
                 "matchId": 4837246,
@@ -52347,7 +54617,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 5,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 6
+                "duel_won": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -52389,7 +54661,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -52429,7 +54703,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -52486,7 +54762,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6345,
                 "physical_metrics_running": 3157,
                 "physical_metrics_sprinting": 141,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -52536,7 +54814,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -52572,7 +54852,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -52621,7 +54903,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -52669,7 +54953,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -52711,7 +54997,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -52750,7 +55038,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -52802,7 +55092,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -52858,7 +55150,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4070,
                 "physical_metrics_running": 2318,
                 "physical_metrics_sprinting": 152,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -52899,7 +55193,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -52940,7 +55236,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -52990,7 +55288,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -53034,7 +55334,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -53083,7 +55385,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4217,
                 "physical_metrics_running": 2601,
                 "physical_metrics_sprinting": 120,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -53121,7 +55425,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -53170,7 +55476,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5049,
                 "physical_metrics_running": 3291,
                 "physical_metrics_sprinting": 102,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -53211,7 +55519,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 11,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -53259,7 +55569,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -53308,7 +55620,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3383,
                 "physical_metrics_running": 1820,
                 "physical_metrics_sprinting": 113,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -53358,7 +55672,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 11,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -53406,7 +55722,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6352,
                 "physical_metrics_running": 2799,
                 "physical_metrics_sprinting": 255,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -53457,7 +55775,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -53501,7 +55821,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -53550,7 +55872,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -53592,7 +55916,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -53634,7 +55960,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -53674,7 +56002,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -53715,7 +56045,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -53759,7 +56091,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -53809,7 +56143,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -53857,7 +56193,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -53906,7 +56244,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4419,
                 "physical_metrics_running": 2314,
                 "physical_metrics_sprinting": 278,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -53950,7 +56290,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -53991,7 +56333,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -54039,7 +56383,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -54086,7 +56432,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -54134,7 +56482,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4615,
                 "physical_metrics_running": 2400,
                 "physical_metrics_sprinting": 137,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -54177,7 +56527,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -54232,7 +56584,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4467,
                 "physical_metrics_running": 2531,
                 "physical_metrics_sprinting": 166,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -54274,7 +56628,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -54315,7 +56671,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -54362,7 +56720,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4765,
                 "physical_metrics_running": 2462,
                 "physical_metrics_sprinting": 171,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -54412,7 +56772,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -54424,6 +56786,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "CDM",
                 "lineupRole": "Midfielder",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 8.94,
                 "rating": 8.94,
                 "minutes_played": 90,
@@ -54509,7 +56873,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 427,
                 "physical_metrics_running": 323,
                 "physical_metrics_sprinting": 44,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -54557,7 +56923,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1970,
                 "physical_metrics_running": 1136,
                 "physical_metrics_sprinting": 116,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -54604,7 +56972,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -54652,7 +57022,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -54689,7 +57061,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 467,
                 "physical_metrics_running": 430,
                 "physical_metrics_sprinting": 56,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -54728,7 +57102,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -54767,7 +57143,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -54815,7 +57193,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -54857,7 +57237,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 464,
                 "physical_metrics_running": 413,
                 "physical_metrics_sprinting": 57,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -54906,7 +57288,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -54952,7 +57336,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -54997,7 +57383,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -55031,7 +57419,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -55063,7 +57453,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -55112,7 +57504,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -55151,7 +57545,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -55199,7 +57595,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -55242,7 +57640,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1225,
                 "physical_metrics_running": 592,
                 "physical_metrics_sprinting": 104,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -55291,7 +57691,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -55332,7 +57734,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 528,
                 "physical_metrics_running": 332,
                 "physical_metrics_sprinting": 68,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -55374,7 +57778,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1022,
                 "physical_metrics_running": 418,
                 "physical_metrics_sprinting": 125,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -55406,7 +57812,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -55439,7 +57847,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -55471,7 +57881,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -55513,7 +57925,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -55550,7 +57964,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -55591,7 +58007,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 439,
                 "physical_metrics_running": 233,
                 "physical_metrics_sprinting": 36,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -55631,7 +58049,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -55675,7 +58095,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -55710,7 +58132,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -55747,7 +58171,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 124,
                 "physical_metrics_running": 86,
                 "physical_metrics_sprinting": 6,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -55777,7 +58203,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -55818,7 +58246,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -55849,7 +58279,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -55894,7 +58326,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -55926,7 +58360,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -55971,7 +58407,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -56016,7 +58454,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 947,
                 "physical_metrics_running": 324,
                 "physical_metrics_sprinting": 65,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -56054,7 +58494,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -56084,7 +58526,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -56131,7 +58575,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 1
+                "interceptions": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -56167,7 +58613,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -56206,7 +58654,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 1,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -56241,7 +58691,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -56286,7 +58738,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2059,
                 "physical_metrics_running": 342,
                 "physical_metrics_sprinting": 11,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -56322,7 +58776,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -56363,7 +58819,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -56400,7 +58858,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -56442,7 +58902,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3587,
                 "physical_metrics_jogging": 1853,
                 "physical_metrics_running": 213,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -56479,7 +58941,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 4,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -56516,7 +58980,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -56552,7 +59018,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -56595,7 +59063,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3437,
                 "physical_metrics_jogging": 1355,
                 "physical_metrics_running": 144,
-                "physical_metrics_sprinting": 2
+                "physical_metrics_sprinting": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -56634,7 +59104,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -56670,7 +59142,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -56708,7 +59182,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 1,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -56745,7 +59221,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -56783,7 +59261,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -56819,7 +59299,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -56860,7 +59342,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 7,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -56903,7 +59387,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3599,
                 "physical_metrics_jogging": 1582,
                 "physical_metrics_running": 201,
-                "physical_metrics_sprinting": 5
+                "physical_metrics_sprinting": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -56944,7 +59430,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -56987,7 +59475,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3689,
                 "physical_metrics_jogging": 1841,
                 "physical_metrics_running": 199,
-                "physical_metrics_sprinting": 3
+                "physical_metrics_sprinting": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -57024,7 +59514,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 3,
                 "line_breaking_passes": 12,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -57060,7 +59552,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -57095,7 +59589,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 0,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -57131,7 +59627,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 2,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -57168,7 +59666,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -57204,7 +59704,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -57243,7 +59745,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 1,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -57279,7 +59783,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -57318,7 +59824,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 1,
                 "passes_into_final_third": 5,
                 "line_breaking_passes": 8,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -57364,7 +59872,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3664,
                 "physical_metrics_jogging": 1910,
                 "physical_metrics_running": 286,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -57400,7 +59910,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -57443,7 +59955,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1692,
                 "physical_metrics_running": 313,
                 "physical_metrics_sprinting": 4,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -57478,7 +59992,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 3,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 1
+                "interceptions": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -57515,7 +60031,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -57558,7 +60076,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3631,
                 "physical_metrics_jogging": 1568,
                 "physical_metrics_running": 210,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -57594,7 +60114,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -57636,7 +60158,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3958,
                 "physical_metrics_jogging": 1846,
                 "physical_metrics_running": 235,
-                "physical_metrics_sprinting": 6
+                "physical_metrics_sprinting": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -57673,7 +60197,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -57710,7 +60236,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 4,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -57746,7 +60274,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -57785,7 +60315,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 1,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 8,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -57821,7 +60353,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -57857,7 +60391,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 5,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -57891,7 +60427,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -57927,7 +60465,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -57963,7 +60503,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 5,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -58005,7 +60547,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3619,
                 "physical_metrics_jogging": 1586,
                 "physical_metrics_running": 183,
-                "physical_metrics_sprinting": 6
+                "physical_metrics_sprinting": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -58046,7 +60590,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 6,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -58083,7 +60629,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
                 "line_breaking_passes": 2,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -58121,7 +60669,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -58168,7 +60718,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1801,
                 "physical_metrics_running": 232,
                 "physical_metrics_sprinting": 18,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -58204,7 +60756,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 1,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -58247,7 +60801,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 3696,
                 "physical_metrics_jogging": 2071,
                 "physical_metrics_running": 224,
-                "physical_metrics_sprinting": 2
+                "physical_metrics_sprinting": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -58282,7 +60838,9 @@ export const TITANS_DATA: Player[] = [
                 "defensive_actions": 3,
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -58318,7 +60876,9 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "line_breaking_passes": 4,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -58364,7 +60924,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1688,
                 "physical_metrics_running": 204,
                 "physical_metrics_sprinting": 19,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -58403,7 +60965,9 @@ export const TITANS_DATA: Player[] = [
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 2,
                 "line_breaking_passes": 3,
-                "interceptions": 0
+                "interceptions": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -58415,6 +60979,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "GK",
                 "lineupRole": "Goalkeeper",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 5.17,
                 "rating": 5.17,
                 "minutes_played": 90,
@@ -58476,7 +61042,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -58516,7 +61084,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 512,
                 "physical_metrics_running": 495,
                 "physical_metrics_sprinting": 22,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -58567,7 +61137,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -58610,7 +61182,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -58653,7 +61227,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -58698,7 +61274,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -58729,7 +61307,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -58783,7 +61363,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1046,
                 "physical_metrics_running": 482,
                 "physical_metrics_sprinting": 54,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -58826,7 +61408,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -58877,7 +61461,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -58912,7 +61498,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -58956,7 +61544,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -59005,7 +61595,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -59039,7 +61631,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -59095,7 +61689,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -59136,7 +61732,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -59176,7 +61774,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -59217,7 +61817,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -59264,7 +61866,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -59319,7 +61923,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4357,
                 "physical_metrics_running": 2765,
                 "physical_metrics_sprinting": 258,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -59368,7 +61974,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -59408,7 +62016,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -59457,7 +62067,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4904,
                 "physical_metrics_running": 2971,
                 "physical_metrics_sprinting": 476,
-                "physical_metrics_number_of_sprints": 24
+                "physical_metrics_number_of_sprints": 24,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -59496,7 +62108,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -59545,7 +62159,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -59597,7 +62213,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5287,
                 "physical_metrics_running": 2872,
                 "physical_metrics_sprinting": 414,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -59639,7 +62257,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -59681,7 +62301,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -59723,7 +62345,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -59772,7 +62396,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 902,
                 "physical_metrics_running": 509,
                 "physical_metrics_sprinting": 71,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -59811,7 +62437,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -59854,7 +62482,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -59895,7 +62525,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -59943,7 +62575,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5145,
                 "physical_metrics_running": 2811,
                 "physical_metrics_sprinting": 342,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -59985,7 +62619,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -60028,7 +62664,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -60069,7 +62707,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -60108,7 +62748,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 5,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -60156,7 +62798,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -60207,7 +62851,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4017,
                 "physical_metrics_running": 2362,
                 "physical_metrics_sprinting": 328,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -60257,7 +62903,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -60308,7 +62956,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4973,
                 "physical_metrics_running": 2789,
                 "physical_metrics_sprinting": 380,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -60355,7 +63005,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -60396,7 +63048,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -60437,7 +63091,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -60479,7 +63135,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -60528,7 +63186,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -60576,7 +63236,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -60628,7 +63290,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5510,
                 "physical_metrics_running": 3025,
                 "physical_metrics_sprinting": 345,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -60680,7 +63344,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5426,
                 "physical_metrics_running": 2753,
                 "physical_metrics_sprinting": 429,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -60722,7 +63388,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -60765,7 +63433,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -60807,7 +63477,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -60854,7 +63526,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 4,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -60894,7 +63568,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -60942,7 +63618,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5103,
                 "physical_metrics_running": 3014,
                 "physical_metrics_sprinting": 423,
-                "physical_metrics_number_of_sprints": 22
+                "physical_metrics_number_of_sprints": 22,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -60978,7 +63656,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -61016,7 +63696,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -61055,7 +63737,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -61094,7 +63778,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -61135,7 +63821,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -61176,7 +63864,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -61225,7 +63915,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -61266,7 +63958,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -61311,7 +64005,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1155,
                 "physical_metrics_running": 798,
                 "physical_metrics_sprinting": 143,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -61351,7 +64047,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -61399,7 +64097,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -61447,7 +64147,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4097,
                 "physical_metrics_running": 2333,
                 "physical_metrics_sprinting": 274,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -61489,7 +64191,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -61532,7 +64236,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -61581,7 +64287,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4607,
                 "physical_metrics_running": 2824,
                 "physical_metrics_sprinting": 497,
-                "physical_metrics_number_of_sprints": 21
+                "physical_metrics_number_of_sprints": 21,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -61622,7 +64330,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -61665,7 +64375,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -61712,7 +64424,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4049,
                 "physical_metrics_running": 2391,
                 "physical_metrics_sprinting": 410,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -61756,7 +64470,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -61806,7 +64522,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -61843,7 +64561,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -61898,7 +64618,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4779,
                 "physical_metrics_running": 2688,
                 "physical_metrics_sprinting": 375,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -61946,7 +64668,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -61984,7 +64708,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -62031,7 +64757,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -62076,7 +64804,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -62116,7 +64846,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -62156,7 +64888,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -62198,7 +64932,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -62244,7 +64980,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -62292,7 +65030,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4268,
                 "physical_metrics_running": 2597,
                 "physical_metrics_sprinting": 189,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -62332,7 +65072,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -62381,7 +65123,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4764,
                 "physical_metrics_running": 3162,
                 "physical_metrics_sprinting": 533,
-                "physical_metrics_number_of_sprints": 24
+                "physical_metrics_number_of_sprints": 24,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -62425,7 +65169,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -62467,7 +65213,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -62515,7 +65263,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -62554,7 +65304,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -62597,7 +65349,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -62637,7 +65391,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 3,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -62679,7 +65435,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 563,
                 "physical_metrics_running": 464,
                 "physical_metrics_sprinting": 61,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -62719,7 +65477,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -62759,7 +65519,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -62791,7 +65553,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -62821,7 +65585,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -62861,7 +65627,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -62907,7 +65675,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -62955,7 +65725,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -62995,7 +65767,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -63038,7 +65812,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1283,
                 "physical_metrics_running": 887,
                 "physical_metrics_sprinting": 122,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -63079,7 +65855,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -63120,7 +65898,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -63160,7 +65940,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 762,
                 "physical_metrics_running": 436,
                 "physical_metrics_sprinting": 62,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -63205,7 +65987,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -63245,7 +66029,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 502,
                 "physical_metrics_running": 449,
                 "physical_metrics_sprinting": 18,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -63278,7 +66064,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -63310,7 +66098,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -63364,7 +66154,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1987,
                 "physical_metrics_running": 1201,
                 "physical_metrics_sprinting": 73,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -63401,7 +66193,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -63443,7 +66237,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -63491,7 +66287,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1760,
                 "physical_metrics_running": 1158,
                 "physical_metrics_sprinting": 106,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -63531,7 +66329,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -63566,7 +66366,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -63602,7 +66404,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -63641,7 +66445,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -63690,7 +66496,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -63732,7 +66540,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -63775,7 +66585,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -63815,7 +66627,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -63864,7 +66678,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -63910,7 +66726,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -63966,7 +66784,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4513,
                 "physical_metrics_running": 2461,
                 "physical_metrics_sprinting": 141,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -64015,7 +66835,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4994,
                 "physical_metrics_running": 3695,
                 "physical_metrics_sprinting": 174,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -64051,7 +66873,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -64090,7 +66914,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -64130,7 +66956,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -64167,7 +66995,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -64216,7 +67046,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1379,
                 "physical_metrics_running": 1070,
                 "physical_metrics_sprinting": 60,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -64246,7 +67078,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -64288,7 +67122,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -64328,7 +67164,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -64377,7 +67215,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -64421,7 +67261,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1107,
                 "physical_metrics_running": 908,
                 "physical_metrics_sprinting": 25,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -64459,7 +67301,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -64508,7 +67352,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4179,
                 "physical_metrics_running": 2399,
                 "physical_metrics_sprinting": 110,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -64553,7 +67399,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -64600,7 +67448,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -64639,7 +67489,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -64683,7 +67535,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 905,
                 "physical_metrics_running": 419,
                 "physical_metrics_sprinting": 16,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -64729,7 +67583,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -64773,7 +67629,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1167,
                 "physical_metrics_running": 661,
                 "physical_metrics_sprinting": 80,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -64814,7 +67672,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -64851,7 +67711,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -64897,7 +67759,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 5,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -64938,7 +67802,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 15,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -64976,7 +67842,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -65019,7 +67887,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -65053,7 +67923,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -65093,7 +67965,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -65143,7 +68017,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3855,
                 "physical_metrics_running": 2271,
                 "physical_metrics_sprinting": 110,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -65186,7 +68062,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -65239,7 +68117,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5149,
                 "physical_metrics_running": 2173,
                 "physical_metrics_sprinting": 210,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -65278,7 +68158,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -65320,7 +68202,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -65362,7 +68246,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -65402,7 +68288,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -65446,7 +68334,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -65488,7 +68378,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -65529,7 +68421,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -65567,7 +68461,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 291,
                 "physical_metrics_jogging": 789,
                 "physical_metrics_running": 309,
-                "physical_metrics_sprinting": 9
+                "physical_metrics_sprinting": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -65605,7 +68501,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -65654,7 +68552,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -65698,7 +68598,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 989,
                 "physical_metrics_running": 652,
                 "physical_metrics_sprinting": 55,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -65737,7 +68639,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -65789,7 +68693,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2573,
                 "physical_metrics_running": 1780,
                 "physical_metrics_sprinting": 85,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -65836,7 +68742,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1995,
                 "physical_metrics_running": 1099,
                 "physical_metrics_sprinting": 87,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -65873,7 +68781,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -65885,6 +68795,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": null,
                 "lineupRole": "Midfielder",
+                "yellowCard": false,
+                "redCard": false,
                 "minutes_played": 1,
                 "minutes": 1,
                 "goals": 0,
@@ -65964,7 +68876,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -66011,7 +68925,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -66060,7 +68976,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -66107,7 +69025,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -66150,7 +69070,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -66195,7 +69117,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1202,
                 "physical_metrics_running": 573,
                 "physical_metrics_sprinting": 85,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -66229,7 +69153,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -66259,7 +69185,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -66304,7 +69232,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 767,
                 "physical_metrics_running": 278,
                 "physical_metrics_sprinting": 43,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -66355,7 +69285,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -66394,7 +69326,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 361,
                 "physical_metrics_running": 221,
                 "physical_metrics_sprinting": 53,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -66424,7 +69358,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -66472,7 +69408,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -66521,7 +69459,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -66561,7 +69501,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -66616,7 +69558,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3483,
                 "physical_metrics_running": 1604,
                 "physical_metrics_sprinting": 122,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -66655,7 +69599,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -66689,7 +69635,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -66737,7 +69685,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -66774,7 +69724,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -66810,7 +69762,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -66851,7 +69805,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -66901,7 +69857,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 607,
                 "physical_metrics_running": 374,
                 "physical_metrics_sprinting": 7,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -66951,7 +69909,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -67000,7 +69960,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -67050,7 +70012,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -67098,7 +70062,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -67143,7 +70109,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -67192,7 +70160,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -67249,7 +70219,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -67288,7 +70260,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -67334,7 +70308,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -67384,7 +70360,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5688,
                 "physical_metrics_running": 2866,
                 "physical_metrics_sprinting": 142,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -67424,7 +70402,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -67472,7 +70452,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -67517,7 +70499,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -67564,7 +70548,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6163,
                 "physical_metrics_running": 2260,
                 "physical_metrics_sprinting": 149,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -67605,7 +70591,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -67652,7 +70640,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -67701,7 +70691,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 7013,
                 "physical_metrics_running": 2845,
                 "physical_metrics_sprinting": 181,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -67743,7 +70735,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 4,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -67784,7 +70778,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -67832,7 +70828,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6668,
                 "physical_metrics_running": 2394,
                 "physical_metrics_sprinting": 106,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -67878,7 +70876,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -67926,7 +70926,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": true,
+                "redCard": true
             },
             {
                 "matchId": 4621540,
@@ -67983,7 +70985,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6874,
                 "physical_metrics_running": 2010,
                 "physical_metrics_sprinting": 86,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -68023,7 +71027,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -68069,7 +71075,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -68116,7 +71124,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6178,
                 "physical_metrics_running": 2886,
                 "physical_metrics_sprinting": 162,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -68157,7 +71167,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -68199,7 +71211,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -68236,7 +71250,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -68281,7 +71297,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 8,
                 "duel_won": 6,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -68318,7 +71336,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -68366,7 +71386,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4531,
                 "physical_metrics_running": 1828,
                 "physical_metrics_sprinting": 129,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -68413,7 +71435,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -68463,7 +71487,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 952,
                 "physical_metrics_running": 488,
                 "physical_metrics_sprinting": 24,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -68499,7 +71525,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -68536,7 +71564,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -68567,7 +71597,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -68608,7 +71640,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -68656,7 +71690,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 6,
                 "duel_won": 6,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -68704,7 +71740,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 997,
                 "physical_metrics_running": 785,
                 "physical_metrics_sprinting": 26,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -68751,7 +71789,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 708,
                 "physical_metrics_running": 404,
                 "physical_metrics_sprinting": 16,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -68792,7 +71832,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -68833,7 +71875,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -68880,7 +71924,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -68921,7 +71967,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 335,
                 "physical_metrics_running": 215,
                 "physical_metrics_sprinting": 14,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -68964,7 +72012,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -69011,7 +72061,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -69041,7 +72093,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -69087,7 +72141,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1331,
                 "physical_metrics_running": 1072,
                 "physical_metrics_sprinting": 62,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -69128,7 +72184,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -69176,7 +72234,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6723,
                 "physical_metrics_running": 2653,
                 "physical_metrics_sprinting": 87,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -69222,7 +72282,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -69270,7 +72332,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 6,
                 "duel_won": 1,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -69317,7 +72381,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5012,
                 "physical_metrics_running": 1602,
                 "physical_metrics_sprinting": 123,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -69359,7 +72425,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -69407,7 +72475,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -69444,7 +72514,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -69474,7 +72546,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -69515,7 +72589,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -69551,7 +72627,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -69591,7 +72669,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -69633,7 +72713,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -69680,7 +72762,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 975,
                 "physical_metrics_running": 552,
                 "physical_metrics_sprinting": 27,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -69719,7 +72803,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -69759,7 +72845,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -69806,7 +72894,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -69847,7 +72937,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -69890,7 +72982,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -69932,7 +73026,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1357,
                 "physical_metrics_running": 689,
                 "physical_metrics_sprinting": 52,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -69972,7 +73068,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -70011,7 +73109,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -70052,7 +73152,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -70096,7 +73198,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -70143,7 +73247,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -70177,7 +73283,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -70213,7 +73321,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -70259,7 +73369,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -70293,7 +73405,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -70341,7 +73455,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -70382,7 +73498,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -70431,7 +73549,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4301,
                 "physical_metrics_running": 2111,
                 "physical_metrics_sprinting": 353,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -70475,7 +73595,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -70524,7 +73646,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -70582,7 +73706,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1994,
                 "physical_metrics_running": 1228,
                 "physical_metrics_sprinting": 175,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -70630,7 +73756,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -70676,7 +73804,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -70733,7 +73863,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4872,
                 "physical_metrics_running": 2456,
                 "physical_metrics_sprinting": 288,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -70778,7 +73910,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -70811,7 +73945,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -70861,7 +73997,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1519,
                 "physical_metrics_running": 869,
                 "physical_metrics_sprinting": 170,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -70909,7 +74047,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -70958,7 +74098,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -71010,7 +74152,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -71049,7 +74193,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -71089,7 +74235,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -71137,7 +74285,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1969,
                 "physical_metrics_running": 972,
                 "physical_metrics_sprinting": 124,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -71188,7 +74338,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 5,
                 "duel_won": 8,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -71229,7 +74381,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1450,
                 "physical_metrics_running": 889,
                 "physical_metrics_sprinting": 55,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -71277,7 +74431,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -71325,7 +74481,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -71373,7 +74531,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4507000,
@@ -71420,7 +74580,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -71451,7 +74613,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -71490,7 +74654,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -71530,7 +74696,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 628,
                 "physical_metrics_running": 401,
                 "physical_metrics_sprinting": 22,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -71579,7 +74747,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -71630,7 +74800,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -71669,7 +74841,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -71711,7 +74885,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -71772,7 +74948,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4670,
                 "physical_metrics_running": 2248,
                 "physical_metrics_sprinting": 180,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -71822,7 +75000,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -71881,7 +75061,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4435,
                 "physical_metrics_running": 2482,
                 "physical_metrics_sprinting": 196,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -71929,7 +75111,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -71976,7 +75160,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -72022,7 +75208,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -72076,7 +75264,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1666,
                 "physical_metrics_running": 798,
                 "physical_metrics_sprinting": 57,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -72129,7 +75319,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 1,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -72180,7 +75372,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3088,
                 "physical_metrics_running": 1418,
                 "physical_metrics_sprinting": 135,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -72218,7 +75412,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -72264,7 +75460,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -72315,7 +75513,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -72365,7 +75565,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -72405,7 +75607,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -72446,7 +75650,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -72495,7 +75701,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -72551,7 +75759,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4903,
                 "physical_metrics_running": 2521,
                 "physical_metrics_sprinting": 468,
-                "physical_metrics_number_of_sprints": 23
+                "physical_metrics_number_of_sprints": 23,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -72598,7 +75808,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -72648,7 +75860,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -72704,7 +75918,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5195,
                 "physical_metrics_running": 2119,
                 "physical_metrics_sprinting": 199,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -72752,7 +75968,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -72802,7 +76020,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -72858,7 +76078,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5376,
                 "physical_metrics_running": 2747,
                 "physical_metrics_sprinting": 272,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -72907,7 +76129,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -72959,7 +76183,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -73005,7 +76231,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3646,
                 "physical_metrics_running": 1949,
                 "physical_metrics_sprinting": 239,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -73049,7 +76277,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -73105,7 +76335,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2955,
                 "physical_metrics_running": 1231,
                 "physical_metrics_sprinting": 129,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -73145,7 +76377,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -73193,7 +76427,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -73245,7 +76481,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -73295,7 +76533,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -73347,7 +76587,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -73397,7 +76639,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -73447,7 +76691,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -73498,7 +76744,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -73554,7 +76802,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4733,
                 "physical_metrics_running": 2383,
                 "physical_metrics_sprinting": 207,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -73596,7 +76846,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -73653,7 +76905,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5020,
                 "physical_metrics_running": 1906,
                 "physical_metrics_sprinting": 214,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -73707,7 +76961,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -73748,7 +77004,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -73797,7 +77055,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -73849,7 +77109,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -73899,7 +77161,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -73948,7 +77212,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -74000,7 +77266,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -74049,7 +77317,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -74089,7 +77359,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -74143,7 +77415,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5057,
                 "physical_metrics_running": 2862,
                 "physical_metrics_sprinting": 284,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -74184,7 +77458,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -74242,7 +77518,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3793,
                 "physical_metrics_running": 2055,
                 "physical_metrics_sprinting": 314,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -74290,7 +77568,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 6,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -74338,7 +77618,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -74395,7 +77677,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2822,
                 "physical_metrics_running": 1439,
                 "physical_metrics_sprinting": 155,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -74447,7 +77731,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 9,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -74503,7 +77789,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3976,
                 "physical_metrics_running": 1841,
                 "physical_metrics_sprinting": 350,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -74552,7 +77840,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -74604,7 +77894,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -74655,7 +77947,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 5,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -74703,7 +77997,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -74751,7 +78047,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -74801,7 +78099,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -74853,7 +78153,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -74902,7 +78204,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -74955,7 +78259,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -75010,7 +78316,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1297,
                 "physical_metrics_running": 540,
                 "physical_metrics_sprinting": 28,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -75061,7 +78369,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -75106,7 +78416,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -75156,7 +78468,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -75213,7 +78527,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4556,
                 "physical_metrics_running": 2409,
                 "physical_metrics_sprinting": 208,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -75264,7 +78580,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -75321,7 +78639,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4663,
                 "physical_metrics_running": 2279,
                 "physical_metrics_sprinting": 264,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -75372,7 +78692,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -75423,7 +78745,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -75480,7 +78804,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4018,
                 "physical_metrics_running": 2003,
                 "physical_metrics_sprinting": 166,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -75531,7 +78857,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -75543,6 +78871,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "CAM",
                 "lineupRole": "Midfielder",
+                "yellowCard": false,
+                "redCard": true,
                 "rating_title": 5.8,
                 "rating": 5.8,
                 "minutes_played": 68,
@@ -75641,7 +78971,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -75689,7 +79021,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 8,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -75740,7 +79074,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -75784,7 +79120,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -75832,7 +79170,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -75889,7 +79229,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4007,
                 "physical_metrics_running": 1690,
                 "physical_metrics_sprinting": 160,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -75942,7 +79284,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -75992,7 +79336,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -76043,7 +79389,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -76098,7 +79446,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3885,
                 "physical_metrics_running": 1369,
                 "physical_metrics_sprinting": 95,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -76147,7 +79497,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -76197,7 +79549,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -76256,7 +79610,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4663,
                 "physical_metrics_running": 2328,
                 "physical_metrics_sprinting": 186,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -76305,7 +79661,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -76357,7 +79715,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -76414,7 +79774,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4956,
                 "physical_metrics_running": 1810,
                 "physical_metrics_sprinting": 321,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -76464,7 +79826,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -76517,7 +79881,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -76571,7 +79937,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 11,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -76630,7 +79998,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3822,
                 "physical_metrics_running": 1741,
                 "physical_metrics_sprinting": 239,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -76677,7 +80047,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -76722,7 +80094,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -76768,7 +80142,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -76819,7 +80195,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -76871,7 +80249,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -76932,7 +80312,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4393,
                 "physical_metrics_running": 1929,
                 "physical_metrics_sprinting": 196,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -76984,7 +80366,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -77041,7 +80425,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4159,
                 "physical_metrics_running": 1688,
                 "physical_metrics_sprinting": 299,
-                "physical_metrics_number_of_sprints": 15
+                "physical_metrics_number_of_sprints": 15,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -77092,7 +80478,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 15,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -77144,7 +80532,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -77194,7 +80584,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -77246,7 +80638,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -77297,7 +80691,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 13,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -77348,7 +80744,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 2,
                 "duel_won": 11,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -77400,7 +80798,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 9,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -77459,7 +80859,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2943,
                 "physical_metrics_running": 1570,
                 "physical_metrics_sprinting": 231,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737563,
@@ -77516,7 +80918,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3711,
                 "physical_metrics_running": 2102,
                 "physical_metrics_sprinting": 403,
-                "physical_metrics_number_of_sprints": 18
+                "physical_metrics_number_of_sprints": 18,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -77568,7 +80972,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 11,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -77618,7 +81024,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -77671,7 +81079,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 8,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -77722,7 +81132,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -77773,7 +81185,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 12,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -77832,7 +81246,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3866,
                 "physical_metrics_running": 1920,
                 "physical_metrics_sprinting": 237,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -77883,7 +81299,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -77938,7 +81356,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3619,
                 "physical_metrics_running": 1904,
                 "physical_metrics_sprinting": 220,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -77980,7 +81400,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -78032,7 +81454,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -78082,7 +81506,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 6,
-                "duel_lost": 13
+                "duel_lost": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -78140,7 +81566,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4906,
                 "physical_metrics_running": 1878,
                 "physical_metrics_sprinting": 150,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -78190,7 +81618,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -78250,7 +81680,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5972,
                 "physical_metrics_running": 2303,
                 "physical_metrics_sprinting": 334,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -78302,7 +81734,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -78351,7 +81785,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 13,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -78402,7 +81838,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -78452,7 +81890,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -78504,7 +81944,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 9,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -78555,7 +81997,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -78608,7 +82052,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 1,
                 "duel_won": 11,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -78651,7 +82097,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -78711,7 +82159,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4830,
                 "physical_metrics_running": 2201,
                 "physical_metrics_sprinting": 169,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -78762,7 +82212,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -78822,7 +82274,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3066,
                 "physical_metrics_running": 1310,
                 "physical_metrics_sprinting": 175,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -78871,7 +82325,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -78923,7 +82379,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -78985,7 +82443,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4776,
                 "physical_metrics_running": 2191,
                 "physical_metrics_sprinting": 232,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -79037,7 +82497,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -79090,7 +82552,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 9,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -79146,7 +82610,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3649,
                 "physical_metrics_running": 2056,
                 "physical_metrics_sprinting": 227,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -79201,7 +82667,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 16,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -79251,7 +82719,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -79300,7 +82770,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 6,
                 "fouls": 2,
                 "duel_won": 12,
-                "duel_lost": 12
+                "duel_lost": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -79356,7 +82828,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4494,
                 "physical_metrics_running": 1599,
                 "physical_metrics_sprinting": 267,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -79410,7 +82884,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -79460,7 +82936,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -79511,7 +82989,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 13,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -79561,7 +83041,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -79605,7 +83087,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -79656,7 +83140,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 5,
                 "fouls": 5,
                 "duel_won": 12,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -79709,7 +83195,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -79763,7 +83251,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 15,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -79815,7 +83305,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 4,
                 "duel_won": 5,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -79875,7 +83367,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4019,
                 "physical_metrics_running": 1712,
                 "physical_metrics_sprinting": 345,
-                "physical_metrics_number_of_sprints": 16
+                "physical_metrics_number_of_sprints": 16,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -79929,7 +83423,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -79980,7 +83476,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -80032,7 +83530,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -80075,7 +83575,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 6,
                 "fouls": 1,
                 "duel_won": 13,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -80130,7 +83632,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 4,
                 "fouls": 2,
                 "duel_won": 12,
-                "duel_lost": 11
+                "duel_lost": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -80181,7 +83685,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -80231,7 +83737,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -80281,7 +83789,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 14,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -80331,7 +83841,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -80387,7 +83899,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4562,
                 "physical_metrics_running": 2349,
                 "physical_metrics_sprinting": 431,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -80423,7 +83937,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -80483,7 +83999,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4124,
                 "physical_metrics_running": 2291,
                 "physical_metrics_sprinting": 371,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -80533,7 +84051,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -80587,7 +84107,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 11,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -80648,7 +84170,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5731,
                 "physical_metrics_running": 2297,
                 "physical_metrics_sprinting": 245,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -80701,7 +84225,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 9,
-                "duel_lost": 8
+                "duel_lost": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -80760,7 +84286,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4881,
                 "physical_metrics_running": 1972,
                 "physical_metrics_sprinting": 275,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -80813,7 +84341,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -80864,7 +84394,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -80918,7 +84450,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -80972,7 +84506,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 12,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -81025,7 +84561,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -81084,7 +84622,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4475,
                 "physical_metrics_running": 1771,
                 "physical_metrics_sprinting": 240,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -81135,7 +84675,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -81192,7 +84734,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 9,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -81244,7 +84788,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 7,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -81295,7 +84841,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -81356,7 +84904,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3970,
                 "physical_metrics_running": 1706,
                 "physical_metrics_sprinting": 347,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -81407,7 +84957,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -81468,7 +85020,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5317,
                 "physical_metrics_running": 2567,
                 "physical_metrics_sprinting": 315,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -81521,7 +85075,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 3,
                 "duel_won": 8,
-                "duel_lost": 9
+                "duel_lost": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -81574,7 +85130,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -81634,7 +85192,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4075,
                 "physical_metrics_running": 1928,
                 "physical_metrics_sprinting": 371,
-                "physical_metrics_number_of_sprints": 19
+                "physical_metrics_number_of_sprints": 19,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -81685,7 +85245,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 11,
-                "duel_lost": 10
+                "duel_lost": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -81697,6 +85259,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "RW",
                 "lineupRole": "Attacker",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 8.19,
                 "rating": 8.19,
                 "minutes_played": 90,
@@ -81791,7 +85355,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -81822,7 +85388,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -81853,7 +85421,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -81889,7 +85459,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -81936,7 +85508,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1622,
                 "physical_metrics_running": 856,
                 "physical_metrics_sprinting": 199,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -81975,7 +85549,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -82022,7 +85598,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -82063,7 +85641,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -82102,7 +85682,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -82134,7 +85716,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -82169,7 +85753,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -82213,7 +85799,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -82250,7 +85838,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -82294,7 +85884,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -82340,7 +85932,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -82390,7 +85984,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -82443,7 +86039,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1560,
                 "physical_metrics_running": 864,
                 "physical_metrics_sprinting": 87,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -82481,7 +86079,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -82514,7 +86114,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -82551,7 +86153,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -82605,7 +86209,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -82649,7 +86255,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -82694,7 +86302,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506777,
@@ -82739,7 +86349,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -82776,7 +86388,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -82821,7 +86435,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4661,
                 "physical_metrics_running": 1914,
                 "physical_metrics_sprinting": 161,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -82857,7 +86473,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -82895,7 +86513,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -82936,7 +86556,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621538,
@@ -82984,7 +86606,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3541,
                 "physical_metrics_running": 1132,
                 "physical_metrics_sprinting": 154,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -83025,7 +86649,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -83067,7 +86693,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621509,
@@ -83119,7 +86747,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5899,
                 "physical_metrics_running": 2815,
                 "physical_metrics_sprinting": 213,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506859,
@@ -83158,7 +86788,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506874,
@@ -83197,7 +86829,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -83246,7 +86880,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3786,
                 "physical_metrics_running": 1325,
                 "physical_metrics_sprinting": 192,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506881,
@@ -83292,7 +86928,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 6,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -83334,7 +86972,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -83382,7 +87022,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5877,
                 "physical_metrics_running": 1961,
                 "physical_metrics_sprinting": 106,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -83429,7 +87071,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506941,
@@ -83470,7 +87114,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506911,
@@ -83511,7 +87157,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621528,
@@ -83560,7 +87208,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5593,
                 "physical_metrics_running": 2300,
                 "physical_metrics_sprinting": 107,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506916,
@@ -83599,7 +87249,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506932,
@@ -83639,7 +87291,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -83678,7 +87332,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -83717,7 +87373,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4582241,
@@ -83756,7 +87414,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -83796,7 +87456,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506950,
@@ -83836,7 +87498,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -83881,7 +87545,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5815,
                 "physical_metrics_running": 2135,
                 "physical_metrics_sprinting": 302,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -83921,7 +87587,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621536,
@@ -83966,7 +87634,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1405,
                 "physical_metrics_running": 602,
                 "physical_metrics_sprinting": 53,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -84006,7 +87676,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -84044,7 +87716,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -84082,7 +87756,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506986,
@@ -84122,7 +87798,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -84162,7 +87840,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731569,
@@ -84210,7 +87890,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -84248,7 +87930,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -84300,7 +87984,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1394,
                 "physical_metrics_running": 574,
                 "physical_metrics_sprinting": 70,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4507025,
@@ -84341,7 +88027,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -84373,7 +88061,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -84413,7 +88103,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -84452,7 +88144,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737569,
@@ -84507,7 +88201,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5543,
                 "physical_metrics_running": 1908,
                 "physical_metrics_sprinting": 99,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -84541,7 +88237,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -84590,7 +88288,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5339,
                 "physical_metrics_running": 2187,
                 "physical_metrics_sprinting": 231,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -84631,7 +88331,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -84670,7 +88372,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -84717,7 +88421,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4651,
                 "physical_metrics_running": 1752,
                 "physical_metrics_sprinting": 237,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -84766,7 +88472,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5629,
                 "physical_metrics_running": 2172,
                 "physical_metrics_sprinting": 251,
-                "physical_metrics_number_of_sprints": 12
+                "physical_metrics_number_of_sprints": 12,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -84811,7 +88519,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -84852,7 +88562,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -84891,7 +88603,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -84929,7 +88643,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 4,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837114,
@@ -84968,7 +88684,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837124,
@@ -85015,7 +88733,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -85055,7 +88775,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 6,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -85103,7 +88825,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3568,
                 "physical_metrics_running": 1488,
                 "physical_metrics_sprinting": 117,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -85144,7 +88868,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 3,
                 "duel_won": 7,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -85190,7 +88916,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5761,
                 "physical_metrics_running": 2555,
                 "physical_metrics_sprinting": 310,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -85237,7 +88965,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 7,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 8
+                "duel_won": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -85285,7 +89015,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -85333,7 +89065,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5404,
                 "physical_metrics_running": 1898,
                 "physical_metrics_sprinting": 116,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -85374,7 +89108,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 3,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -85413,7 +89149,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 119,
                 "physical_metrics_jogging": 420,
                 "physical_metrics_running": 201,
-                "physical_metrics_sprinting": 1
+                "physical_metrics_sprinting": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -85453,7 +89191,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -85492,7 +89232,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -85540,7 +89282,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5079,
                 "physical_metrics_running": 2209,
                 "physical_metrics_sprinting": 231,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -85580,7 +89324,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -85621,7 +89367,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -85658,7 +89406,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -85707,7 +89457,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5172,
                 "physical_metrics_running": 1660,
                 "physical_metrics_sprinting": 191,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -85753,7 +89505,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -85792,7 +89546,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -85833,7 +89589,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 6,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -85875,7 +89633,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -85915,7 +89675,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -85954,7 +89716,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -85994,7 +89758,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -86033,7 +89799,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -86073,7 +89841,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 4,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 7
+                "duel_won": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -86128,7 +89898,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5917,
                 "physical_metrics_running": 1837,
                 "physical_metrics_sprinting": 206,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -86166,7 +89938,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -86201,7 +89975,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -86249,7 +90025,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -86289,7 +90067,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -86337,7 +90117,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -86378,7 +90160,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -86425,7 +90209,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -86471,7 +90257,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -86518,7 +90306,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4964,
                 "physical_metrics_running": 2374,
                 "physical_metrics_sprinting": 374,
-                "physical_metrics_number_of_sprints": 17
+                "physical_metrics_number_of_sprints": 17,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -86559,7 +90349,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -86607,7 +90399,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4816,
                 "physical_metrics_running": 2169,
                 "physical_metrics_sprinting": 217,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -86647,7 +90441,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -86689,7 +90485,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -86736,7 +90534,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2840,
                 "physical_metrics_running": 1121,
                 "physical_metrics_sprinting": 73,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": true
             },
             {
                 "matchId": 4837411,
@@ -86777,7 +90577,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -86819,7 +90621,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -86860,7 +90664,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 7,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -86902,7 +90708,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -86944,7 +90752,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -86985,7 +90795,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -87034,7 +90846,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -87081,7 +90895,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -87122,7 +90938,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -87170,7 +90988,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5100,
                 "physical_metrics_running": 1951,
                 "physical_metrics_sprinting": 229,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -87211,7 +91031,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -87258,7 +91080,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -87306,7 +91130,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5290,
                 "physical_metrics_running": 1962,
                 "physical_metrics_sprinting": 241,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -87347,7 +91173,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 5,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -87391,7 +91219,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6062,
                 "physical_metrics_running": 2434,
                 "physical_metrics_sprinting": 239,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -87432,7 +91262,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -87473,7 +91305,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -87522,7 +91356,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5321,
                 "physical_metrics_running": 1935,
                 "physical_metrics_sprinting": 264,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -87569,7 +91405,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -87620,7 +91458,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -87660,7 +91500,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -87709,7 +91551,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 6,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -87747,7 +91591,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -87779,7 +91625,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -87818,7 +91666,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 965,
                 "physical_metrics_running": 673,
                 "physical_metrics_sprinting": 85,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -87861,7 +91711,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1124,
                 "physical_metrics_running": 465,
                 "physical_metrics_sprinting": 9,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -87891,7 +91743,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -87929,7 +91783,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -87974,7 +91830,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -88013,7 +91871,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -88054,7 +91914,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -88093,7 +91955,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -88130,7 +91994,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -88177,7 +92043,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 7,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -88220,7 +92088,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1000,
                 "physical_metrics_running": 683,
                 "physical_metrics_sprinting": 92,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -88260,7 +92130,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -88314,7 +92186,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3032,
                 "physical_metrics_running": 1503,
                 "physical_metrics_sprinting": 142,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837326,
@@ -88362,7 +92236,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -88405,7 +92281,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837333,
@@ -88453,7 +92331,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -88491,7 +92371,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -88540,7 +92422,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 8,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837360,
@@ -88588,7 +92472,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -88635,7 +92521,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -88676,7 +92564,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -88725,7 +92615,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4321,
                 "physical_metrics_running": 2407,
                 "physical_metrics_sprinting": 161,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -88768,7 +92660,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -88824,7 +92718,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4989,
                 "physical_metrics_running": 2716,
                 "physical_metrics_sprinting": 148,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -88865,7 +92761,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 6,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -88912,7 +92810,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -88947,7 +92847,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -88986,7 +92888,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -89034,7 +92938,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 8,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -89074,7 +92980,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -89115,7 +93023,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -89163,7 +93073,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -89204,7 +93116,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -89254,7 +93168,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -89294,7 +93210,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106264,
@@ -89346,7 +93264,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1727,
                 "physical_metrics_running": 839,
                 "physical_metrics_sprinting": 54,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -89386,7 +93306,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -89427,7 +93349,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -89468,7 +93392,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -89504,7 +93430,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -89547,7 +93475,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1412,
                 "physical_metrics_running": 648,
                 "physical_metrics_sprinting": 44,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -89602,7 +93532,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4248,
                 "physical_metrics_running": 2435,
                 "physical_metrics_sprinting": 118,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -89642,7 +93574,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -89686,7 +93620,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3219,
                 "physical_metrics_running": 1596,
                 "physical_metrics_sprinting": 103,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -89734,7 +93670,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 9,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -89746,6 +93684,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "CDM",
                 "lineupRole": "Midfielder",
+                "yellowCard": true,
+                "redCard": false,
                 "rating_title": 7.44,
                 "rating": 7.44,
                 "minutes_played": 89,
@@ -89827,7 +93767,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506764,
@@ -89859,7 +93801,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506771,
@@ -89901,7 +93845,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506791,
@@ -89932,7 +93878,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -89973,7 +93921,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 786,
                 "physical_metrics_running": 442,
                 "physical_metrics_sprinting": 61,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -90015,7 +93965,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 3,
                 "duel_won": 3,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506807,
@@ -90048,7 +94000,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -90089,7 +94043,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506837,
@@ -90122,7 +94078,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4506846,
@@ -90157,7 +94115,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 3,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -90206,7 +94166,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5710,
                 "physical_metrics_running": 2527,
                 "physical_metrics_sprinting": 221,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506890,
@@ -90245,7 +94207,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621540,
@@ -90297,7 +94261,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5129,
                 "physical_metrics_running": 2055,
                 "physical_metrics_sprinting": 260,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506895,
@@ -90336,7 +94302,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -90378,7 +94346,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4579037,
@@ -90414,7 +94384,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4707274,
@@ -90462,7 +94434,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 5,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621537,
@@ -90503,7 +94477,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 307,
                 "physical_metrics_running": 196,
                 "physical_metrics_sprinting": 6,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506957,
@@ -90542,7 +94518,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506974,
@@ -90576,7 +94554,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4717295,
@@ -90615,7 +94595,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506981,
@@ -90647,7 +94629,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507000,
@@ -90677,7 +94661,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507005,
@@ -90726,7 +94712,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737555,
@@ -90770,7 +94758,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 966,
                 "physical_metrics_running": 347,
                 "physical_metrics_sprinting": 16,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507025,
@@ -90803,7 +94793,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507016,
@@ -90836,7 +94828,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507036,
@@ -90879,7 +94873,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731571,
@@ -90913,7 +94909,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4507045,
@@ -90951,7 +94949,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507060,
@@ -90989,7 +94989,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737573,
@@ -91040,7 +95042,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5402,
                 "physical_metrics_running": 2174,
                 "physical_metrics_sprinting": 326,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507066,
@@ -91087,7 +95091,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507078,
@@ -91125,7 +95131,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4731604,
@@ -91166,7 +95174,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4737576,
@@ -91214,7 +95224,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 2589,
                 "physical_metrics_running": 1020,
                 "physical_metrics_sprinting": 171,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507091,
@@ -91263,7 +95275,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4737578,
@@ -91314,7 +95328,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6625,
                 "physical_metrics_running": 2996,
                 "physical_metrics_sprinting": 443,
-                "physical_metrics_number_of_sprints": 20
+                "physical_metrics_number_of_sprints": 20,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507097,
@@ -91362,7 +95378,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507107,
@@ -91403,7 +95421,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507117,
@@ -91449,7 +95469,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4507126,
@@ -91480,7 +95502,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837136,
@@ -91515,7 +95539,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -91557,7 +95583,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 8,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947153,
@@ -91606,7 +95634,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4189,
                 "physical_metrics_running": 1865,
                 "physical_metrics_sprinting": 252,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837150,
@@ -91649,7 +95679,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837166,
@@ -91691,7 +95723,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837171,
@@ -91738,7 +95772,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947145,
@@ -91788,7 +95824,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4043,
                 "physical_metrics_running": 2156,
                 "physical_metrics_sprinting": 274,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837185,
@@ -91828,7 +95866,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -91862,7 +95902,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -91908,7 +95950,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1210,
                 "physical_metrics_running": 500,
                 "physical_metrics_sprinting": 85,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837206,
@@ -91940,7 +95984,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -91980,7 +96026,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947147,
@@ -92020,7 +96068,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_walking": 139,
                 "physical_metrics_jogging": 452,
                 "physical_metrics_running": 157,
-                "physical_metrics_sprinting": 7
+                "physical_metrics_sprinting": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837226,
@@ -92052,7 +96102,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -92095,7 +96147,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 4,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947109,
@@ -92139,7 +96193,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 813,
                 "physical_metrics_running": 396,
                 "physical_metrics_sprinting": 83,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837246,
@@ -92181,7 +96237,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 0,
                 "duel_won": 10,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -92221,7 +96279,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -92259,7 +96319,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947146,
@@ -92316,7 +96378,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5069,
                 "physical_metrics_running": 1651,
                 "physical_metrics_sprinting": 178,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4837262,
@@ -92363,7 +96427,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -92395,7 +96461,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837277,
@@ -92435,7 +96503,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837285,
@@ -92476,7 +96546,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4889767,
@@ -92509,7 +96581,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5039109,
@@ -92542,7 +96616,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5125326,
@@ -92583,7 +96659,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837308,
@@ -92619,7 +96697,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947151,
@@ -92668,7 +96748,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5352,
                 "physical_metrics_running": 2306,
                 "physical_metrics_sprinting": 82,
-                "physical_metrics_number_of_sprints": 6
+                "physical_metrics_number_of_sprints": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837312,
@@ -92706,7 +96788,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4947152,
@@ -92760,7 +96844,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4382,
                 "physical_metrics_running": 1646,
                 "physical_metrics_sprinting": 153,
-                "physical_metrics_number_of_sprints": 7
+                "physical_metrics_number_of_sprints": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5144838,
@@ -92808,7 +96894,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5173360,
@@ -92841,7 +96929,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837347,
@@ -92883,7 +96973,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837353,
@@ -92923,7 +97015,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5173361,
@@ -92968,7 +97062,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 4,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837370,
@@ -93008,7 +97104,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 3,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 6
+                "duel_won": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205733,
@@ -93056,7 +97154,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4928,
                 "physical_metrics_running": 2197,
                 "physical_metrics_sprinting": 177,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -93104,7 +97204,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -93152,7 +97254,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4791,
                 "physical_metrics_running": 2188,
                 "physical_metrics_sprinting": 140,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -93201,7 +97305,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837401,
@@ -93243,7 +97349,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 2,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5205793,
@@ -93297,7 +97405,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5653,
                 "physical_metrics_running": 2187,
                 "physical_metrics_sprinting": 186,
-                "physical_metrics_number_of_sprints": 11
+                "physical_metrics_number_of_sprints": 11,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837411,
@@ -93337,7 +97447,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205794,
@@ -93386,7 +97498,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5575,
                 "physical_metrics_running": 1887,
                 "physical_metrics_sprinting": 202,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837431,
@@ -93427,7 +97541,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 4,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837426,
@@ -93475,7 +97591,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837447,
@@ -93515,7 +97633,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837452,
@@ -93554,7 +97674,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837472,
@@ -93601,7 +97723,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -93643,7 +97767,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -93684,7 +97810,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -93729,7 +97857,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -93769,7 +97899,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -93812,7 +97944,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868066,
@@ -93855,7 +97989,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868078,
@@ -93896,7 +98032,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 3,
                 "fouls": 0,
-                "duel_won": 4
+                "duel_won": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -93938,7 +98076,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 2,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106338,
@@ -93985,7 +98125,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5198,
                 "physical_metrics_running": 1742,
                 "physical_metrics_sprinting": 203,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -94022,7 +98164,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -94070,7 +98214,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 6030,
                 "physical_metrics_running": 2239,
                 "physical_metrics_sprinting": 177,
-                "physical_metrics_number_of_sprints": 9
+                "physical_metrics_number_of_sprints": 9,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -94119,7 +98265,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 2,
                 "fouls": 1,
                 "duel_won": 2,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868115,
@@ -94150,7 +98298,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -94198,7 +98348,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5173,
                 "physical_metrics_running": 1723,
                 "physical_metrics_sprinting": 220,
-                "physical_metrics_number_of_sprints": 10
+                "physical_metrics_number_of_sprints": 10,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -94241,7 +98393,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868133,
@@ -94253,6 +98407,8 @@ export const TITANS_DATA: Player[] = [
                 "isHome": true,
                 "lineupPosition": "CB",
                 "lineupRole": "Defender",
+                "yellowCard": false,
+                "redCard": false,
                 "rating_title": 8.15,
                 "rating": 8.15,
                 "minutes_played": 90,
@@ -94331,7 +98487,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4621541,
@@ -94376,7 +98534,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 805,
                 "physical_metrics_running": 465,
                 "physical_metrics_sprinting": 62,
-                "physical_metrics_number_of_sprints": 3
+                "physical_metrics_number_of_sprints": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506802,
@@ -94416,7 +98576,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4506822,
@@ -94457,7 +98619,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 4621539,
@@ -94504,7 +98668,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1650,
                 "physical_metrics_running": 602,
                 "physical_metrics_sprinting": 47,
-                "physical_metrics_number_of_sprints": 2
+                "physical_metrics_number_of_sprints": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4686822,
@@ -94549,7 +98715,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -94593,7 +98761,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 2,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837192,
@@ -94628,7 +98798,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 1,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -94677,7 +98849,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 625,
                 "physical_metrics_running": 297,
                 "physical_metrics_sprinting": 125,
-                "physical_metrics_number_of_sprints": 4
+                "physical_metrics_number_of_sprints": 4,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -94725,7 +98899,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 6,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4947148,
@@ -94776,7 +98952,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 3293,
                 "physical_metrics_running": 1887,
                 "physical_metrics_sprinting": 146,
-                "physical_metrics_number_of_sprints": 8
+                "physical_metrics_number_of_sprints": 8,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837212,
@@ -94808,7 +98986,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837236,
@@ -94845,7 +99025,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837294,
@@ -94881,7 +99063,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -94932,7 +99116,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 7,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -94973,7 +99159,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "was_fouled": 1,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -95008,7 +99196,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -95050,7 +99240,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -95083,7 +99275,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -95131,7 +99325,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 0,
                 "duel_won": 2,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837140,
@@ -95167,7 +99363,9 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837254,
@@ -95200,7 +99398,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5091468,
@@ -95241,7 +99441,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -95290,7 +99492,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 496,
                 "physical_metrics_running": 313,
                 "physical_metrics_sprinting": 18,
-                "physical_metrics_number_of_sprints": 1
+                "physical_metrics_number_of_sprints": 1,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837382,
@@ -95332,7 +99536,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 9,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5205734,
@@ -95379,7 +99585,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 1411,
                 "physical_metrics_running": 807,
                 "physical_metrics_sprinting": 102,
-                "physical_metrics_number_of_sprints": 5
+                "physical_metrics_number_of_sprints": 5,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837391,
@@ -95409,7 +99617,9 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837460,
@@ -95450,7 +99660,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 1,
                 "fouls": 0,
-                "duel_won": 3
+                "duel_won": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 4837488,
@@ -95498,7 +99710,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868024,
@@ -95541,7 +99755,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 3,
                 "fouls": 1,
                 "duel_won": 10,
-                "duel_lost": 4
+                "duel_lost": 4,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868016,
@@ -95591,7 +99807,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 2,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": true,
+                "redCard": false
             },
             {
                 "matchId": 5868034,
@@ -95640,7 +99858,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 5,
-                "duel_lost": 6
+                "duel_lost": 6,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868049,
@@ -95688,7 +99908,9 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 1,
                 "fouls": 2,
                 "duel_won": 8,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868054,
@@ -95738,7 +99960,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 2,
                 "fouls": 3,
                 "duel_won": 9,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868084,
@@ -95788,7 +100012,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 4,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868091,
@@ -95836,7 +100062,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106234,
@@ -95891,7 +100119,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 5092,
                 "physical_metrics_running": 2208,
                 "physical_metrics_sprinting": 291,
-                "physical_metrics_number_of_sprints": 14
+                "physical_metrics_number_of_sprints": 14,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868105,
@@ -95928,7 +100158,9 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 5,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     },
@@ -95976,7 +100208,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 2,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 2
+                "duel_won": 2,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 6106263,
@@ -96023,7 +100257,9 @@ export const TITANS_DATA: Player[] = [
                 "physical_metrics_jogging": 4679,
                 "physical_metrics_running": 1943,
                 "physical_metrics_sprinting": 284,
-                "physical_metrics_number_of_sprints": 13
+                "physical_metrics_number_of_sprints": 13,
+                "yellowCard": false,
+                "redCard": false
             },
             {
                 "matchId": 5868121,
@@ -96061,7 +100297,9 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 0,
                 "aerials_won": 0,
                 "fouls": 1,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "yellowCard": false,
+                "redCard": false
             }
         ]
     }

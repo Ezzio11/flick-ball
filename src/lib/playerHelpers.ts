@@ -9,6 +9,7 @@ interface EnrichedMatchData extends MatchData {
 }
 import { calculateFBI, Position as FBIPosition, TitanMatch } from './fbi-rating';
 import { positionGroup } from './utils';
+import { tierOf } from './opponentData';
 
 // Cross-reference titans player data with ingested match metadata
 export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]): Player {
@@ -85,7 +86,7 @@ export function enrichPlayerMatches(player: Player, matches: EnrichedMatchData[]
     // Calculate FBI Ratings for each match
     const positionType = mapToFBIPosition(player.position);
     const matchesWithFBI = sortedMatches.map((match) => {
-        const fbiStats = calculateFBI(match as TitanMatch, positionType);
+        const fbiStats = calculateFBI(match as TitanMatch, positionType, tierOf(match));
         return {
             ...match,
             fbiRating: fbiStats.final,

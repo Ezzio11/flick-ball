@@ -6,7 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getMatch, lineupPositions, SLOT_ROLE, COMPETITION_BLOCKLIST } = require('./fotmob');
+const { getMatch, lineupPositions, matchCards, SLOT_ROLE, COMPETITION_BLOCKLIST } = require('./fotmob');
 
 /** Most frequent value; ties go to the one seen most recently (matches are date-sorted). */
 function mostCommon(values) {
@@ -81,8 +81,8 @@ async function run() {
     const isRecent = (m) => Date.now() - new Date(m.date) < REFRESH_DAYS * 864e5;
 
     const ingested = new Set(Object.values(playersMap).flatMap(p => p.matches.map(m => String(m.matchId))));
-    // Records from before lineup positions were stored get backfilled once.
-    const missingLineup = new Set(Object.values(playersMap).flatMap(p => p.matches.filter(m => !('lineupRole' in m)).map(m => String(m.matchId))));
+    // Records from before lineup positions / cards were stored get backfilled once.
+    const missingLineup = new Set(Object.values(playersMap).flatMap(p => p.matches.filter(m => !('lineupRole' in m) || !('redCard' in m)).map(m => String(m.matchId))));
 
     for (const match of matches) {
         if (!match.id) continue;
@@ -105,9 +105,11 @@ async function run() {
 
             const lineup = lineupPositions(matchData, BARCA_ID);
             const noLineup = { lineupPosition: null, lineupRole: null };
+            const cards = matchCards(matchData);
+            const noCards = { yellowCard: false, redCard: false };
             for (const player of Object.values(playersMap)) {
                 const rec = player.matches.find(m => String(m.matchId) === String(match.id));
-                if (rec) Object.assign(rec, lineup.get(String(player.id)) || noLineup);
+                if (rec) Object.assign(rec, lineup.get(String(player.id)) || noLineup, cards.get(String(player.id)) || noCards);
             }
 
             if (!matchData || !matchData.content || !matchData.content.playerStats) {
@@ -173,6 +175,7 @@ async function run() {
                     score: resultScore,
                     isHome: match.isHome === undefined ? true : match.isHome,
                     ...(lineup.get(String(playerId)) || noLineup),
+                    ...(cards.get(String(playerId)) || noCards),
                 };
 
                 if (p.stats) {

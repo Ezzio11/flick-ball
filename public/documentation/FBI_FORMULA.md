@@ -24,12 +24,12 @@ OC = (Goals × 1.6) + (Assists × 1.1) +
 ```
 
 ### 2. Passing & Build-Up (PBU)
-Evaluates verticality and progression (normalized per 90 mins).
+Evaluates verticality and progression (match totals; the per-90 conversion happens once, see *Minutes*).
 ```
-PBU = (Accurate Passes/90 × 0.01) +
-      (Passes to Final 3rd/90 × 0.3) +    <-- Heavily rewarded for vertical play
+PBU = (Accurate Passes × 0.01) +
+      (Passes to Final 3rd × 0.3) +    <-- Heavily rewarded for vertical play
       (Long Balls Accurate × 0.1) +
-      (Touches/90 × 0.005) +
+      (Touches × 0.005) +
       (Corners × 0.05) +
       (Crosses × PositionWeight)          <-- FWD: 0.3, DEF: 0.2, MID: 0.15
 ```
@@ -51,7 +51,7 @@ DC = (Interceptions × 0.5) +              <-- Critical for high press
 Evaluates ability to beat the press and carry the ball.
 ```
 BRP = (Successful Dribbles × 0.4) +
-      (Touches in Box/90 × 0.15) -
+      (Touches in Box × 0.15) -
       (Dispossessed × 0.3) -
       (Fouls Committed × 0.1)
 ```
@@ -71,7 +71,7 @@ To ensure fair evaluation, each component is weighted by the player's role:
 |-----------|----|-----|-----|-----|
 | Offensive | 0.2 | 0.4 | **0.7** | **1.0** |
 | Passing | 0.3 | 0.6 | **1.0** | 0.6 |
-| Defensive | **1.0** | **1.0** | 0.6 | 0.3 |
+| Defensive | **1.0** | **1.0** | 0.6 | 0.5 |
 | Retention | 0.2 | 0.5 | 0.8 | **1.0** |
 
 ---
@@ -83,41 +83,52 @@ Goalkeepers are scored on a completely separate model tailored to the modern Swe
 1. **Shot-Stopping (35%)**: `(PSxG - Goals) × 3.5` + Volume Metrics
 2. **Sweeping (35%)**: Sweeper Actions × 1.8 + Claims & Aerials
 3. **Distribution (30%)**: Long Balls & Pass Accuracy
-4. **Penalties**: Goals Conceded (-0.8), Errors (-2.0)
+4. **Penalties**: Goals Conceded (-0.8), Yellow (-0.5), Red (-2.0), Penalty Conceded (-0.8)
+
+Shot-stopping and penalties count in full; sweeping and distribution are volume (see *Minutes*).
 
 ---
 
-## Validated Example: Pedri vs Girona
+## Minutes, Context and Calibration
 
-**Stats:**
-- Minutes: 69
-- Goals: 1, Assists: 0
-- xG: 0.21, xA: 0.02
-- Key Chances: 1, SOT: 1
-- Passing: 30 Acc (7 Final 3rd)
-- Defensive: 3 Tackles, 0 Int, 3 Recov
-- Duels: 5 Won / 3 Lost (62.5%)
+**Events vs volume.** Goals, assists, xG/xA, chances, shots and cards (the weighted Offensive score plus discipline) count in full, however long the player was on: a goal off the bench is a goal. Passing, Defensive and Retention (weighted) are *volume*: they are turned into a per-90 rate, with 120 minutes of position-average play blended in:
 
-**1. Calculate Components:**
-- **Offensive:** (1×1.6) + (0.21×0.8) + (1×0.5) + (1×0.2) = **2.468**
-- **Passing:** (30×0.01) + (7×0.3) + (1×0.1) = **2.50** (normalized)
-- **Defensive:** (3×0.3) + (3×0.4) + (0.625×0.5) = **2.41**
-- **Retention:** (1×0.4) + (2×0.15) = **0.70**
+```
+Volume/90 = (Volume × 90 + 120 × PositionAverage/90) / (Minutes + 120)
+Raw       = Events + Volume/90
+```
 
-**2. Apply Midfielder Weights:**
-- Off: 2.468 × 0.7 = 1.72
-- Pass: 2.50 × 1.0 = 2.50
-- Def: 2.41 × 0.6 = 1.44
-- Ret: 0.70 × 0.8 = 0.56
-- **Raw Score = 6.22**
+A 90-minute game keeps 43% of its own volume rate, a 10-minute cameo 8%, so a quiet cameo counts as roughly average instead of terrible, and a 7-minute burst of passes can't count as a world-class game.
 
-**3. Apply Context:**
-- Opponent (Girona - Mid Table): **1.0**
-- Result (Win): **+0.3**
-- **Context Score = 6.22 × 1.0 × 1.3 = 8.08**
+**Scale.** Raw is mapped so that every position averages **6.8** with a spread of **1.3** on the real data (`node scripts/calibrate_fbi.mjs` writes the constants; `scripts/fbi.test.js` fails if they drift).
 
-**4. Normalization (Z-Score):**
-- Empirical Mean for MID: ~4.5
-- Final Z-Score Mapping → **FBI Rating: 8.9**
+**Context** is added to the rating, never multiplied:
 
-*(Note: Real-time calculation uses float precision)*
+| | Bonus |
+|---|---|
+| Win / Draw / Loss | +0.3 / 0 / −0.2 |
+| Opponent top-4 / 5-8 / 9-14 / 15-20 in that season's LaLiga table | +0.2 / +0.1 / 0 / −0.2 |
+
+Champions League knockout opponents and that season's quarter-finalists count as top-4; other UCL sides as 5-8.
+
+**Ceiling.** Up to 9.0 the rating is untouched; above it, it eases toward 10 (`9 + (1 − e^−(x−9))`), so a 10.0 is a once-a-season game.
+
+---
+
+## Worked Example: Pedri vs Valencia (5-0, 6 Sept 2026)
+
+Computed by the real code (`src/lib/fbi-rating.ts`).
+
+**Stats:** 81 minutes · 1 goal · xG 0.30 · xA 0.11 · 1 shot on target · 69 accurate passes (10 into the final third, 2 long balls) · 86 touches · 3 tackles · 8 recoveries · duels 4/5 · 1 dribble · 5 touches in the box
+
+**1. Components (unweighted):** Offensive 2.13 · Passing 4.32 · Defensive 4.50 · Retention 1.15 · Discipline 0
+
+**2. Midfielder weights (0.7 / 1.0 / 0.6 / 0.8):**
+- Events = 2.13 × 0.7 = **1.49**
+- Volume = 4.32 × 1.0 + 4.50 × 0.6 + 1.15 × 0.8 = **7.94** (in 81 minutes)
+
+**3. Minutes:** Volume/90 = (7.94 × 90 + 120 × 6.16) / (81 + 120) = **7.23** → Raw = 1.49 + 7.23 = **8.72**
+
+**4. Scale (MID: mean 6.99, spread 1.28):** 6.61 + (8.72 − 6.99) / 1.28 × 1.3 = **8.36**
+
+**5. Context:** Valencia were 15th-20th (−0.2), win (+0.3) → **FBI 8.5** (FotMob: 8.64)

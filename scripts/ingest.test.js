@@ -73,3 +73,18 @@ test('derivePosition: most common slot, broad role when the slot disagrees or is
     // No lineup data at all -> keep what we had
     assert.strictEqual(derivePosition([m(null, null)], 'LW'), 'LW');
 });
+
+test('matchCards: yellow, red, and a second yellow counts as both', () => {
+    const { matchCards } = require('./fotmob');
+    const props = { content: { matchFacts: { events: { events: [
+        { type: 'Card', card: 'Yellow', playerId: 1 }, { type: 'Card', card: 'Red', playerId: 2 },
+        { type: 'Card', card: 'YellowRed', playerId: 3 }, { type: 'Goal', playerId: 4 }, { type: 'Card', card: 'Yellow' },
+    ] } } } };
+    const c = matchCards(props);
+    assert.deepStrictEqual(c.get('1'), { yellowCard: true, redCard: false });
+    assert.deepStrictEqual(c.get('2'), { yellowCard: false, redCard: true });
+    assert.deepStrictEqual(c.get('3'), { yellowCard: true, redCard: true });
+    assert.strictEqual(c.has('4'), false);
+    assert.strictEqual(c.size, 3);
+    assert.strictEqual(matchCards({ content: {} }).size, 0);
+});

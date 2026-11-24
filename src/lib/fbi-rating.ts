@@ -1,4 +1,3 @@
-import { tierOf } from './opponentData';
 /**
  * FlickBall Index (FBI) - Player Rating System
  * 
@@ -6,9 +5,9 @@ import { tierOf } from './opponentData';
  * under Hansi Flick's management. Accounts for position-specific contributions,
  * match context, and tactical system requirements.
  * 
- * Scale: 1.0 (catastrophic) to 10.0 (perfect)
- * Average: ~6.5
- * Standard Deviation: ~1.2
+ * Scale: 1.0 (catastrophic) to 10.0 (perfect). Calibrated per position to
+ * average 6.8 with a spread of 1.3 (scripts/calibrate_fbi.mjs; tested in
+ * scripts/fbi.test.js). No app imports, so tests and the calibration load it directly.
  */
 
 // Match data structure (subset of titans_data format)
@@ -128,9 +127,9 @@ function calculateOffensiveScore(match: TitanMatch): number {
     const xG = match.expected_goals || 0;
     const xA = match.expected_assists || 0;
     const keyChances = match.chances_created || 0;
-    const shotsOnTarget = match.shotsontarget || 0;
+    const shotsOnTarget = match.ShotsOnTarget || match.shotsontarget || 0; // data key is ShotsOnTarget
     const bigChancesMissed = match.big_chance_missed_title || 0;
-    const offsides = match.offsides || 0;
+    const offsides = match.Offsides || match.offsides || 0; // data key is Offsides
     const penaltiesWon = match.penalties_won || 0;
     const wasFouled = match.was_fouled || 0;
 
@@ -153,14 +152,11 @@ function calculateOffensiveScore(match: TitanMatch): number {
  * ...
  */
 function calculatePassingScore(match: TitanMatch, position: Position): number {
-    // ... (unchanged)
-    const minutes = match.minutes || 90;
-    const per90 = 90 / minutes;
-
-    const accuratePasses = (match.accurate_passes || 0) * per90;
-    const passesIntoFinalThird = (match.passes_into_final_third || 0) * per90;
+    // Match totals: per-90 conversion happens once, in calculateFBI (volumePer90).
+    const accuratePasses = match.accurate_passes || 0;
+    const passesIntoFinalThird = match.passes_into_final_third || 0;
     const longBallsAccurate = match.long_balls_accurate || 0;
-    const touches = (match.touches || 0) * per90;
+    const touches = match.touches || 0;
     const accurateCrosses = match.accurate_crosses || 0;
     const corners = match.corners || 0;
 
@@ -222,12 +218,9 @@ function calculateDefensiveScore(match: TitanMatch): number {
  * BRP = (DS × 0.4) - (Disp × 0.3) + (TOB/90 × 0.1) - (Fouls × 0.1)
  */
 function calculateRetentionScore(match: TitanMatch): number {
-    const minutes = match.minutes || 90;
-    const per90 = 90 / minutes;
-
     const dribblesSucceeded = match.dribbles_succeeded || 0;
     const dispossessed = match.dispossessed || 0;
-    const touchesInBox = (match.touches_opp_box || 0) * per90;
+    const touchesInBox = match.touches_opp_box || 0;
     const fouls = match.fouls || 0;
 
     return (
@@ -250,53 +243,87 @@ function calculateDisciplineScore(match: TitanMatch): number {
 }
 
 // ============================================================================
-// CONTEXT ADJUSTMENTS
+// CONTEXT, MINUTES AND CALIBRATION
 // ============================================================================
 
-function getOpponentDifficulty(match: TitanMatch): number {
-    const competition = match.competition || '';
-    const opponent = match.opponent;
+export type OpponentTier = 'elite' | 'strong' | 'mid' | 'weak';
 
-    if (competition.includes('Champions League')) return 1.1;
+/** Added to the final rating: harder opponents and wins earn a little, weak opponents and losses cost a little. */
+export const OPPONENT_BONUS: Record<OpponentTier, number> = { elite: 0.2, strong: 0.1, mid: 0, weak: -0.2 };
+export const RESULT_BONUS = { W: 0.3, D: 0, L: -0.2 } as const;
 
-    // Tier from that season's LaLiga table (src/lib/opponents.ts).
-    const tier = tierOf({ opponent, date: match.date, competition });
-    return tier === 'elite' ? 1.1 : tier === 'weak' ? 0.9 : 1.0;
-}
+/** Minutes of "average performance" blended into every appearance (see volumePer90). 120 chosen by
+ *  sweep (30-180): best balance of FotMob agreement, hat-trick ratings and tame short cameos. */
+export const SHRINK_MINUTES = 120;
 
-function getResultModifier(match: TitanMatch): number {
-    let score = match.result || match.score || '0 - 0';
-    if (typeof score !== 'string') {
-        score = String(score);
+/** Barca's result. Scores are stored home-first, so "0 - 4" away is a WIN. */
+export function matchOutcome(match: TitanMatch): 'W' | 'D' | 'L' {
+    let gf = match.teamScore, ga = match.opponentScore;
+    if (typeof gf !== 'number' || typeof ga !== 'number') {
+        const [h, a] = String(match.result || match.score || '').split('-').map(x => parseInt(x.trim()));
+        if (isNaN(h) || isNaN(a)) return 'D';
+        [gf, ga] = match.isHome === false ? [a, h] : [h, a];
     }
-    const parts = score.split('-').map(s => parseInt(s.trim()));
-    if (parts.length !== 2 || parts.some(isNaN)) return 0;
-
-    if (parts[0] > parts[1]) return 0.3;  // Win
-    if (parts[0] < parts[1]) return -0.2; // Loss
-    return 0;
-}
-
-function getMinutesFactor(minutes: number): number {
-    return Math.min(1.0, minutes / 60);
+    return gf > ga ? 'W' : gf < ga ? 'L' : 'D';
 }
 
 /**
- * Normalization
+ * Volume stats (passes, tackles, touches, sweeping...) as a per-90 rate, pulled toward the
+ * position's average: SHRINK_MINUTES of average play are blended in, so a 90-minute game keeps
+ * 43% of its own rate and a 10-minute cameo 8%. Event stats (goals, assists, chances, cards)
+ * are never scaled: a goal off the bench counts in full.
  */
-function normalizeToScale(rawScore: number, mean: number = 3.2, stdDev: number = 1.5): number {
-    const TARGET_MEAN = 6.8;    // Slight boost to target average
-    const TARGET_STDDEV = 1.3;  // Widen spread slightly
-    // ...
+export function volumePer90(volume: number, minutes: number, averagePer90: number): number {
+    return (volume * 90 + SHRINK_MINUTES * averagePer90) / (Math.max(0, minutes) + SHRINK_MINUTES);
+}
 
-    // Z-score
-    const zScore = (rawScore - mean) / stdDev;
+// CALIBRATION:START (written by `node scripts/calibrate_fbi.mjs`; do not edit by hand)
+export const CALIBRATION: Record<Position, { volumeMean: number; rawMean: number; rawSd: number; scaleMean: number }> = {
+    GK: { volumeMean: 2.8891, rawMean: 3.4828, rawSd: 1.6912, scaleMean: 6.6051 },
+    DEF: { volumeMean: 5.9672, rawMean: 6.2121, rawSd: 0.7806, scaleMean: 6.6008 },
+    MID: { volumeMean: 6.1607, rawMean: 6.9947, rawSd: 1.2801, scaleMean: 6.6065 },
+    FWD: { volumeMean: 3.5054, rawMean: 5.7270, rawSd: 2.2914, scaleMean: 6.6017 },
+};
+// CALIBRATION:END
 
-    // Map to target distribution
-    const normalized = TARGET_MEAN + (zScore * TARGET_STDDEV);
+/** Soft ceiling: unchanged up to 9.0, then eases toward 10 so a 10.0 needs a truly exceptional game. */
+export function softCap(x: number): number {
+    return x <= 9 ? x : 9 + (1 - Math.exp(-(x - 9)));
+}
 
-    // Clamp to 1-10 range
-    return Math.max(1.0, Math.min(10.0, normalized));
+export const TARGET_MEAN = 6.8;
+export const TARGET_SD = 1.3;
+
+// ============================================================================
+// GOALKEEPERS
+// ============================================================================
+
+/** Shot-stopping and discipline are events; sweeping and distribution are volume. */
+function goalkeeperParts(match: TitanMatch) {
+    const xGFaced = match.expected_goals_on_target_faced || 0;
+    const goalsConceded = match.goals_conceded || 0;
+    const shotStopping =
+        ((xGFaced - goalsConceded) * 3.5) +       // saves above expected
+        ((match.saves || 0) * 0.4) +
+        ((match.saves_inside_box || 0) * 0.6) +
+        ((match.keeper_diving_save || 0) * 0.8) -
+        (goalsConceded * 0.8);
+    const sweeping =
+        ((match.keeper_sweeper || 0) * 1.8) +     // sweeping is core to Flick's high line
+        ((match.keeper_high_claim || 0) * 0.8) +
+        ((match.clearances || 0) * 0.2) +
+        ((match.recoveries || 0) * 0.15) +
+        ((match.aerials_won || 0) * 0.4) +
+        ((match.punches || 0) * 0.3);
+    const distribution =
+        ((match.accurate_passes || 0) * 0.02) +
+        ((match.long_balls_accurate || 0) * 0.6) +
+        ((match.player_throws || 0) * 0.2);
+    const discipline =
+        -(match.yellowCard ? 0.5 : 0)
+        - (match.redCard ? 2.0 : 0)
+        - ((match.conceded_penalties || 0) * 0.8);
+    return { event: shotStopping * 0.35 + discipline, volume: sweeping * 0.35 + distribution * 0.30, shotStopping, sweeping, distribution, discipline };
 }
 
 // ============================================================================
@@ -304,225 +331,71 @@ function normalizeToScale(rawScore: number, mean: number = 3.2, stdDev: number =
 // ============================================================================
 
 export interface FBIBreakdown {
-    offensive: number;
+    offensive: number;   // unweighted component scores (the match modal shows score x weight)
     passing: number;
     defensive: number;
     retention: number;
-    discipline: number; // v1.2: Added discipline
-    contextFactors: {
-        difficulty: number;
-        resultMod: number;
-        minutesFactor: number;
-    };
-    raw: number;
-    contextAdjusted: number;
+    discipline: number;
+    contextFactors: { opponentBonus: number; resultBonus: number; minutes: number };
+    raw: number;         // events + per-90 volume (blended toward average for short games)
+    scaled: number;      // raw on the 6.8 / 1.3 scale, before the context bonuses
     final: number;
     position: Position;
-    comparison?: {
-        fotmob: number;
-        difference: number;
-    };
+    comparison?: { fotmob: number; difference: number };
 }
 
-// ============================================================================
-// GOALKEEPER-SPECIFIC CALCULATION (v1.4)
-// ============================================================================
-
-/**
- * Goalkeeper-Specific FBI Calculation
- * 
- * Evaluates goalkeepers based on Flick's sweeper-keeper system requirements:
- * - Shot-stopping (40%): Quality saves, PSxG (post-shot xG)
- * - Sweeping/Modern GK (30%): Sweeper actions, command, aerial dominance
- * - Distribution (20%): Passing accuracy, quick restarts
- * - Discipline (10%): Errors, penalties conceded
- */
-function calculateGoalkeeperScore(match: TitanMatch): number {
-    // ===== 1. SHOT-STOPPING SCORE (40% weight) =====
-    // PSxG (Post-Shot Expected Goals) - most important GK metric
-    const xGFaced = match.expected_goals_on_target_faced || 0;
-    const goalsConceded = match.goals_conceded || 0;
-    const psxg = xGFaced - goalsConceded; // Saves above expected
-
-    const saves = match.saves || 0;
-    const savesInsideBox = match.saves_inside_box || 0;
-    const divingSaves = match.keeper_diving_save || 0;
-
-    const shotStoppingScore =
-        (psxg * 3.5) +                    // v1.7: UP from 3.0 - Boost GK ratings
-        (saves * 0.4) +                   // Volume matters
-        (savesInsideBox * 0.6) +          // High-danger saves worth more
-        (divingSaves * 0.8) -             // Spectacular saves
-        (goalsConceded * 0.8);            // Penalty for conceding
-
-    // ===== 2. SWEEPING/MODERN GK SCORE (30% weight) =====
-    // Critical for Flick's high-line system
-    const sweeperActions = match.keeper_sweeper || 0;
-    const highClaims = match.keeper_high_claim || 0;
-    const clearances = match.clearances || 0;
-    const recoveries = match.recoveries || 0;
-    const aerialsWon = match.aerials_won || 0;
-    const punches = match.punches || 0;
-
-    const sweepingScore =
-        (sweeperActions * 1.8) +          // v1.7: UP from 1.3 - EXTREMELY important for Flick!
-        (highClaims * 0.8) +              // Commanding the box
-        (clearances * 0.2) +              // General defensive actions
-        (recoveries * 0.15) +             // Ball recoveries/positioning
-        (aerialsWon * 0.4) +              // Aerial dominance
-        (punches * 0.3);                  // Alternative to catching
-
-    // ===== 3. DISTRIBUTION SCORE (20% weight) =====
-    // Build-up from back, normalized per 90
-    const per90 = 90 / (match.minutes || 90);
-    const accuratePasses = match.accurate_passes || 0;
-    const longBallsAccurate = match.long_balls_accurate || 0;
-    const throws = match.player_throws || 0;
-
-    const distributionScore =
-        (accuratePasses * per90 * 0.02) + // Base passing (normalized)
-        (longBallsAccurate * 0.6) +       // Long distribution quality
-        (throws * 0.2);                   // Quick restarts
-
-    // ===== 4. DISCIPLINE SCORE (10% - negative only) =====
-    const yellowCard = match.yellowCard ? 1 : 0;
-    const redCard = match.redCard ? 1 : 0;
-    const penaltiesConceded = match.conceded_penalties || 0;
-
-    const disciplineScore =
-        -(yellowCard * 0.5) -
-        -(redCard * 2.0) -
-        -(penaltiesConceded * 0.8);
-
-    // ===== WEIGHTED COMBINATION =====
-    const rawGKScore =
-        (shotStoppingScore * 0.35) +     // v1.7: DOWN from 0.4 - Still important but not everything
-        (sweepingScore * 0.35) +         // v1.7: UP from 0.3 - Sweeping is CORE to Flick!
-        (distributionScore * 0.30) +     // v1.7: UP from 0.2 - Passing vital for build-up
-        disciplineScore; // Already weighted in calculation
-
-    return rawGKScore;
-}
-
-// ============================================================================
-// MAIN FBI CALCULATION
-// ============================================================================
-
-/**
- * Calculate FlickBall Index (FBI) for a player's match performance
- * 
- * @param match - Player match data
- * @param position - Player's tactical position
- * @returns FBI rating (1-10) with component breakdown
- */
-export function calculateFBI(match: TitanMatch, position: Position): FBIBreakdown {
-    // Route to goalkeeper-specific calculation if GK
+/** Event score and total volume score for one match, before minutes and calibration. */
+export function fbiParts(match: TitanMatch, position: Position) {
     if (position === 'GK') {
-        const rawGKScore = calculateGoalkeeperScore(match);
-
-        // Apply context adjustments (same as outfield)
-        const difficulty = getOpponentDifficulty(match);
-        const resultMod = getResultModifier(match);
-        const minutesFactor = getMinutesFactor(match.minutes || 90);
-
-        const contextScore = rawGKScore * difficulty * (1 + resultMod) * minutesFactor;
-
-        // Normalize to 1-10 scale
-        const finalRating = normalizeToScale(contextScore);
-        const rounded = Math.round(finalRating * 10) / 10;
-
-        // Return with GK-specific breakdown
-        return {
-            offensive: 0, // Not applicable for GK
-            passing: 0,   // Included in GK distribution score
-            defensive: 0, // Included in GK shot-stopping/sweeping
-            retention: 0, // Not applicable for GK
-            discipline: 0, // Included in GK discipline score
-            contextFactors: {
-                difficulty,
-                resultMod,
-                minutesFactor
-            },
-            raw: Math.ceil(rawGKScore * 10) / 10,
-            contextAdjusted: Math.ceil(contextScore * 10) / 10,
-            final: rounded,
-            position,
-            comparison: match.rating ? {
-                fotmob: parseFloat(match.rating),
-                difference: Math.round((rounded - parseFloat(match.rating)) * 10) / 10
-            } : undefined
-        };
+        const gk = goalkeeperParts(match);
+        return { event: gk.event, volume: gk.volume, offensive: 0, passing: gk.distribution, defensive: gk.shotStopping + gk.sweeping, retention: 0, discipline: gk.discipline };
     }
-
-    // Standard outfield player calculation
-    // Calculate component scores
+    const w = POSITION_WEIGHTS[position];
     const offensive = calculateOffensiveScore(match);
     const passing = calculatePassingScore(match, position);
     const defensive = calculateDefensiveScore(match);
     const retention = calculateRetentionScore(match);
-    const discipline = calculateDisciplineScore(match); // v1.2: Added
-
-    // Apply position weights
-    const weights = POSITION_WEIGHTS[position];
-    const weightedOffensive = offensive * weights.offensive;
-    const weightedPassing = passing * weights.passing;
-    const weightedDefensive = defensive * weights.defensive;
-    const weightedRetention = retention * weights.retention;
-
-    // Sum weighted components + discipline (not position-weighted)
-    const rawScore = weightedOffensive + weightedPassing + weightedDefensive + weightedRetention + discipline;
-
-    // Apply context adjustments
-    const difficulty = getOpponentDifficulty(match);
-    const resultMod = getResultModifier(match);
-    const minutesFactor = getMinutesFactor(match.minutes || 90);
-
-    const contextScore = rawScore * difficulty * (1 + resultMod) * minutesFactor;
-
-    // Normalize to 1-10 scale
-    const finalRating = normalizeToScale(contextScore);
-
-    // Round to 1 decimal place (v1.7: ALWAYS round UP - good teacher!)
-    const rounded = Math.ceil(finalRating * 10) / 10;
-
+    const discipline = calculateDisciplineScore(match);
     return {
-        offensive: Math.ceil(weightedOffensive * 10) / 10,
-        passing: Math.ceil(weightedPassing * 10) / 10,
-        defensive: Math.ceil(weightedDefensive * 10) / 10,
-        retention: Math.ceil(weightedRetention * 10) / 10,
-        discipline: Math.ceil(discipline * 10) / 10,
-        contextFactors: {
-            difficulty,
-            resultMod,
-            minutesFactor
-        },
-        raw: Math.ceil(rawScore * 10) / 10,
-        contextAdjusted: Math.ceil(contextScore * 10) / 10,
-        final: rounded,
-        position,
-        comparison: match.rating ? {
-            fotmob: parseFloat(match.rating),
-            difference: Math.round((rounded - parseFloat(match.rating)) * 10) / 10
-        } : undefined
+        event: offensive * w.offensive + discipline,
+        volume: passing * w.passing + defensive * w.defensive + retention * w.retention,
+        offensive, passing, defensive, retention, discipline,
     };
 }
 
-/**
- * Helper to infer position from player name
- * TODO: Replace with actual position data from squad info
- */
-export function inferPosition(playerName: string): Position {
-    // Temporary inference based on known players
-    const forwards = ['Lewandowski', 'Ferran Torres', 'Raphinha', 'Ansu Fati'];
-    const midfielders = ['Pedri', 'Gavi', 'De Jong', 'Casado', 'Olmo'];
-    const defenders = ['Araujo', 'Christensen', 'Kounde', 'Balde', 'Cubarsi', 'Martinez', 'Fort'];
-    const goalkeepers = ['ter Stegen', 'Pena'];
+const minutesOf = (match: TitanMatch) => match.minutes_played ?? match.minutes ?? 90;
 
-    if (goalkeepers.some(gk => playerName.includes(gk))) return 'GK';
-    if (defenders.some(def => playerName.includes(def))) return 'DEF';
-    if (midfielders.some(mid => playerName.includes(mid))) return 'MID';
-    if (forwards.some(fwd => playerName.includes(fwd))) return 'FWD';
-
-    return 'MID'; // Default
+/** Events in full plus volume as a blended per-90 rate. */
+export function rawFBI(match: TitanMatch, position: Position): number {
+    const parts = fbiParts(match, position);
+    return parts.event + volumePer90(parts.volume, minutesOf(match), CALIBRATION[position].volumeMean);
 }
 
+/**
+ * FBI for one player in one match. `opponentTier` comes from src/lib/opponents.ts (that season's
+ * real league table); passed in so this file stays free of app imports.
+ */
+export function calculateFBI(match: TitanMatch, position: Position, opponentTier: OpponentTier = 'mid'): FBIBreakdown {
+    const parts = fbiParts(match, position);
+    const cal = CALIBRATION[position];
+    const raw = parts.event + volumePer90(parts.volume, minutesOf(match), cal.volumeMean);
+    const scaled = cal.scaleMean + ((raw - cal.rawMean) / cal.rawSd) * TARGET_SD;
+    const opponentBonus = OPPONENT_BONUS[opponentTier];
+    const resultBonus = RESULT_BONUS[matchOutcome(match)];
+    const r1 = (x: number) => Math.round(x * 10) / 10;
+    const final = r1(Math.max(1, Math.min(10, softCap(scaled + opponentBonus + resultBonus))));
+    const fotmob = match.rating === undefined || match.rating === null ? NaN : parseFloat(String(match.rating));
+    return {
+        offensive: r1(parts.offensive),
+        passing: r1(parts.passing),
+        defensive: r1(parts.defensive),
+        retention: r1(parts.retention),
+        discipline: r1(parts.discipline),
+        contextFactors: { opponentBonus, resultBonus, minutes: minutesOf(match) },
+        raw: Math.round(raw * 100) / 100,
+        scaled: Math.round(scaled * 100) / 100,
+        final,
+        position,
+        comparison: isNaN(fotmob) ? undefined : { fotmob, difference: r1(final - fotmob) },
+    };
+}

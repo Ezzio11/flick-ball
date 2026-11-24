@@ -50,10 +50,10 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
     const pos = match.fbiBreakdown?.position || 'MID';
     const weights = POSITION_WEIGHTS[pos] || POSITION_WEIGHTS['MID'];
 
-    // Use exact context factors from the FBI calculation
-    const difficultyStart = match.fbiBreakdown?.contextFactors?.difficulty || 1.0;
-    const rawResultMod = match.fbiBreakdown?.contextFactors?.resultMod || 0;
-    const resultMod = 1 + rawResultMod;
+    // Exact context bonuses from the FBI calculation (added to the rating)
+    const opponentBonus = match.fbiBreakdown?.contextFactors?.opponentBonus ?? 0;
+    const resultBonus = match.fbiBreakdown?.contextFactors?.resultBonus ?? 0;
+    const signed = (x: number) => `${x >= 0 ? '+' : '−'}${Math.abs(x).toFixed(1)}`;
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-0 md:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
@@ -215,6 +215,9 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
                                         <span>+</span>
                                         <span className="text-yellow-600">({match.fbiBreakdown.retention} × {weights.retention})</span>
                                     </div>
+                                    <p className="mt-2 text-[10px] text-gray-500 leading-tight">
+                                        Goals, assists, chances and cards count in full. Passing, defending and ball-carrying become a per-90 rate, blended toward the position average so short appearances aren&apos;t over- or under-rated.
+                                    </p>
                                     <div className="mt-2 pt-2 border-t border-dashed border-gray-200 flex items-center justify-between">
                                         <span className="text-xs font-bold text-gray-500">RAW SCORE</span>
                                         <span className="text-xl font-bold font-mono">{match.fbiBreakdown.raw.toFixed(2)}</span>
@@ -223,22 +226,25 @@ export default function MatchDetailModal({ match, onClose }: MatchDetailModalPro
 
                                 {/* Step 2: Context */}
                                 <div className="mb-6 bg-white p-4 border border-black/10 rounded-lg">
-                                    <div className="text-[10px] text-gray-400 uppercase font-bold mb-2 tracking-wider">Step 2: Context Boost</div>
-                                    <div className="grid grid-cols-2 gap-2 text-xs text-gray-600 mb-2">
-                                        <div className="flex justify-between"><span>Opponent Difficulty:</span> <span className="font-mono font-bold text-black" title="Based on Tier">x{difficultyStart.toFixed(1)}</span></div>
-                                        <div className="flex justify-between"><span>Match Result:</span> <span className="font-mono font-bold text-black" title="Win/Loss">x{resultMod.toFixed(1)}</span></div>
+                                    <div className="text-[10px] text-gray-400 uppercase font-bold mb-2 tracking-wider">Step 2: On the 1-10 Scale</div>
+                                    <p className="text-[10px] text-gray-500 leading-tight mb-2">
+                                        Calibrated per position: an average {pos} game is 6.8.
+                                    </p>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-xs font-bold text-gray-500">PERFORMANCE</span>
+                                        <span className="text-xl font-bold font-mono">{match.fbiBreakdown.scaled?.toFixed(2) ?? '-'}</span>
                                     </div>
-                                    <div className="mt-2 pt-2 border-t border-dashed border-gray-200 flex items-center justify-between">
-                                        <span className="text-xs font-bold text-gray-500">CONTEXT ADJUSTED</span>
-                                        <span className="text-xl font-bold font-mono">{match.fbiBreakdown.contextAdjusted?.toFixed(2) || "???"}</span>
+                                    <div className="grid grid-cols-2 gap-2 text-xs text-gray-600 mt-2 pt-2 border-t border-dashed border-gray-200">
+                                        <div className="flex justify-between"><span>Opponent:</span> <span className="font-mono font-bold text-black" title="From that season's league table">{signed(opponentBonus)}</span></div>
+                                        <div className="flex justify-between"><span>Result:</span> <span className="font-mono font-bold text-black" title="Win +0.3, loss −0.2">{signed(resultBonus)}</span></div>
                                     </div>
                                 </div>
 
                                 {/* Step 3: Normalization */}
                                 <div className="bg-[#004d98] text-white p-4 border border-black shadow-[4px_4px_0_rgba(0,0,0,0.2)]">
-                                    <div className="text-[10px] text-blue-200 uppercase font-bold mb-1 tracking-wider">Step 3: Final Normalization</div>
+                                    <div className="text-[10px] text-blue-200 uppercase font-bold mb-1 tracking-wider">Step 3: Final Rating</div>
                                     <p className="text-[10px] mb-2 leading-tight opacity-80">
-                                        The score is mapped to a bell curve (mean ~6.5) and capped at 10.0.
+                                        Performance plus context. Above 9.0 the scale eases toward 10, so a 10.0 is a once-in-a-season game.
                                     </p>
                                     <div className="flex items-center justify-between">
                                         <span className="font-black uppercase tracking-widest">Final Rating</span>

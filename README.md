@@ -17,7 +17,7 @@ Stats, tactics and player ratings for FC Barcelona under Hansi Flick, from his f
 | `/achievements` | Trophies and milestones |
 | `/about-fbi` | How the FBI rating works |
 
-**FBI (FlickBall Index)** is the site's own 1 to 10 player rating, weighted per position toward what Flick's system asks for (pressing, verticality, risk-taking). Formula: [`public/documentation/FBI_FORMULA.md`](public/documentation/FBI_FORMULA.md). Code: [`src/lib/fbi-rating.ts`](src/lib/fbi-rating.ts).
+**FBI (FlickBall Index)** is the site's own 1 to 10 player rating, weighted per position toward what Flick's system asks for (pressing, verticality, risk-taking). Formula: [`public/documentation/FBI_FORMULA.md`](public/documentation/FBI_FORMULA.md). Code: [`src/lib/fbi-rating.ts`](src/lib/fbi-rating.ts). Each position is calibrated to average 6.8 (spread 1.3) on the real data; `scripts/fbi.test.js` fails if that drifts, and `node scripts/calibrate_fbi.mjs` recalibrates. Measured behaviour: [`FBI validation`](public/documentation/FBI_v1.0_VALIDATION.md).
 
 ## How the data gets in
 

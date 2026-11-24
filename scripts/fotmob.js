@@ -50,6 +50,19 @@ function lineupPositions(props, teamId) {
     return out;
 }
 
+/** Cards per player in a match: Map(String(playerId) -> { yellowCard, redCard }). A second yellow ("YellowRed") counts as both. */
+function matchCards(props) {
+    const out = new Map();
+    for (const e of props.content?.matchFacts?.events?.events || []) {
+        if (e.type !== 'Card' || !e.playerId) continue;
+        const c = out.get(String(e.playerId)) || { yellowCard: false, redCard: false };
+        if (e.card === 'Yellow' || e.card === 'YellowRed') c.yellowCard = true;
+        if (e.card === 'Red' || e.card === 'YellowRed') c.redCard = true;
+        out.set(String(e.playerId), c);
+    }
+    return out;
+}
+
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function getJson(url) {
@@ -108,4 +121,4 @@ function seasonLabel(date) {
     return `${String(y).slice(2)}/${String(y + 1).slice(2)}`;
 }
 
-module.exports = { COMPETITION_BLOCKLIST, SLOT_ROLE, lineupPositions, api, getMatch, isMatch, seasonStartYear, seasonLabel };
+module.exports = { COMPETITION_BLOCKLIST, SLOT_ROLE, lineupPositions, matchCards, api, getMatch, isMatch, seasonStartYear, seasonLabel };
