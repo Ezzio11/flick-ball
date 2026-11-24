@@ -100,7 +100,7 @@ Raw       = Events + Volume/90
 
 A 90-minute game keeps 43% of its own volume rate, a 10-minute cameo 8%, so a quiet cameo counts as roughly average instead of terrible, and a 7-minute burst of passes can't count as a world-class game.
 
-**Scale.** Raw is mapped so that every role (GK, DEF, MID, and forwards split into strikers and wingers) averages **6.8** with a spread of **1.3** on the real data (`node scripts/calibrate_fbi.mjs` writes the constants; `scripts/fbi.test.js` fails if they drift).
+**Scale.** Raw is mapped so that every role (GK, DEF, holding and attacking midfielders, strikers and wingers) averages **6.8** with a spread of **1.3** on the real data (`node scripts/calibrate_fbi.mjs` writes the constants; `scripts/fbi.test.js` fails if they drift).
 
 **Context** is added to the rating, never multiplied:
 

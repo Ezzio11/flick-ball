@@ -278,23 +278,26 @@ export function volumePer90(volume: number, minutes: number, averagePer90: numbe
 }
 
 /**
- * Calibration groups: forwards share one set of weights but are scaled separately as strikers and
- * wingers, so a poacher isn't measured against wingers who are on the ball all game.
+ * Calibration groups: midfielders and forwards keep one set of weights each but are scaled per role,
+ * so a poacher isn't measured against wingers on the ball all game, nor a No.10 against the pivots
+ * who make the most passes.
  */
-export type CalibrationGroup = 'GK' | 'DEF' | 'MID' | 'ST' | 'W';
-export const CALIBRATION_GROUPS: CalibrationGroup[] = ['GK', 'DEF', 'MID', 'ST', 'W'];
+export type CalibrationGroup = 'GK' | 'DEF' | 'DM' | 'AM' | 'ST' | 'W';
+export const CALIBRATION_GROUPS: CalibrationGroup[] = ['GK', 'DEF', 'DM', 'AM', 'ST', 'W'];
 
-/** `role` is the player's position as stored (e.g. 'LW', 'ST', 'Attacker'). */
+/** `role` is the player's position as stored (e.g. 'CAM', 'LW', 'ST', 'Midfielder'). */
 export function calibrationGroup(position: Position, role?: string): CalibrationGroup {
-    if (position !== 'FWD') return position;
-    return ['LW', 'RW', 'LM', 'RM'].includes(role ?? '') ? 'W' : 'ST';
+    if (position === 'MID') return ['CAM', 'RM', 'LM'].includes(role ?? '') ? 'AM' : 'DM'; // CDM, CM, broad role
+    if (position === 'FWD') return ['LW', 'RW'].includes(role ?? '') ? 'W' : 'ST';           // ST, broad role
+    return position;
 }
 
 // CALIBRATION:START (written by `node scripts/calibrate_fbi.mjs`; do not edit by hand)
 export const CALIBRATION: Record<CalibrationGroup, { volumeMean: number; rawMean: number; rawSd: number; scaleMean: number }> = {
     GK: { volumeMean: 2.8891, rawMean: 3.4828, rawSd: 1.6912, scaleMean: 6.6051 },
     DEF: { volumeMean: 5.9672, rawMean: 6.2121, rawSd: 0.7806, scaleMean: 6.6008 },
-    MID: { volumeMean: 6.1607, rawMean: 6.9947, rawSd: 1.2801, scaleMean: 6.6065 },
+    DM: { volumeMean: 7.0007, rawMean: 7.6316, rawSd: 1.2668, scaleMean: 6.5956 },
+    AM: { volumeMean: 4.4292, rawMean: 5.6649, rawSd: 1.2860, scaleMean: 6.6274 },
     ST: { volumeMean: 1.8713, rawMean: 3.4713, rawSd: 1.8100, scaleMean: 6.6270 },
     W: { volumeMean: 4.2926, rawMean: 6.9659, rawSd: 2.3152, scaleMean: 6.5915 },
 };
@@ -388,7 +391,7 @@ export function rawFBI(match: TitanMatch, position: Position, role?: string): nu
 /**
  * FBI for one player in one match. `opponentTier` comes from src/lib/opponents.ts (that season's
  * real league table); passed in so this file stays free of app imports. `role` is the player's
- * stored position ('LW', 'ST'...), used to calibrate strikers and wingers separately.
+ * stored position ('CAM', 'LW', 'ST'...), used to pick its calibration group.
  */
 export function calculateFBI(match: TitanMatch, position: Position, opponentTier: OpponentTier = 'mid', role?: string): FBIBreakdown {
     const parts = fbiParts(match, position);
