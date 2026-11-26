@@ -11544,5 +11544,97 @@ export const INGESTED_MATCHES: MatchData[] = [
             }
         ],
         "formation": "4-2-3-1"
+    },
+    {
+        "id": 6106421,
+        "date": "2026-11-25T17:45:00.000Z",
+        "opponent": "Sabah FK",
+        "score": "1 - 4",
+        "isHome": false,
+        "competition": "Champions League",
+        "round": "5",
+        "season": "26/27",
+        "stats": {
+            "available": true,
+            "possession": 71,
+            "xG": "4.13",
+            "totalShots": 25,
+            "shotsOnTarget": 14,
+            "bigChances": 9,
+            "bigChancesMissed": 5,
+            "corners": 6,
+            "fouls": 8,
+            "accuratePasses": {
+                "value": 634,
+                "percentage": 93
+            },
+            "oppositionHalfPasses": 286,
+            "ownHalfPasses": 348,
+            "touchesInOppBox": 42,
+            "accurateLongBalls": {
+                "value": 9,
+                "percentage": 56
+            },
+            "accurateCrosses": {
+                "value": 1,
+                "percentage": 10
+            },
+            "tackles": 14,
+            "interceptions": 2,
+            "blocks": 1,
+            "clearances": 11,
+            "keeperSaves": 2,
+            "shotsOffTarget": 8,
+            "blockedShots": 3,
+            "duelsWon": 38,
+            "groundDuelsWon": {
+                "value": 31,
+                "percentage": 54
+            },
+            "aerialDuelsWon": {
+                "value": 7,
+                "percentage": 64
+            },
+            "successfulDribbles": {
+                "value": 9,
+                "percentage": 60
+            },
+            "xGOpenPlay": "3.09",
+            "xGSetPlay": "1.04",
+            "xGOT": "5.04"
+        },
+        "scorers": [
+            {
+                "player": "Anthony Gordon",
+                "team": "barca",
+                "minute": 31,
+                "assist": null
+            },
+            {
+                "player": "Anthony Gordon",
+                "team": "barca",
+                "minute": 51,
+                "assist": "Gabriel Jesus"
+            },
+            {
+                "player": "Karim Adeyemi",
+                "team": "barca",
+                "minute": 55,
+                "assist": "Alejandro Balde"
+            },
+            {
+                "player": "Gabriel Jesus",
+                "team": "barca",
+                "minute": 60,
+                "assist": "Jules Koundé"
+            },
+            {
+                "player": "Joy-Lance Mickels",
+                "team": "opponent",
+                "minute": 63,
+                "assist": "Christian Nwachukwu"
+            }
+        ],
+        "formation": "4-2-3-1"
     }
 ];
