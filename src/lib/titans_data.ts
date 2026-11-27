@@ -11080,6 +11080,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.01,
                 "xg_and_xa": 0.05,
                 "total_shots": 1,
+                "top_speed": 31.200000762939453,
+                "totalDistance": 3.416,
                 "accurate_passes": 19,
                 "chances_created": 0,
                 "ShotsOnTarget": 1,
@@ -11091,7 +11093,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 0,
                 "dribbles_succeeded": 1,
                 "passes_into_final_third": 2,
-                "line_breaking_passes": 3,
+                "line_breaking_passes": 5,
                 "long_balls_accurate": 0,
                 "dispossessed": 0,
                 "expected_goals_non_penalty": 0.04,
@@ -11106,7 +11108,12 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 1,
                 "duel_won": 1,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "physical_metrics_walking": 902,
+                "physical_metrics_jogging": 1624,
+                "physical_metrics_running": 750,
+                "physical_metrics_sprinting": 140,
+                "physical_metrics_number_of_sprints": 6
             }
         ]
     },
@@ -12995,6 +13002,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.02,
                 "xg_and_xa": 1.58,
                 "total_shots": 7,
+                "top_speed": 31.5,
+                "totalDistance": 10.651,
                 "accurate_passes": 14,
                 "chances_created": 0,
                 "ShotsOnTarget": 4,
@@ -13023,7 +13032,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "physical_metrics_walking": 2963,
+                "physical_metrics_jogging": 5131,
+                "physical_metrics_running": 2316,
+                "physical_metrics_sprinting": 241,
+                "physical_metrics_number_of_sprints": 13
             }
         ]
     },
@@ -18200,6 +18214,8 @@ export const TITANS_DATA: Player[] = [
                 "assists": 0,
                 "expected_assists": 0.02,
                 "xg_and_xa": 0.02,
+                "top_speed": 30.799999237060547,
+                "totalDistance": 5.483,
                 "accurate_passes": 23,
                 "chances_created": 2,
                 "Shotmap": 0,
@@ -18208,7 +18224,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 2,
                 "dribbles_succeeded": 0,
                 "passes_into_final_third": 3,
-                "line_breaking_passes": 2,
+                "line_breaking_passes": 4,
                 "long_balls_accurate": 1,
                 "dispossessed": 0,
                 "matchstats.headers.tackles": 0,
@@ -18222,7 +18238,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 3,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "physical_metrics_walking": 1319,
+                "physical_metrics_jogging": 2822,
+                "physical_metrics_running": 1179,
+                "physical_metrics_sprinting": 163,
+                "physical_metrics_number_of_sprints": 7
             }
         ]
     },
@@ -22226,6 +22247,8 @@ export const TITANS_DATA: Player[] = [
                 "assists": 0,
                 "expected_assists": 0.01,
                 "xg_and_xa": 0.01,
+                "top_speed": 31.700000762939453,
+                "totalDistance": 7.968,
                 "accurate_passes": 67,
                 "chances_created": 0,
                 "Shotmap": 0,
@@ -22233,7 +22256,7 @@ export const TITANS_DATA: Player[] = [
                 "touches": 75,
                 "touches_opp_box": 0,
                 "passes_into_final_third": 2,
-                "line_breaking_passes": 6,
+                "line_breaking_passes": 7,
                 "dispossessed": 0,
                 "matchstats.headers.tackles": 1,
                 "last_man_tackle": 1,
@@ -22246,7 +22269,12 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "physical_metrics_walking": 1896,
+                "physical_metrics_jogging": 4316,
+                "physical_metrics_running": 1574,
+                "physical_metrics_sprinting": 182,
+                "physical_metrics_number_of_sprints": 10
             }
         ]
     },
@@ -31214,6 +31242,8 @@ export const TITANS_DATA: Player[] = [
                 "assists": 0,
                 "expected_assists": 0.02,
                 "xg_and_xa": 0.02,
+                "top_speed": 31.700000762939453,
+                "totalDistance": 2.38,
                 "accurate_passes": 13,
                 "chances_created": 1,
                 "Shotmap": 0,
@@ -31221,7 +31251,7 @@ export const TITANS_DATA: Player[] = [
                 "touches": 17,
                 "touches_opp_box": 0,
                 "dribbles_succeeded": 1,
-                "line_breaking_passes": 3,
+                "line_breaking_passes": 4,
                 "accurate_crosses": 0,
                 "corners": 1,
                 "dispossessed": 0,
@@ -31234,7 +31264,12 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 1,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 1
+                "duel_won": 1,
+                "physical_metrics_walking": 604,
+                "physical_metrics_jogging": 988,
+                "physical_metrics_running": 599,
+                "physical_metrics_sprinting": 189,
+                "physical_metrics_number_of_sprints": 7
             }
         ]
     },
@@ -36475,6 +36510,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.21,
                 "xg_and_xa": 0.44999999999999996,
                 "total_shots": 2,
+                "top_speed": 32.5,
+                "totalDistance": 11.095,
                 "accurate_passes": 76,
                 "chances_created": 1,
                 "big_chance_created_team_title": 1,
@@ -36488,7 +36525,7 @@ export const TITANS_DATA: Player[] = [
                 "touches": 96,
                 "touches_opp_box": 3,
                 "passes_into_final_third": 6,
-                "line_breaking_passes": 17,
+                "line_breaking_passes": 22,
                 "accurate_crosses": 0,
                 "long_balls_accurate": 2,
                 "dispossessed": 0,
@@ -36503,7 +36540,12 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 5,
                 "aerials_won": 2,
                 "fouls": 0,
-                "duel_won": 7
+                "duel_won": 7,
+                "physical_metrics_walking": 2814,
+                "physical_metrics_jogging": 5457,
+                "physical_metrics_running": 2410,
+                "physical_metrics_sprinting": 414,
+                "physical_metrics_number_of_sprints": 17
             }
         ]
     },
@@ -41884,6 +41926,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.14,
                 "xg_and_xa": 1.31,
                 "total_shots": 5,
+                "top_speed": 32.5,
+                "totalDistance": 8.884,
                 "accurate_passes": 27,
                 "chances_created": 2,
                 "ShotsOnTarget": 3,
@@ -41895,6 +41939,7 @@ export const TITANS_DATA: Player[] = [
                 "touches": 43,
                 "touches_opp_box": 9,
                 "passes_into_final_third": 3,
+                "line_breaking_passes": 3,
                 "dispossessed": 0,
                 "expected_goals_non_penalty": 1.17,
                 "matchstats.headers.tackles": 2,
@@ -41907,7 +41952,12 @@ export const TITANS_DATA: Player[] = [
                 "aerials_won": 0,
                 "fouls": 3,
                 "duel_won": 2,
-                "duel_lost": 5
+                "duel_lost": 5,
+                "physical_metrics_walking": 2713,
+                "physical_metrics_jogging": 3751,
+                "physical_metrics_running": 1991,
+                "physical_metrics_sprinting": 429,
+                "physical_metrics_number_of_sprints": 21
             }
         ]
     },
@@ -50506,6 +50556,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.23,
                 "xg_and_xa": 1.41,
                 "total_shots": 4,
+                "top_speed": 33.29999923706055,
+                "totalDistance": 10.656,
                 "accurate_passes": 35,
                 "chances_created": 2,
                 "ShotsOnTarget": 2,
@@ -50520,7 +50572,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 10,
                 "dribbles_succeeded": 1,
                 "passes_into_final_third": 4,
-                "line_breaking_passes": 4,
+                "line_breaking_passes": 6,
                 "accurate_crosses": 0,
                 "long_balls_accurate": 0,
                 "corners": 2,
@@ -50537,7 +50589,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 1,
                 "duel_won": 3,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "physical_metrics_walking": 3171,
+                "physical_metrics_jogging": 4630,
+                "physical_metrics_running": 2485,
+                "physical_metrics_sprinting": 370,
+                "physical_metrics_number_of_sprints": 19
             }
         ]
     },
@@ -57240,6 +57297,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.06,
                 "xg_and_xa": 0.24,
                 "total_shots": 2,
+                "top_speed": 30.5,
+                "totalDistance": 7.128,
                 "accurate_passes": 51,
                 "chances_created": 2,
                 "ShotsOnTarget": 1,
@@ -57252,7 +57311,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 1,
                 "dribbles_succeeded": 0,
                 "passes_into_final_third": 11,
-                "line_breaking_passes": 13,
+                "line_breaking_passes": 17,
                 "accurate_crosses": 0,
                 "dispossessed": 0,
                 "expected_goals_non_penalty": 0.18,
@@ -57267,7 +57326,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 2
+                "duel_lost": 2,
+                "physical_metrics_walking": 1301,
+                "physical_metrics_jogging": 3885,
+                "physical_metrics_running": 1853,
+                "physical_metrics_sprinting": 89,
+                "physical_metrics_number_of_sprints": 4
             }
         ]
     },
@@ -61486,8 +61550,14 @@ export const TITANS_DATA: Player[] = [
                 "fouls": 0,
                 "matchstats.headers.tackles": 0,
                 "passes_into_final_third": 1,
-                "line_breaking_passes": 2,
-                "interceptions": 0
+                "line_breaking_passes": 5,
+                "interceptions": 0,
+                "top_speed": 25.299999237060547,
+                "totalDistance": 5.849,
+                "physical_metrics_walking": 3616,
+                "physical_metrics_jogging": 1932,
+                "physical_metrics_running": 293,
+                "physical_metrics_sprinting": 8
             }
         ]
     },
@@ -66450,6 +66520,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.68,
                 "xg_and_xa": 0.74,
                 "total_shots": 2,
+                "top_speed": 32.29999923706055,
+                "totalDistance": 7.528,
                 "accurate_passes": 31,
                 "chances_created": 1,
                 "big_chance_created_team_title": 1,
@@ -66463,7 +66535,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 3,
                 "dribbles_succeeded": 2,
                 "passes_into_final_third": 6,
-                "line_breaking_passes": 7,
+                "line_breaking_passes": 8,
                 "accurate_crosses": 0,
                 "long_balls_accurate": 2,
                 "dispossessed": 2,
@@ -66479,7 +66551,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 0,
                 "duel_won": 3,
-                "duel_lost": 3
+                "duel_lost": 3,
+                "physical_metrics_walking": 1983,
+                "physical_metrics_jogging": 3441,
+                "physical_metrics_running": 1701,
+                "physical_metrics_sprinting": 403,
+                "physical_metrics_number_of_sprints": 19
             }
         ]
     },
@@ -69377,6 +69454,8 @@ export const TITANS_DATA: Player[] = [
                 "assists": 0,
                 "expected_assists": 0.04,
                 "xg_and_xa": 0.04,
+                "top_speed": 28.600000381469727,
+                "totalDistance": 11.645,
                 "accurate_passes": 66,
                 "chances_created": 0,
                 "Shotmap": 0,
@@ -69385,7 +69464,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 1,
                 "dribbles_succeeded": 0,
                 "passes_into_final_third": 3,
-                "line_breaking_passes": 5,
+                "line_breaking_passes": 8,
                 "long_balls_accurate": 1,
                 "dispossessed": 0,
                 "matchstats.headers.tackles": 0,
@@ -69400,7 +69479,12 @@ export const TITANS_DATA: Player[] = [
                 "was_fouled": 1,
                 "fouls": 3,
                 "duel_won": 4,
-                "duel_lost": 7
+                "duel_lost": 7,
+                "physical_metrics_walking": 2167,
+                "physical_metrics_jogging": 6919,
+                "physical_metrics_running": 2471,
+                "physical_metrics_sprinting": 88,
+                "physical_metrics_number_of_sprints": 5
             }
         ]
     },
@@ -79519,6 +79603,8 @@ export const TITANS_DATA: Player[] = [
                 "expected_assists": 0.31,
                 "xg_and_xa": 0.39,
                 "total_shots": 2,
+                "top_speed": 30.200000762939453,
+                "totalDistance": 12.018,
                 "accurate_passes": 54,
                 "chances_created": 3,
                 "big_chance_created_team_title": 2,
@@ -79532,7 +79618,7 @@ export const TITANS_DATA: Player[] = [
                 "touches_opp_box": 4,
                 "dribbles_succeeded": 2,
                 "passes_into_final_third": 6,
-                "line_breaking_passes": 8,
+                "line_breaking_passes": 9,
                 "accurate_crosses": 1,
                 "long_balls_accurate": 1,
                 "corners": 3,
@@ -79547,7 +79633,12 @@ export const TITANS_DATA: Player[] = [
                 "ground_duels_won": 5,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_won": 5
+                "duel_won": 5,
+                "physical_metrics_walking": 2806,
+                "physical_metrics_jogging": 5861,
+                "physical_metrics_running": 3072,
+                "physical_metrics_sprinting": 279,
+                "physical_metrics_number_of_sprints": 16
             }
         ]
     },
@@ -99102,6 +99193,8 @@ export const TITANS_DATA: Player[] = [
                 "assists": 0,
                 "expected_assists": 0.01,
                 "xg_and_xa": 0.01,
+                "top_speed": 31.100000381469727,
+                "totalDistance": 10.233,
                 "accurate_passes": 87,
                 "chances_created": 0,
                 "Shotmap": 0,
@@ -99109,7 +99202,7 @@ export const TITANS_DATA: Player[] = [
                 "touches": 99,
                 "touches_opp_box": 0,
                 "passes_into_final_third": 8,
-                "line_breaking_passes": 17,
+                "line_breaking_passes": 23,
                 "long_balls_accurate": 0,
                 "dispossessed": 0,
                 "matchstats.headers.tackles": 0,
@@ -99120,7 +99213,12 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 3,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "physical_metrics_walking": 2785,
+                "physical_metrics_jogging": 5480,
+                "physical_metrics_running": 1766,
+                "physical_metrics_sprinting": 202,
+                "physical_metrics_number_of_sprints": 10
             }
         ]
     },
@@ -100863,6 +100961,8 @@ export const TITANS_DATA: Player[] = [
                 "minutes": 26,
                 "goals": 0,
                 "assists": 0,
+                "top_speed": 31.799999237060547,
+                "totalDistance": 3.634,
                 "accurate_passes": 36,
                 "chances_created": 0,
                 "Shotmap": 0,
@@ -100880,7 +100980,12 @@ export const TITANS_DATA: Player[] = [
                 "dribbled_past": 0,
                 "aerials_won": 0,
                 "fouls": 0,
-                "duel_lost": 1
+                "duel_lost": 1,
+                "physical_metrics_walking": 812,
+                "physical_metrics_jogging": 1865,
+                "physical_metrics_running": 818,
+                "physical_metrics_sprinting": 139,
+                "physical_metrics_number_of_sprints": 5
             }
         ]
     },
@@ -101030,13 +101135,15 @@ export const TITANS_DATA: Player[] = [
                 "score": "1 - 4",
                 "isHome": false,
                 "lineupPosition": null,
-                "lineupRole": "Defender",
+                "lineupRole": "Midfielder",
                 "yellowCard": false,
                 "redCard": false,
                 "minutes_played": 4,
                 "minutes": 4,
                 "goals": 0,
                 "assists": 0,
+                "top_speed": 25,
+                "totalDistance": 1.031,
                 "accurate_passes": 5,
                 "chances_created": 0,
                 "Shotmap": 0,
@@ -101052,7 +101159,11 @@ export const TITANS_DATA: Player[] = [
                 "recoveries": 0,
                 "dribbled_past": 0,
                 "aerials_won": 0,
-                "fouls": 0
+                "fouls": 0,
+                "physical_metrics_walking": 155,
+                "physical_metrics_jogging": 556,
+                "physical_metrics_running": 311,
+                "physical_metrics_sprinting": 9
             }
         ]
     }
